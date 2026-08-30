@@ -1,0 +1,32 @@
+{
+  "source": "PerseusDL/canonical-greekLit",
+  "license": "CC BY-SA 3.0 US",
+  "attribution": "Perseus Digital Library, Tufts University",
+  "base_url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0012/tlg002/",
+  "editions": {
+    "grc": {
+      "file": "tlg0012.tlg002.perseus-grc2.xml",
+      "lang": "grc",
+      "label": "ギリシャ語原典(Murray 校訂 Loeb 1919)",
+      "role": "原典",
+      "bytes": 1560163,
+      "sha256": "e00253c0b383d6c94f949524f0ec1d4491f585ebaf66413e8615199af5fd2904"
+    },
+    "murray": {
+      "file": "tlg0012.tlg002.perseus-eng3.xml",
+      "lang": "eng",
+      "label": "A.T. Murray 英訳 1919",
+      "role": "対訳(主)",
+      "bytes": 870905,
+      "sha256": "dda5b206e332e56c570c1d92ea41e9a510339a454bc2ea90491788e34174a7e7"
+    },
+    "butler": {
+      "file": "tlg0012.tlg002.perseus-eng4.xml",
+      "lang": "eng",
+      "label": "Samuel Butler 英訳(Power/Nagy 改訂)",
+      "role": "対訳(照合用)",
+      "bytes": 939107,
+      "sha256": "4404a35bd6fc679db69dc7f6b4d5414bd576821b12615ff0d9bf3f3a19d5834d"
+    }
+  }
+}

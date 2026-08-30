@@ -1,0 +1,33 @@
+[
+ {
+  "edition": "grc",
+  "book": 3,
+  "line": 304,
+  "kind": "transposed",
+  "after": 305,
+  "action": "正準行番号順に整列(出典の組版順は逆)"
+ },
+ {
+  "edition": "grc",
+  "book": 14,
+  "line": 63,
+  "kind": "transposed",
+  "after": 64,
+  "action": "正準行番号順に整列(出典の組版順は逆)"
+ },
+ {
+  "edition": "murray",
+  "book": 6,
+  "line": 320,
+  "kind": "duplicate_anchor",
+  "action": "本文を直前の錨へ統合"
+ },
+ {
+  "edition": "murray",
+  "book": 16,
+  "line": 580,
+  "kind": "out_of_range",
+  "last_line": 481,
+  "action": "錨を除去し本文を直前の錨へ引き継ぎ"
+ }
+]

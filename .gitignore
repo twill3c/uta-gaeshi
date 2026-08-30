@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+# 出典の生 XML は再取得可能。sha256 は data/sources.json に刻んである
+data/raw/
