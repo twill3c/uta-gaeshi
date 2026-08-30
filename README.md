@@ -14,7 +14,7 @@
 | ループ | 内容 | 状態 |
 |---|---|---|
 | L1 | TEI 取得・構造化・G-01 / G-06 | 完了 |
-| L2 | 定型句・話者・地名の全数測定 | 未着手 |
+| L2 | 定型句・話者・地名の全数測定 | 完了 |
 | L3 | 名寄せ表と用語集の確定 | 未着手 |
 | L4 | 全 2,432 単位の和訳 | 未着手 |
 | L5 | 較正ゲートの測定 | 未着手 |
@@ -25,8 +25,28 @@
 ```bash
 python -m pipeline.fetch_tei    # 出典 TEI を取得し sha256 を data/sources.json に刻む
 python -m pipeline.parse_tei    # 翻訳単位 data/units.json を構築
-python -m pytest -q             # G-01 構造ゲートと G-06 陽性対照
+python -m pipeline.formulas     # 反復行と定型句 data/formulas.json(目玉)
+python -m pipeline.speakers     # 発話定型からの話者候補 data/speakers.json
+python -m pipeline.places       # 地名の全数集計 data/places.json
+python -m pytest -q             # 構造ゲート・測定の不変量・陽性対照
 ```
+
+## L2 で測れたこと
+
+| 測定 | 値 |
+|---|---|
+| 逐語的に反復する行 | 808 種 / 2,155 回 = **全行の 17.8%**(全群が単位を跨ぐ) |
+| 和訳の強制等値制約 | **1,347 件**(原典で同一の行は和訳でも同一であるべき) |
+| 定型句(5 回以上) | 3-gram 644 種 / 4-gram 320 種 / 5-gram 192 種 |
+| 発話導入定型 | 611 行(全行の 5.1%)。うち固有名詞を伴う 364 行(60%) |
+| 話者候補 / 受け手候補 | 35 / 14。父称と判定 14、格が曖昧で判定保留 18 |
+| 地名タグ | 418 箇所 / 異なりキー 70(tgn 49・perseus 21) |
+| 同一表記が複数キーに分裂 | 5 件(Troy は **3 キー**、Ithaca / Pylos / Olympus / Elis が各 2) |
+| 航海の寄港地のタグ | 10 件中 **9 件がタグ無し**(Scheria のみ有り) |
+
+最後の行が企画の芯である。寄港地は本文に現れるのに典拠データに存在しない。
+稀だからではなく指示対象が無いためであり、**オデュッセウスの航路は地図に描けない**。
+描けない区間を明示することを地図の仕様とする。
 
 `data/raw/` は git 管理外(再取得可能)。上流が改訂されると `tests/test_pins.py` だけが落ちる。
 そのときは実測し直して `pipeline/pins.py` と `pipeline/gates.py` を更新する。

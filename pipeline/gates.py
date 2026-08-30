@@ -92,3 +92,65 @@ def diagnose(corpus: dict) -> str:
     drift = upstream_drift()
     cause = "上流が改訂された(刻印と実物が不一致)" if drift else "我々の回帰(上流は不動)"
     return f"G-01 不合格 — {cause}\n" + "\n".join(f"  - {x}" for x in violations + drift)
+
+
+# --- L2 の測定に対する不変量ゲート -------------------------------------------
+# 件数は pins.py の刻印とセットで意味を持つ。ここでは件数ではなく
+# 「データがそれ自身と整合しているか」だけを見る。件数の固定はテスト側の責務。
+
+def check_formulas(f: dict) -> list[str]:
+    v: list[str] = []
+    m = f["meta"]
+    for g in f["repeated_lines"]:
+        if g["count"] < 2:
+            v.append(f"反復群 {g['key'][:24]!r} の出現が {g['count']} 回(2 未満)")
+        if len(g["occurrences"]) != g["count"]:
+            v.append(f"反復群 {g['key'][:24]!r} の出現数と count が不一致")
+        if len(g["units"]) != len({o['unit'] for o in g['occurrences']}):
+            v.append(f"反復群 {g['key'][:24]!r} の units が出現と不整合")
+    if m["repeated_types"] != len(f["repeated_lines"]):
+        v.append("repeated_types が実データと不一致")
+    occ = sum(g["count"] for g in f["repeated_lines"])
+    if m["repeated_occurrences"] != occ:
+        v.append("repeated_occurrences が実データと不一致")
+    if m["equality_constraints"] != occ - len(f["repeated_lines"]):
+        v.append("強制等値制約の導出が合わない")
+    return v
+
+
+def check_speakers(s: dict) -> list[str]:
+    v: list[str] = []
+    m = s["meta"]
+    expect = {"speaker": "nom", "addressee": "acc"}
+    for line in s["speech_lines"]:
+        for n in line["names"]:
+            want = expect.get(n["role"])
+            if want and n["case"] != want:
+                v.append(f"{line['book']}.{line['line']} {n['token']}: "
+                         f"役割 {n['role']} なのに格 {n['case']}")
+            if n["case"] == "amb" and n["role"] is not None:
+                v.append(f"{line['book']}.{line['line']} {n['token']}: "
+                         f"格が曖昧なのに役割 {n['role']} が付いている")
+    if m["speech_lines"] != len(s["speech_lines"]):
+        v.append("speech_lines の件数が実データと不一致")
+    if m["speech_lines_with_name"] > m["speech_lines"]:
+        v.append("名前を伴う行が発話行より多い")
+    return v
+
+
+def check_places(p: dict) -> list[str]:
+    v: list[str] = []
+    for pl in p["places"]:
+        if pl["count"] != len(pl["occurrences"]):
+            v.append(f"{pl['key']}: count と出現数が不一致")
+        if sorted(pl["books"]) != sorted({o["book"] for o in pl["occurrences"]}):
+            v.append(f"{pl['key']}: books が出現と不整合")
+        for o in pl["occurrences"]:
+            if not 1 <= o["book"] <= 24:
+                v.append(f"{pl['key']}: 巻 {o['book']} が範囲外")
+    if p["meta"]["distinct_keys"] != len(p["places"]):
+        v.append("distinct_keys が実データと不一致")
+    total = sum(pl["count"] for pl in p["places"])
+    if p["meta"]["occurrences"] != total:
+        v.append("occurrences が実データと不一致")
+    return v
