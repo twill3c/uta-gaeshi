@@ -1,0 +1,4927 @@
+{
+ "meta": {
+  "surface_forms": 280,
+  "confident_forms": 245,
+  "held_forms": 35,
+  "confident_share": 0.875,
+  "entities": 110,
+  "threshold": 0.8
+ },
+ "entities": [
+  {
+   "english": "Odysseus",
+   "forms": [
+    {
+     "form": "οδυσσευσ",
+     "count": 256,
+     "coverage": 0.823
+    },
+    {
+     "form": "οδυσσηοσ",
+     "count": 71,
+     "coverage": 0.986
+    },
+    {
+     "form": "οδυσευσ",
+     "count": 68,
+     "coverage": 0.938
+    },
+    {
+     "form": "οδυσηοσ",
+     "count": 59,
+     "coverage": 1.0
+    },
+    {
+     "form": "οδυσηα",
+     "count": 50,
+     "coverage": 0.98
+    },
+    {
+     "form": "οδυσηι",
+     "count": 24,
+     "coverage": 0.957
+    },
+    {
+     "form": "οδυσσευ",
+     "count": 23,
+     "coverage": 1.0
+    },
+    {
+     "form": "οδυσσηα",
+     "count": 15,
+     "coverage": 1.0
+    },
+    {
+     "form": "λαερτιαδη",
+     "count": 14,
+     "coverage": 1.0
+    },
+    {
+     "form": "οδυσευ",
+     "count": 11,
+     "coverage": 0.818
+    },
+    {
+     "form": "λαερτιαδεω",
+     "count": 11,
+     "coverage": 1.0
+    },
+    {
+     "form": "οδυσηʼ",
+     "count": 9,
+     "coverage": 1.0
+    },
+    {
+     "form": "οδυσσηι",
+     "count": 8,
+     "coverage": 1.0
+    },
+    {
+     "form": "αλκινοω",
+     "count": 3,
+     "coverage": 1.0
+    },
+    {
+     "form": "λαερτιαδην",
+     "count": 3,
+     "coverage": 1.0
+    },
+    {
+     "form": "κακοιλιον",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 628,
+   "books": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+   ]
+  },
+  {
+   "english": "Telemachus",
+   "forms": [
+    {
+     "form": "τηλεμαχοσ",
+     "count": 128,
+     "coverage": 0.944
+    },
+    {
+     "form": "τηλεμαχον",
+     "count": 40,
+     "coverage": 0.95
+    },
+    {
+     "form": "τηλεμαχω",
+     "count": 22,
+     "coverage": 1.0
+    },
+    {
+     "form": "τηλεμαχοιο",
+     "count": 14,
+     "coverage": 1.0
+    },
+    {
+     "form": "τηλεμαχου",
+     "count": 12,
+     "coverage": 1.0
+    }
+   ],
+   "count": 216,
+   "books": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+   ]
+  },
+  {
+   "english": "Zeus",
+   "forms": [
+    {
+     "form": "ζευσ",
+     "count": 88,
+     "coverage": 0.908
+    },
+    {
+     "form": "διοσ",
+     "count": 84,
+     "coverage": 0.988
+    },
+    {
+     "form": "μενελαε",
+     "count": 10,
+     "coverage": 1.0
+    },
+    {
+     "form": "ηρησ",
+     "count": 4,
+     "coverage": 1.0
+    },
+    {
+     "form": "ζηνι",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 189,
+   "books": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+   ]
+  },
+  {
+   "english": "Athena",
+   "forms": [
+    {
+     "form": "αθηνη",
+     "count": 118,
+     "coverage": 0.851
+    },
+    {
+     "form": "αθηναιη",
+     "count": 26,
+     "coverage": 0.8
+    },
+    {
+     "form": "αθηνην",
+     "count": 9,
+     "coverage": 0.889
+    },
+    {
+     "form": "αθηναιησ",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 156,
+   "books": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+   ]
+  },
+  {
+   "english": "Achaeans",
+   "forms": [
+    {
+     "form": "αχαιων",
+     "count": 55,
+     "coverage": 0.944
+    },
+    {
+     "form": "αχαιοι",
+     "count": 39,
+     "coverage": 0.923
+    },
+    {
+     "form": "αχαιουσ",
+     "count": 22,
+     "coverage": 0.909
+    },
+    {
+     "form": "παναχαιοι",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 119,
+   "books": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+   ]
+  },
+  {
+   "english": "Ithaca",
+   "forms": [
+    {
+     "form": "ιθακησ",
+     "count": 36,
+     "coverage": 1.0
+    },
+    {
+     "form": "ιθακην",
+     "count": 26,
+     "coverage": 1.0
+    },
+    {
+     "form": "ιθακη",
+     "count": 16,
+     "coverage": 1.0
+    },
+    {
+     "form": "ιθακησιοι",
+     "count": 8,
+     "coverage": 1.0
+    },
+    {
+     "form": "σαμη",
+     "count": 5,
+     "coverage": 0.8
+    },
+    {
+     "form": "ιθακηνδε",
+     "count": 4,
+     "coverage": 1.0
+    },
+    {
+     "form": "δουλιχιω",
+     "count": 3,
+     "coverage": 1.0
+    },
+    {
+     "form": "ζακυνθω",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 101,
+   "books": [
+    1,
+    2,
+    3,
+    4,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+   ]
+  },
+  {
+   "english": "Penelope",
+   "forms": [
+    {
+     "form": "πηνελοπεια",
+     "count": 58,
+     "coverage": 1.0
+    },
+    {
+     "form": "πηνελοπειη",
+     "count": 14,
+     "coverage": 1.0
+    },
+    {
+     "form": "πηνελοπειαν",
+     "count": 8,
+     "coverage": 1.0
+    },
+    {
+     "form": "πηνελοπειησ",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 83,
+   "books": [
+    1,
+    2,
+    4,
+    5,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+   ]
+  },
+  {
+   "english": "Phaeacians",
+   "forms": [
+    {
+     "form": "φαιηκων",
+     "count": 40,
+     "coverage": 1.0
+    },
+    {
+     "form": "φαιηκεσ",
+     "count": 18,
+     "coverage": 0.833
+    },
+    {
+     "form": "φαιηκεσσι",
+     "count": 10,
+     "coverage": 1.0
+    },
+    {
+     "form": "φαιηκασ",
+     "count": 4,
+     "coverage": 1.0
+    },
+    {
+     "form": "φαιηκεσσιν",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 75,
+   "books": [
+    5,
+    6,
+    7,
+    8,
+    11,
+    13,
+    16,
+    19,
+    23
+   ]
+  },
+  {
+   "english": "Alcinous",
+   "forms": [
+    {
+     "form": "αλκινοοιο",
+     "count": 31,
+     "coverage": 1.0
+    },
+    {
+     "form": "αλκινοοσ",
+     "count": 20,
+     "coverage": 0.95
+    },
+    {
+     "form": "αλκινοε",
+     "count": 6,
+     "coverage": 1.0
+    },
+    {
+     "form": "αλκινοον",
+     "count": 5,
+     "coverage": 1.0
+    },
+    {
+     "form": "αλκινοου",
+     "count": 4,
+     "coverage": 1.0
+    },
+    {
+     "form": "λαοδαμασ",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 69,
+   "books": [
+    6,
+    7,
+    8,
+    9,
+    11,
+    13
+   ]
+  },
+  {
+   "english": "Menelaus",
+   "forms": [
+    {
+     "form": "μενελαοσ",
+     "count": 32,
+     "coverage": 0.969
+    },
+    {
+     "form": "μενελαου",
+     "count": 8,
+     "coverage": 0.875
+    },
+    {
+     "form": "μενελαον",
+     "count": 6,
+     "coverage": 1.0
+    },
+    {
+     "form": "μενελαω",
+     "count": 4,
+     "coverage": 1.0
+    }
+   ],
+   "count": 50,
+   "books": [
+    1,
+    3,
+    4,
+    8,
+    11,
+    13,
+    14,
+    15,
+    17,
+    24
+   ]
+  },
+  {
+   "english": "Nestor",
+   "forms": [
+    {
+     "form": "νεστωρ",
+     "count": 19,
+     "coverage": 1.0
+    },
+    {
+     "form": "νεστοροσ",
+     "count": 11,
+     "coverage": 1.0
+    },
+    {
+     "form": "νεστοριδησ",
+     "count": 6,
+     "coverage": 1.0
+    },
+    {
+     "form": "νεστορι",
+     "count": 3,
+     "coverage": 1.0
+    },
+    {
+     "form": "θρασυμηδησ",
+     "count": 3,
+     "coverage": 1.0
+    },
+    {
+     "form": "νεστοριδη",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 45,
+   "books": [
+    3,
+    4,
+    11,
+    15,
+    24
+   ]
+  },
+  {
+   "english": "Circe",
+   "forms": [
+    {
+     "form": "κιρκη",
+     "count": 24,
+     "coverage": 0.917
+    },
+    {
+     "form": "κιρκησ",
+     "count": 21,
+     "coverage": 0.9
+    }
+   ],
+   "count": 45,
+   "books": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    23
+   ]
+  },
+  {
+   "english": "Antinous",
+   "forms": [
+    {
+     "form": "αντινοοσ",
+     "count": 34,
+     "coverage": 0.879
+    },
+    {
+     "form": "αντινοον",
+     "count": 7,
+     "coverage": 1.0
+    },
+    {
+     "form": "αντινοοιο",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 44,
+   "books": [
+    1,
+    2,
+    4,
+    16,
+    17,
+    18,
+    20,
+    21,
+    22,
+    24
+   ]
+  },
+  {
+   "english": "Atreus",
+   "forms": [
+    {
+     "form": "ατρειδη",
+     "count": 16,
+     "coverage": 1.0
+    },
+    {
+     "form": "ατρειδησ",
+     "count": 12,
+     "coverage": 1.0
+    },
+    {
+     "form": "ατρειδαο",
+     "count": 10,
+     "coverage": 1.0
+    },
+    {
+     "form": "ατρεοσ",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 41,
+   "books": [
+    1,
+    3,
+    4,
+    11,
+    13,
+    14,
+    15,
+    17,
+    24
+   ]
+  },
+  {
+   "english": "Poseidon",
+   "forms": [
+    {
+     "form": "ποσειδαων",
+     "count": 20,
+     "coverage": 0.85
+    },
+    {
+     "form": "ποσειδαωνι",
+     "count": 13,
+     "coverage": 1.0
+    },
+    {
+     "form": "ποσειδαωνοσ",
+     "count": 3,
+     "coverage": 1.0
+    },
+    {
+     "form": "ποσειδαον",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 39,
+   "books": [
+    1,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    11,
+    13,
+    23,
+    24
+   ]
+  },
+  {
+   "english": "Troy",
+   "forms": [
+    {
+     "form": "τροιη",
+     "count": 11,
+     "coverage": 1.0
+    },
+    {
+     "form": "τροιησ",
+     "count": 9,
+     "coverage": 1.0
+    },
+    {
+     "form": "τροιηθεν",
+     "count": 6,
+     "coverage": 1.0
+    },
+    {
+     "form": "τροιην",
+     "count": 5,
+     "coverage": 1.0
+    },
+    {
+     "form": "τροιηνδε",
+     "count": 5,
+     "coverage": 1.0
+    }
+   ],
+   "count": 36,
+   "books": [
+    1,
+    3,
+    4,
+    5,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    24
+   ]
+  },
+  {
+   "english": "Pylos",
+   "forms": [
+    {
+     "form": "πυλον",
+     "count": 15,
+     "coverage": 0.933
+    },
+    {
+     "form": "πυλου",
+     "count": 9,
+     "coverage": 1.0
+    },
+    {
+     "form": "πυλονδε",
+     "count": 5,
+     "coverage": 1.0
+    },
+    {
+     "form": "πυλω",
+     "count": 4,
+     "coverage": 1.0
+    },
+    {
+     "form": "νεστορα",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 36,
+   "books": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    21,
+    24
+   ]
+  },
+  {
+   "english": "Eumaeus",
+   "forms": [
+    {
+     "form": "ευμαιε",
+     "count": 26,
+     "coverage": 1.0
+    },
+    {
+     "form": "ευμαιον",
+     "count": 5,
+     "coverage": 0.8
+    },
+    {
+     "form": "ευμαιοσ",
+     "count": 5,
+     "coverage": 1.0
+    }
+   ],
+   "count": 36,
+   "books": [
+    14,
+    15,
+    16,
+    17,
+    20,
+    21,
+    22
+   ]
+  },
+  {
+   "english": "Hades",
+   "forms": [
+    {
+     "form": "αιδαο",
+     "count": 18,
+     "coverage": 1.0
+    },
+    {
+     "form": "αιδοσ",
+     "count": 6,
+     "coverage": 1.0
+    },
+    {
+     "form": "αιδοσδε",
+     "count": 5,
+     "coverage": 1.0
+    },
+    {
+     "form": "αιδεω",
+     "count": 4,
+     "coverage": 1.0
+    }
+   ],
+   "count": 33,
+   "books": [
+    3,
+    4,
+    6,
+    9,
+    10,
+    11,
+    12,
+    14,
+    15,
+    20,
+    23,
+    24
+   ]
+  },
+  {
+   "english": "Laertes",
+   "forms": [
+    {
+     "form": "λαερτησ",
+     "count": 12,
+     "coverage": 0.833
+    },
+    {
+     "form": "λαερταο",
+     "count": 6,
+     "coverage": 1.0
+    },
+    {
+     "form": "λαερτη",
+     "count": 5,
+     "coverage": 1.0
+    },
+    {
+     "form": "λαερτην",
+     "count": 4,
+     "coverage": 1.0
+    },
+    {
+     "form": "λαερτεω",
+     "count": 4,
+     "coverage": 1.0
+    }
+   ],
+   "count": 31,
+   "books": [
+    1,
+    2,
+    4,
+    8,
+    9,
+    14,
+    15,
+    16,
+    19,
+    22,
+    24
+   ]
+  },
+  {
+   "english": "Trojans",
+   "forms": [
+    {
+     "form": "τρωων",
+     "count": 18,
+     "coverage": 0.944
+    },
+    {
+     "form": "τρωεσσι",
+     "count": 6,
+     "coverage": 1.0
+    },
+    {
+     "form": "τρωεσ",
+     "count": 4,
+     "coverage": 1.0
+    }
+   ],
+   "count": 28,
+   "books": [
+    1,
+    3,
+    4,
+    5,
+    8,
+    11,
+    12,
+    13,
+    14,
+    17,
+    22,
+    24
+   ]
+  },
+  {
+   "english": "Apollo",
+   "forms": [
+    {
+     "form": "απολλων",
+     "count": 15,
+     "coverage": 0.867
+    },
+    {
+     "form": "απολλον",
+     "count": 6,
+     "coverage": 1.0
+    },
+    {
+     "form": "απολλωνοσ",
+     "count": 6,
+     "coverage": 0.833
+    }
+   ],
+   "count": 27,
+   "books": [
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    15,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    24
+   ]
+  },
+  {
+   "english": "Calypso",
+   "forms": [
+    {
+     "form": "καλυψω",
+     "count": 19,
+     "coverage": 0.895
+    },
+    {
+     "form": "καλυψουσ",
+     "count": 5,
+     "coverage": 1.0
+    }
+   ],
+   "count": 24,
+   "books": [
+    1,
+    4,
+    5,
+    7,
+    8,
+    9,
+    12,
+    17,
+    23
+   ]
+  },
+  {
+   "english": "Cronos",
+   "forms": [
+    {
+     "form": "κρονιων",
+     "count": 19,
+     "coverage": 0.947
+    },
+    {
+     "form": "κρονιδη",
+     "count": 5,
+     "coverage": 1.0
+    }
+   ],
+   "count": 24,
+   "books": [
+    1,
+    3,
+    4,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16,
+    18,
+    19,
+    20,
+    21,
+    22,
+    24
+   ]
+  },
+  {
+   "english": "Pallas",
+   "forms": [
+    {
+     "form": "παλλασ",
+     "count": 24,
+     "coverage": 0.958
+    }
+   ],
+   "count": 24,
+   "books": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    11,
+    13,
+    15,
+    16,
+    19,
+    20,
+    23,
+    24
+   ]
+  },
+  {
+   "english": "Eurycleia",
+   "forms": [
+    {
+     "form": "ευρυκλεια",
+     "count": 16,
+     "coverage": 1.0
+    },
+    {
+     "form": "ευρυκλειαν",
+     "count": 6,
+     "coverage": 1.0
+    }
+   ],
+   "count": 22,
+   "books": [
+    2,
+    4,
+    17,
+    19,
+    20,
+    21,
+    22,
+    23
+   ]
+  },
+  {
+   "english": "Cyclops",
+   "forms": [
+    {
+     "form": "κυκλωψ",
+     "count": 13,
+     "coverage": 1.0
+    },
+    {
+     "form": "κυκλωποσ",
+     "count": 4,
+     "coverage": 1.0
+    },
+    {
+     "form": "κυκλωπα",
+     "count": 4,
+     "coverage": 1.0
+    }
+   ],
+   "count": 21,
+   "books": [
+    1,
+    2,
+    9,
+    10,
+    12,
+    20,
+    23
+   ]
+  },
+  {
+   "english": "Helen",
+   "forms": [
+    {
+     "form": "ελενη",
+     "count": 14,
+     "coverage": 0.846
+    },
+    {
+     "form": "ελενησ",
+     "count": 4,
+     "coverage": 1.0
+    },
+    {
+     "form": "μεγαπενθησ",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 21,
+   "books": [
+    4,
+    11,
+    14,
+    15,
+    22,
+    23
+   ]
+  },
+  {
+   "english": "Agamemnon",
+   "forms": [
+    {
+     "form": "αγαμεμνονοσ",
+     "count": 7,
+     "coverage": 1.0
+    },
+    {
+     "form": "αγαμεμνονι",
+     "count": 6,
+     "coverage": 1.0
+    },
+    {
+     "form": "αγαμεμνων",
+     "count": 3,
+     "coverage": 1.0
+    },
+    {
+     "form": "αγαμεμνον",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 19,
+   "books": [
+    3,
+    4,
+    8,
+    9,
+    11,
+    13,
+    14,
+    24
+   ]
+  },
+  {
+   "english": "Argos",
+   "forms": [
+    {
+     "form": "αργοσ",
+     "count": 9,
+     "coverage": 0.889
+    },
+    {
+     "form": "αργεοσ",
+     "count": 6,
+     "coverage": 0.833
+    },
+    {
+     "form": "αργει",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 18,
+   "books": [
+    1,
+    3,
+    4,
+    15,
+    17,
+    18,
+    21,
+    24
+   ]
+  },
+  {
+   "english": "Icarius",
+   "forms": [
+    {
+     "form": "ικαριοιο",
+     "count": 14,
+     "coverage": 1.0
+    },
+    {
+     "form": "ικαριου",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 17,
+   "books": [
+    1,
+    2,
+    4,
+    11,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    24
+   ]
+  },
+  {
+   "english": "Autolycus",
+   "forms": [
+    {
+     "form": "αυτολυκοσ",
+     "count": 5,
+     "coverage": 0.8
+    },
+    {
+     "form": "αυτολυκου",
+     "count": 4,
+     "coverage": 1.0
+    },
+    {
+     "form": "παρνησονδʼ",
+     "count": 4,
+     "coverage": 1.0
+    },
+    {
+     "form": "αυτολυκοιο",
+     "count": 4,
+     "coverage": 1.0
+    }
+   ],
+   "count": 17,
+   "books": [
+    11,
+    19,
+    21
+   ]
+  },
+  {
+   "english": "Ilios",
+   "forms": [
+    {
+     "form": "ιλιον",
+     "count": 16,
+     "coverage": 0.938
+    }
+   ],
+   "count": 16,
+   "books": [
+    2,
+    8,
+    10,
+    11,
+    14,
+    17,
+    18,
+    19,
+    24
+   ]
+  },
+  {
+   "english": "Hephaestus",
+   "forms": [
+    {
+     "form": "ηφαιστοιο",
+     "count": 10,
+     "coverage": 1.0
+    },
+    {
+     "form": "ηφαιστοσ",
+     "count": 6,
+     "coverage": 1.0
+    }
+   ],
+   "count": 16,
+   "books": [
+    4,
+    6,
+    7,
+    8,
+    15,
+    23,
+    24
+   ]
+  },
+  {
+   "english": "Aegisthus",
+   "forms": [
+    {
+     "form": "αιγισθοσ",
+     "count": 8,
+     "coverage": 1.0
+    },
+    {
+     "form": "αιγισθοιο",
+     "count": 6,
+     "coverage": 1.0
+    }
+   ],
+   "count": 14,
+   "books": [
+    1,
+    3,
+    4,
+    11,
+    24
+   ]
+  },
+  {
+   "english": "Argives",
+   "forms": [
+    {
+     "form": "αργειοι",
+     "count": 8,
+     "coverage": 0.875
+    },
+    {
+     "form": "αργειοισιν",
+     "count": 6,
+     "coverage": 0.833
+    }
+   ],
+   "count": 14,
+   "books": [
+    2,
+    3,
+    8,
+    11,
+    12,
+    15,
+    17,
+    18,
+    19,
+    24
+   ]
+  },
+  {
+   "english": "Olympus",
+   "forms": [
+    {
+     "form": "ολυμπον",
+     "count": 11,
+     "coverage": 1.0
+    },
+    {
+     "form": "ολυμπια",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 14,
+   "books": [
+    3,
+    6,
+    8,
+    10,
+    12,
+    14,
+    15,
+    18,
+    19,
+    20,
+    23,
+    24
+   ]
+  },
+  {
+   "english": "Artemis",
+   "forms": [
+    {
+     "form": "αρτεμισ",
+     "count": 8,
+     "coverage": 1.0
+    },
+    {
+     "form": "αρτεμιδι",
+     "count": 6,
+     "coverage": 1.0
+    }
+   ],
+   "count": 14,
+   "books": [
+    4,
+    5,
+    6,
+    11,
+    15,
+    17,
+    18,
+    19,
+    20
+   ]
+  },
+  {
+   "english": "Achilles",
+   "forms": [
+    {
+     "form": "αχιλλευ",
+     "count": 6,
+     "coverage": 1.0
+    },
+    {
+     "form": "αχιληοσ",
+     "count": 4,
+     "coverage": 1.0
+    },
+    {
+     "form": "αχιλληοσ",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 13,
+   "books": [
+    3,
+    4,
+    8,
+    11,
+    24
+   ]
+  },
+  {
+   "english": "Arete",
+   "forms": [
+    {
+     "form": "αρητη",
+     "count": 10,
+     "coverage": 0.889
+    },
+    {
+     "form": "αρητην",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 13,
+   "books": [
+    7,
+    8,
+    11,
+    13
+   ]
+  },
+  {
+   "english": "Hermes",
+   "forms": [
+    {
+     "form": "ερμειασ",
+     "count": 8,
+     "coverage": 0.875
+    },
+    {
+     "form": "ερμειαν",
+     "count": 4,
+     "coverage": 1.0
+    }
+   ],
+   "count": 12,
+   "books": [
+    1,
+    5,
+    8,
+    10,
+    11,
+    19,
+    24
+   ]
+  },
+  {
+   "english": "Mentor",
+   "forms": [
+    {
+     "form": "μεντορι",
+     "count": 7,
+     "coverage": 1.0
+    },
+    {
+     "form": "μεντωρ",
+     "count": 5,
+     "coverage": 1.0
+    }
+   ],
+   "count": 12,
+   "books": [
+    2,
+    17,
+    22,
+    24
+   ]
+  },
+  {
+   "english": "Scylla",
+   "forms": [
+    {
+     "form": "σκυλλην",
+     "count": 5,
+     "coverage": 1.0
+    },
+    {
+     "form": "σκυλλη",
+     "count": 4,
+     "coverage": 1.0
+    },
+    {
+     "form": "σκυλλησ",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 12,
+   "books": [
+    12,
+    23
+   ]
+  },
+  {
+   "english": "Gerenia",
+   "forms": [
+    {
+     "form": "γερηνιοσ",
+     "count": 11,
+     "coverage": 1.0
+    }
+   ],
+   "count": 11,
+   "books": [
+    3,
+    4
+   ]
+  },
+  {
+   "english": "Eurylochus",
+   "forms": [
+    {
+     "form": "ευρυλοχοσ",
+     "count": 11,
+     "coverage": 0.909
+    }
+   ],
+   "count": 11,
+   "books": [
+    10,
+    11,
+    12
+   ]
+  },
+  {
+   "english": "Eupeithes",
+   "forms": [
+    {
+     "form": "ευπειθεοσ",
+     "count": 10,
+     "coverage": 1.0
+    }
+   ],
+   "count": 10,
+   "books": [
+    1,
+    4,
+    16,
+    17,
+    18,
+    20,
+    21
+   ]
+  },
+  {
+   "english": "Dolius",
+   "forms": [
+    {
+     "form": "δολιοσ",
+     "count": 4,
+     "coverage": 1.0
+    },
+    {
+     "form": "δολιον",
+     "count": 3,
+     "coverage": 1.0
+    },
+    {
+     "form": "δολιοιο",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 10,
+   "books": [
+    4,
+    17,
+    18,
+    22,
+    24
+   ]
+  },
+  {
+   "english": "North",
+   "forms": [
+    {
+     "form": "βορεησ",
+     "count": 4,
+     "coverage": 1.0
+    },
+    {
+     "form": "βορεη",
+     "count": 3,
+     "coverage": 1.0
+    },
+    {
+     "form": "βορεαο",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 10,
+   "books": [
+    5,
+    9,
+    10,
+    13,
+    14,
+    19
+   ]
+  },
+  {
+   "english": "Peisenor",
+   "forms": [
+    {
+     "form": "ευρυκλειʼ",
+     "count": 3,
+     "coverage": 1.0
+    },
+    {
+     "form": "ωποσ",
+     "count": 3,
+     "coverage": 1.0
+    },
+    {
+     "form": "πεισηνοριδαο",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 9,
+   "books": [
+    1,
+    2,
+    20
+   ]
+  },
+  {
+   "english": "Neleus",
+   "forms": [
+    {
+     "form": "νεστορ",
+     "count": 3,
+     "coverage": 1.0
+    },
+    {
+     "form": "νηληιαδη",
+     "count": 3,
+     "coverage": 1.0
+    },
+    {
+     "form": "νηλευσ",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 9,
+   "books": [
+    3,
+    11
+   ]
+  },
+  {
+   "english": "Crete",
+   "forms": [
+    {
+     "form": "κρητη",
+     "count": 5,
+     "coverage": 1.0
+    },
+    {
+     "form": "κρητησ",
+     "count": 4,
+     "coverage": 1.0
+    }
+   ],
+   "count": 9,
+   "books": [
+    3,
+    11,
+    13,
+    14,
+    17,
+    19
+   ]
+  },
+  {
+   "english": "Lacedaemon",
+   "forms": [
+    {
+     "form": "λακεδαιμονα",
+     "count": 9,
+     "coverage": 1.0
+    }
+   ],
+   "count": 9,
+   "books": [
+    3,
+    4,
+    5,
+    13,
+    15,
+    17
+   ]
+  },
+  {
+   "english": "Aphrodite",
+   "forms": [
+    {
+     "form": "αφροδιτη",
+     "count": 9,
+     "coverage": 1.0
+    }
+   ],
+   "count": 9,
+   "books": [
+    4,
+    8,
+    17,
+    19,
+    20
+   ]
+  },
+  {
+   "english": "Ares",
+   "forms": [
+    {
+     "form": "αρησ",
+     "count": 5,
+     "coverage": 1.0
+    },
+    {
+     "form": "αρηα",
+     "count": 4,
+     "coverage": 1.0
+    }
+   ],
+   "count": 9,
+   "books": [
+    8,
+    11,
+    14
+   ]
+  },
+  {
+   "english": "Persephone",
+   "forms": [
+    {
+     "form": "περσεφονεια",
+     "count": 6,
+     "coverage": 1.0
+    },
+    {
+     "form": "περσεφονειησ",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 9,
+   "books": [
+    10,
+    11
+   ]
+  },
+  {
+   "english": "Helios",
+   "forms": [
+    {
+     "form": "ηελιου",
+     "count": 3,
+     "coverage": 1.0
+    },
+    {
+     "form": "ηελιω",
+     "count": 3,
+     "coverage": 1.0
+    },
+    {
+     "form": "υπεριονι",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 9,
+   "books": [
+    11,
+    12
+   ]
+  },
+  {
+   "english": "Olympian",
+   "forms": [
+    {
+     "form": "ολυμπιοσ",
+     "count": 5,
+     "coverage": 1.0
+    },
+    {
+     "form": "ολυμπιου",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 8,
+   "books": [
+    1,
+    2,
+    4,
+    6,
+    15,
+    23
+   ]
+  },
+  {
+   "english": "Peisistratus",
+   "forms": [
+    {
+     "form": "πεισιστρατοσ",
+     "count": 8,
+     "coverage": 0.875
+    }
+   ],
+   "count": 8,
+   "books": [
+    3,
+    4,
+    15
+   ]
+  },
+  {
+   "english": "West",
+   "forms": [
+    {
+     "form": "ζεφυροσ",
+     "count": 5,
+     "coverage": 1.0
+    },
+    {
+     "form": "ζεφυροιο",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 8,
+   "books": [
+    4,
+    5,
+    12,
+    14,
+    19
+   ]
+  },
+  {
+   "english": "Oceanus",
+   "forms": [
+    {
+     "form": "ωκεανοιο",
+     "count": 8,
+     "coverage": 0.875
+    }
+   ],
+   "count": 8,
+   "books": [
+    5,
+    10,
+    11,
+    12,
+    19,
+    20,
+    22
+   ]
+  },
+  {
+   "english": "Thesprotians",
+   "forms": [
+    {
+     "form": "θεσπρωτων",
+     "count": 8,
+     "coverage": 1.0
+    }
+   ],
+   "count": 8,
+   "books": [
+    14,
+    16,
+    17,
+    19
+   ]
+  },
+  {
+   "english": "Amphinomus",
+   "forms": [
+    {
+     "form": "αμφινομοσ",
+     "count": 8,
+     "coverage": 1.0
+    }
+   ],
+   "count": 8,
+   "books": [
+    16,
+    18,
+    20,
+    22
+   ]
+  },
+  {
+   "english": "Irus",
+   "forms": [
+    {
+     "form": "ιροσ",
+     "count": 5,
+     "coverage": 1.0
+    },
+    {
+     "form": "ιρον",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 8,
+   "books": [
+    18
+   ]
+  },
+  {
+   "english": "Cyclopes",
+   "forms": [
+    {
+     "form": "κυκλωπων",
+     "count": 4,
+     "coverage": 1.0
+    },
+    {
+     "form": "κυκλωπεσσι",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 7,
+   "books": [
+    1,
+    6,
+    9
+   ]
+  },
+  {
+   "english": "Polybus",
+   "forms": [
+    {
+     "form": "πολυβου",
+     "count": 7,
+     "coverage": 1.0
+    }
+   ],
+   "count": 7,
+   "books": [
+    1,
+    2,
+    16,
+    18,
+    20,
+    21
+   ]
+  },
+  {
+   "english": "Theoclymenus",
+   "forms": [
+    {
+     "form": "θεοκλυμενοσ",
+     "count": 7,
+     "coverage": 1.0
+    }
+   ],
+   "count": 7,
+   "books": [
+    15,
+    17,
+    20
+   ]
+  },
+  {
+   "english": "Agelaus",
+   "forms": [
+    {
+     "form": "αγελαοσ",
+     "count": 4,
+     "coverage": 1.0
+    },
+    {
+     "form": "δαμαστοριδησ",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 7,
+   "books": [
+    20,
+    22
+   ]
+  },
+  {
+   "english": "Priam",
+   "forms": [
+    {
+     "form": "πριαμοιο",
+     "count": 6,
+     "coverage": 1.0
+    }
+   ],
+   "count": 6,
+   "books": [
+    3,
+    5,
+    11,
+    13
+   ]
+  },
+  {
+   "english": "South",
+   "forms": [
+    {
+     "form": "νοτοσ",
+     "count": 6,
+     "coverage": 0.8
+    }
+   ],
+   "count": 6,
+   "books": [
+    3,
+    5,
+    12
+   ]
+  },
+  {
+   "english": "Theban",
+   "forms": [
+    {
+     "form": "θηβαιου",
+     "count": 6,
+     "coverage": 1.0
+    }
+   ],
+   "count": 6,
+   "books": [
+    10,
+    11,
+    12,
+    23
+   ]
+  },
+  {
+   "english": "Peleus",
+   "forms": [
+    {
+     "form": "πηλειωνα",
+     "count": 3,
+     "coverage": 1.0
+    },
+    {
+     "form": "πηληοσ",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 6,
+   "books": [
+    11,
+    24
+   ]
+  },
+  {
+   "english": "Charybdis",
+   "forms": [
+    {
+     "form": "χαρυβδιν",
+     "count": 6,
+     "coverage": 0.833
+    }
+   ],
+   "count": 6,
+   "books": [
+    12,
+    23
+   ]
+  },
+  {
+   "english": "Elis",
+   "forms": [
+    {
+     "form": "ηλιδα",
+     "count": 3,
+     "coverage": 1.0
+    },
+    {
+     "form": "επειοι",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 6,
+   "books": [
+    13,
+    15,
+    24
+   ]
+  },
+  {
+   "english": "Eurymachus",
+   "forms": [
+    {
+     "form": "ευρυμαχω",
+     "count": 3,
+     "coverage": 1.0
+    },
+    {
+     "form": "ευρυμαχον",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 6,
+   "books": [
+    15,
+    18,
+    21
+   ]
+  },
+  {
+   "english": "Orestes",
+   "forms": [
+    {
+     "form": "ορεστησ",
+     "count": 5,
+     "coverage": 1.0
+    }
+   ],
+   "count": 5,
+   "books": [
+    1,
+    3,
+    4,
+    11
+   ]
+  },
+  {
+   "english": "Hellas",
+   "forms": [
+    {
+     "form": "ελλαδα",
+     "count": 5,
+     "coverage": 1.0
+    }
+   ],
+   "count": 5,
+   "books": [
+    1,
+    4,
+    11,
+    15
+   ]
+  },
+  {
+   "english": "Achaean",
+   "forms": [
+    {
+     "form": "αχαιιαδων",
+     "count": 5,
+     "coverage": 1.0
+    }
+   ],
+   "count": 5,
+   "books": [
+    2,
+    3,
+    19,
+    21,
+    24
+   ]
+  },
+  {
+   "english": "Egypt",
+   "forms": [
+    {
+     "form": "αιγυπτω",
+     "count": 5,
+     "coverage": 0.8
+    }
+   ],
+   "count": 5,
+   "books": [
+    3,
+    4,
+    14,
+    17
+   ]
+  },
+  {
+   "english": "Ogygia",
+   "forms": [
+    {
+     "form": "ωγυγιην",
+     "count": 4,
+     "coverage": 1.0
+    }
+   ],
+   "count": 4,
+   "books": [
+    1,
+    7,
+    12,
+    23
+   ]
+  },
+  {
+   "english": "Sparta",
+   "forms": [
+    {
+     "form": "σπαρτην",
+     "count": 4,
+     "coverage": 1.0
+    }
+   ],
+   "count": 4,
+   "books": [
+    1,
+    2,
+    13
+   ]
+  },
+  {
+   "english": "Halitherses",
+   "forms": [
+    {
+     "form": "αλιθερσησ",
+     "count": 4,
+     "coverage": 1.0
+    }
+   ],
+   "count": 4,
+   "books": [
+    2,
+    17,
+    24
+   ]
+  },
+  {
+   "english": "Cyprus",
+   "forms": [
+    {
+     "form": "κυπρον",
+     "count": 4,
+     "coverage": 1.0
+    }
+   ],
+   "count": 4,
+   "books": [
+    4,
+    8,
+    17
+   ]
+  },
+  {
+   "english": "Antilochus",
+   "forms": [
+    {
+     "form": "αντιλοχοιο",
+     "count": 4,
+     "coverage": 1.0
+    }
+   ],
+   "count": 4,
+   "books": [
+    4,
+    11,
+    24
+   ]
+  },
+  {
+   "english": "East",
+   "forms": [
+    {
+     "form": "ευροσ",
+     "count": 4,
+     "coverage": 1.0
+    }
+   ],
+   "count": 4,
+   "books": [
+    5,
+    12,
+    19
+   ]
+  },
+  {
+   "english": "Noman",
+   "forms": [
+    {
+     "form": "ουτισ",
+     "count": 4,
+     "coverage": 1.0
+    }
+   ],
+   "count": 4,
+   "books": [
+    9
+   ]
+  },
+  {
+   "english": "Achaea",
+   "forms": [
+    {
+     "form": "αχαιιδοσ",
+     "count": 4,
+     "coverage": 1.0
+    }
+   ],
+   "count": 4,
+   "books": [
+    11,
+    13,
+    23
+   ]
+  },
+  {
+   "english": "Sirens",
+   "forms": [
+    {
+     "form": "σειρηνων",
+     "count": 4,
+     "coverage": 1.0
+    }
+   ],
+   "count": 4,
+   "books": [
+    12,
+    23
+   ]
+  },
+  {
+   "english": "Philoetius",
+   "forms": [
+    {
+     "form": "φιλοιτιοσ",
+     "count": 4,
+     "coverage": 1.0
+    }
+   ],
+   "count": 4,
+   "books": [
+    20,
+    21,
+    22
+   ]
+  },
+  {
+   "english": "Ethiopians",
+   "forms": [
+    {
+     "form": "αιθιοπασ",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 3,
+   "books": [
+    1,
+    4
+   ]
+  },
+  {
+   "english": "Phorcys",
+   "forms": [
+    {
+     "form": "φορκυνοσ",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 3,
+   "books": [
+    1,
+    13
+   ]
+  },
+  {
+   "english": "Phronius",
+   "forms": [
+    {
+     "form": "φρονιοιο",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 3,
+   "books": [
+    2,
+    4
+   ]
+  },
+  {
+   "english": "Lesbos",
+   "forms": [
+    {
+     "form": "λεσβω",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 3,
+   "books": [
+    3,
+    4,
+    17
+   ]
+  },
+  {
+   "english": "Clytemnestra",
+   "forms": [
+    {
+     "form": "κλυταιμνηστρη",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 3,
+   "books": [
+    3,
+    11
+   ]
+  },
+  {
+   "english": "Ortilochus",
+   "forms": [
+    {
+     "form": "ορτιλοχοιο",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 3,
+   "books": [
+    3,
+    15,
+    21
+   ]
+  },
+  {
+   "english": "Dawn",
+   "forms": [
+    {
+     "form": "ηουσ",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 3,
+   "books": [
+    4,
+    12,
+    13
+   ]
+  },
+  {
+   "english": "Samos",
+   "forms": [
+    {
+     "form": "σαμοιο",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 3,
+   "books": [
+    4,
+    15
+   ]
+  },
+  {
+   "english": "Scheria",
+   "forms": [
+    {
+     "form": "σχεριην",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 3,
+   "books": [
+    5,
+    7,
+    13
+   ]
+  },
+  {
+   "english": "Orion",
+   "forms": [
+    {
+     "form": "ωριωνα",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 3,
+   "books": [
+    5,
+    11
+   ]
+  },
+  {
+   "english": "Leto",
+   "forms": [
+    {
+     "form": "λητω",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 3,
+   "books": [
+    6,
+    11
+   ]
+  },
+  {
+   "english": "Laodamas",
+   "forms": [
+    {
+     "form": "λαοδαμαντα",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 3,
+   "books": [
+    7,
+    8
+   ]
+  },
+  {
+   "english": "Pontonous",
+   "forms": [
+    {
+     "form": "ποντονοοσ",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 3,
+   "books": [
+    7,
+    8,
+    13
+   ]
+  },
+  {
+   "english": "Demodocus",
+   "forms": [
+    {
+     "form": "δημοδοκον",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 3,
+   "books": [
+    8
+   ]
+  },
+  {
+   "english": "Dulichium",
+   "forms": [
+    {
+     "form": "δουλιχιον",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 3,
+   "books": [
+    9,
+    14,
+    19
+   ]
+  },
+  {
+   "english": "Erebus",
+   "forms": [
+    {
+     "form": "ερεβοσ",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 3,
+   "books": [
+    10,
+    11,
+    12
+   ]
+  },
+  {
+   "english": "Aias",
+   "forms": [
+    {
+     "form": "αιαντοσ",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 3,
+   "books": [
+    11,
+    24
+   ]
+  },
+  {
+   "english": "Cretans",
+   "forms": [
+    {
+     "form": "κρητεσσι",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 3,
+   "books": [
+    14
+   ]
+  },
+  {
+   "english": "Idomeneus",
+   "forms": [
+    {
+     "form": "ιδομενηα",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 3,
+   "books": [
+    14,
+    19
+   ]
+  },
+  {
+   "english": "Cephallenians",
+   "forms": [
+    {
+     "form": "κεφαλληνων",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 3,
+   "books": [
+    20,
+    24
+   ]
+  },
+  {
+   "english": "Melanthius",
+   "forms": [
+    {
+     "form": "μελανθιον",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 3,
+   "books": [
+    21,
+    22
+   ]
+  },
+  {
+   "english": "Sicilian",
+   "forms": [
+    {
+     "form": "σικελη",
+     "count": 3,
+     "coverage": 1.0
+    }
+   ],
+   "count": 3,
+   "books": [
+    24
+   ]
+  }
+ ],
+ "held": [
+  {
+   "form": "τηλεμαχʼ",
+   "count": 26,
+   "units": 26,
+   "english": "Telemachus",
+   "coverage": 0.423,
+   "runners_up": [
+    [
+     "Odysseus",
+     3
+    ],
+    [
+     "Menelaus",
+     3
+    ],
+    [
+     "Ithaca",
+     2
+    ]
+   ],
+   "books": [
+    1,
+    2,
+    3,
+    4,
+    15,
+    16,
+    17,
+    18,
+    20,
+    21,
+    22,
+    23,
+    24
+   ],
+   "occurrences": [
+    {
+     "book": 1,
+     "line": 384,
+     "unit": "1.380"
+    },
+    {
+     "book": 1,
+     "line": 400,
+     "unit": "1.400"
+    },
+    {
+     "book": 2,
+     "line": 85,
+     "unit": "2.85"
+    },
+    {
+     "book": 2,
+     "line": 270,
+     "unit": "2.270"
+    },
+    {
+     "book": 2,
+     "line": 303,
+     "unit": "2.300"
+    },
+    {
+     "book": 2,
+     "line": 402,
+     "unit": "2.400"
+    },
+    {
+     "book": 3,
+     "line": 14,
+     "unit": "3.10"
+    },
+    {
+     "book": 3,
+     "line": 26,
+     "unit": "3.25"
+    },
+    {
+     "book": 4,
+     "line": 312,
+     "unit": "4.310"
+    },
+    {
+     "book": 15,
+     "line": 10,
+     "unit": "15.10"
+    },
+    {
+     "book": 15,
+     "line": 49,
+     "unit": "15.45"
+    },
+    {
+     "book": 15,
+     "line": 68,
+     "unit": "15.65"
+    },
+    {
+     "book": 15,
+     "line": 111,
+     "unit": "15.110"
+    },
+    {
+     "book": 15,
+     "line": 531,
+     "unit": "15.530"
+    },
+    {
+     "book": 15,
+     "line": 545,
+     "unit": "15.545"
+    },
+    {
+     "book": 16,
+     "line": 202,
+     "unit": "16.200"
+    },
+    {
+     "book": 17,
+     "line": 75,
+     "unit": "17.75"
+    },
+    {
+     "book": 17,
+     "line": 101,
+     "unit": "17.100"
+    },
+    {
+     "book": 17,
+     "line": 406,
+     "unit": "17.405"
+    },
+    {
+     "book": 18,
+     "line": 215,
+     "unit": "18.215"
+    },
+    {
+     "book": 20,
+     "line": 376,
+     "unit": "20.375"
+    },
+    {
+     "book": 21,
+     "line": 424,
+     "unit": "21.420"
+    },
+    {
+     "book": 22,
+     "line": 151,
+     "unit": "22.150"
+    },
+    {
+     "book": 22,
+     "line": 391,
+     "unit": "22.390"
+    },
+    {
+     "book": 23,
+     "line": 113,
+     "unit": "23.110"
+    },
+    {
+     "book": 24,
+     "line": 506,
+     "unit": "24.505"
+    }
+   ]
+  },
+  {
+   "form": "ευρυμαχοσ",
+   "count": 15,
+   "units": 15,
+   "english": "Eurymachus",
+   "coverage": 0.733,
+   "runners_up": [
+    [
+     "Polybus",
+     7
+    ],
+    [
+     "Odysseus",
+     6
+    ],
+    [
+     "Antinous",
+     3
+    ]
+   ],
+   "books": [
+    1,
+    2,
+    4,
+    16,
+    18,
+    20,
+    21,
+    22
+   ],
+   "occurrences": [
+    {
+     "book": 1,
+     "line": 399,
+     "unit": "1.395"
+    },
+    {
+     "book": 2,
+     "line": 177,
+     "unit": "2.175"
+    },
+    {
+     "book": 4,
+     "line": 628,
+     "unit": "4.625"
+    },
+    {
+     "book": 16,
+     "line": 345,
+     "unit": "16.345"
+    },
+    {
+     "book": 16,
+     "line": 434,
+     "unit": "16.430"
+    },
+    {
+     "book": 18,
+     "line": 65,
+     "unit": "18.65"
+    },
+    {
+     "book": 18,
+     "line": 244,
+     "unit": "18.240"
+    },
+    {
+     "book": 18,
+     "line": 349,
+     "unit": "18.345"
+    },
+    {
+     "book": 18,
+     "line": 387,
+     "unit": "18.385"
+    },
+    {
+     "book": 20,
+     "line": 359,
+     "unit": "20.355"
+    },
+    {
+     "book": 21,
+     "line": 186,
+     "unit": "21.185"
+    },
+    {
+     "book": 21,
+     "line": 245,
+     "unit": "21.245"
+    },
+    {
+     "book": 21,
+     "line": 320,
+     "unit": "21.320"
+    },
+    {
+     "book": 22,
+     "line": 44,
+     "unit": "22.40"
+    },
+    {
+     "book": 22,
+     "line": 69,
+     "unit": "22.65"
+    }
+   ]
+  },
+  {
+   "form": "αργειων",
+   "count": 13,
+   "units": 13,
+   "english": "Argives",
+   "coverage": 0.769,
+   "runners_up": [
+    [
+     "Odysseus",
+     3
+    ],
+    [
+     "Argive",
+     3
+    ],
+    [
+     "Trojans",
+     3
+    ]
+   ],
+   "books": [
+    1,
+    4,
+    8,
+    10,
+    11,
+    24
+   ],
+   "occurrences": [
+    {
+     "book": 1,
+     "line": 61,
+     "unit": "1.60"
+    },
+    {
+     "book": 1,
+     "line": 211,
+     "unit": "1.210"
+    },
+    {
+     "book": 4,
+     "line": 172,
+     "unit": "4.170"
+    },
+    {
+     "book": 4,
+     "line": 200,
+     "unit": "4.200"
+    },
+    {
+     "book": 4,
+     "line": 273,
+     "unit": "4.270"
+    },
+    {
+     "book": 4,
+     "line": 279,
+     "unit": "4.275"
+    },
+    {
+     "book": 8,
+     "line": 513,
+     "unit": "8.510"
+    },
+    {
+     "book": 8,
+     "line": 578,
+     "unit": "8.575"
+    },
+    {
+     "book": 10,
+     "line": 15,
+     "unit": "10.15"
+    },
+    {
+     "book": 11,
+     "line": 369,
+     "unit": "11.365"
+    },
+    {
+     "book": 11,
+     "line": 524,
+     "unit": "11.520"
+    },
+    {
+     "book": 24,
+     "line": 62,
+     "unit": "24.60"
+    },
+    {
+     "book": 24,
+     "line": 81,
+     "unit": "24.80"
+    }
+   ]
+  },
+  {
+   "form": "τειρεσιαο",
+   "count": 13,
+   "units": 13,
+   "english": "Teiresias",
+   "coverage": 0.538,
+   "runners_up": [
+    [
+     "Theban",
+     6
+    ],
+    [
+     "Hades",
+     5
+    ],
+    [
+     "Ilios",
+     2
+    ]
+   ],
+   "books": [
+    10,
+    11,
+    12,
+    23
+   ],
+   "occurrences": [
+    {
+     "book": 10,
+     "line": 492,
+     "unit": "10.490"
+    },
+    {
+     "book": 10,
+     "line": 537,
+     "unit": "10.535"
+    },
+    {
+     "book": 10,
+     "line": 565,
+     "unit": "10.565"
+    },
+    {
+     "book": 11,
+     "line": 50,
+     "unit": "11.50"
+    },
+    {
+     "book": 11,
+     "line": 89,
+     "unit": "11.85"
+    },
+    {
+     "book": 11,
+     "line": 90,
+     "unit": "11.90"
+    },
+    {
+     "book": 11,
+     "line": 151,
+     "unit": "11.150"
+    },
+    {
+     "book": 11,
+     "line": 165,
+     "unit": "11.165"
+    },
+    {
+     "book": 11,
+     "line": 479,
+     "unit": "11.475"
+    },
+    {
+     "book": 12,
+     "line": 267,
+     "unit": "12.265"
+    },
+    {
+     "book": 12,
+     "line": 272,
+     "unit": "12.270"
+    },
+    {
+     "book": 23,
+     "line": 251,
+     "unit": "23.250"
+    },
+    {
+     "book": 23,
+     "line": 323,
+     "unit": "23.320"
+    }
+   ]
+  },
+  {
+   "form": "ηελιοιο",
+   "count": 12,
+   "units": 12,
+   "english": "Helios",
+   "coverage": 0.75,
+   "runners_up": [
+    [
+     "Scylla",
+     3
+    ],
+    [
+     "Oceanus",
+     3
+    ],
+    [
+     "Aeaean",
+     3
+    ]
+   ],
+   "books": [
+    1,
+    10,
+    12,
+    23,
+    24
+   ],
+   "occurrences": [
+    {
+     "book": 1,
+     "line": 8,
+     "unit": "1.5"
+    },
+    {
+     "book": 10,
+     "line": 138,
+     "unit": "10.135"
+    },
+    {
+     "book": 12,
+     "line": 4,
+     "unit": "12.1"
+    },
+    {
+     "book": 12,
+     "line": 128,
+     "unit": "12.125"
+    },
+    {
+     "book": 12,
+     "line": 263,
+     "unit": "12.260"
+    },
+    {
+     "book": 12,
+     "line": 269,
+     "unit": "12.265"
+    },
+    {
+     "book": 12,
+     "line": 274,
+     "unit": "12.270"
+    },
+    {
+     "book": 12,
+     "line": 343,
+     "unit": "12.340"
+    },
+    {
+     "book": 12,
+     "line": 353,
+     "unit": "12.350"
+    },
+    {
+     "book": 12,
+     "line": 398,
+     "unit": "12.395"
+    },
+    {
+     "book": 23,
+     "line": 329,
+     "unit": "23.325"
+    },
+    {
+     "book": 24,
+     "line": 12,
+     "unit": "24.10"
+    }
+   ]
+  },
+  {
+   "form": "αντινοʼ",
+   "count": 9,
+   "units": 9,
+   "english": "Telemachus",
+   "coverage": 0.333,
+   "runners_up": [
+    [
+     "Antinous",
+     3
+    ],
+    [
+     "Ithaca",
+     2
+    ],
+    [
+     "Penelope",
+     1
+    ]
+   ],
+   "books": [
+    1,
+    2,
+    4,
+    16,
+    17,
+    21
+   ],
+   "occurrences": [
+    {
+     "book": 1,
+     "line": 389,
+     "unit": "1.385"
+    },
+    {
+     "book": 2,
+     "line": 130,
+     "unit": "2.130"
+    },
+    {
+     "book": 2,
+     "line": 310,
+     "unit": "2.310"
+    },
+    {
+     "book": 4,
+     "line": 632,
+     "unit": "4.630"
+    },
+    {
+     "book": 16,
+     "line": 418,
+     "unit": "16.415"
+    },
+    {
+     "book": 17,
+     "line": 381,
+     "unit": "17.380"
+    },
+    {
+     "book": 17,
+     "line": 397,
+     "unit": "17.395"
+    },
+    {
+     "book": 17,
+     "line": 483,
+     "unit": "17.480"
+    },
+    {
+     "book": 21,
+     "line": 312,
+     "unit": "21.310"
+    }
+   ]
+  },
+  {
+   "form": "μεδων",
+   "count": 9,
+   "units": 9,
+   "english": "Medon",
+   "coverage": 0.778,
+   "runners_up": [
+    [
+     "Achaeans",
+     2
+    ],
+    [
+     "Ithaca",
+     2
+    ],
+    [
+     "Zacynthus",
+     1
+    ]
+   ],
+   "books": [
+    4,
+    16,
+    17,
+    22,
+    24
+   ],
+   "occurrences": [
+    {
+     "book": 4,
+     "line": 677,
+     "unit": "4.675"
+    },
+    {
+     "book": 4,
+     "line": 696,
+     "unit": "4.695"
+    },
+    {
+     "book": 4,
+     "line": 711,
+     "unit": "4.710"
+    },
+    {
+     "book": 16,
+     "line": 252,
+     "unit": "16.250"
+    },
+    {
+     "book": 16,
+     "line": 412,
+     "unit": "16.410"
+    },
+    {
+     "book": 17,
+     "line": 172,
+     "unit": "17.170"
+    },
+    {
+     "book": 22,
+     "line": 361,
+     "unit": "22.360"
+    },
+    {
+     "book": 24,
+     "line": 439,
+     "unit": "24.435"
+    },
+    {
+     "book": 24,
+     "line": 442,
+     "unit": "24.440"
+    }
+   ]
+  },
+  {
+   "form": "ναυσικαα",
+   "count": 9,
+   "units": 9,
+   "english": "Nausicaa",
+   "coverage": 0.778,
+   "runners_up": [
+    [
+     "Odysseus",
+     3
+    ],
+    [
+     "Alcinous",
+     3
+    ],
+    [
+     "Olympian",
+     1
+    ]
+   ],
+   "books": [
+    6,
+    8
+   ],
+   "occurrences": [
+    {
+     "book": 6,
+     "line": 17,
+     "unit": "6.15"
+    },
+    {
+     "book": 6,
+     "line": 25,
+     "unit": "6.25"
+    },
+    {
+     "book": 6,
+     "line": 101,
+     "unit": "6.100"
+    },
+    {
+     "book": 6,
+     "line": 186,
+     "unit": "6.185"
+    },
+    {
+     "book": 6,
+     "line": 213,
+     "unit": "6.210"
+    },
+    {
+     "book": 6,
+     "line": 251,
+     "unit": "6.250"
+    },
+    {
+     "book": 6,
+     "line": 276,
+     "unit": "6.275"
+    },
+    {
+     "book": 8,
+     "line": 457,
+     "unit": "8.455"
+    },
+    {
+     "book": 8,
+     "line": 464,
+     "unit": "8.460"
+    }
+   ]
+  },
+  {
+   "form": "ευρυνομη",
+   "count": 9,
+   "units": 9,
+   "english": "Eurynome",
+   "coverage": 0.778,
+   "runners_up": [
+    [
+     "Penelope",
+     3
+    ],
+    [
+     "Odysseus",
+     2
+    ],
+    [
+     "Dawn",
+     1
+    ]
+   ],
+   "books": [
+    17,
+    18,
+    19,
+    20,
+    23
+   ],
+   "occurrences": [
+    {
+     "book": 17,
+     "line": 495,
+     "unit": "17.495"
+    },
+    {
+     "book": 18,
+     "line": 164,
+     "unit": "18.160"
+    },
+    {
+     "book": 18,
+     "line": 169,
+     "unit": "18.165"
+    },
+    {
+     "book": 18,
+     "line": 178,
+     "unit": "18.175"
+    },
+    {
+     "book": 19,
+     "line": 97,
+     "unit": "19.95"
+    },
+    {
+     "book": 20,
+     "line": 4,
+     "unit": "20.1"
+    },
+    {
+     "book": 23,
+     "line": 154,
+     "unit": "23.150"
+    },
+    {
+     "book": 23,
+     "line": 289,
+     "unit": "23.285"
+    },
+    {
+     "book": 23,
+     "line": 293,
+     "unit": "23.290"
+    }
+   ]
+  },
+  {
+   "form": "ζηνοσ",
+   "count": 8,
+   "units": 8,
+   "english": "Zeus",
+   "coverage": 0.625,
+   "runners_up": [
+    [
+     "Olympian",
+     3
+    ],
+    [
+     "Nestor",
+     1
+    ],
+    [
+     "Calypso",
+     1
+    ]
+   ],
+   "books": [
+    1,
+    2,
+    4,
+    5,
+    7,
+    11,
+    20
+   ],
+   "occurrences": [
+    {
+     "book": 1,
+     "line": 27,
+     "unit": "1.25"
+    },
+    {
+     "book": 2,
+     "line": 68,
+     "unit": "2.65"
+    },
+    {
+     "book": 4,
+     "line": 74,
+     "unit": "4.70"
+    },
+    {
+     "book": 5,
+     "line": 150,
+     "unit": "5.150"
+    },
+    {
+     "book": 7,
+     "line": 263,
+     "unit": "7.260"
+    },
+    {
+     "book": 11,
+     "line": 302,
+     "unit": "11.300"
+    },
+    {
+     "book": 11,
+     "line": 620,
+     "unit": "11.620"
+    },
+    {
+     "book": 20,
+     "line": 121,
+     "unit": "20.120"
+    }
+   ]
+  },
+  {
+   "form": "δαναων",
+   "count": 8,
+   "units": 8,
+   "english": "Danaans",
+   "coverage": 0.625,
+   "runners_up": [
+    [
+     "Peleus",
+     4
+    ],
+    [
+     "Achaeans",
+     2
+    ],
+    [
+     "Aias",
+     2
+    ]
+   ],
+   "books": [
+    1,
+    4,
+    8,
+    11,
+    24
+   ],
+   "occurrences": [
+    {
+     "book": 1,
+     "line": 350,
+     "unit": "1.350"
+    },
+    {
+     "book": 4,
+     "line": 278,
+     "unit": "4.275"
+    },
+    {
+     "book": 8,
+     "line": 578,
+     "unit": "8.575"
+    },
+    {
+     "book": 11,
+     "line": 470,
+     "unit": "11.470"
+    },
+    {
+     "book": 11,
+     "line": 526,
+     "unit": "11.525"
+    },
+    {
+     "book": 11,
+     "line": 551,
+     "unit": "11.550"
+    },
+    {
+     "book": 11,
+     "line": 559,
+     "unit": "11.555"
+    },
+    {
+     "book": 24,
+     "line": 18,
+     "unit": "24.15"
+    }
+   ]
+  },
+  {
+   "form": "ευρυμαχʼ",
+   "count": 8,
+   "units": 8,
+   "english": "Odysseus",
+   "coverage": 0.25,
+   "runners_up": [
+    [
+     "Penelope",
+     2
+    ],
+    [
+     "Telemachus",
+     2
+    ],
+    [
+     "Eupeithes",
+     1
+    ]
+   ],
+   "books": [
+    1,
+    2,
+    18,
+    20,
+    21,
+    22
+   ],
+   "occurrences": [
+    {
+     "book": 1,
+     "line": 413,
+     "unit": "1.410"
+    },
+    {
+     "book": 2,
+     "line": 209,
+     "unit": "2.205"
+    },
+    {
+     "book": 18,
+     "line": 251,
+     "unit": "18.250"
+    },
+    {
+     "book": 18,
+     "line": 366,
+     "unit": "18.365"
+    },
+    {
+     "book": 20,
+     "line": 364,
+     "unit": "20.360"
+    },
+    {
+     "book": 21,
+     "line": 257,
+     "unit": "21.255"
+    },
+    {
+     "book": 21,
+     "line": 331,
+     "unit": "21.330"
+    },
+    {
+     "book": 22,
+     "line": 61,
+     "unit": "22.60"
+    }
+   ]
+  },
+  {
+   "form": "μελανθιοσ",
+   "count": 8,
+   "units": 8,
+   "english": "Melanthius",
+   "coverage": 0.75,
+   "runners_up": [
+    [
+     "Odysseus",
+     2
+    ],
+    [
+     "Zeus",
+     2
+    ],
+    [
+     "Laertes",
+     1
+    ]
+   ],
+   "books": [
+    17,
+    20,
+    21,
+    22
+   ],
+   "occurrences": [
+    {
+     "book": 17,
+     "line": 247,
+     "unit": "17.245"
+    },
+    {
+     "book": 17,
+     "line": 369,
+     "unit": "17.365"
+    },
+    {
+     "book": 20,
+     "line": 173,
+     "unit": "20.170"
+    },
+    {
+     "book": 21,
+     "line": 181,
+     "unit": "21.180"
+    },
+    {
+     "book": 22,
+     "line": 135,
+     "unit": "22.135"
+    },
+    {
+     "book": 22,
+     "line": 142,
+     "unit": "22.140"
+    },
+    {
+     "book": 22,
+     "line": 161,
+     "unit": "22.160"
+    },
+    {
+     "book": 22,
+     "line": 182,
+     "unit": "22.180"
+    }
+   ]
+  },
+  {
+   "form": "ηελιοσ",
+   "count": 6,
+   "units": 6,
+   "english": "Helius",
+   "coverage": 0.167,
+   "runners_up": [
+    [
+     "Lemnos",
+     1
+    ],
+    [
+     "Pylos",
+     1
+    ],
+    [
+     "Neleus",
+     1
+    ]
+   ],
+   "books": [
+    3,
+    8,
+    19,
+    22
+   ],
+   "occurrences": [
+    {
+     "book": 3,
+     "line": 1,
+     "unit": "3.1"
+    },
+    {
+     "book": 8,
+     "line": 302,
+     "unit": "8.300"
+    },
+    {
+     "book": 19,
+     "line": 276,
+     "unit": "19.275"
+    },
+    {
+     "book": 19,
+     "line": 433,
+     "unit": "19.430"
+    },
+    {
+     "book": 19,
+     "line": 441,
+     "unit": "19.440"
+    },
+    {
+     "book": 22,
+     "line": 388,
+     "unit": "22.385"
+    }
+   ]
+  },
+  {
+   "form": "ευρυαλοσ",
+   "count": 6,
+   "units": 6,
+   "english": "Euryalus",
+   "coverage": 0.667,
+   "runners_up": [
+    [
+     "Alcinous",
+     3
+    ],
+    [
+     "Amphialus",
+     2
+    ],
+    [
+     "Elatreus",
+     1
+    ]
+   ],
+   "books": [
+    8
+   ],
+   "occurrences": [
+    {
+     "book": 8,
+     "line": 115,
+     "unit": "8.115"
+    },
+    {
+     "book": 8,
+     "line": 127,
+     "unit": "8.125"
+    },
+    {
+     "book": 8,
+     "line": 140,
+     "unit": "8.140"
+    },
+    {
+     "book": 8,
+     "line": 158,
+     "unit": "8.155"
+    },
+    {
+     "book": 8,
+     "line": 396,
+     "unit": "8.395"
+    },
+    {
+     "book": 8,
+     "line": 400,
+     "unit": "8.400"
+    }
+   ]
+  },
+  {
+   "form": "ευμαιʼ",
+   "count": 6,
+   "units": 6,
+   "english": "Odysseus",
+   "coverage": 0.667,
+   "runners_up": [
+    [
+     "Eumaeus",
+     2
+    ],
+    [
+     "Icarius",
+     1
+    ],
+    [
+     "Penelope",
+     1
+    ]
+   ],
+   "books": [
+    15,
+    16,
+    17
+   ],
+   "occurrences": [
+    {
+     "book": 15,
+     "line": 486,
+     "unit": "15.485"
+    },
+    {
+     "book": 16,
+     "line": 8,
+     "unit": "16.5"
+    },
+    {
+     "book": 16,
+     "line": 69,
+     "unit": "16.65"
+    },
+    {
+     "book": 17,
+     "line": 264,
+     "unit": "17.260"
+    },
+    {
+     "book": 17,
+     "line": 306,
+     "unit": "17.305"
+    },
+    {
+     "book": 17,
+     "line": 561,
+     "unit": "17.560"
+    }
+   ]
+  },
+  {
+   "form": "μεντορ",
+   "count": 5,
+   "units": 5,
+   "english": "Odysseus",
+   "coverage": 0.4,
+   "runners_up": [
+    [
+     "Mentor",
+     1
+    ],
+    [
+     "Zeus",
+     1
+    ],
+    [
+     "Telemachus",
+     1
+    ]
+   ],
+   "books": [
+    2,
+    3,
+    22
+   ],
+   "occurrences": [
+    {
+     "book": 2,
+     "line": 243,
+     "unit": "2.240"
+    },
+    {
+     "book": 3,
+     "line": 22,
+     "unit": "3.20"
+    },
+    {
+     "book": 3,
+     "line": 240,
+     "unit": "3.240"
+    },
+    {
+     "book": 22,
+     "line": 208,
+     "unit": "22.205"
+    },
+    {
+     "book": 22,
+     "line": 213,
+     "unit": "22.210"
+    }
+   ]
+  },
+  {
+   "form": "αιγισθον",
+   "count": 4,
+   "units": 4,
+   "english": "Aegisthus",
+   "coverage": 0.75,
+   "runners_up": [
+    [
+     "Atreus",
+     2
+    ],
+    [
+     "Seven",
+     1
+    ],
+    [
+     "Mycenae",
+     1
+    ]
+   ],
+   "books": [
+    1,
+    3
+   ],
+   "occurrences": [
+    {
+     "book": 1,
+     "line": 300,
+     "unit": "1.300"
+    },
+    {
+     "book": 3,
+     "line": 198,
+     "unit": "3.195"
+    },
+    {
+     "book": 3,
+     "line": 256,
+     "unit": "3.255"
+    },
+    {
+     "book": 3,
+     "line": 308,
+     "unit": "3.305"
+    }
+   ]
+  },
+  {
+   "form": "ατρειδην",
+   "count": 4,
+   "units": 4,
+   "english": "Atreus",
+   "coverage": 0.75,
+   "runners_up": [
+    [
+     "Aegisthus",
+     2
+    ],
+    [
+     "Menelaus",
+     2
+    ],
+    [
+     "Egypt",
+     1
+    ]
+   ],
+   "books": [
+    3,
+    4,
+    17
+   ],
+   "occurrences": [
+    {
+     "book": 3,
+     "line": 193,
+     "unit": "3.190"
+    },
+    {
+     "book": 3,
+     "line": 304,
+     "unit": "3.300"
+    },
+    {
+     "book": 4,
+     "line": 51,
+     "unit": "4.50"
+    },
+    {
+     "book": 17,
+     "line": 116,
+     "unit": "17.115"
+    }
+   ]
+  },
+  {
+   "form": "τηλεμαχε",
+   "count": 4,
+   "units": 4,
+   "english": "Telemachus",
+   "coverage": 0.75,
+   "runners_up": [
+    [
+     "Pylos",
+     2
+    ],
+    [
+     "Agamemnon",
+     1
+    ],
+    [
+     "Odysseus",
+     1
+    ]
+   ],
+   "books": [
+    3,
+    16,
+    17,
+    19
+   ],
+   "occurrences": [
+    {
+     "book": 3,
+     "line": 230,
+     "unit": "3.230"
+    },
+    {
+     "book": 16,
+     "line": 23,
+     "unit": "16.20"
+    },
+    {
+     "book": 17,
+     "line": 41,
+     "unit": "17.40"
+    },
+    {
+     "book": 19,
+     "line": 4,
+     "unit": "19.1"
+    }
+   ]
+  },
+  {
+   "form": "δημοδοκω",
+   "count": 4,
+   "units": 4,
+   "english": "Demodocus",
+   "coverage": 0.75,
+   "runners_up": [
+    [
+     "Odysseus",
+     1
+    ],
+    [
+     "Muse",
+     1
+    ],
+    [
+     "Phaeacians",
+     1
+    ]
+   ],
+   "books": [
+    8
+   ],
+   "occurrences": [
+    {
+     "book": 8,
+     "line": 254,
+     "unit": "8.250"
+    },
+    {
+     "book": 8,
+     "line": 262,
+     "unit": "8.260"
+    },
+    {
+     "book": 8,
+     "line": 478,
+     "unit": "8.475"
+    },
+    {
+     "book": 8,
+     "line": 483,
+     "unit": "8.480"
+    }
+   ]
+  },
+  {
+   "form": "μελανθευσ",
+   "count": 4,
+   "units": 4,
+   "english": "Melanthius",
+   "coverage": 0.75,
+   "runners_up": [
+    [
+     "Dolius",
+     2
+    ],
+    [
+     "Telemachus",
+     2
+    ],
+    [
+     "Eumaeus",
+     1
+    ]
+   ],
+   "books": [
+    17,
+    20,
+    22
+   ],
+   "occurrences": [
+    {
+     "book": 17,
+     "line": 212,
+     "unit": "17.210"
+    },
+    {
+     "book": 20,
+     "line": 255,
+     "unit": "20.255"
+    },
+    {
+     "book": 22,
+     "line": 152,
+     "unit": "22.150"
+    },
+    {
+     "book": 22,
+     "line": 159,
+     "unit": "22.155"
+    }
+   ]
+  },
+  {
+   "form": "υπεριονοσ",
+   "count": 3,
+   "units": 3,
+   "english": "Helios",
+   "coverage": 0.667,
+   "runners_up": [
+    [
+     "Odysseus",
+     1
+    ],
+    [
+     "Poseidon",
+     1
+    ],
+    [
+     "Ethiopians",
+     1
+    ]
+   ],
+   "books": [
+    1,
+    12
+   ],
+   "occurrences": [
+    {
+     "book": 1,
+     "line": 8,
+     "unit": "1.5"
+    },
+    {
+     "book": 1,
+     "line": 24,
+     "unit": "1.20"
+    },
+    {
+     "book": 12,
+     "line": 263,
+     "unit": "12.260"
+    }
+   ]
+  },
+  {
+   "form": "αθηναιην",
+   "count": 3,
+   "units": 3,
+   "english": "Pallas",
+   "coverage": 0.667,
+   "runners_up": [
+    [
+     "Zeus",
+     2
+    ],
+    [
+     "Priam",
+     1
+    ],
+    [
+     "Athena",
+     1
+    ]
+   ],
+   "books": [
+    3,
+    5,
+    13
+   ],
+   "occurrences": [
+    {
+     "book": 3,
+     "line": 42,
+     "unit": "3.40"
+    },
+    {
+     "book": 5,
+     "line": 108,
+     "unit": "5.105"
+    },
+    {
+     "book": 13,
+     "line": 300,
+     "unit": "13.300"
+    }
+   ]
+  },
+  {
+   "form": "αιασ",
+   "count": 3,
+   "units": 3,
+   "english": "Aias",
+   "coverage": 0.667,
+   "runners_up": [
+    [
+     "Achaeans",
+     1
+    ],
+    [
+     "Gyrae",
+     1
+    ],
+    [
+     "Poseidon",
+     1
+    ]
+   ],
+   "books": [
+    3,
+    4
+   ],
+   "occurrences": [
+    {
+     "book": 3,
+     "line": 109,
+     "unit": "3.105"
+    },
+    {
+     "book": 4,
+     "line": 499,
+     "unit": "4.495"
+    },
+    {
+     "book": 4,
+     "line": 509,
+     "unit": "4.505"
+    }
+   ]
+  },
+  {
+   "form": "αφροδιτησ",
+   "count": 3,
+   "units": 3,
+   "english": "Aphrodite",
+   "coverage": 0.667,
+   "runners_up": [
+    [
+     "Ares",
+     1
+    ],
+    [
+     "Hephaestus",
+     1
+    ],
+    [
+     "Alector",
+     1
+    ]
+   ],
+   "books": [
+    4,
+    8,
+    22
+   ],
+   "occurrences": [
+    {
+     "book": 4,
+     "line": 14,
+     "unit": "4.10"
+    },
+    {
+     "book": 8,
+     "line": 267,
+     "unit": "8.265"
+    },
+    {
+     "book": 22,
+     "line": 444,
+     "unit": "22.440"
+    }
+   ]
+  },
+  {
+   "form": "αργειη",
+   "count": 3,
+   "units": 3,
+   "english": "Argive",
+   "coverage": 0.667,
+   "runners_up": [
+    [
+     "Zeus",
+     2
+    ],
+    [
+     "Helen",
+     1
+    ]
+   ],
+   "books": [
+    4,
+    23
+   ],
+   "occurrences": [
+    {
+     "book": 4,
+     "line": 184,
+     "unit": "4.180"
+    },
+    {
+     "book": 4,
+     "line": 296,
+     "unit": "4.295"
+    },
+    {
+     "book": 23,
+     "line": 218,
+     "unit": "23.215"
+    }
+   ]
+  },
+  {
+   "form": "ωκεανοσ",
+   "count": 3,
+   "units": 3,
+   "english": "Oceanus",
+   "coverage": 0.667,
+   "runners_up": [
+    [
+     "Helen",
+     1
+    ],
+    [
+     "Zeus",
+     1
+    ],
+    [
+     "West",
+     1
+    ]
+   ],
+   "books": [
+    4,
+    10,
+    11
+   ],
+   "occurrences": [
+    {
+     "book": 4,
+     "line": 568,
+     "unit": "4.565"
+    },
+    {
+     "book": 10,
+     "line": 139,
+     "unit": "10.135"
+    },
+    {
+     "book": 11,
+     "line": 158,
+     "unit": "11.155"
+    }
+   ]
+  },
+  {
+   "form": "ερμεια",
+   "count": 3,
+   "units": 3,
+   "english": "Hermes",
+   "coverage": 0.667,
+   "runners_up": [
+    [
+     "Aphrodite",
+     1
+    ],
+    [
+     "Argeiphontes",
+     1
+    ],
+    [
+     "Apollo",
+     1
+    ]
+   ],
+   "books": [
+    5,
+    8
+   ],
+   "occurrences": [
+    {
+     "book": 5,
+     "line": 29,
+     "unit": "5.25"
+    },
+    {
+     "book": 5,
+     "line": 87,
+     "unit": "5.85"
+    },
+    {
+     "book": 8,
+     "line": 335,
+     "unit": "8.335"
+    }
+   ]
+  },
+  {
+   "form": "ουρανιωνεσ",
+   "count": 3,
+   "units": 3,
+   "english": "Odysseus",
+   "coverage": 0.333,
+   "runners_up": [
+    [
+     "Laertes",
+     1
+    ],
+    [
+     "Ogygia",
+     1
+    ]
+   ],
+   "books": [
+    7,
+    9,
+    13
+   ],
+   "occurrences": [
+    {
+     "book": 7,
+     "line": 242,
+     "unit": "7.240"
+    },
+    {
+     "book": 9,
+     "line": 15,
+     "unit": "9.15"
+    },
+    {
+     "book": 13,
+     "line": 41,
+     "unit": "13.40"
+    }
+   ]
+  },
+  {
+   "form": "αιαιην",
+   "count": 3,
+   "units": 3,
+   "english": "Aeaean",
+   "coverage": 0.667,
+   "runners_up": [
+    [
+     "Oceanus",
+     2
+    ],
+    [
+     "Dawn",
+     1
+    ],
+    [
+     "Perse",
+     1
+    ]
+   ],
+   "books": [
+    10,
+    11,
+    12
+   ],
+   "occurrences": [
+    {
+     "book": 10,
+     "line": 135,
+     "unit": "10.135"
+    },
+    {
+     "book": 11,
+     "line": 70,
+     "unit": "11.70"
+    },
+    {
+     "book": 12,
+     "line": 3,
+     "unit": "12.1"
+    }
+   ]
+  },
+  {
+   "form": "τειρεσιη",
+   "count": 3,
+   "units": 3,
+   "english": "Ithaca",
+   "coverage": 0.667,
+   "runners_up": [
+    [
+     "Teiresias",
+     2
+    ]
+   ],
+   "books": [
+    10,
+    11
+   ],
+   "occurrences": [
+    {
+     "book": 10,
+     "line": 524,
+     "unit": "10.520"
+    },
+    {
+     "book": 11,
+     "line": 32,
+     "unit": "11.30"
+    },
+    {
+     "book": 11,
+     "line": 139,
+     "unit": "11.135"
+    }
+   ]
+  },
+  {
+   "form": "πειραιον",
+   "count": 3,
+   "units": 3,
+   "english": "Peiraeus",
+   "coverage": 0.667,
+   "runners_up": [
+    [
+     "Telemachus",
+     2
+    ],
+    [
+     "Piraeus",
+     1
+    ],
+    [
+     "Therewith",
+     1
+    ]
+   ],
+   "books": [
+    15,
+    17,
+    20
+   ],
+   "occurrences": [
+    {
+     "book": 15,
+     "line": 539,
+     "unit": "15.535"
+    },
+    {
+     "book": 17,
+     "line": 55,
+     "unit": "17.55"
+    },
+    {
+     "book": 20,
+     "line": 372,
+     "unit": "20.370"
+    }
+   ]
+  },
+  {
+   "form": "πειραιοσ",
+   "count": 3,
+   "units": 2,
+   "english": "Telemachus",
+   "coverage": 0.5,
+   "runners_up": [
+    [
+     "Peiraeus",
+     1
+    ],
+    [
+     "Pylos",
+     1
+    ],
+    [
+     "Clytius",
+     1
+    ]
+   ],
+   "books": [
+    15,
+    17
+   ],
+   "occurrences": [
+    {
+     "book": 15,
+     "line": 544,
+     "unit": "15.540"
+    },
+    {
+     "book": 17,
+     "line": 71,
+     "unit": "17.70"
+    },
+    {
+     "book": 17,
+     "line": 74,
+     "unit": "17.70"
+    }
+   ]
+  },
+  {
+   "form": "εχετον",
+   "count": 3,
+   "units": 3,
+   "english": "Antinous",
+   "coverage": 0.333,
+   "runners_up": [
+    [
+     "Odysseus",
+     1
+    ],
+    [
+     "Amphinomus",
+     1
+    ],
+    [
+     "Echetus",
+     1
+    ]
+   ],
+   "books": [
+    18,
+    21
+   ],
+   "occurrences": [
+    {
+     "book": 18,
+     "line": 85,
+     "unit": "18.85"
+    },
+    {
+     "book": 18,
+     "line": 116,
+     "unit": "18.115"
+    },
+    {
+     "book": 21,
+     "line": 308,
+     "unit": "21.305"
+    }
+   ]
+  }
+ ]
+}

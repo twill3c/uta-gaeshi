@@ -1,0 +1,2135 @@
+{
+ "meta": {
+  "occurrences_before": 2860,
+  "occurrences_after": 2860,
+  "conserved": true,
+  "duplicate_forms": 0,
+  "entities": 107,
+  "verified": 58,
+  "unverified": 49,
+  "reassigned_forms": 4,
+  "resolved_forms": 5,
+  "held_forms": 35,
+  "held_occurrences": 229
+ },
+ "entities": [
+  {
+   "english": "Odysseus",
+   "forms": [
+    {
+     "form": "οδυσσευσ",
+     "count": 256
+    },
+    {
+     "form": "οδυσσηοσ",
+     "count": 71
+    },
+    {
+     "form": "οδυσευσ",
+     "count": 68
+    },
+    {
+     "form": "οδυσηοσ",
+     "count": 59
+    },
+    {
+     "form": "οδυσηα",
+     "count": 50
+    },
+    {
+     "form": "οδυσηι",
+     "count": 24
+    },
+    {
+     "form": "οδυσσευ",
+     "count": 23
+    },
+    {
+     "form": "οδυσσηα",
+     "count": 15
+    },
+    {
+     "form": "λαερτιαδη",
+     "count": 14
+    },
+    {
+     "form": "οδυσευ",
+     "count": 11
+    },
+    {
+     "form": "λαερτιαδεω",
+     "count": 11
+    },
+    {
+     "form": "οδυσηʼ",
+     "count": 9
+    },
+    {
+     "form": "οδυσσηι",
+     "count": 8
+    },
+    {
+     "form": "λαερτιαδην",
+     "count": 3
+    }
+   ],
+   "count": 622,
+   "ja": "オデュッセウス",
+   "category": "person",
+   "verified": true,
+   "note": "αλκινοω はアルキノオスの与格、κακοιλιον は κακο-Ἴλιον(禍のイリオス)で地名。共起投票の誤付着。Λαερτιάδης(父称)は父が一意なため本人へ解決済み"
+  },
+  {
+   "english": "Telemachus",
+   "forms": [
+    {
+     "form": "τηλεμαχοσ",
+     "count": 128
+    },
+    {
+     "form": "τηλεμαχον",
+     "count": 40
+    },
+    {
+     "form": "τηλεμαχω",
+     "count": 22
+    },
+    {
+     "form": "τηλεμαχοιο",
+     "count": 14
+    },
+    {
+     "form": "τηλεμαχου",
+     "count": 12
+    }
+   ],
+   "count": 216,
+   "ja": "テレマコス",
+   "category": "person",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Zeus",
+   "forms": [
+    {
+     "form": "ζευσ",
+     "count": 88
+    },
+    {
+     "form": "διοσ",
+     "count": 84
+    },
+    {
+     "form": "κρονιων",
+     "count": 19
+    },
+    {
+     "form": "κρονιδη",
+     "count": 5
+    },
+    {
+     "form": "ζηνι",
+     "count": 3
+    }
+   ],
+   "count": 199,
+   "ja": "ゼウス",
+   "category": "person",
+   "verified": true,
+   "note": "μενελαε はメネラオスの呼格、ηρησ はヘラ。Ζεύς/Διός/Ζηνός は補充形で同一人物"
+  },
+  {
+   "english": "Athena",
+   "forms": [
+    {
+     "form": "αθηνη",
+     "count": 118
+    },
+    {
+     "form": "αθηναιη",
+     "count": 26
+    },
+    {
+     "form": "παλλασ",
+     "count": 24
+    },
+    {
+     "form": "αθηνην",
+     "count": 9
+    },
+    {
+     "form": "αθηναιησ",
+     "count": 3
+    }
+   ],
+   "count": 180,
+   "ja": "アテナ",
+   "category": "person",
+   "verified": true,
+   "note": "Pallas(παλλασ 24回)は別名。統合する"
+  },
+  {
+   "english": "Achaeans",
+   "forms": [
+    {
+     "form": "αχαιων",
+     "count": 55
+    },
+    {
+     "form": "αχαιοι",
+     "count": 39
+    },
+    {
+     "form": "αχαιουσ",
+     "count": 22
+    },
+    {
+     "form": "παναχαιοι",
+     "count": 3
+    }
+   ],
+   "count": 119,
+   "ja": "アカイア勢",
+   "category": "group",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Ithaca",
+   "forms": [
+    {
+     "form": "ιθακησ",
+     "count": 36
+    },
+    {
+     "form": "ιθακην",
+     "count": 26
+    },
+    {
+     "form": "ιθακη",
+     "count": 16
+    },
+    {
+     "form": "ιθακησιοι",
+     "count": 8
+    },
+    {
+     "form": "σαμη",
+     "count": 5
+    },
+    {
+     "form": "ιθακηνδε",
+     "count": 4
+    },
+    {
+     "form": "δουλιχιω",
+     "count": 3
+    },
+    {
+     "form": "ζακυνθω",
+     "count": 3
+    }
+   ],
+   "count": 101,
+   "ja": "イタケ",
+   "category": "place",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Penelope",
+   "forms": [
+    {
+     "form": "πηνελοπεια",
+     "count": 58
+    },
+    {
+     "form": "πηνελοπειη",
+     "count": 14
+    },
+    {
+     "form": "πηνελοπειαν",
+     "count": 8
+    },
+    {
+     "form": "πηνελοπειησ",
+     "count": 3
+    }
+   ],
+   "count": 83,
+   "ja": "ペネロペイア",
+   "category": "person",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Phaeacians",
+   "forms": [
+    {
+     "form": "φαιηκων",
+     "count": 40
+    },
+    {
+     "form": "φαιηκεσ",
+     "count": 18
+    },
+    {
+     "form": "φαιηκεσσι",
+     "count": 10
+    },
+    {
+     "form": "φαιηκασ",
+     "count": 4
+    },
+    {
+     "form": "φαιηκεσσιν",
+     "count": 3
+    }
+   ],
+   "count": 75,
+   "ja": "パイエケス人",
+   "category": "group",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Alcinous",
+   "forms": [
+    {
+     "form": "αλκινοοιο",
+     "count": 31
+    },
+    {
+     "form": "αλκινοοσ",
+     "count": 20
+    },
+    {
+     "form": "αλκινοε",
+     "count": 6
+    },
+    {
+     "form": "αλκινοον",
+     "count": 5
+    },
+    {
+     "form": "αλκινοου",
+     "count": 4
+    },
+    {
+     "form": "αλκινοω",
+     "count": 3
+    },
+    {
+     "form": "λαοδαμασ",
+     "count": 3
+    }
+   ],
+   "count": 72,
+   "ja": "アルキノオス",
+   "category": "person",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Menelaus",
+   "forms": [
+    {
+     "form": "μενελαοσ",
+     "count": 32
+    },
+    {
+     "form": "μενελαε",
+     "count": 10
+    },
+    {
+     "form": "μενελαου",
+     "count": 8
+    },
+    {
+     "form": "μενελαον",
+     "count": 6
+    },
+    {
+     "form": "μενελαω",
+     "count": 4
+    }
+   ],
+   "count": 60,
+   "ja": "メネラオス",
+   "category": "person",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Nestor",
+   "forms": [
+    {
+     "form": "νεστωρ",
+     "count": 19
+    },
+    {
+     "form": "νεστοροσ",
+     "count": 11
+    },
+    {
+     "form": "γερηνιοσ",
+     "count": 11
+    },
+    {
+     "form": "νεστοριδησ",
+     "count": 6
+    },
+    {
+     "form": "νεστορι",
+     "count": 3
+    },
+    {
+     "form": "θρασυμηδησ",
+     "count": 3
+    },
+    {
+     "form": "νεστοριδη",
+     "count": 3
+    }
+   ],
+   "count": 56,
+   "ja": "ネストル",
+   "category": "person",
+   "verified": true,
+   "note": "Gerenia(γερηνιοσ 11回)は常用形容辞ゲレニアで、地名ではなく本人の枕詞"
+  },
+  {
+   "english": "Troy",
+   "forms": [
+    {
+     "form": "ιλιον",
+     "count": 16
+    },
+    {
+     "form": "τροιη",
+     "count": 11
+    },
+    {
+     "form": "τροιησ",
+     "count": 9
+    },
+    {
+     "form": "τροιηθεν",
+     "count": 6
+    },
+    {
+     "form": "τροιην",
+     "count": 5
+    },
+    {
+     "form": "τροιηνδε",
+     "count": 5
+    },
+    {
+     "form": "κακοιλιον",
+     "count": 3
+    }
+   ],
+   "count": 55,
+   "ja": "トロイア",
+   "category": "place",
+   "verified": true,
+   "note": "Ilios(ιλιον 16回)は同一都市の別名。Perseus では perseus,Troy と tgn,7002329 と tgn,7014164 の3キーに分裂している"
+  },
+  {
+   "english": "Circe",
+   "forms": [
+    {
+     "form": "κιρκη",
+     "count": 24
+    },
+    {
+     "form": "κιρκησ",
+     "count": 21
+    }
+   ],
+   "count": 45,
+   "ja": "キルケ",
+   "category": "person",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Antinous",
+   "forms": [
+    {
+     "form": "αντινοοσ",
+     "count": 34
+    },
+    {
+     "form": "αντινοον",
+     "count": 7
+    },
+    {
+     "form": "αντινοοιο",
+     "count": 3
+    }
+   ],
+   "count": 44,
+   "ja": "アンティノオス",
+   "category": "person",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Atreus",
+   "forms": [
+    {
+     "form": "ατρειδη",
+     "count": 16
+    },
+    {
+     "form": "ατρειδησ",
+     "count": 12
+    },
+    {
+     "form": "ατρειδαο",
+     "count": 10
+    },
+    {
+     "form": "ατρεοσ",
+     "count": 3
+    }
+   ],
+   "count": 41,
+   "ja": "アトレウス",
+   "category": "patronymic",
+   "verified": true,
+   "note": "ατρειδη/ατρειδησ/ατρειδαο 計38回が「アトレウスの子」で、アガメムノンとメネラオスの両方がありうる。指示先が一意でないため保留(文脈判定はしない)。ατρεοσ 3回のみが本人への属格"
+  },
+  {
+   "english": "Poseidon",
+   "forms": [
+    {
+     "form": "ποσειδαων",
+     "count": 20
+    },
+    {
+     "form": "ποσειδαωνι",
+     "count": 13
+    },
+    {
+     "form": "ποσειδαωνοσ",
+     "count": 3
+    },
+    {
+     "form": "ποσειδαον",
+     "count": 3
+    }
+   ],
+   "count": 39,
+   "ja": "ポセイドン",
+   "category": "person",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Pylos",
+   "forms": [
+    {
+     "form": "πυλον",
+     "count": 15
+    },
+    {
+     "form": "πυλου",
+     "count": 9
+    },
+    {
+     "form": "πυλονδε",
+     "count": 5
+    },
+    {
+     "form": "πυλω",
+     "count": 4
+    },
+    {
+     "form": "νεστορα",
+     "count": 3
+    }
+   ],
+   "count": 36,
+   "ja": "ピュロス",
+   "category": "place",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Eumaeus",
+   "forms": [
+    {
+     "form": "ευμαιε",
+     "count": 26
+    },
+    {
+     "form": "ευμαιον",
+     "count": 5
+    },
+    {
+     "form": "ευμαιοσ",
+     "count": 5
+    }
+   ],
+   "count": 36,
+   "ja": "エウマイオス",
+   "category": "person",
+   "verified": true,
+   "note": "ευμαιε(呼格)が多い。地の文が直接呼びかける稀な人物"
+  },
+  {
+   "english": "Hades",
+   "forms": [
+    {
+     "form": "αιδαο",
+     "count": 18
+    },
+    {
+     "form": "αιδοσ",
+     "count": 6
+    },
+    {
+     "form": "αιδοσδε",
+     "count": 5
+    },
+    {
+     "form": "αιδεω",
+     "count": 4
+    }
+   ],
+   "count": 33,
+   "ja": "ハデス",
+   "category": "person",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Laertes",
+   "forms": [
+    {
+     "form": "λαερτησ",
+     "count": 12
+    },
+    {
+     "form": "λαερταο",
+     "count": 6
+    },
+    {
+     "form": "λαερτη",
+     "count": 5
+    },
+    {
+     "form": "λαερτην",
+     "count": 4
+    },
+    {
+     "form": "λαερτεω",
+     "count": 4
+    }
+   ],
+   "count": 31,
+   "ja": "ラエルテス",
+   "category": "person",
+   "verified": true,
+   "note": "機械は地名に分類したが誤り。Perseus が placeName に含めた表記の巻き添え。主格 λαερτησ を持つ実在の人物で第24巻に登場する"
+  },
+  {
+   "english": "Trojans",
+   "forms": [
+    {
+     "form": "τρωων",
+     "count": 18
+    },
+    {
+     "form": "τρωεσσι",
+     "count": 6
+    },
+    {
+     "form": "τρωεσ",
+     "count": 4
+    }
+   ],
+   "count": 28,
+   "ja": "トロイア勢",
+   "category": "group",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Apollo",
+   "forms": [
+    {
+     "form": "απολλων",
+     "count": 15
+    },
+    {
+     "form": "απολλον",
+     "count": 6
+    },
+    {
+     "form": "απολλωνοσ",
+     "count": 6
+    }
+   ],
+   "count": 27,
+   "ja": "アポロン",
+   "category": "person",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Calypso",
+   "forms": [
+    {
+     "form": "καλυψω",
+     "count": 19
+    },
+    {
+     "form": "καλυψουσ",
+     "count": 5
+    }
+   ],
+   "count": 24,
+   "ja": "カリュプソ",
+   "category": "person",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Eurycleia",
+   "forms": [
+    {
+     "form": "ευρυκλεια",
+     "count": 16
+    },
+    {
+     "form": "ευρυκλειαν",
+     "count": 6
+    }
+   ],
+   "count": 22,
+   "ja": "エウリュクレイア",
+   "category": "person",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Cyclops",
+   "forms": [
+    {
+     "form": "κυκλωψ",
+     "count": 13
+    },
+    {
+     "form": "κυκλωποσ",
+     "count": 4
+    },
+    {
+     "form": "κυκλωπα",
+     "count": 4
+    }
+   ],
+   "count": 21,
+   "ja": "キュクロプス",
+   "category": "group",
+   "verified": true,
+   "note": "Perseus は地名タグを付けているが種族名。第9巻ではポリュペモス個人を指す"
+  },
+  {
+   "english": "Helen",
+   "forms": [
+    {
+     "form": "ελενη",
+     "count": 14
+    },
+    {
+     "form": "ελενησ",
+     "count": 4
+    },
+    {
+     "form": "μεγαπενθησ",
+     "count": 3
+    }
+   ],
+   "count": 21,
+   "ja": "ヘレネ",
+   "category": "person",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Agamemnon",
+   "forms": [
+    {
+     "form": "αγαμεμνονοσ",
+     "count": 7
+    },
+    {
+     "form": "αγαμεμνονι",
+     "count": 6
+    },
+    {
+     "form": "αγαμεμνων",
+     "count": 3
+    },
+    {
+     "form": "αγαμεμνον",
+     "count": 3
+    }
+   ],
+   "count": 19,
+   "ja": "アガメムノン",
+   "category": "person",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Argos",
+   "forms": [
+    {
+     "form": "αργοσ",
+     "count": 9
+    },
+    {
+     "form": "αργεοσ",
+     "count": 6
+    },
+    {
+     "form": "αργει",
+     "count": 3
+    }
+   ],
+   "count": 18,
+   "ja": "アルゴス",
+   "category": "place",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Icarius",
+   "forms": [
+    {
+     "form": "ικαριοιο",
+     "count": 14
+    },
+    {
+     "form": "ικαριου",
+     "count": 3
+    }
+   ],
+   "count": 17,
+   "ja": "イカリオス",
+   "category": "person",
+   "verified": true,
+   "note": "全17回が属格(ικαριοιο/ικαριου)で「イカリオスの娘」= ペネロペを指す用法。本人は登場しない"
+  },
+  {
+   "english": "Autolycus",
+   "forms": [
+    {
+     "form": "αυτολυκοσ",
+     "count": 5
+    },
+    {
+     "form": "αυτολυκου",
+     "count": 4
+    },
+    {
+     "form": "παρνησονδʼ",
+     "count": 4
+    },
+    {
+     "form": "αυτολυκοιο",
+     "count": 4
+    }
+   ],
+   "count": 17,
+   "ja": "アウトリュコス",
+   "category": "person",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Hephaestus",
+   "forms": [
+    {
+     "form": "ηφαιστοιο",
+     "count": 10
+    },
+    {
+     "form": "ηφαιστοσ",
+     "count": 6
+    }
+   ],
+   "count": 16,
+   "ja": "ヘパイストス",
+   "category": "person",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Aegisthus",
+   "forms": [
+    {
+     "form": "αιγισθοσ",
+     "count": 8
+    },
+    {
+     "form": "αιγισθοιο",
+     "count": 6
+    }
+   ],
+   "count": 14,
+   "ja": "アイギストス",
+   "category": "person",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Argives",
+   "forms": [
+    {
+     "form": "αργειοι",
+     "count": 8
+    },
+    {
+     "form": "αργειοισιν",
+     "count": 6
+    }
+   ],
+   "count": 14,
+   "ja": "アルゴス勢",
+   "category": "group",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Olympus",
+   "forms": [
+    {
+     "form": "ολυμπον",
+     "count": 11
+    },
+    {
+     "form": "ολυμπια",
+     "count": 3
+    }
+   ],
+   "count": 14,
+   "ja": "オリュンポス",
+   "category": "place",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Artemis",
+   "forms": [
+    {
+     "form": "αρτεμισ",
+     "count": 8
+    },
+    {
+     "form": "αρτεμιδι",
+     "count": 6
+    }
+   ],
+   "count": 14,
+   "ja": "アルテミス",
+   "category": "person",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Achilles",
+   "forms": [
+    {
+     "form": "αχιλλευ",
+     "count": 6
+    },
+    {
+     "form": "αχιληοσ",
+     "count": 4
+    },
+    {
+     "form": "αχιλληοσ",
+     "count": 3
+    }
+   ],
+   "count": 13,
+   "ja": "アキレウス",
+   "category": "person",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Arete",
+   "forms": [
+    {
+     "form": "αρητη",
+     "count": 10
+    },
+    {
+     "form": "αρητην",
+     "count": 3
+    }
+   ],
+   "count": 13,
+   "ja": "アレテ",
+   "category": "person",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Hermes",
+   "forms": [
+    {
+     "form": "ερμειασ",
+     "count": 8
+    },
+    {
+     "form": "ερμειαν",
+     "count": 4
+    }
+   ],
+   "count": 12,
+   "ja": "ヘルメス",
+   "category": "person",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Mentor",
+   "forms": [
+    {
+     "form": "μεντορι",
+     "count": 7
+    },
+    {
+     "form": "μεντωρ",
+     "count": 5
+    }
+   ],
+   "count": 12,
+   "ja": "メントル",
+   "category": "person",
+   "verified": true,
+   "note": "アテナがしばしばこの姿を借りる。同一表記が別人格を指す場面がある"
+  },
+  {
+   "english": "Scylla",
+   "forms": [
+    {
+     "form": "σκυλλην",
+     "count": 5
+    },
+    {
+     "form": "σκυλλη",
+     "count": 4
+    },
+    {
+     "form": "σκυλλησ",
+     "count": 3
+    }
+   ],
+   "count": 12,
+   "ja": "スキュレ",
+   "category": "person",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Eurylochus",
+   "forms": [
+    {
+     "form": "ευρυλοχοσ",
+     "count": 11
+    }
+   ],
+   "count": 11,
+   "ja": "エウリュロコス",
+   "category": "person",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Eupeithes",
+   "forms": [
+    {
+     "form": "ευπειθεοσ",
+     "count": 10
+    }
+   ],
+   "count": 10,
+   "ja": "エウペイテス",
+   "category": "person",
+   "verified": true,
+   "note": "属格 Εὐπείθεος がアンティノオスの父称として現れる。loop_002 で話者と誤判定した実体"
+  },
+  {
+   "english": "Dolius",
+   "forms": [
+    {
+     "form": "δολιοσ",
+     "count": 4
+    },
+    {
+     "form": "δολιον",
+     "count": 3
+    },
+    {
+     "form": "δολιοιο",
+     "count": 3
+    }
+   ],
+   "count": 10,
+   "ja": "ドリオス",
+   "category": "person",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "North",
+   "forms": [
+    {
+     "form": "βορεησ",
+     "count": 4
+    },
+    {
+     "form": "βορεη",
+     "count": 3
+    },
+    {
+     "form": "βορεαο",
+     "count": 3
+    }
+   ],
+   "count": 10,
+   "ja": "ボレアス",
+   "category": "nature",
+   "verified": true,
+   "note": "βορεησ/βορεη/βορεαο = 北風ボレアス。Perseus は地名タグを付けているが人物でも地名でもない"
+  },
+  {
+   "english": "Peisenor",
+   "forms": [
+    {
+     "form": "ευρυκλειʼ",
+     "count": 3
+    },
+    {
+     "form": "ωποσ",
+     "count": 3
+    },
+    {
+     "form": "πεισηνοριδαο",
+     "count": 3
+    }
+   ],
+   "count": 9,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Neleus",
+   "forms": [
+    {
+     "form": "νεστορ",
+     "count": 3
+    },
+    {
+     "form": "νηληιαδη",
+     "count": 3
+    },
+    {
+     "form": "νηλευσ",
+     "count": 3
+    }
+   ],
+   "count": 9,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Crete",
+   "forms": [
+    {
+     "form": "κρητη",
+     "count": 5
+    },
+    {
+     "form": "κρητησ",
+     "count": 4
+    }
+   ],
+   "count": 9,
+   "ja": "クレタ",
+   "category": "place",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Lacedaemon",
+   "forms": [
+    {
+     "form": "λακεδαιμονα",
+     "count": 9
+    }
+   ],
+   "count": 9,
+   "ja": "ラケダイモン",
+   "category": "place",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Aphrodite",
+   "forms": [
+    {
+     "form": "αφροδιτη",
+     "count": 9
+    }
+   ],
+   "count": 9,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Ares",
+   "forms": [
+    {
+     "form": "αρησ",
+     "count": 5
+    },
+    {
+     "form": "αρηα",
+     "count": 4
+    }
+   ],
+   "count": 9,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Persephone",
+   "forms": [
+    {
+     "form": "περσεφονεια",
+     "count": 6
+    },
+    {
+     "form": "περσεφονειησ",
+     "count": 3
+    }
+   ],
+   "count": 9,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Helios",
+   "forms": [
+    {
+     "form": "ηελιου",
+     "count": 3
+    },
+    {
+     "form": "ηελιω",
+     "count": 3
+    },
+    {
+     "form": "υπεριονι",
+     "count": 3
+    }
+   ],
+   "count": 9,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Olympian",
+   "forms": [
+    {
+     "form": "ολυμπιοσ",
+     "count": 5
+    },
+    {
+     "form": "ολυμπιου",
+     "count": 3
+    }
+   ],
+   "count": 8,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Peisistratus",
+   "forms": [
+    {
+     "form": "πεισιστρατοσ",
+     "count": 8
+    }
+   ],
+   "count": 8,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "West",
+   "forms": [
+    {
+     "form": "ζεφυροσ",
+     "count": 5
+    },
+    {
+     "form": "ζεφυροιο",
+     "count": 3
+    }
+   ],
+   "count": 8,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Oceanus",
+   "forms": [
+    {
+     "form": "ωκεανοιο",
+     "count": 8
+    }
+   ],
+   "count": 8,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Thesprotians",
+   "forms": [
+    {
+     "form": "θεσπρωτων",
+     "count": 8
+    }
+   ],
+   "count": 8,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Amphinomus",
+   "forms": [
+    {
+     "form": "αμφινομοσ",
+     "count": 8
+    }
+   ],
+   "count": 8,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Irus",
+   "forms": [
+    {
+     "form": "ιροσ",
+     "count": 5
+    },
+    {
+     "form": "ιρον",
+     "count": 3
+    }
+   ],
+   "count": 8,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Cyclopes",
+   "forms": [
+    {
+     "form": "κυκλωπων",
+     "count": 4
+    },
+    {
+     "form": "κυκλωπεσσι",
+     "count": 3
+    }
+   ],
+   "count": 7,
+   "ja": "キュクロプス族",
+   "category": "group",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Polybus",
+   "forms": [
+    {
+     "form": "πολυβου",
+     "count": 7
+    }
+   ],
+   "count": 7,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Theoclymenus",
+   "forms": [
+    {
+     "form": "θεοκλυμενοσ",
+     "count": 7
+    }
+   ],
+   "count": 7,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Agelaus",
+   "forms": [
+    {
+     "form": "αγελαοσ",
+     "count": 4
+    },
+    {
+     "form": "δαμαστοριδησ",
+     "count": 3
+    }
+   ],
+   "count": 7,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Priam",
+   "forms": [
+    {
+     "form": "πριαμοιο",
+     "count": 6
+    }
+   ],
+   "count": 6,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "South",
+   "forms": [
+    {
+     "form": "νοτοσ",
+     "count": 6
+    }
+   ],
+   "count": 6,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Theban",
+   "forms": [
+    {
+     "form": "θηβαιου",
+     "count": 6
+    }
+   ],
+   "count": 6,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Peleus",
+   "forms": [
+    {
+     "form": "πηλειωνα",
+     "count": 3
+    },
+    {
+     "form": "πηληοσ",
+     "count": 3
+    }
+   ],
+   "count": 6,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Charybdis",
+   "forms": [
+    {
+     "form": "χαρυβδιν",
+     "count": 6
+    }
+   ],
+   "count": 6,
+   "ja": "カリュブディス",
+   "category": "place",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Elis",
+   "forms": [
+    {
+     "form": "ηλιδα",
+     "count": 3
+    },
+    {
+     "form": "επειοι",
+     "count": 3
+    }
+   ],
+   "count": 6,
+   "ja": "エリス",
+   "category": "place",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Eurymachus",
+   "forms": [
+    {
+     "form": "ευρυμαχω",
+     "count": 3
+    },
+    {
+     "form": "ευρυμαχον",
+     "count": 3
+    }
+   ],
+   "count": 6,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Orestes",
+   "forms": [
+    {
+     "form": "ορεστησ",
+     "count": 5
+    }
+   ],
+   "count": 5,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Hellas",
+   "forms": [
+    {
+     "form": "ελλαδα",
+     "count": 5
+    }
+   ],
+   "count": 5,
+   "ja": "ヘラス",
+   "category": "place",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Achaean",
+   "forms": [
+    {
+     "form": "αχαιιαδων",
+     "count": 5
+    }
+   ],
+   "count": 5,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Egypt",
+   "forms": [
+    {
+     "form": "αιγυπτω",
+     "count": 5
+    }
+   ],
+   "count": 5,
+   "ja": "エジプト",
+   "category": "place",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Hera",
+   "forms": [
+    {
+     "form": "ηρησ",
+     "count": 4
+    }
+   ],
+   "count": 4,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Ogygia",
+   "forms": [
+    {
+     "form": "ωγυγιην",
+     "count": 4
+    }
+   ],
+   "count": 4,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Sparta",
+   "forms": [
+    {
+     "form": "σπαρτην",
+     "count": 4
+    }
+   ],
+   "count": 4,
+   "ja": "スパルタ",
+   "category": "place",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Halitherses",
+   "forms": [
+    {
+     "form": "αλιθερσησ",
+     "count": 4
+    }
+   ],
+   "count": 4,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Cyprus",
+   "forms": [
+    {
+     "form": "κυπρον",
+     "count": 4
+    }
+   ],
+   "count": 4,
+   "ja": "キュプロス",
+   "category": "place",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Antilochus",
+   "forms": [
+    {
+     "form": "αντιλοχοιο",
+     "count": 4
+    }
+   ],
+   "count": 4,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "East",
+   "forms": [
+    {
+     "form": "ευροσ",
+     "count": 4
+    }
+   ],
+   "count": 4,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Noman",
+   "forms": [
+    {
+     "form": "ουτισ",
+     "count": 4
+    }
+   ],
+   "count": 4,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Achaea",
+   "forms": [
+    {
+     "form": "αχαιιδοσ",
+     "count": 4
+    }
+   ],
+   "count": 4,
+   "ja": "アカイア",
+   "category": "place",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Sirens",
+   "forms": [
+    {
+     "form": "σειρηνων",
+     "count": 4
+    }
+   ],
+   "count": 4,
+   "ja": "セイレン",
+   "category": "group",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Philoetius",
+   "forms": [
+    {
+     "form": "φιλοιτιοσ",
+     "count": 4
+    }
+   ],
+   "count": 4,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Ethiopians",
+   "forms": [
+    {
+     "form": "αιθιοπασ",
+     "count": 3
+    }
+   ],
+   "count": 3,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Phorcys",
+   "forms": [
+    {
+     "form": "φορκυνοσ",
+     "count": 3
+    }
+   ],
+   "count": 3,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Phronius",
+   "forms": [
+    {
+     "form": "φρονιοιο",
+     "count": 3
+    }
+   ],
+   "count": 3,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Lesbos",
+   "forms": [
+    {
+     "form": "λεσβω",
+     "count": 3
+    }
+   ],
+   "count": 3,
+   "ja": "レスボス",
+   "category": "place",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Clytemnestra",
+   "forms": [
+    {
+     "form": "κλυταιμνηστρη",
+     "count": 3
+    }
+   ],
+   "count": 3,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Ortilochus",
+   "forms": [
+    {
+     "form": "ορτιλοχοιο",
+     "count": 3
+    }
+   ],
+   "count": 3,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Dawn",
+   "forms": [
+    {
+     "form": "ηουσ",
+     "count": 3
+    }
+   ],
+   "count": 3,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Samos",
+   "forms": [
+    {
+     "form": "σαμοιο",
+     "count": 3
+    }
+   ],
+   "count": 3,
+   "ja": "サモス",
+   "category": "place",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Scheria",
+   "forms": [
+    {
+     "form": "σχεριην",
+     "count": 3
+    }
+   ],
+   "count": 3,
+   "ja": "スケリア",
+   "category": "place",
+   "verified": true,
+   "note": ""
+  },
+  {
+   "english": "Orion",
+   "forms": [
+    {
+     "form": "ωριωνα",
+     "count": 3
+    }
+   ],
+   "count": 3,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Leto",
+   "forms": [
+    {
+     "form": "λητω",
+     "count": 3
+    }
+   ],
+   "count": 3,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Laodamas",
+   "forms": [
+    {
+     "form": "λαοδαμαντα",
+     "count": 3
+    }
+   ],
+   "count": 3,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Pontonous",
+   "forms": [
+    {
+     "form": "ποντονοοσ",
+     "count": 3
+    }
+   ],
+   "count": 3,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Demodocus",
+   "forms": [
+    {
+     "form": "δημοδοκον",
+     "count": 3
+    }
+   ],
+   "count": 3,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Dulichium",
+   "forms": [
+    {
+     "form": "δουλιχιον",
+     "count": 3
+    }
+   ],
+   "count": 3,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Erebus",
+   "forms": [
+    {
+     "form": "ερεβοσ",
+     "count": 3
+    }
+   ],
+   "count": 3,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Aias",
+   "forms": [
+    {
+     "form": "αιαντοσ",
+     "count": 3
+    }
+   ],
+   "count": 3,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Cretans",
+   "forms": [
+    {
+     "form": "κρητεσσι",
+     "count": 3
+    }
+   ],
+   "count": 3,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Idomeneus",
+   "forms": [
+    {
+     "form": "ιδομενηα",
+     "count": 3
+    }
+   ],
+   "count": 3,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Cephallenians",
+   "forms": [
+    {
+     "form": "κεφαλληνων",
+     "count": 3
+    }
+   ],
+   "count": 3,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Melanthius",
+   "forms": [
+    {
+     "form": "μελανθιον",
+     "count": 3
+    }
+   ],
+   "count": 3,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  },
+  {
+   "english": "Sicilian",
+   "forms": [
+    {
+     "form": "σικελη",
+     "count": 3
+    }
+   ],
+   "count": 3,
+   "ja": null,
+   "category": "unclassified",
+   "verified": false,
+   "note": ""
+  }
+ ],
+ "duplicates": [],
+ "reassignments": [
+  {
+   "form": "μενελαε",
+   "from": "Zeus",
+   "to": "Menelaus",
+   "count": 10,
+   "why": "メネラオスの呼格。ゼウスへの誤付着"
+  },
+  {
+   "form": "ηρησ",
+   "from": "Zeus",
+   "to": "Hera",
+   "count": 4,
+   "why": "ヘラの属格。ゼウスへの誤付着(Hera は上位62件に入らない)"
+  },
+  {
+   "form": "αλκινοω",
+   "from": "Odysseus",
+   "to": "Alcinous",
+   "count": 3,
+   "why": "アルキノオスの与格。オデュッセウスへの誤付着"
+  },
+  {
+   "form": "κακοιλιον",
+   "from": "Odysseus",
+   "to": "Troy",
+   "count": 3,
+   "why": "κακο-Ἴλιον(禍のイリオス)。地名でオデュッセウスへの誤付着"
+  }
+ ],
+ "resolutions": [
+  {
+   "form": "κρονιων",
+   "from": "Cronos",
+   "to": "Zeus",
+   "count": 19,
+   "kind": "patronymic"
+  },
+  {
+   "form": "κρονιδη",
+   "from": "Cronos",
+   "to": "Zeus",
+   "count": 5,
+   "kind": "patronymic"
+  },
+  {
+   "form": "παλλασ",
+   "from": "Pallas",
+   "to": "Athena",
+   "count": 24,
+   "kind": "alias"
+  },
+  {
+   "form": "ιλιον",
+   "from": "Ilios",
+   "to": "Troy",
+   "count": 16,
+   "kind": "alias"
+  },
+  {
+   "form": "γερηνιοσ",
+   "from": "Gerenia",
+   "to": "Nestor",
+   "count": 11,
+   "kind": "epithet"
+  }
+ ]
+}

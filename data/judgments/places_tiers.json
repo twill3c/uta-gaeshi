@@ -1,0 +1,210 @@
+{
+ "reviewed_on": "2026-08-31",
+ "reviewer": "loop_003",
+ "policy": {
+  "tier1": "同定が標準的に確立。現代地図に座標で載せる",
+  "tier2": "比定に争いあり。複数候補を併記し断定しない。地図には確度記号つきで載せる",
+  "tier3": "同定不能。**地図に載せない**。地図の脇に別枠の登録簿として並置する",
+  "mythic": "地理的空間ではない。地図の対象外",
+  "principle": "諸説の一つを断定して航海図を描くことは捏造である。描けない区間を明示することを仕様とする"
+ },
+ "places": [
+  {
+   "english": "Ithaca",
+   "ja": "イタケ",
+   "tier": 1,
+   "note": "通説は現代のイタキ島。パリキ半島説など異論はあるが同定自体は標準的",
+   "candidates": []
+  },
+  {
+   "english": "Troy",
+   "ja": "トロイア",
+   "tier": 1,
+   "note": "ヒサルルク遺丘。Ilios は同一都市の別名",
+   "candidates": []
+  },
+  {
+   "english": "Pylos",
+   "ja": "ピュロス",
+   "tier": 1,
+   "note": "メッセニアのピュロス(ネストルの宮殿址)",
+   "candidates": []
+  },
+  {
+   "english": "Argos",
+   "ja": "アルゴス",
+   "tier": 1,
+   "candidates": [],
+   "note": ""
+  },
+  {
+   "english": "Olympus",
+   "ja": "オリュンポス",
+   "tier": 1,
+   "note": "実在の山だが作中の用法は神々の座。座標は載せるが用法の注記を付ける",
+   "candidates": []
+  },
+  {
+   "english": "Crete",
+   "ja": "クレタ",
+   "tier": 1,
+   "candidates": [],
+   "note": ""
+  },
+  {
+   "english": "Lacedaemon",
+   "ja": "ラケダイモン",
+   "tier": 1,
+   "note": "スパルタを含む地域名",
+   "candidates": []
+  },
+  {
+   "english": "Sparta",
+   "ja": "スパルタ",
+   "tier": 1,
+   "candidates": [],
+   "note": ""
+  },
+  {
+   "english": "Elis",
+   "ja": "エリス",
+   "tier": 1,
+   "candidates": [],
+   "note": ""
+  },
+  {
+   "english": "Hellas",
+   "ja": "ヘラス",
+   "tier": 1,
+   "note": "作中ではテッサリア南部の地域を指し、後世の「ギリシャ全体」ではない",
+   "candidates": []
+  },
+  {
+   "english": "Egypt",
+   "ja": "エジプト",
+   "tier": 1,
+   "candidates": [],
+   "note": ""
+  },
+  {
+   "english": "Cyprus",
+   "ja": "キュプロス",
+   "tier": 1,
+   "candidates": [],
+   "note": ""
+  },
+  {
+   "english": "Achaea",
+   "ja": "アカイア",
+   "tier": 1,
+   "candidates": [],
+   "note": ""
+  },
+  {
+   "english": "Lesbos",
+   "ja": "レスボス",
+   "tier": 1,
+   "candidates": [],
+   "note": ""
+  },
+  {
+   "english": "Samos",
+   "ja": "サモス",
+   "tier": 1,
+   "note": "作中の Σάμη はイタケ近傍の島で、エーゲ海のサモス島とは別。同名別地",
+   "candidates": []
+  },
+  {
+   "english": "Scheria",
+   "ja": "スケリア",
+   "tier": 2,
+   "candidates": [
+    "コルキュラ(ケルキラ島)説",
+    "比定を拒む立場"
+   ],
+   "note": "パイエケス人の地。古代からコルキュラ説があるが、作中の記述は現実の地理と整合しない"
+  },
+  {
+   "english": "Charybdis",
+   "ja": "カリュブディス",
+   "tier": 2,
+   "candidates": [
+    "メッシナ海峡説",
+    "比定を拒む立場"
+   ],
+   "note": "スキュレと対の海の脅威。伝統的にメッシナ海峡に擬されるが本文に地理的裏付けは無い"
+  },
+  {
+   "english": "Ismarus",
+   "ja": "イスマロス",
+   "tier": 2,
+   "candidates": [
+    "トラキアのキコネス人の町"
+   ],
+   "note": "実在の地域を指すとされるが正確な位置は未確定。Perseus は地名タグを付けていない"
+  },
+  {
+   "english": "Ogygia",
+   "ja": "オギュギア",
+   "tier": 3,
+   "note": "カリュプソの島。典拠タグ無し。位置を与える根拠が本文に無い",
+   "candidates": []
+  },
+  {
+   "english": "Aeaea",
+   "ja": "アイアイエ",
+   "tier": 3,
+   "note": "キルケの島。典拠タグ無し",
+   "candidates": []
+  },
+  {
+   "english": "Thrinacia",
+   "ja": "トリナキエ",
+   "tier": 3,
+   "note": "太陽神の牛の島。シケリア説があるが本文の記述と噛み合わない",
+   "candidates": []
+  },
+  {
+   "english": "Aeolia",
+   "ja": "アイオリエ",
+   "tier": 3,
+   "note": "風の神アイオロスの浮島。浮くと明示されており固定座標を持たない",
+   "candidates": []
+  },
+  {
+   "english": "Laestrygonians",
+   "ja": "ライストリュゴネス人の地",
+   "tier": 3,
+   "note": "典拠タグ無し",
+   "candidates": []
+  },
+  {
+   "english": "Cimmerians",
+   "ja": "キンメリオイ人の地",
+   "tier": 3,
+   "note": "日の射さぬ地。冥界の入口として語られる",
+   "candidates": []
+  },
+  {
+   "english": "Lotus-eaters",
+   "ja": "ロトパゴイ人の地",
+   "tier": 3,
+   "note": "典拠タグ無し",
+   "candidates": []
+  },
+  {
+   "english": "Erebus",
+   "ja": "エレボス",
+   "tier": "mythic",
+   "note": "冥界。地上の場所ではないため三段のいずれにも属さない",
+   "candidates": []
+  },
+  {
+   "english": "Hades",
+   "ja": "ハデス",
+   "tier": "mythic",
+   "note": "作中では神名と冥界名の両方に使われる。人物表とは別に扱う",
+   "candidates": []
+  }
+ ]
+}

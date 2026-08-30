@@ -1,0 +1,592 @@
+{
+ "reviewed_on": "2026-08-31",
+ "reviewer": "loop_003",
+ "policy": {
+  "scope": "出現10回以上の人物 + 地名 + 集団 = 上位のみ",
+  "patronymic": "指示先が一意なものだけ解決し、曖昧なものは保留"
+ },
+ "entities": [
+  {
+   "english": "Odysseus",
+   "ja": "オデュッセウス",
+   "category": "person",
+   "exclude_forms": [
+    "αλκινοω",
+    "κακοιλιον"
+   ],
+   "note": "αλκινοω はアルキノオスの与格、κακοιλιον は κακο-Ἴλιον(禍のイリオス)で地名。共起投票の誤付着。Λαερτιάδης(父称)は父が一意なため本人へ解決済み",
+   "resolves_to": null,
+   "verified": true
+  },
+  {
+   "english": "Telemachus",
+   "ja": "テレマコス",
+   "category": "person",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Zeus",
+   "ja": "ゼウス",
+   "category": "person",
+   "exclude_forms": [
+    "μενελαε",
+    "ηρησ"
+   ],
+   "note": "μενελαε はメネラオスの呼格、ηρησ はヘラ。Ζεύς/Διός/Ζηνός は補充形で同一人物",
+   "resolves_to": null,
+   "verified": true
+  },
+  {
+   "english": "Athena",
+   "ja": "アテナ",
+   "category": "person",
+   "note": "Pallas(παλλασ 24回)は別名。統合する",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "verified": true
+  },
+  {
+   "english": "Penelope",
+   "ja": "ペネロペイア",
+   "category": "person",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Alcinous",
+   "ja": "アルキノオス",
+   "category": "person",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Menelaus",
+   "ja": "メネラオス",
+   "category": "person",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Nestor",
+   "ja": "ネストル",
+   "category": "person",
+   "note": "Gerenia(γερηνιοσ 11回)は常用形容辞ゲレニアで、地名ではなく本人の枕詞",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "verified": true
+  },
+  {
+   "english": "Circe",
+   "ja": "キルケ",
+   "category": "person",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Antinous",
+   "ja": "アンティノオス",
+   "category": "person",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Poseidon",
+   "ja": "ポセイドン",
+   "category": "person",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Eumaeus",
+   "ja": "エウマイオス",
+   "category": "person",
+   "note": "ευμαιε(呼格)が多い。地の文が直接呼びかける稀な人物",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "verified": true
+  },
+  {
+   "english": "Hades",
+   "ja": "ハデス",
+   "category": "person",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Apollo",
+   "ja": "アポロン",
+   "category": "person",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Calypso",
+   "ja": "カリュプソ",
+   "category": "person",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Eurycleia",
+   "ja": "エウリュクレイア",
+   "category": "person",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Helen",
+   "ja": "ヘレネ",
+   "category": "person",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Agamemnon",
+   "ja": "アガメムノン",
+   "category": "person",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Icarius",
+   "ja": "イカリオス",
+   "category": "person",
+   "note": "全17回が属格(ικαριοιο/ικαριου)で「イカリオスの娘」= ペネロペを指す用法。本人は登場しない",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "verified": true
+  },
+  {
+   "english": "Autolycus",
+   "ja": "アウトリュコス",
+   "category": "person",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Hephaestus",
+   "ja": "ヘパイストス",
+   "category": "person",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Aegisthus",
+   "ja": "アイギストス",
+   "category": "person",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Artemis",
+   "ja": "アルテミス",
+   "category": "person",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Achilles",
+   "ja": "アキレウス",
+   "category": "person",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Arete",
+   "ja": "アレテ",
+   "category": "person",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Hermes",
+   "ja": "ヘルメス",
+   "category": "person",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Mentor",
+   "ja": "メントル",
+   "category": "person",
+   "note": "アテナがしばしばこの姿を借りる。同一表記が別人格を指す場面がある",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "verified": true
+  },
+  {
+   "english": "Scylla",
+   "ja": "スキュレ",
+   "category": "person",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Eurylochus",
+   "ja": "エウリュロコス",
+   "category": "person",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Eupeithes",
+   "ja": "エウペイテス",
+   "category": "person",
+   "note": "属格 Εὐπείθεος がアンティノオスの父称として現れる。loop_002 で話者と誤判定した実体",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "verified": true
+  },
+  {
+   "english": "Dolius",
+   "ja": "ドリオス",
+   "category": "person",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Laertes",
+   "ja": "ラエルテス",
+   "category": "person",
+   "note": "機械は地名に分類したが誤り。Perseus が placeName に含めた表記の巻き添え。主格 λαερτησ を持つ実在の人物で第24巻に登場する",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "verified": true
+  },
+  {
+   "english": "Pallas",
+   "ja": "パラス",
+   "category": "alias",
+   "resolves_to": "Athena",
+   "note": "παλλασ 24回。アテナの別名",
+   "exclude_forms": [],
+   "verified": true
+  },
+  {
+   "english": "Cronos",
+   "ja": "クロノス",
+   "category": "patronymic",
+   "resolves_to": "Zeus",
+   "note": "形は κρονιων(19)/κρονιδη(5)のみで主格 Κρόνος が無い。全てが「クロノスの子」= ゼウス。指示先が一意なので解決する",
+   "exclude_forms": [],
+   "verified": true
+  },
+  {
+   "english": "Atreus",
+   "ja": "アトレウス",
+   "category": "patronymic",
+   "resolves_to": null,
+   "note": "ατρειδη/ατρειδησ/ατρειδαο 計38回が「アトレウスの子」で、アガメムノンとメネラオスの両方がありうる。指示先が一意でないため保留(文脈判定はしない)。ατρεοσ 3回のみが本人への属格",
+   "exclude_forms": [],
+   "verified": true
+  },
+  {
+   "english": "Gerenia",
+   "ja": "ゲレニア",
+   "category": "epithet",
+   "resolves_to": "Nestor",
+   "note": "γερηνιοσ 11回。Perseus は地名タグを付けているがネストルの常用形容辞",
+   "exclude_forms": [],
+   "verified": true
+  },
+  {
+   "english": "North",
+   "ja": "ボレアス",
+   "category": "nature",
+   "note": "βορεησ/βορεη/βορεαο = 北風ボレアス。Perseus は地名タグを付けているが人物でも地名でもない",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "verified": true
+  },
+  {
+   "english": "Achaeans",
+   "ja": "アカイア勢",
+   "category": "group",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Phaeacians",
+   "ja": "パイエケス人",
+   "category": "group",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Trojans",
+   "ja": "トロイア勢",
+   "category": "group",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Argives",
+   "ja": "アルゴス勢",
+   "category": "group",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Cyclopes",
+   "ja": "キュクロプス族",
+   "category": "group",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Sirens",
+   "ja": "セイレン",
+   "category": "group",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Cyclops",
+   "ja": "キュクロプス",
+   "category": "group",
+   "note": "Perseus は地名タグを付けているが種族名。第9巻ではポリュペモス個人を指す",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "verified": true
+  },
+  {
+   "english": "Ithaca",
+   "ja": "イタケ",
+   "category": "place",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Troy",
+   "ja": "トロイア",
+   "category": "place",
+   "note": "Ilios(ιλιον 16回)は同一都市の別名。Perseus では perseus,Troy と tgn,7002329 と tgn,7014164 の3キーに分裂している",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "verified": true
+  },
+  {
+   "english": "Ilios",
+   "ja": "イリオス",
+   "category": "alias",
+   "resolves_to": "Troy",
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Pylos",
+   "ja": "ピュロス",
+   "category": "place",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Argos",
+   "ja": "アルゴス",
+   "category": "place",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Olympus",
+   "ja": "オリュンポス",
+   "category": "place",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Crete",
+   "ja": "クレタ",
+   "category": "place",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Lacedaemon",
+   "ja": "ラケダイモン",
+   "category": "place",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Charybdis",
+   "ja": "カリュブディス",
+   "category": "place",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Elis",
+   "ja": "エリス",
+   "category": "place",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Hellas",
+   "ja": "ヘラス",
+   "category": "place",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Egypt",
+   "ja": "エジプト",
+   "category": "place",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Sparta",
+   "ja": "スパルタ",
+   "category": "place",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Cyprus",
+   "ja": "キュプロス",
+   "category": "place",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Achaea",
+   "ja": "アカイア",
+   "category": "place",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Lesbos",
+   "ja": "レスボス",
+   "category": "place",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Samos",
+   "ja": "サモス",
+   "category": "place",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  },
+  {
+   "english": "Scheria",
+   "ja": "スケリア",
+   "category": "place",
+   "resolves_to": null,
+   "exclude_forms": [],
+   "note": "",
+   "verified": true
+  }
+ ],
+ "reassign": {
+  "μενελαε": {
+   "to": "Menelaus",
+   "why": "メネラオスの呼格。ゼウスへの誤付着"
+  },
+  "ηρησ": {
+   "to": "Hera",
+   "why": "ヘラの属格。ゼウスへの誤付着(Hera は上位62件に入らない)"
+  },
+  "αλκινοω": {
+   "to": "Alcinous",
+   "why": "アルキノオスの与格。オデュッセウスへの誤付着"
+  },
+  "κακοιλιον": {
+   "to": "Troy",
+   "why": "κακο-Ἴλιον(禍のイリオス)。地名でオデュッセウスへの誤付着"
+  }
+ }
+}
