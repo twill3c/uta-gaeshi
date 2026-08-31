@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>地名の三段台帳 — 歌返し</title>
+<style>
+:root{--bg:#fbfaf7;--fg:#1c1a17;--sub:#6b6459;--line:#ddd6c9;--acc:#7a5c3e;--mark:#f0e6d2}
+*{box-sizing:border-box}
+body{margin:0;padding:0 0 3.2rem;background:var(--bg);color:var(--fg);
+ font-family:"Hiragino Mincho ProN","Yu Mincho",serif;line-height:1.85}
+header{border-bottom:1px solid var(--line);padding:1.1rem 1rem .9rem}
+header h1{margin:0;font-size:1.35rem;letter-spacing:.04em}
+header h1 .en{font-size:.62rem;color:var(--sub);margin-left:.6rem;letter-spacing:.14em}
+header p{margin:.35rem 0 0;font-size:.8rem;color:var(--sub)}
+nav{padding:.5rem 1rem;border-bottom:1px solid var(--line);font-size:.85rem}
+nav a{color:var(--acc);text-decoration:none;margin-right:1rem}
+nav a:hover{text-decoration:underline}
+main{max-width:56rem;margin:0 auto;padding:1.2rem 1rem}
+h2{font-size:1.05rem;margin:1.8rem 0 .6rem;border-left:3px solid var(--acc);padding-left:.5rem}
+table{border-collapse:collapse;width:100%;font-size:.85rem}
+th,td{border-bottom:1px solid var(--line);padding:.35rem .5rem;text-align:left;vertical-align:top}
+th{color:var(--sub);font-weight:normal;white-space:nowrap}
+.unit{margin:0 0 1.4rem;padding-top:.3rem}
+.ln{font-size:.7rem;color:var(--sub);letter-spacing:.05em}
+.ja{margin:.15rem 0 0}
+.grc,.eng{margin:.3rem 0 0;font-size:.82rem;color:var(--sub)}
+.grc{font-family:"Palatino Linotype",Palatino,serif}
+.untranslated{color:var(--sub);font-style:italic}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(7.2rem,1fr));gap:.4rem}
+.grid a{display:block;border:1px solid var(--line);border-radius:3px;padding:.45rem .5rem;
+ text-decoration:none;color:var(--fg);font-size:.85rem;background:#fff}
+.grid a .st{display:block;font-size:.68rem;color:var(--sub);margin-top:.15rem}
+.grid a.done{border-color:var(--acc)}
+.note{font-size:.8rem;color:var(--sub);background:#fff;border:1px solid var(--line);
+ border-radius:3px;padding:.6rem .8rem;margin:.8rem 0}
+.tier1{color:#2c5f2d}.tier2{color:#8a6d1f}.tier3{color:#8a3324}
+mark{background:var(--mark)}
+.modes{font-size:.8rem;color:var(--sub);margin:.2rem 0 1rem}
+.modes button{font:inherit;font-size:.8rem;border:1px solid var(--line);background:#fff;
+ color:var(--fg);border-radius:3px;padding:.2rem .55rem;margin-right:.3rem;cursor:pointer}
+.modes button[aria-pressed=true]{border-color:var(--acc);background:var(--mark)}
+body.hide-grc .grc{display:none}
+body.hide-eng .eng{display:none}
+footer{position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--bg);
+ border-top:1px solid var(--line);color:var(--sub);font-size:.75rem;text-align:center;
+ padding:.5rem 1rem;white-space:nowrap;overflow-x:auto}
+footer p{display:inline;margin:0}
+footer a{color:var(--sub)}
+</style>
+</head>
+<body>
+<nav><a href="index.html">目次</a><a href="formula.html">定型句</a><a href="person.html">登場者</a><a href="place.html">地名</a><a href="about.html">出典と作り方</a></nav>
+<main>
+<h2>地名の三段台帳</h2>
+<div class="note"><strong>オデュッセウスの航路は地図に描けません。</strong>
+実測でそう言えます。航海の寄港地 10 件のうち
+<strong>9 件</strong>は、本文に現れるのに Perseus の地名典拠に項目がありません。
+稀だからではなく、指示対象が存在しないからです。よくある「オデュッセウス航海図」は
+諸説の一つを断定したもので、我々はそれを作りません。<strong>描けない区間を明示すること</strong>を
+仕様にしています。</div>
+<h2 class="tier1">第一段 — 同定確実（15 件）</h2>
+<p>同定が標準的に確立している地。現代地図に座標で載せられます。</p>
+<table><tr><th>地名</th><th>出現位置</th></tr><tr><td>イタケ<span class="ln"> Ithaca</span><br><span class="ln">通説は現代のイタキ島。パリキ半島説など異論はあるが同定自体は標準的</span></td><td><a href="book/1.html#L15">1.15</a> <a href="book/1.html#L55">1.55</a> <a href="book/1.html#L85">1.85</a> <a href="book/1.html#L100">1.100</a> <a href="book/1.html#L160">1.160</a> <a href="book/1.html#L170">1.170</a> <a href="book/1.html#L245">1.245</a> <a href="book/1.html#L385">1.385</a> <a href="book/1.html#L395">1.395</a> <a href="book/1.html#L400">1.400</a></td></tr><tr><td>トロイア<span class="ln"> Troy</span><br><span class="ln">ヒサルルク遺丘。Ilios は同一都市の別名</span></td><td><a href="book/1.html#L60">1.60</a> <a href="book/1.html#L210">1.210</a> <a href="book/1.html#L325">1.325</a> <a href="book/1.html#L355">1.355</a> <a href="book/3.html#L255">3.255</a> <a href="book/3.html#L260">3.260</a> <a href="book/3.html#L265">3.265</a> <a href="book/3.html#L275">3.275</a> <a href="book/4.html#L5">4.5</a> <a href="book/4.html#L95">4.95</a></td></tr><tr><td>ピュロス<span class="ln"> Pylos</span><br><span class="ln">メッセニアのピュロス(ネストルの宮殿址)</span></td><td><a href="book/1.html#L90">1.90</a> <a href="book/1.html#L280">1.280</a> <a href="book/2.html#L210">2.210</a> <a href="book/2.html#L305">2.305</a> <a href="book/2.html#L315">2.315</a> <a href="book/2.html#L325">2.325</a> <a href="book/2.html#L355">2.355</a> <a href="book/3.html#L1">3.1</a> <a href="book/3.html#L30">3.30</a> <a href="book/3.html#L55">3.55</a></td></tr><tr><td>アルゴス<span class="ln"> Argos</span></td><td><a href="book/1.html#L340">1.340</a> <a href="book/3.html#L180">3.180</a> <a href="book/3.html#L260">3.260</a> <a href="book/4.html#L95">4.95</a> <a href="book/4.html#L170">4.170</a> <a href="book/4.html#L560">4.560</a> <a href="book/4.html#L725">4.725</a> <a href="book/4.html#L815">4.815</a> <a href="book/15.html#L80">15.80</a> <a href="book/15.html#L220">15.220</a></td></tr><tr><td>オリュンポス<span class="ln"> Olympus</span><br><span class="ln">実在の山だが作中の用法は神々の座。座標は載せるが用法の注記を付ける</span></td><td><a href="book/1.html#L100">1.100</a> <a href="book/3.html#L375">3.375</a> <a href="book/6.html#L40">6.40</a> <a href="book/6.html#L240">6.240</a> <a href="book/8.html#L330">8.330</a> <a href="book/10.html#L305">10.305</a> <a href="book/11.html#L310">11.310</a> <a href="book/11.html#L315">11.315</a> <a href="book/14.html#L390">14.390</a> <a href="book/15.html#L40">15.40</a></td></tr><tr><td>クレタ<span class="ln"> Crete</span></td><td><a href="book/3.html#L190">3.190</a> <a href="book/3.html#L290">3.290</a> <a href="book/11.html#L320">11.320</a> <a href="book/13.html#L255">13.255</a> <a href="book/13.html#L260">13.260</a> <a href="book/14.html#L195">14.195</a> <a href="book/14.html#L250">14.250</a> <a href="book/14.html#L300">14.300</a> <a href="book/14.html#L300">14.300</a> <a href="book/16.html#L60">16.60</a></td></tr><tr><td>ラケダイモン<span class="ln"> Lacedaemon</span><br><span class="ln">スパルタを含む地域名</span></td><td><a href="book/3.html#L325">3.325</a> <a href="book/4.html#L1">4.1</a> <a href="book/4.html#L310">4.310</a> <a href="book/4.html#L700">4.700</a> <a href="book/5.html#L20">5.20</a> <a href="book/13.html#L410">13.410</a> <a href="book/13.html#L440">13.440</a> <a href="book/15.html#L1">15.1</a> <a href="book/17.html#L120">17.120</a> <a href="book/21.html#L10">21.10</a></td></tr><tr><td>スパルタ<span class="ln"> Sparta</span></td><td><a href="book/1.html#L90">1.90</a> <a href="book/1.html#L285">1.285</a> <a href="book/2.html#L210">2.210</a> <a href="book/2.html#L325">2.325</a> <a href="book/2.html#L355">2.355</a> <a href="book/4.html#L10">4.10</a> <a href="book/11.html#L460">11.460</a> <a href="book/13.html#L410">13.410</a></td></tr><tr><td>エリス<span class="ln"> Elis</span></td><td><a href="book/4.html#L635">4.635</a> <a href="book/13.html#L275">13.275</a> <a href="book/15.html#L295">15.295</a> <a href="book/21.html#L345">21.345</a> <a href="book/24.html#L430">24.430</a></td></tr><tr><td>ヘラス<span class="ln"> Hellas</span><br><span class="ln">作中ではテッサリア南部の地域を指し、後世の「ギリシャ全体」ではない</span></td><td><a href="book/1.html#L340">1.340</a> <a href="book/4.html#L725">4.725</a> <a href="book/4.html#L815">4.815</a> <a href="book/11.html#L495">11.495</a> <a href="book/15.html#L80">15.80</a></td></tr><tr><td>エジプト<span class="ln"> Egypt</span></td><td><a href="book/3.html#L300">3.300</a> <a href="book/4.html#L80">4.80</a> <a href="book/4.html#L125">4.125</a> <a href="book/4.html#L225">4.225</a> <a href="book/4.html#L350">4.350</a> <a href="book/4.html#L355">4.355</a> <a href="book/4.html#L475">4.475</a> <a href="book/4.html#L480">4.480</a> <a href="book/4.html#L580">4.580</a> <a href="book/14.html#L245">14.245</a></td></tr><tr><td>キュプロス<span class="ln"> Cyprus</span></td><td><a href="book/4.html#L80">4.80</a> <a href="book/8.html#L360">8.360</a> <a href="book/17.html#L440">17.440</a> <a href="book/17.html#L440">17.440</a> <a href="book/17.html#L445">17.445</a></td></tr><tr><td>アカイア<span class="ln"> Achaea</span></td><td><a href="book/11.html#L165">11.165</a> <a href="book/11.html#L480">11.480</a> <a href="book/23.html#L65">23.65</a></td></tr><tr><td>レスボス<span class="ln"> Lesbos</span></td><td><a href="book/3.html#L165">3.165</a> <a href="book/4.html#L340">4.340</a> <a href="book/17.html#L130">17.130</a></td></tr><tr><td>サモス<span class="ln"> Samos</span><br><span class="ln">作中の Σάμη はイタケ近傍の島で、エーゲ海のサモス島とは別。同名別地</span></td><td><a href="book/4.html#L670">4.670</a> <a href="book/4.html#L845">4.845</a> <a href="book/15.html#L25">15.25</a></td></tr></table>
+<h2 class="tier2">第二段 — 比定に争いあり（3 件）</h2>
+<p>複数の候補を併記し、断定しません。</p>
+<table><tr><th>地名</th><th>出現位置</th></tr><tr><td>スケリア<span class="ln"> Scheria</span><br><span class="ln">比定候補: コルキュラ(ケルキラ島)説 / 比定を拒む立場</span><br><span class="ln">パイエケス人の地。古代からコルキュラ説があるが、作中の記述は現実の地理と整合しない</span></td><td><a href="book/5.html#L30">5.30</a> <a href="book/6.html#L5">6.5</a> <a href="book/7.html#L75">7.75</a> <a href="book/13.html#L160">13.160</a></td></tr><tr><td>カリュブディス<span class="ln"> Charybdis</span><br><span class="ln">比定候補: メッシナ海峡説 / 比定を拒む立場</span><br><span class="ln">スキュレと対の海の脅威。伝統的にメッシナ海峡に擬されるが本文に地理的裏付けは無い</span></td><td><a href="book/12.html#L425">12.425</a> <a href="book/12.html#L430">12.430</a> <a href="book/12.html#L435">12.435</a> <a href="book/12.html#L440">12.440</a></td></tr><tr><td>イスマロス<span class="ln"> Ismarus</span><br><span class="ln">比定候補: トラキアのキコネス人の町</span><br><span class="ln">実在の地域を指すとされるが正確な位置は未確定。Perseus は地名タグを付けていない</span></td><td>—</td></tr></table>
+<h2 class="tier3">第三段 — 同定不能（7 件）</h2>
+<p><strong>地図に載せません。</strong>載らないことを見せるために、ここに登録簿として置きます。</p>
+<table><tr><th>地名</th><th>出現位置</th></tr><tr><td>オギュギア<span class="ln"> Ogygia</span><br><span class="ln">カリュプソの島。典拠タグ無し。位置を与える根拠が本文に無い</span></td><td>—</td></tr><tr><td>アイアイエ<span class="ln"> Aeaea</span><br><span class="ln">キルケの島。典拠タグ無し</span></td><td>—</td></tr><tr><td>トリナキエ<span class="ln"> Thrinacia</span><br><span class="ln">太陽神の牛の島。シケリア説があるが本文の記述と噛み合わない</span></td><td>—</td></tr><tr><td>アイオリエ<span class="ln"> Aeolia</span><br><span class="ln">風の神アイオロスの浮島。浮くと明示されており固定座標を持たない</span></td><td>—</td></tr><tr><td>ライストリュゴネス人の地<span class="ln"> Laestrygonians</span><br><span class="ln">典拠タグ無し</span></td><td>—</td></tr><tr><td>キンメリオイ人の地<span class="ln"> Cimmerians</span><br><span class="ln">日の射さぬ地。冥界の入口として語られる</span></td><td>—</td></tr><tr><td>ロトパゴイ人の地<span class="ln"> Lotus-eaters</span><br><span class="ln">典拠タグ無し</span></td><td>—</td></tr></table>
+<h2>神話的空間（2 件）</h2>
+<p>地上の場所ではないため、三段のいずれにも属しません。</p>
+<table><tr><th>地名</th><th>出現位置</th></tr><tr><td>エレボス<span class="ln"> Erebus</span><br><span class="ln">冥界。地上の場所ではないため三段のいずれにも属さない</span></td><td>—</td></tr><tr><td>ハデス<span class="ln"> Hades</span><br><span class="ln">作中では神名と冥界名の両方に使われる。人物表とは別に扱う</span></td><td>—</td></tr></table>
+<div class="note">出典側にも欠陥があります。Perseus の地名タグは
+418 箇所・異なり 70 キーですが、
+同一の表記が複数のキーに分裂しているものが 5 件あります
+（トロイアは 3 キー）。名寄せは我々の側で行いました。</div>
+</main>
+<footer>
+  <p><a href="https://github.com/twill3c/uta-gaeshi/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a> © 2026 坂田哲朗
+  ・ <a href="https://github.com/twill3c/uta-gaeshi" target="_blank" rel="noopener">GitHub</a>
+  ・ <a href="about.html">出典と作り方</a>
+  ・ 本文データ CC BY-SA 3.0 US（Perseus Digital Library）
+  ・ <a href="https://app-menu-amber.vercel.app" target="_blank" rel="noopener">App Menu</a></p>
+</footer>
+</body>
+</html>

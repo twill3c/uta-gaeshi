@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>出典と作り方 — 歌返し</title>
+<style>
+:root{--bg:#fbfaf7;--fg:#1c1a17;--sub:#6b6459;--line:#ddd6c9;--acc:#7a5c3e;--mark:#f0e6d2}
+*{box-sizing:border-box}
+body{margin:0;padding:0 0 3.2rem;background:var(--bg);color:var(--fg);
+ font-family:"Hiragino Mincho ProN","Yu Mincho",serif;line-height:1.85}
+header{border-bottom:1px solid var(--line);padding:1.1rem 1rem .9rem}
+header h1{margin:0;font-size:1.35rem;letter-spacing:.04em}
+header h1 .en{font-size:.62rem;color:var(--sub);margin-left:.6rem;letter-spacing:.14em}
+header p{margin:.35rem 0 0;font-size:.8rem;color:var(--sub)}
+nav{padding:.5rem 1rem;border-bottom:1px solid var(--line);font-size:.85rem}
+nav a{color:var(--acc);text-decoration:none;margin-right:1rem}
+nav a:hover{text-decoration:underline}
+main{max-width:56rem;margin:0 auto;padding:1.2rem 1rem}
+h2{font-size:1.05rem;margin:1.8rem 0 .6rem;border-left:3px solid var(--acc);padding-left:.5rem}
+table{border-collapse:collapse;width:100%;font-size:.85rem}
+th,td{border-bottom:1px solid var(--line);padding:.35rem .5rem;text-align:left;vertical-align:top}
+th{color:var(--sub);font-weight:normal;white-space:nowrap}
+.unit{margin:0 0 1.4rem;padding-top:.3rem}
+.ln{font-size:.7rem;color:var(--sub);letter-spacing:.05em}
+.ja{margin:.15rem 0 0}
+.grc,.eng{margin:.3rem 0 0;font-size:.82rem;color:var(--sub)}
+.grc{font-family:"Palatino Linotype",Palatino,serif}
+.untranslated{color:var(--sub);font-style:italic}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(7.2rem,1fr));gap:.4rem}
+.grid a{display:block;border:1px solid var(--line);border-radius:3px;padding:.45rem .5rem;
+ text-decoration:none;color:var(--fg);font-size:.85rem;background:#fff}
+.grid a .st{display:block;font-size:.68rem;color:var(--sub);margin-top:.15rem}
+.grid a.done{border-color:var(--acc)}
+.note{font-size:.8rem;color:var(--sub);background:#fff;border:1px solid var(--line);
+ border-radius:3px;padding:.6rem .8rem;margin:.8rem 0}
+.tier1{color:#2c5f2d}.tier2{color:#8a6d1f}.tier3{color:#8a3324}
+mark{background:var(--mark)}
+.modes{font-size:.8rem;color:var(--sub);margin:.2rem 0 1rem}
+.modes button{font:inherit;font-size:.8rem;border:1px solid var(--line);background:#fff;
+ color:var(--fg);border-radius:3px;padding:.2rem .55rem;margin-right:.3rem;cursor:pointer}
+.modes button[aria-pressed=true]{border-color:var(--acc);background:var(--mark)}
+body.hide-grc .grc{display:none}
+body.hide-eng .eng{display:none}
+footer{position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--bg);
+ border-top:1px solid var(--line);color:var(--sub);font-size:.75rem;text-align:center;
+ padding:.5rem 1rem;white-space:nowrap;overflow-x:auto}
+footer p{display:inline;margin:0}
+footer a{color:var(--sub)}
+</style>
+</head>
+<body>
+<nav><a href="index.html">目次</a><a href="formula.html">定型句</a><a href="person.html">登場者</a><a href="place.html">地名</a><a href="about.html">出典と作り方</a></nav>
+<main>
+<h2>この和訳は機械が作ったものです</h2>
+<div class="note">訳の巧拙は主張しません。<strong>作り方と測定値を開示すること</strong>で、
+読み手がどこまで信用するかを自分で決められるようにしています。</div>
+<h2>なぜ自前で訳したのか</h2>
+<p>日本語の既存訳は一つも使えませんでした。松平千秋訳・呉茂一訳は著作権が存続しています。
+土井晩翠訳（1941）は訳者が 1952 年に没しており日本ではパブリックドメインですが、
+青空文庫では『オヂュッセーア』が 2026 年 8 月時点で「作業中」のままで、
+利用できる電子テキストが存在しません（公開済みは『イーリアス』のみ）。</p>
+<h2>出典</h2>
+<p>Perseus Digital Library（Tufts University）の TEI XML。ライセンスは
+<strong>CC BY-SA 3.0 US</strong>。継承条項があるため、本サイトの派生データ（和訳を含む）も
+同ライセンスで頒布します。</p>
+<table><tr><th>版</th><th>大きさ</th><th>sha256</th></tr><tr><td>ギリシャ語原典(Murray 校訂 Loeb 1919)</td><td>1,560,163 bytes</td><td><code class="ln">e00253c0b383d6c9…</code></td></tr><tr><td>A.T. Murray 英訳 1919</td><td>870,905 bytes</td><td><code class="ln">dda5b206e332e56c…</code></td></tr><tr><td>Samuel Butler 英訳(Power/Nagy 改訂)</td><td>939,107 bytes</td><td><code class="ln">4404a35bd6fc679d…</code></td></tr></table>
+<p class="ln">上流が改訂されると刻印が合わなくなり、検査が落ちます。件数のずれが
+「上流の改訂」なのか「我々の回帰」なのかを、そこで切り分けられるようにしています。</p>
+<h2>出典側の欠陥と、その扱い</h2>
+<ul><li>grc 巻3 行304: transposed — 正準行番号順に整列(出典の組版順は逆)</li><li>grc 巻14 行63: transposed — 正準行番号順に整列(出典の組版順は逆)</li><li>murray 巻6 行320: duplicate_anchor — 本文を直前の錨へ統合</li><li>murray 巻16 行580: out_of_range — 錨を除去し本文を直前の錨へ引き継ぎ</li></ul>
+<p class="ln">巻3.304 と巻14.63 の組版順の逆転は Loeb 版の校訂判断であって欠陥ではないため、
+修復せず整列した事実として記録しています。校訂で削除され番号だけが残る欠番
+（10.456 / 16.101 / 23.49）は<strong>埋めていません</strong>。</p>
+<h2>作り方</h2>
+<p>原典の行番号を唯一の座標系とし、Murray 英訳が打つ行錨で区切った区間を「翻訳単位」
+（2,432 件）としました。訳は単位ごとに作り、追記のみの台帳に記録します。
+現在 <strong>610 / 2,432 単位（25.1%）</strong>が訳済みです。</p>
+<h2>検査（機械翻訳を、機械翻訳自身に採点させない）</h2>
+<table>
+<tr><th>G-01</th><td>構造：24 巻・原典 12,107 行を、単位が重複なく過不足なく分割する</td></tr>
+<tr><th>G-02</th><td>反復保存：原典で同一の行は、和訳でも定めた中核句を含む
+（1,347 件の制約）</td></tr>
+<tr><th>G-03</th><td>固有名詞：人手で確認した和名の表記ゆれを許さない</td></tr>
+<tr><th>G-04</th><td>数詞保存：英訳側の数詞が訳文に残っている</td></tr>
+<tr><th>G-05</th><td>文字種衛生：キリル文字・ハングル・ラテン文字の混入を検出</td></tr>
+<tr><th>G-06</th><td>陽性対照：故意に壊したデータで各ゲートが落ちることを確認</td></tr>
+<tr><th>G-14</th><td>分量整合：訳文が原文に対して極端に短くないこと（訳し落としの検出）</td></tr>
+</table>
+<div class="note">G-02 が成り立つのは、原典の反復が<strong>我々の解釈を含まない</strong>からです。
+n-gram を数えただけの事実なので、これを基準に訳を検査しても循環になりません。
+G-05 と G-14 は実際に本番で欠陥を捕まえました — 目視では気づけないキリル文字の混入、
+そして作業画面で原文を切り詰めていたことによる訳し落とし 7 件です。</div>
+<h2>まだできていないこと</h2>
+<ul>
+<li>第 7 巻以降の和訳（1,822 単位）</li>
+<li>地名の地図表示。同定確実な地点のみを Natural Earth（パブリックドメイン）で描く予定で、
+タイルサーバは使いません</li>
+<li>人手確認は出現 10 回以上の実体に限っています。残りは機械確定のままです</li>
+</ul>
+</main>
+<footer>
+  <p><a href="https://github.com/twill3c/uta-gaeshi/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a> © 2026 坂田哲朗
+  ・ <a href="https://github.com/twill3c/uta-gaeshi" target="_blank" rel="noopener">GitHub</a>
+  ・ <a href="about.html">出典と作り方</a>
+  ・ 本文データ CC BY-SA 3.0 US（Perseus Digital Library）
+  ・ <a href="https://app-menu-amber.vercel.app" target="_blank" rel="noopener">App Menu</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>登場者一覧 — 歌返し</title>
+<style>
+:root{--bg:#fbfaf7;--fg:#1c1a17;--sub:#6b6459;--line:#ddd6c9;--acc:#7a5c3e;--mark:#f0e6d2}
+*{box-sizing:border-box}
+body{margin:0;padding:0 0 3.2rem;background:var(--bg);color:var(--fg);
+ font-family:"Hiragino Mincho ProN","Yu Mincho",serif;line-height:1.85}
+header{border-bottom:1px solid var(--line);padding:1.1rem 1rem .9rem}
+header h1{margin:0;font-size:1.35rem;letter-spacing:.04em}
+header h1 .en{font-size:.62rem;color:var(--sub);margin-left:.6rem;letter-spacing:.14em}
+header p{margin:.35rem 0 0;font-size:.8rem;color:var(--sub)}
+nav{padding:.5rem 1rem;border-bottom:1px solid var(--line);font-size:.85rem}
+nav a{color:var(--acc);text-decoration:none;margin-right:1rem}
+nav a:hover{text-decoration:underline}
+main{max-width:56rem;margin:0 auto;padding:1.2rem 1rem}
+h2{font-size:1.05rem;margin:1.8rem 0 .6rem;border-left:3px solid var(--acc);padding-left:.5rem}
+table{border-collapse:collapse;width:100%;font-size:.85rem}
+th,td{border-bottom:1px solid var(--line);padding:.35rem .5rem;text-align:left;vertical-align:top}
+th{color:var(--sub);font-weight:normal;white-space:nowrap}
+.unit{margin:0 0 1.4rem;padding-top:.3rem}
+.ln{font-size:.7rem;color:var(--sub);letter-spacing:.05em}
+.ja{margin:.15rem 0 0}
+.grc,.eng{margin:.3rem 0 0;font-size:.82rem;color:var(--sub)}
+.grc{font-family:"Palatino Linotype",Palatino,serif}
+.untranslated{color:var(--sub);font-style:italic}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(7.2rem,1fr));gap:.4rem}
+.grid a{display:block;border:1px solid var(--line);border-radius:3px;padding:.45rem .5rem;
+ text-decoration:none;color:var(--fg);font-size:.85rem;background:#fff}
+.grid a .st{display:block;font-size:.68rem;color:var(--sub);margin-top:.15rem}
+.grid a.done{border-color:var(--acc)}
+.note{font-size:.8rem;color:var(--sub);background:#fff;border:1px solid var(--line);
+ border-radius:3px;padding:.6rem .8rem;margin:.8rem 0}
+.tier1{color:#2c5f2d}.tier2{color:#8a6d1f}.tier3{color:#8a3324}
+mark{background:var(--mark)}
+.modes{font-size:.8rem;color:var(--sub);margin:.2rem 0 1rem}
+.modes button{font:inherit;font-size:.8rem;border:1px solid var(--line);background:#fff;
+ color:var(--fg);border-radius:3px;padding:.2rem .55rem;margin-right:.3rem;cursor:pointer}
+.modes button[aria-pressed=true]{border-color:var(--acc);background:var(--mark)}
+body.hide-grc .grc{display:none}
+body.hide-eng .eng{display:none}
+footer{position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--bg);
+ border-top:1px solid var(--line);color:var(--sub);font-size:.75rem;text-align:center;
+ padding:.5rem 1rem;white-space:nowrap;overflow-x:auto}
+footer p{display:inline;margin:0}
+footer a{color:var(--sub)}
+</style>
+</head>
+<body>
+<nav><a href="index.html">目次</a><a href="formula.html">定型句</a><a href="person.html">登場者</a><a href="place.html">地名</a><a href="about.html">出典と作り方</a></nav>
+<main>
+<h2>登場者一覧</h2>
+<div class="note"><strong>「名前が出る」ことと「その場にいる」ことは別です。</strong>
+この一覧は三層に分けています。<span class="tier1">発話</span>＝発話導入の定型句に主格で現れる
+（機械的に確定）。<span class="tier2">在席</span>＝対格・呼格で呼びかけられている。
+<span class="tier3">言及のみ</span>＝語られるだけ。たとえばアガメムノンは名前が数多く出ますが、
+本人が現れるのは死者としてです。</div>
+<p>ギリシャ語は格で役割を符号化しています。主格＝話し手、対格＝相手、属格＝父称。
+父称は<strong>別人を指す</strong>ため（「アトレウスの子」はアガメムノンかメネラオス）、
+名前の出現をそのまま数えると壊れます。指示先が一意なものだけ解決し、曖昧なものは保留しました。</p>
+<p>人手で確認したのは出現 10 回以上の人物と地名・集団です。残りは機械確定のまま
+「未確認」として出しています。</p>
+<table><tr><th>人物</th><th>層</th><th>出現</th><th>発話</th><th>位置</th></tr><tr><td>オデュッセウス<span class="ln"> Odysseus</span><br><span class="ln">αλκινοω はアルキノオスの与格、κακοιλιον は κακο-Ἴλιον(禍のイリオス)で地名。共起投票の誤付着。Λαερτιάδης(父称)は父が一意なため本人へ解決済み</span></td><td class="tier1">発話</td><td>622</td><td>79</td><td><a href="book/5.html#L214">5.214</a> <a href="book/6.html#L217">6.217</a> <a href="book/7.html#L207">7.207</a> <a href="book/7.html#L240">7.240</a> <a href="book/7.html#L302">7.302</a> <a href="book/8.html#L152">8.152</a> <a href="book/8.html#L165">8.165</a> <a href="book/8.html#L412">8.412</a></td></tr><tr><td>テレマコス<span class="ln"> Telemachus</span></td><td class="tier1">発話</td><td>216</td><td>49</td><td><a href="book/1.html#L156">1.156</a> <a href="book/1.html#L213">1.213</a> <a href="book/1.html#L230">1.230</a> <a href="book/1.html#L306">1.306</a> <a href="book/1.html#L345">1.345</a> <a href="book/1.html#L388">1.388</a> <a href="book/1.html#L412">1.412</a> <a href="book/2.html#L129">2.129</a></td></tr><tr><td>ゼウス<span class="ln"> Zeus</span><br><span class="ln">μενελαε はメネラオスの呼格、ηρησ はヘラ。Ζεύς/Διός/Ζηνός は補充形で同一人物</span></td><td class="tier1">発話</td><td>199</td><td>8</td><td><a href="book/1.html#L63">1.63</a> <a href="book/5.html#L21">5.21</a> <a href="book/8.html#L334">8.334</a> <a href="book/12.html#L384">12.384</a> <a href="book/13.html#L139">13.139</a> <a href="book/13.html#L153">13.153</a> <a href="book/20.html#L102">20.102</a> <a href="book/24.html#L477">24.477</a></td></tr><tr><td>アテナ<span class="ln"> Athena</span><br><span class="ln">Pallas(παλλασ 24回)は別名。統合する</span></td><td class="tier1">発話</td><td>180</td><td>33</td><td><a href="book/1.html#L44">1.44</a> <a href="book/1.html#L80">1.80</a> <a href="book/1.html#L178">1.178</a> <a href="book/1.html#L221">1.221</a> <a href="book/1.html#L252">1.252</a> <a href="book/1.html#L314">1.314</a> <a href="book/2.html#L267">2.267</a> <a href="book/2.html#L399">2.399</a></td></tr><tr><td>ペネロペイア<span class="ln"> Penelope</span></td><td class="tier1">発話</td><td>83</td><td>25</td><td><a href="book/4.html#L680">4.680</a> <a href="book/4.html#L721">4.721</a> <a href="book/4.html#L808">4.808</a> <a href="book/4.html#L830">4.830</a> <a href="book/17.html#L162">17.162</a> <a href="book/17.html#L498">17.498</a> <a href="book/17.html#L528">17.528</a> <a href="book/17.html#L575">17.575</a></td></tr><tr><td>アルキノオス<span class="ln"> Alcinous</span></td><td class="tier1">発話</td><td>72</td><td>6</td><td><a href="book/7.html#L185">7.185</a> <a href="book/8.html#L25">8.25</a> <a href="book/8.html#L235">8.235</a> <a href="book/8.html#L256">8.256</a> <a href="book/13.html#L16">13.16</a> <a href="book/13.html#L171">13.171</a></td></tr><tr><td>メネラオス<span class="ln"> Menelaus</span></td><td class="tier1">発話</td><td>60</td><td>10</td><td><a href="book/4.html#L30">4.30</a> <a href="book/4.html#L59">4.59</a> <a href="book/4.html#L147">4.147</a> <a href="book/4.html#L168">4.168</a> <a href="book/4.html#L203">4.203</a> <a href="book/4.html#L265">4.265</a> <a href="book/4.html#L332">4.332</a> <a href="book/15.html#L67">15.67</a></td></tr><tr><td>ネストル<span class="ln"> Nestor</span><br><span class="ln">Gerenia(γερηνιοσ 11回)は常用形容辞ゲレニアで、地名ではなく本人の枕詞</span></td><td class="tier1">発話</td><td>56</td><td>3</td><td><a href="book/3.html#L102">3.102</a> <a href="book/3.html#L210">3.210</a> <a href="book/3.html#L253">3.253</a></td></tr><tr><td>キルケ<span class="ln"> Circe</span></td><td class="tier1">発話</td><td>45</td><td>1</td><td><a href="book/12.html#L36">12.36</a></td></tr><tr><td>アンティノオス<span class="ln"> Antinous</span></td><td class="tier1">発話</td><td>44</td><td>24</td><td><a href="book/1.html#L383">1.383</a> <a href="book/2.html#L84">2.84</a> <a href="book/4.html#L641">4.641</a> <a href="book/4.html#L660">4.660</a> <a href="book/4.html#L773">4.773</a> <a href="book/16.html#L363">16.363</a> <a href="book/17.html#L374">17.374</a> <a href="book/17.html#L405">17.405</a></td></tr><tr><td>ポセイドン<span class="ln"> Poseidon</span></td><td class="tier3">言及のみ</td><td>39</td><td>0</td><td>—</td></tr><tr><td>エウマイオス<span class="ln"> Eumaeus</span><br><span class="ln">ευμαιε(呼格)が多い。地の文が直接呼びかける稀な人物</span></td><td class="tier2">在席</td><td>36</td><td>0</td><td><a href="book/16.html#L7">16.7</a> <a href="book/17.html#L543">17.543</a></td></tr><tr><td>ハデス<span class="ln"> Hades</span></td><td class="tier3">言及のみ</td><td>33</td><td>0</td><td>—</td></tr><tr><td>ラエルテス<span class="ln"> Laertes</span><br><span class="ln">機械は地名に分類したが誤り。Perseus が placeName に含めた表記の巻き添え。主格 λαερτησ を持つ実在の人物で第24巻に登場する</span></td><td class="tier3">言及のみ</td><td>31</td><td>0</td><td>—</td></tr><tr><td>アポロン<span class="ln"> Apollo</span></td><td class="tier3">言及のみ</td><td>27</td><td>0</td><td>—</td></tr><tr><td>カリュプソ<span class="ln"> Calypso</span></td><td class="tier3">言及のみ</td><td>24</td><td>0</td><td>—</td></tr><tr><td>エウリュクレイア<span class="ln"> Eurycleia</span></td><td class="tier1">発話</td><td>22</td><td>10</td><td><a href="book/4.html#L742">4.742</a> <a href="book/19.html#L21">19.21</a> <a href="book/19.html#L491">19.491</a> <a href="book/20.html#L134">20.134</a> <a href="book/22.html#L419">22.419</a> <a href="book/22.html#L485">22.485</a> <a href="book/22.html#L492">22.492</a> <a href="book/23.html#L25">23.25</a></td></tr><tr><td>ヘレネ<span class="ln"> Helen</span></td><td class="tier1">発話</td><td>21</td><td>1</td><td><a href="book/4.html#L296">4.296</a></td></tr><tr><td>アガメムノン<span class="ln"> Agamemnon</span></td><td class="tier3">言及のみ</td><td>19</td><td>0</td><td>—</td></tr><tr><td>イカリオス<span class="ln"> Icarius</span><br><span class="ln">全17回が属格(ικαριοιο/ικαριου)で「イカリオスの娘」= ペネロペを指す用法。本人は登場しない</span></td><td class="tier3">言及のみ</td><td>17</td><td>0</td><td>—</td></tr><tr><td>アウトリュコス<span class="ln"> Autolycus</span></td><td class="tier3">言及のみ</td><td>17</td><td>0</td><td>—</td></tr><tr><td>ヘパイストス<span class="ln"> Hephaestus</span></td><td class="tier3">言及のみ</td><td>16</td><td>0</td><td>—</td></tr><tr><td>アイギストス<span class="ln"> Aegisthus</span></td><td class="tier3">言及のみ</td><td>14</td><td>0</td><td>—</td></tr><tr><td>アルテミス<span class="ln"> Artemis</span></td><td class="tier3">言及のみ</td><td>14</td><td>0</td><td>—</td></tr><tr><td>アキレウス<span class="ln"> Achilles</span></td><td class="tier3">言及のみ</td><td>13</td><td>0</td><td>—</td></tr><tr><td>アレテ<span class="ln"> Arete</span></td><td class="tier1">発話</td><td>13</td><td>1</td><td><a href="book/8.html#L433">8.433</a></td></tr><tr><td>ヘルメス<span class="ln"> Hermes</span></td><td class="tier2">在席</td><td>12</td><td>0</td><td><a href="book/5.html#L28">5.28</a></td></tr><tr><td>メントル<span class="ln"> Mentor</span><br><span class="ln">アテナがしばしばこの姿を借りる。同一表記が別人格を指す場面がある</span></td><td class="tier3">言及のみ</td><td>12</td><td>0</td><td>—</td></tr><tr><td>スキュレ<span class="ln"> Scylla</span></td><td class="tier3">言及のみ</td><td>12</td><td>0</td><td>—</td></tr><tr><td>エウリュロコス<span class="ln"> Eurylochus</span></td><td class="tier1">発話</td><td>11</td><td>3</td><td><a href="book/12.html#L278">12.278</a> <a href="book/12.html#L294">12.294</a> <a href="book/12.html#L352">12.352</a></td></tr><tr><td>エウペイテス<span class="ln"> Eupeithes</span><br><span class="ln">属格 Εὐπείθεος がアンティノオスの父称として現れる。loop_002 で話者と誤判定した実体</span></td><td class="tier3">言及のみ</td><td>10</td><td>0</td><td>—</td></tr><tr><td>ドリオス<span class="ln"> Dolius</span></td><td class="tier3">言及のみ</td><td>10</td><td>0</td><td>—</td></tr></table>
+</main>
+<footer>
+  <p><a href="https://github.com/twill3c/uta-gaeshi/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a> © 2026 坂田哲朗
+  ・ <a href="https://github.com/twill3c/uta-gaeshi" target="_blank" rel="noopener">GitHub</a>
+  ・ <a href="about.html">出典と作り方</a>
+  ・ 本文データ CC BY-SA 3.0 US（Perseus Digital Library）
+  ・ <a href="https://app-menu-amber.vercel.app" target="_blank" rel="noopener">App Menu</a></p>
+</footer>
+</body>
+</html>

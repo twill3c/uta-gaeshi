@@ -18,7 +18,7 @@
 | L3 | 名寄せ表と三段台帳の確定 | 完了 |
 | L4 | 和訳(継続中) | 第1〜6巻 完訳・全体 610/2,432(25.1%) |
 | L5 | 較正ゲートの測定 | 未着手 |
-| L6 | 公開 | 未着手 |
+| L6 | 公開経路(静的サイト29頁・G-15〜G-17) | 完了(デプロイ未実施) |
 
 ## 使い方
 
@@ -32,6 +32,8 @@ python -m pipeline.align        # 英訳を鍵にした名寄せ data/align.json
 python -m pipeline.persons      # 判断表を適用し保存則で検算 data/entities.json
 python -m pipeline.build_glossary  # 定型句用語集(巻をまたいで累積)
 python -m pipeline.translate       # 和訳の進捗(再開可能な追記台帳)
+python -m pipeline.site         # 静的サイトを out/ へ生成(29頁)
+python -m pipeline.sitegates    # G-15 リンク整合 / G-16 外部依存ゼロ / G-17 権利表示
 python -m pytest -q             # 構造ゲート・測定の不変量・陽性対照
 ```
 

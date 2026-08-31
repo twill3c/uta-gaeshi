@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>第6巻 — 歌返し</title>
+<style>
+:root{--bg:#fbfaf7;--fg:#1c1a17;--sub:#6b6459;--line:#ddd6c9;--acc:#7a5c3e;--mark:#f0e6d2}
+*{box-sizing:border-box}
+body{margin:0;padding:0 0 3.2rem;background:var(--bg);color:var(--fg);
+ font-family:"Hiragino Mincho ProN","Yu Mincho",serif;line-height:1.85}
+header{border-bottom:1px solid var(--line);padding:1.1rem 1rem .9rem}
+header h1{margin:0;font-size:1.35rem;letter-spacing:.04em}
+header h1 .en{font-size:.62rem;color:var(--sub);margin-left:.6rem;letter-spacing:.14em}
+header p{margin:.35rem 0 0;font-size:.8rem;color:var(--sub)}
+nav{padding:.5rem 1rem;border-bottom:1px solid var(--line);font-size:.85rem}
+nav a{color:var(--acc);text-decoration:none;margin-right:1rem}
+nav a:hover{text-decoration:underline}
+main{max-width:56rem;margin:0 auto;padding:1.2rem 1rem}
+h2{font-size:1.05rem;margin:1.8rem 0 .6rem;border-left:3px solid var(--acc);padding-left:.5rem}
+table{border-collapse:collapse;width:100%;font-size:.85rem}
+th,td{border-bottom:1px solid var(--line);padding:.35rem .5rem;text-align:left;vertical-align:top}
+th{color:var(--sub);font-weight:normal;white-space:nowrap}
+.unit{margin:0 0 1.4rem;padding-top:.3rem}
+.ln{font-size:.7rem;color:var(--sub);letter-spacing:.05em}
+.ja{margin:.15rem 0 0}
+.grc,.eng{margin:.3rem 0 0;font-size:.82rem;color:var(--sub)}
+.grc{font-family:"Palatino Linotype",Palatino,serif}
+.untranslated{color:var(--sub);font-style:italic}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(7.2rem,1fr));gap:.4rem}
+.grid a{display:block;border:1px solid var(--line);border-radius:3px;padding:.45rem .5rem;
+ text-decoration:none;color:var(--fg);font-size:.85rem;background:#fff}
+.grid a .st{display:block;font-size:.68rem;color:var(--sub);margin-top:.15rem}
+.grid a.done{border-color:var(--acc)}
+.note{font-size:.8rem;color:var(--sub);background:#fff;border:1px solid var(--line);
+ border-radius:3px;padding:.6rem .8rem;margin:.8rem 0}
+.tier1{color:#2c5f2d}.tier2{color:#8a6d1f}.tier3{color:#8a3324}
+mark{background:var(--mark)}
+.modes{font-size:.8rem;color:var(--sub);margin:.2rem 0 1rem}
+.modes button{font:inherit;font-size:.8rem;border:1px solid var(--line);background:#fff;
+ color:var(--fg);border-radius:3px;padding:.2rem .55rem;margin-right:.3rem;cursor:pointer}
+.modes button[aria-pressed=true]{border-color:var(--acc);background:var(--mark)}
+body.hide-grc .grc{display:none}
+body.hide-eng .eng{display:none}
+footer{position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--bg);
+ border-top:1px solid var(--line);color:var(--sub);font-size:.75rem;text-align:center;
+ padding:.5rem 1rem;white-space:nowrap;overflow-x:auto}
+footer p{display:inline;margin:0}
+footer a{color:var(--sub)}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+ var b=document.body,btns=document.querySelectorAll('.modes button');
+ function set(m){b.classList.toggle('hide-grc',m!=='all');
+  b.classList.toggle('hide-eng',m==='ja');
+  btns.forEach(function(x){x.setAttribute('aria-pressed',String(x.dataset.mode===m))});}
+ btns.forEach(function(x){x.addEventListener('click',function(){set(x.dataset.mode)})});
+ set('ja');});
+</script></head>
+<body>
+<nav><a href="../index.html">目次</a><a href="../formula.html">定型句</a><a href="../person.html">登場者</a><a href="../place.html">地名</a><a href="../about.html">出典と作り方</a></nav>
+<main>
+<h2>第 6 巻</h2>
+<div class="modes">表示：<button type="button" data-mode="ja" aria-pressed="true">和</button><button type="button" data-mode="jaeng" aria-pressed="false">和英</button><button type="button" data-mode="all" aria-pressed="false">希和英</button></div>
+<div class="unit"><span id="L1"></span><span id="L2"></span><span id="L3"></span><span id="L4"></span>
+<div class="ln">6.1–4</div>
+<p class="ja">こうして堪え忍ぶ気高いオデュッセウスはそこで眠っていた。眠りと疲れに打ち負かされて。だがアテナはパイエケス人の地と町へ向かった。彼らは昔、広いヒュペレイエに住んでいた。</p>
+<p class="grc">ὣς ὁ μὲν ἔνθα καθεῦδε πολύτλας δῖος Ὀδυσσεὺς / ὕπνῳ καὶ καμάτῳ ἀρημένος· αὐτὰρ Ἀθήνη / βῆ ῥʼ ἐς Φαιήκων ἀνδρῶν δῆμόν τε πόλιν τε, / οἳ πρὶν μέν ποτʼ ἔναιον ἐν εὐρυχόρῳ Ὑπερείῃ,</p>
+<p class="eng">So he lay there asleep, the much-enduring goodly Odysseus, overcome with sleep and weariness; but Athena went to the land and city of the Phaeacians. These dwelt of old in spacious Hypereia</p>
+</div>
+<div class="unit"><span id="L5"></span><span id="L6"></span><span id="L7"></span><span id="L8"></span><span id="L9"></span>
+<div class="ln">6.5–9</div>
+<p class="ja">キュクロプス族のすぐそばに。傲りにおいて度を越した者たちで、絶えず彼らを略奪し、力も勝っていた。そこから神にも似たナウシトオスが彼らを移し、労苦で暮らす人々から遠いスケリアへ導いて住まわせた。町のまわりに城壁を巡らし、家を建て、</p>
+<p class="grc">ἀγχοῦ Κυκλώπων ἀνδρῶν ὑπερηνορεόντων, / οἵ σφεας σινέσκοντο, βίηφι δὲ φέρτεροι ἦσαν. / ἔνθεν ἀναστήσας ἄγε Ναυσίθοος θεοειδής, / εἷσεν δὲ Σχερίῃ, ἑκὰς ἀνδρῶν ἀλφηστάων, / ἀμφὶ δὲ τεῖχος ἔλασσε πόλει, καὶ ἐδείματο οἴκους,</p>
+<p class="eng">hard by the Cyclopes, men overweening in pride who plundered them continually and were mightier than they. From thence Nausithous, the godlike, had removed them, and led and settled them in Scheria far from men that live by toil. About the city he had drawn a wall, he had built houses</p>
+</div>
+<div class="unit"><span id="L10"></span><span id="L11"></span><span id="L12"></span><span id="L13"></span><span id="L14"></span>
+<div class="ln">6.10–14</div>
+<p class="ja">神々のために神殿を作り、耕地を分け与えた。だが彼はすでに定めに屈してハデスの国へ去っており、今はアルキノオスが王であった。神々によって思案に賢くされた人である。その館へ輝く目の女神アテナは向かった。心大きなオデュッセウスの帰還を企てながら。</p>
+<p class="grc">καὶ νηοὺς ποίησε θεῶν, καὶ ἐδάσσατʼ ἀρούρας. / ἀλλʼ ὁ μὲν ἤδη κηρὶ δαμεὶς Ἄϊδόσδε βεβήκει, / Ἀλκίνοος δὲ τότʼ ἦρχε, θεῶν ἄπο μήδεα εἰδώς. / τοῦ μὲν ἔβη πρὸς δῶμα θεά, γλαυκῶπις Ἀθήνη, / νόστον Ὀδυσσῆι μεγαλήτορι μητιόωσα.</p>
+<p class="eng">and made temples for the gods, and divided the ploughlands; but he, ere now, had been stricken by fate and had gone to the house of Hades, and Alcinous was now king, made wise in counsel by the gods. To his house went the goddess, flashing-eyed Athena, to contrive the return of great-hearted Odysseus.</p>
+</div>
+<div class="unit"><span id="L15"></span><span id="L16"></span><span id="L17"></span><span id="L18"></span><span id="L19"></span>
+<div class="ln">6.15–19</div>
+<p class="ja">女神は美しく作られた部屋へ入った。そこには不死の女神にも似た姿と美しさの乙女が眠っていた。心大きなアルキノオスの娘ナウシカアである。そのすぐそばには二人の侍女が眠っていた。優美の女神たちから美しさを授かった者たちで、扉の柱の左右に一人ずつ。輝く扉は閉ざされていた。</p>
+<p class="grc">βῆ δʼ ἴμεν ἐς θάλαμον πολυδαίδαλον, ᾧ ἔνι κούρη / κοιμᾶτʼ ἀθανάτῃσι φυὴν καὶ εἶδος ὁμοίη, / Ναυσικάα, θυγάτηρ μεγαλήτορος Ἀλκινόοιο, / πὰρ δὲ δύʼ ἀμφίπολοι, Χαρίτων ἄπο κάλλος ἔχουσαι, / σταθμοῖιν ἑκάτερθε· θύραι δʼ ἐπέκειντο φαειναί.</p>
+<p class="eng">She went to a chamber, richly wrought, wherein slept a maiden like the immortal goddesses in form and comeliness, Nausicaa, the daughter of great-hearted Alcinous; hard by slept two hand-maidens, gifted with beauty by the Graces, one on either side of the door-posts, and the bright doors were shut.</p>
+</div>
+<div class="unit"><span id="L20"></span><span id="L21"></span><span id="L22"></span><span id="L23"></span><span id="L24"></span>
+<div class="ln">6.20–24</div>
+<p class="ja">だが女神は風のひと息のように乙女の臥所へ疾り、枕辺に立って語りかけた。船で名高いデュマスの娘の姿を取って。ナウシカアと同じ年頃で、その心に親しい娘であった。その姿に身を似せて、輝く目のアテナは語った。</p>
+<p class="grc">ἡ δʼ ἀνέμου ὡς πνοιὴ ἐπέσσυτο δέμνια κούρης, / στῆ δʼ ἄρʼ ὑπὲρ κεφαλῆς, καί μιν πρὸς μῦθον ἔειπεν, / εἰδομένη κούρῃ ναυσικλειτοῖο Δύμαντος, / ἥ οἱ ὁμηλικίη μὲν ἔην, κεχάριστο δὲ θυμῷ. / τῇ μιν ἐεισαμένη προσέφη γλαυκῶπις Ἀθήνη·</p>
+<p class="eng">But like a breath of air the goddess sped to the couch of the maiden, and stood above her head, and spoke to her, taking the form of the daughter of Dymas, famed for his ships, a girl who was of like age with Nausicaa, and was dear to her heart. Likening herself to her, the flashing-eyed Athena spoke and said:</p>
+</div>
+<div class="unit"><span id="L25"></span><span id="L26"></span><span id="L27"></span><span id="L28"></span><span id="L29"></span>
+<div class="ln">6.25–29</div>
+<p class="ja">「ナウシカアよ、どうしてお母さまはあなたをこれほど無頓着に産まれたのでしょう。あなたの輝く衣は手入れもされずに置かれたまま。それなのに婚礼はもう間近で、そのときにはあなた自身が美しい衣をまとい、付き添う人々にも同じような衣を与えねばならないのに。こうしたことからこそ、人々のあいだに良い評判が立ち、</p>
+<p class="grc">Ναυσικάα, τί νύ σʼ ὧδε μεθήμονα γείνατο μήτηρ; / εἵματα μέν τοι κεῖται ἀκηδέα σιγαλόεντα, / σοὶ δὲ γάμος σχεδόν ἐστιν, ἵνα χρὴ καλὰ μὲν αὐτὴν / ἕννυσθαι, τὰ δὲ τοῖσι παρασχεῖν, οἵ κέ σʼ ἄγωνται. / ἐκ γάρ τοι τούτων φάτις ἀνθρώπους ἀναβαίνει</p>
+<p class="eng">“Nausicaa, how comes it that thy mother bore thee so heedless? Thy bright raiment is lying uncared for; yet thy marriage is near at hand, when thou must needs thyself be clad in fair garments, and give other such to those who escort thee. It is from things like these, thou knowest, that good report goeth up among men,</p>
+</div>
+<div class="unit"><span id="L30"></span><span id="L31"></span><span id="L32"></span><span id="L33"></span><span id="L34"></span>
+<div class="ln">6.30–34</div>
+<p class="ja">父君も敬うべき母君もお喜びになるのです。さあ、夜明けに洗いに行きましょう。私もお手伝いに付いて行きます。早く支度を整えられるように。あなたが乙女でいられるのは、もう長くはないのですから。今この地には求婚者がいます。パイエケス人すべてのうちで</p>
+<p class="grc">ἐσθλή, χαίρουσιν δὲ πατὴρ καὶ πότνια μήτηρ. / ἀλλʼ ἴομεν πλυνέουσαι ἅμʼ ἠοῖ φαινομένηφι· / καί τοι ἐγὼ συνέριθος ἅμʼ ἕψομαι, ὄφρα τάχιστα / ἐντύνεαι, ἐπεὶ οὔ τοι ἔτι δὴν παρθένος ἔσσεαι· / ἤδη γάρ σε μνῶνται ἀριστῆες κατὰ δῆμον</p>
+<p class="eng">and the father and honored mother rejoice. Nay, come, let us go to wash them at break of day, for I will follow with thee to aid thee, that thou mayest with speed make thee ready; for thou shalt not long remain a maiden. Even now thou hast suitors in the land, the noblest</p>
+</div>
+<div class="unit"><span id="L35"></span><span id="L36"></span><span id="L37"></span><span id="L38"></span><span id="L39"></span>
+<div class="ln">6.35–39</div>
+<p class="ja">パイエケス人すべてのうちで最も高貴な人々が。あなた自身の血筋もそこから出ているのですから。さあ、今朝早く気高いお父上を促して、騾馬と車の支度をさせなさい。帯と衣と輝く敷布とを運ぶために。それにあなた自身にとっても、そのほうがずっとふさわしい。</p>
+<p class="grc">πάντων Φαιήκων, ὅθι τοι γένος ἐστὶ καὶ αὐτῇ. / ἀλλʼ ἄγʼ ἐπότρυνον πατέρα κλυτὸν ἠῶθι πρὸ / ἡμιόνους καὶ ἄμαξαν ἐφοπλίσαι, ἥ κεν ἄγῃσι / ζῶστρά τε καὶ πέπλους καὶ ῥήγεα σιγαλόεντα. / καὶ δὲ σοὶ ὧδʼ αὐτῇ πολὺ κάλλιον ἠὲ πόδεσσιν</p>
+<p class="eng">of all the Phaeacians, from whom is thine own lineage. Nay, come, bestir thy noble father early this morning that he make ready mules and a wagon for thee, to bear the girdles and robes and bright coverlets. And for thyself, too, it is far more seemly</p>
+</div>
+<div class="unit"><span id="L40"></span><span id="L41"></span><span id="L42"></span><span id="L43"></span><span id="L44"></span>
+<div class="ln">6.40–44</div>
+<p class="ja">徒歩で行くよりも。洗い場は町から遠いのですから」。こう言って、輝く目のアテナはオリュンポスへ去った。そこは神々の住処で、永遠に揺るがぬところだと言われている。風に揺すられることもなく、雨に濡れることもなく、雪が降ることもない。ただ大気が</p>
+<p class="grc">ἔρχεσθαι· πολλὸν γὰρ ἀπὸ πλυνοί εἰσι πόληος. / ἡ μὲν ἄρʼ ὣς εἰποῦσʼ ἀπέβη γλαυκῶπις Ἀθήνη / Οὔλυμπόνδʼ, ὅθι φασὶ θεῶν ἕδος ἀσφαλὲς αἰεὶ / ἔμμεναι. οὔτʼ ἀνέμοισι τινάσσεται οὔτε ποτʼ ὄμβρῳ / δεύεται οὔτε χιὼν ἐπιπίλναται, ἀλλὰ μάλʼ αἴθρη</p>
+<p class="eng">to go thus than on foot, for the washing tanks are far from the city.” So saying, the goddess, flashing-eyed Athena, departed to Olympus , where, they say, is the abode of the gods that stands fast forever. Neither is it shaken by winds nor ever wet with rain, nor does snow fall upon it, but the air</p>
+</div>
+<div class="unit"><span id="L45"></span><span id="L46"></span><span id="L47"></span><span id="L48"></span><span id="L49"></span>
+<div class="ln">6.45–49</div>
+<p class="ja">澄んで雲もなく広がり、その上には輝く白さが漂っている。そこで幸いなる神々は生涯を喜んで過ごす。輝く目の女神は、乙女にすべての言葉を語り終えると、そこへ去った。やがて美しい座の暁が来てナウシカアを目覚めさせた。美しい衣のナウシカアを。そして彼女はすぐに夢を不思議に思い、</p>
+<p class="grc">πέπταται ἀνέφελος, λευκὴ δʼ ἐπιδέδρομεν αἴγλη· / τῷ ἔνι τέρπονται μάκαρες θεοὶ ἤματα πάντα. / ἔνθʼ ἀπέβη γλαυκῶπις, ἐπεὶ διεπέφραδε κούρῃ. / αὐτίκα δʼ Ἠὼς ἦλθεν ἐύθρονος, ἥ μιν ἔγειρε / Ναυσικάαν ἐύπεπλον· ἄφαρ δʼ ἀπεθαύμασʼ ὄνειρον,</p>
+<p class="eng">is outspread clear and cloudless, and over it hovers a radiant whiteness. Therein the blessed gods are glad all their days, and thither went the flashing-eyed one, when she had spoken all her word to the maiden. At once then came fair-throned Dawn and awakened Nausicaa of the beautiful robes, and straightway she marvelled at her dream,</p>
+</div>
+<div class="unit"><span id="L50"></span><span id="L51"></span><span id="L52"></span><span id="L53"></span><span id="L54"></span>
+<div class="ln">6.50–54</div>
+<p class="ja">館を抜けて両親に告げに行った。愛する父と母とに。そして二人とも中にいるのを見つけた。母は炉のそばに侍女たちと座って、紫染めの糸を紡いでいた。父のほうは、輝かしい王たちに加わろうと出て行くところで行き合った。</p>
+<p class="grc">βῆ δʼ ἰέναι διὰ δώμαθʼ, ἵνʼ ἀγγείλειε τοκεῦσιν, / πατρὶ φίλῳ καὶ μητρί· κιχήσατο δʼ ἔνδον ἐόντας· / ἡ μὲν ἐπʼ ἐσχάρῃ ἧστο σὺν ἀμφιπόλοισι γυναιξὶν / ἠλάκατα στρωφῶσʼ ἁλιπόρφυρα· τῷ δὲ θύραζε / ἐρχομένῳ ξύμβλητο μετὰ κλειτοὺς βασιλῆας</p>
+<p class="eng">and went through the house to tell her parents, her father dear and her mother; and she found them both within. The mother sat at the hearth with her handmaidens, spinning the yarn of purple dye, and her father she met as he was going forth to join the glorious kings</p>
+</div>
+<div class="unit"><span id="L55"></span><span id="L56"></span><span id="L57"></span><span id="L58"></span><span id="L59"></span>
+<div class="ln">6.55–59</div>
+<p class="ja">評議の場へ。高貴なパイエケス人たちが彼を呼んでいたのである。だが彼女は愛する父のすぐそばへ寄って言った。「お父さま、私のために車を仕度してくださいませんか。高く、車輪の頑丈な車を。ここに汚れたまま置いてある私の立派な衣を、河へ洗いに持って行けるように。</p>
+<p class="grc">ἐς βουλήν, ἵνα μιν κάλεον Φαίηκες ἀγαυοί. / ἡ δὲ μάλʼ ἄγχι στᾶσα φίλον πατέρα προσέειπε· / πάππα φίλʼ, οὐκ ἂν δή μοι ἐφοπλίσσειας ἀπήνην / ὑψηλὴν ἐύκυκλον, ἵνα κλυτὰ εἵματʼ ἄγωμαι / ἐς ποταμὸν πλυνέουσα, τά μοι ῥερυπωμένα κεῖται;</p>
+<p class="eng">in the place of council, to which the lordly Phaeacians called him. But she came up close to her dear father, and said: “Papa dear, wilt thou not make ready for me a wagon, high and stout of wheel, that I may take to the river for washing the goodly raiment of mine which is lying here soiled?</p>
+</div>
+<div class="unit"><span id="L60"></span><span id="L61"></span><span id="L62"></span><span id="L63"></span><span id="L64"></span>
+<div class="ln">6.60–64</div>
+<p class="ja">それにお父さま自身にとっても、貴人たちと評議の席に着かれるときは、清らかな衣を召しておられるのがふさわしいのです。それに館には五人の息子がいます。二人は妻を迎えていますが、三人は逞しい独り身です。この者たちはいつも、洗いたての衣を着たがるのです。</p>
+<p class="grc">καὶ δὲ σοὶ αὐτῷ ἔοικε μετὰ πρώτοισιν ἐόντα / βουλὰς βουλεύειν καθαρὰ χροΐ εἵματʼ ἔχοντα. / πέντε δέ τοι φίλοι υἷες ἐνὶ μεγάροις γεγάασιν, / οἱ δύʼ ὀπυίοντες, τρεῖς δʼ ἠίθεοι θαλέθοντες· / οἱ δʼ αἰεὶ ἐθέλουσι νεόπλυτα εἵματʼ ἔχοντες</p>
+<p class="eng">Moreover for thyself it is seemly that when thou art at council with the princes thou shouldst have clean raiment upon thee; and thou hast five sons living in thy halls—two are wedded, but three are sturdy bachelors—and these ever wish to put on them freshly-washed raiment,</p>
+</div>
+<div class="unit"><span id="L65"></span><span id="L66"></span><span id="L67"></span><span id="L68"></span><span id="L69"></span>
+<div class="ln">6.65–69</div>
+<p class="ja">舞に出るときには。こうしたことすべてに私が心を配らねばなりません」。彼女はこう言った。喜ばしい婚礼のことを父に口にするのが恥ずかしかったからである。だが父はすべてを察して答えて言った。「騾馬も惜しみはしないよ、我が子よ。ほかの何も惜しみはしない。行っておいで。奴僕たちが車を仕度するだろう。</p>
+<p class="grc">ἐς χορὸν ἔρχεσθαι· τὰ δʼ ἐμῇ φρενὶ πάντα μέμηλεν. / ὣς ἔφατʼ· αἴδετο γὰρ θαλερὸν γάμον ἐξονομῆναι / πατρὶ φίλῳ. ὁ δὲ πάντα νόει καὶ ἀμείβετο μύθῳ· / οὔτε τοι ἡμιόνων φθονέω, τέκος, οὔτε τευ ἄλλου. / ἔρχευ· ἀτάρ τοι δμῶες ἐφοπλίσσουσιν ἀπήνην</p>
+<p class="eng">when they go to the dance. Of all this must I take thought.” So she spoke, for she was ashamed to name gladsome marriage to her father; but he understood all, and answered, saying: “Neither the mules do I begrudge thee, my child, nor aught beside. Go thy way; the slaves shall make ready for thee the wagon,</p>
+</div>
+<div class="unit"><span id="L70"></span><span id="L71"></span><span id="L72"></span><span id="L73"></span><span id="L74"></span>
+<div class="ln">6.70–74</div>
+<p class="ja">高く、車輪が頑丈で、上に箱の付いた車を」。こう言って奴僕たちに呼びかけると、彼らは聞き従った。館の外で軽く走る騾馬車を仕度し、騾馬を引いて来て軛につないだ。乙女は自分の部屋から輝く衣を運び、</p>
+<p class="grc">ὑψηλὴν ἐύκυκλον, ὑπερτερίῃ ἀραρυῖαν. / ὣς εἰπὼν δμώεσσιν ἐκέκλετο, τοὶ δʼ ἐπίθοντο. / οἱ μὲν ἄρʼ ἐκτὸς ἄμαξαν ἐύτροχον ἡμιονείην / ὥπλεον, ἡμιόνους θʼ ὕπαγον ζεῦξάν θʼ ὑπʼ ἀπήνῃ· / κούρη δʼ ἐκ θαλάμοιο φέρεν ἐσθῆτα φαεινήν.</p>
+<p class="eng">high and stout of wheel and fitted with a box above.” With this he called to the slaves, and they hearkened. Outside the palace they made ready the light-running mule wagon, and led up the mules and yoked them to it; and the maiden brought from her chamber the bright raiment,</p>
+</div>
+<div class="unit"><span id="L75"></span><span id="L76"></span><span id="L77"></span><span id="L78"></span><span id="L79"></span>
+<div class="ln">6.75–79</div>
+<p class="ja">磨かれた車の上に載せた。そのあいだ母は櫃にあらゆる食べ物を詰めた。心を満たすためのものである。そこに美味を入れ、山羊革の袋に葡萄酒を注いだ。そして乙女は車に乗った。母は黄金の瓶に入れた柔らかな橄欖の油も持たせた。</p>
+<p class="grc">καὶ τὴν μὲν κατέθηκεν ἐυξέστῳ ἐπʼ ἀπήνῃ, / μήτηρ δʼ ἐν κίστῃ ἐτίθει μενοεικέʼ ἐδωδὴν / παντοίην, ἐν δʼ ὄψα τίθει, ἐν δʼ οἶνον ἔχευεν / ἀσκῷ ἐν αἰγείῳ· κούρη δʼ ἐπεβήσετʼ ἀπήνης. / δῶκεν δὲ χρυσέῃ ἐν ληκύθῳ ὑγρὸν ἔλαιον,</p>
+<p class="eng">and placed it upon the polished car, while her mother put in a chest food of all sorts to satisfy the heart. Therein she put dainties, and poured wine in a goat-skin flask; and the maiden mounted upon the wagon. Her mother gave her also soft olive oil in a flask of gold,</p>
+</div>
+<div class="unit"><span id="L80"></span><span id="L81"></span><span id="L82"></span><span id="L83"></span><span id="L84"></span>
+<div class="ln">6.80–84</div>
+<p class="ja">彼女と侍女たちが湯浴みのあとに使えるようにと。それからナウシカアは鞭と輝く手綱を取り、騾馬を打って走り出させた。騾馬は蹄の音を立てて力いっぱい進み、衣と乙女とを運んだ。彼女は一人で行ったのではなく、侍女たちも共に行った。</p>
+<p class="grc">ἧος χυτλώσαιτο σὺν ἀμφιπόλοισι γυναιξίν. / ἡ δʼ ἔλαβεν μάστιγα καὶ ἡνία σιγαλόεντα, / μάστιξεν δʼ ἐλάαν· καναχὴ δʼ ἦν ἡμιόνοιιν. / αἱ δʼ ἄμοτον τανύοντο, φέρον δʼ ἐσθῆτα καὶ αὐτήν, / οὐκ οἴην, ἅμα τῇ γε καὶ ἀμφίπολοι κίον ἄλλαι.</p>
+<p class="eng">that she and her maidens might have it for the bath. Then Nausicaa took the whip and the bright reins, and smote the mules to start them; and there was a clatter of the mules as they sped on a main, bearing the raiment and the maiden; neither went she alone, for with her went her handmaids as well.</p>
+</div>
+<div class="unit"><span id="L85"></span><span id="L86"></span><span id="L87"></span><span id="L88"></span><span id="L89"></span>
+<div class="ln">6.85–89</div>
+<p class="ja">さて河の美しい流れに着くと、そこには涸れることのない洗い場があった。澄んだ水が地の下から豊かに湧き出て溢れ、どれほど汚れた衣でも清められるのである。そこで彼女たちは車から騾馬を解き、渦巻く河に沿って追いやった。</p>
+<p class="grc">αἱ δʼ ὅτε δὴ ποταμοῖο ῥόον περικαλλέʼ ἵκοντο, / ἔνθʼ ἦ τοι πλυνοὶ ἦσαν ἐπηετανοί, πολὺ δʼ ὕδωρ / καλὸν ὑπεκπρόρεεν μάλα περ ῥυπόωντα καθῆραι, / ἔνθʼ αἵ γʼ ἡμιόνους μὲν ὑπεκπροέλυσαν ἀπήνης. / καὶ τὰς μὲν σεῦαν ποταμὸν πάρα δινήεντα</p>
+<p class="eng">Now when they came to the beautiful streams of the river, where were the washing tanks that never failed—for abundant clear water welled up from beneath and flowed over, to cleanse garments however soiled—there they loosed the mules from under the wagon and drove them along the eddying river</p>
+</div>
+<div class="unit"><span id="L90"></span><span id="L91"></span><span id="L92"></span><span id="L93"></span><span id="L94"></span>
+<div class="ln">6.90–94</div>
+<p class="ja">蜜のように甘い水草を食ませるためである。そして自分たちは車から衣を腕に抱え取り、暗い水の中へ運び入れて、洗い溝の中でそれを踏んだ。互いに競い合いながら、せわしく手を動かして。さて衣を洗い上げ、汚れをすっかり落としてしまうと、海の岸に沿って列をなして並べ広げた。そこは</p>
+<p class="grc">τρώγειν ἄγρωστιν μελιηδέα· ταὶ δʼ ἀπʼ ἀπήνης / εἵματα χερσὶν ἕλοντο καὶ ἐσφόρεον μέλαν ὕδωρ, / στεῖβον δʼ ἐν βόθροισι θοῶς ἔριδα προφέρουσαι. / αὐτὰρ ἐπεὶ πλῦνάν τε κάθηράν τε ῥύπα πάντα, / ἑξείης πέτασαν παρὰ θῖνʼ ἁλός, ἧχι μάλιστα</p>
+<p class="eng">to graze on the honey-sweet water-grass, and themselves took in their arms the raiment from the wagon, and bore it into the dark water, and trampled it in the trenches, busily vying each with each. Now when they had washed the garments, and had cleansed them of all the stains, they spread them out in rows on the shore of the sea where</p>
+</div>
+<div class="unit"><span id="L95"></span><span id="L96"></span><span id="L97"></span><span id="L98"></span><span id="L99"></span>
+<div class="ln">6.95–99</div>
+<p class="ja">陸に打ち寄せる波が小石を最もきれいに洗うところであった。それから彼女たちは湯浴みをし、たっぷりと油を塗って、河の岸辺で食事を取った。そして衣が輝く日差しの中で乾くのを待った。やがて食事の喜びを味わい終えると、彼女と侍女たちは、</p>
+<p class="grc">λάιγγας ποτὶ χέρσον ἀποπλύνεσκε θάλασσα. / αἱ δὲ λοεσσάμεναι καὶ χρισάμεναι λίπʼ ἐλαίῳ / δεῖπνον ἔπειθʼ εἵλοντο παρʼ ὄχθῃσιν ποταμοῖο, / εἵματα δʼ ἠελίοιο μένον τερσήμεναι αὐγῇ. / αὐτὰρ ἐπεὶ σίτου τάρφθεν δμῳαί τε καὶ αὐτή,</p>
+<p class="eng">the waves dashing against the land washed the pebbles cleanest; and they, after they had bathed and anointed themselves richly with oil, took their meal on the river's banks, and waited for the clothing to dry in the bright sunshine. Then when they had had their joy of food, she and her handmaids,</p>
+</div>
+<div class="unit"><span id="L100"></span><span id="L101"></span><span id="L102"></span><span id="L103"></span><span id="L104"></span>
+<div class="ln">6.100–104</div>
+<p class="ja">頭の被り物を脱いで鞠遊びを始めた。白い腕のナウシカアが歌の音頭を取った。ちょうど、弓を射るアルテミスが山々を歩き回るように。高いタユゲトスやエリュマントスの尾根に沿って、猪や足速い鹿を追うことを喜びながら。</p>
+<p class="grc">σφαίρῃ ταὶ δʼ ἄρʼ ἔπαιζον, ἀπὸ κρήδεμνα βαλοῦσαι· / τῇσι δὲ Ναυσικάα λευκώλενος ἤρχετο μολπῆς. / οἵη δʼ Ἄρτεμις εἶσι κατʼ οὔρεα ἰοχέαιρα, / ἢ κατὰ Τηΰγετον περιμήκετον ἢ Ἐρύμανθον, / τερπομένη κάπροισι καὶ ὠκείῃς ἐλάφοισι·</p>
+<p class="eng">they threw off their head-gear and fell to playing at ball, and white-armed Nausicaa was leader in the song. And even as Artemis, the archer, roves over the mountains, along the ridges of lofty Taygetus or Erymanthus, joying in the pursuit of boars and swift deer,</p>
+</div>
+<div class="unit"><span id="L105"></span><span id="L106"></span><span id="L107"></span><span id="L108"></span><span id="L109"></span>
+<div class="ln">6.105–109</div>
+<p class="ja">そのそばでは森の妖精たちが、アイギスを持つゼウスの娘たちが戯れ、レトは心に喜ぶ。誰よりも高くアルテミスは頭と眉とを掲げ、皆が美しいなかでも容易にそれと知れる。そのように侍女たちのただ中で、まだ嫁がぬ乙女は輝いていた。</p>
+<p class="grc">τῇ δέ θʼ ἅμα νύμφαι, κοῦραι Διὸς αἰγιόχοιο, / ἀγρονόμοι παίζουσι, γέγηθε δέ τε φρένα Λητώ· / πασάων δʼ ὑπὲρ ἥ γε κάρη ἔχει ἠδὲ μέτωπα, / ῥεῖά τʼ ἀριγνώτη πέλεται, καλαὶ δέ τε πᾶσαι· / ὣς ἥ γʼ ἀμφιπόλοισι μετέπρεπε παρθένος ἀδμής.</p>
+<p class="eng">and with her sport the wood-nymphs, the daughters of Zeus who bears the aegis, and Leto is glad at heart—high above them all Artemis holds her head and brows, and easily may she be known, though all are fair—so amid her handmaidens shone the maid unwed.</p>
+</div>
+<div class="unit"><span id="L110"></span><span id="L111"></span><span id="L112"></span><span id="L113"></span><span id="L114"></span>
+<div class="ln">6.110–114</div>
+<p class="ja">だが騾馬を軛につなぎ、美しい衣を畳んで家へ帰ろうとしたとき、そのとき輝く目の女神アテナは別のことを思いついた。オデュッセウスが目覚めて、美しい顔の乙女を見るようにと。その乙女がパイエケス人の町へ彼を導くはずであった。</p>
+<p class="grc">ἀλλʼ ὅτε δὴ ἄρʼ ἔμελλε πάλιν οἶκόνδε νέεσθαι / ζεύξασʼ ἡμιόνους πτύξασά τε εἵματα καλά, / ἔνθʼ αὖτʼ ἄλλʼ ἐνόησε θεά, γλαυκῶπις Ἀθήνη, / ὡς Ὀδυσεὺς ἔγροιτο, ἴδοι τʼ ἐυώπιδα κούρην, / ἥ οἱ Φαιήκων ἀνδρῶν πόλιν ἡγήσαιτο.</p>
+<p class="eng">But when she was about to yoke the mules, and fold the fair raiment, in order to return homeward, then the goddess, flashing-eyed Athena, took other counsel, that Odysseus might awake and see the fair-faced maid, who should lead him to the city of the Phaeacians.</p>
+</div>
+<div class="unit"><span id="L115"></span><span id="L116"></span><span id="L117"></span><span id="L118"></span><span id="L119"></span>
+<div class="ln">6.115–119</div>
+<p class="ja">そこで王女は侍女の一人へ鞠を投げた。侍女には当たらず、深い渦の中へ落ちてしまい、そこで彼女たちは声をあげた。すると気高いオデュッセウスが目を覚まし、身を起こして、心と胸のうちにこう思案した。「ああ困った。私は今度はどんな人間の地へ来たのか。</p>
+<p class="grc">σφαῖραν ἔπειτʼ ἔρριψε μετʼ ἀμφίπολον βασίλεια· / ἀμφιπόλου μὲν ἅμαρτε, βαθείῃ δʼ ἔμβαλε δίνῃ· / αἱ δʼ ἐπὶ μακρὸν ἄυσαν· ὁ δʼ ἔγρετο δῖος Ὀδυσσεύς, / ἑζόμενος δʼ ὥρμαινε κατὰ φρένα καὶ κατὰ θυμόν· / ὤ μοι ἐγώ, τέων αὖτε βροτῶν ἐς γαῖαν ἱκάνω;</p>
+<p class="eng">So then the princess tossed the ball to one of her maidens; the maiden indeed she missed, but cast it into a deep eddy, and thereat they cried aloud, and goodly Odysseus awoke, and sat up, and thus he pondered in mind and heart: “Woe is me! to the land of what mortals am I now come?</p>
+</div>
+<div class="unit"><span id="L120"></span><span id="L121"></span><span id="L122"></span><span id="L123"></span><span id="L124"></span>
+<div class="ln">6.120–124</div>
+<p class="ja">この者たちは傲慢で荒々しく、正しくないのか。それとも客を遇する心を持ち、思いのうちに神を畏れる者たちなのか。耳に響いたのは乙女たちの声のようであった。山の聳える峰や、河を養う泉や、草深い草地に住まう妖精たちの声のような。</p>
+<p class="grc">ἦ ῥʼ οἵ γʼ ὑβρισταί τε καὶ ἄγριοι οὐδὲ δίκαιοι, / ἦε φιλόξεινοι καί σφιν νόος ἐστὶ θεουδής; / ὥς τέ με κουράων ἀμφήλυθε θῆλυς ἀυτή· / νυμφάων, αἳ ἔχουσʼ ὀρέων αἰπεινὰ κάρηνα / καὶ πηγὰς ποταμῶν καὶ πίσεα ποιήεντα.</p>
+<p class="eng">Are they cruel, and wild, and unjust? or do they love strangers and fear the gods in their thoughts? There rang in my ears a cry as of maidens, of nymphs who haunt the towering peaks of the mountains, the springs that feed the rivers, and the grassy meadows!</p>
+</div>
+<div class="unit"><span id="L125"></span><span id="L126"></span><span id="L127"></span><span id="L128"></span><span id="L129"></span>
+<div class="ln">6.125–129</div>
+<p class="ja">もしや私は人の言葉を語る者たちの近くにいるのだろうか。いや、自分で試して見てみよう」。こう言って気高いオデュッセウスは灌木の下から出て来た。そして逞しい手で、茂みから葉のついた枝を折り取った。それを身のまわりに当てて、裸の身を隠すためである。</p>
+<p class="grc">ἦ νύ που ἀνθρώπων εἰμὶ σχεδὸν αὐδηέντων; / ἀλλʼ ἄγʼ ἐγὼν αὐτὸς πειρήσομαι ἠδὲ ἴδωμαι. / ὣς εἰπὼν θάμνων ὑπεδύσετο δῖος Ὀδυσσεύς, / ἐκ πυκινῆς δʼ ὕλης πτόρθον κλάσε χειρὶ παχείῃ / φύλλων, ὡς ῥύσαιτο περὶ χροῒ μήδεα φωτός.</p>
+<p class="eng">Can it be that I am somewhere near men of human speech? Nay, I will myself make trial and see.” So saying the goodly Odysseus came forth from beneath the bushes, and with his stout hand he broke from the thick wood a leafy branch, that he might hold it about him and hide therewith his nakedness.</p>
+</div>
+<div class="unit"><span id="L130"></span><span id="L131"></span><span id="L132"></span><span id="L133"></span><span id="L134"></span>
+<div class="ln">6.130–134</div>
+<p class="ja">彼は山に育った獅子のように現れた。おのれの力を恃み、雨と風に打たれながらも進み出て、その二つの目は燃えている。牛の群れのただ中へ、あるいは羊の群れへ、あるいは野の鹿の跡を追って行く。腹が空けば、頑丈に造られた囲いの中へさえ押し入って群れを襲おうとする。</p>
+<p class="grc">βῆ δʼ ἴμεν ὥς τε λέων ὀρεσίτροφος ἀλκὶ πεποιθώς, / ὅς τʼ εἶσʼ ὑόμενος καὶ ἀήμενος, ἐν δέ οἱ ὄσσε / δαίεται· αὐτὰρ ὁ βουσὶ μετέρχεται ἢ ὀίεσσιν / ἠὲ μετʼ ἀγροτέρας ἐλάφους· κέλεται δέ ἑ γαστὴρ / μήλων πειρήσοντα καὶ ἐς πυκινὸν δόμον ἐλθεῖν·</p>
+<p class="eng">Forth he came like a mountain-nurtured lion trusting in his might, who goes forth, beaten with rain and wind, but his two eyes are ablaze: into the midst of the kine he goes, or of the sheep, or on the track of the wild deer, and his belly bids him go even into the close-built fold, to make an attack upon the flocks.</p>
+</div>
+<div class="unit"><span id="L135"></span><span id="L136"></span><span id="L137"></span><span id="L138"></span><span id="L139"></span>
+<div class="ln">6.135–139</div>
+<p class="ja">そのようにオデュッセウスは、髪美しい乙女たちの中へ入って行こうとした。裸のままで。必要が彼に迫っていたからである。だが彼女たちには恐ろしく見えた。潮にまみれて汚れきっていたのだ。そして怯えて散り、突き出た砂州に沿って、こちらに一人、あちらに一人と逃れた。ただアルキノオスの娘だけがその場に留まった。</p>
+<p class="grc">ὣς Ὀδυσεὺς κούρῃσιν ἐυπλοκάμοισιν ἔμελλε / μίξεσθαι, γυμνός περ ἐών· χρειὼ γὰρ ἵκανε. / σμερδαλέος δʼ αὐτῇσι φάνη κεκακωμένος ἅλμῃ, / τρέσσαν δʼ ἄλλυδις ἄλλη ἐπʼ ἠιόνας προὐχούσας· / οἴη δʼ Ἀλκινόου θυγάτηρ μένε· τῇ γὰρ Ἀθήνη</p>
+<p class="eng">Even so Odysseus was about to enter the company of the fair-tressed maidens, naked though he was, for need had come upon him. But terrible did he seem to them, all befouled with brine, and they shrank in fear, one here, one there, along the jutting sand-spits. Alone the daughter of Alcinous kept her place, for</p>
+</div>
+<div class="unit"><span id="L140"></span><span id="L141"></span><span id="L142"></span><span id="L143"></span><span id="L144"></span>
+<div class="ln">6.140–144</div>
+<p class="ja">アテナが彼女の心に勇気を置き、手足から恐れを取り去ったからである。彼女は逃げず、立って彼に向き合った。そしてオデュッセウスは思案した。美しい顔の乙女の膝にすがって願うべきか、それとも今のように離れて立ったまま、優しい言葉で懇願すべきか。町を示し、衣を与えてくれることを望みながら。</p>
+<p class="grc">θάρσος ἐνὶ φρεσὶ θῆκε καὶ ἐκ δέος εἵλετο γυίων. / στῆ δʼ ἄντα σχομένη· ὁ δὲ μερμήριξεν Ὀδυσσεύς, / ἢ γούνων λίσσοιτο λαβὼν ἐυώπιδα κούρην, / ἦ αὔτως ἐπέεσσιν ἀποσταδὰ μειλιχίοισι / λίσσοιτʼ, εἰ δείξειε πόλιν καὶ εἵματα δοίη.</p>
+<p class="eng">in her heart Athena put courage, and took fear from her limbs. She fled not, but stood and faced him; and Odysseus pondered whether he should clasp the knees of the fair-faced maid, and make his prayer, or whether, standing apart as he was, he should beseech her with gentle words, in hope that she might show him the city and give him raiment.</p>
+</div>
+<div class="unit"><span id="L145"></span><span id="L146"></span><span id="L147"></span><span id="L148"></span><span id="L149"></span>
+<div class="ln">6.145–149</div>
+<p class="ja">そう思案してみると、離れて立ったまま優しい言葉で懇願する、そのほうが得策と思われた。膝にすがれば乙女の心が自分に対して憤るかもしれないからである。そこでただちに、優しく巧みな言葉を発した。「お願いします、女王よ。あなたは女神でしょうか、それとも死すべき人でしょうか。</p>
+<p class="grc">ὣς ἄρα οἱ φρονέοντι δοάσσατο κέρδιον εἶναι, / λίσσεσθαι ἐπέεσσιν ἀποσταδὰ μειλιχίοισι, / μή οἱ γοῦνα λαβόντι χολώσαιτο φρένα κούρη. / αὐτίκα μειλίχιον καὶ κερδαλέον φάτο μῦθον. / γουνοῦμαί σε, ἄνασσα· θεός νύ τις, ἦ βροτός ἐσσι;</p>
+<p class="eng">And, as he pondered, it seemed to him better to stand apart and beseech her with gentle words, lest the maiden's heart should be wroth with him if he clasped her knees; so straightway he spoke a gentle word and crafty: “I beseech thee, O queen,—a goddess art thou, or art thou mortal?</p>
+</div>
+<div class="unit"><span id="L150"></span><span id="L151"></span><span id="L152"></span><span id="L153"></span><span id="L154"></span>
+<div class="ln">6.150–154</div>
+<p class="ja">もしあなたが女神で、広い天を領する方々のお一人であるなら、大いなるゼウスの娘アルテミスに、私はあなたを最も近く擬えます。美しさにおいても背丈においても姿においても。だがもしあなたが地上に住む死すべき者のお一人であるなら、三たび幸いなるかな、あなたの父君と敬うべき母君は。</p>
+<p class="grc">εἰ μέν τις θεός ἐσσι, τοὶ οὐρανὸν εὐρὺν ἔχουσιν, / Ἀρτέμιδί σε ἐγώ γε, Διὸς κούρῃ μεγάλοιο, / εἶδός τε μέγεθός τε φυήν τʼ ἄγχιστα ἐίσκω· / εἰ δέ τίς ἐσσι βροτῶν, τοὶ ἐπὶ χθονὶ ναιετάουσιν, / τρὶς μάκαρες μὲν σοί γε πατὴρ καὶ πότνια μήτηρ,</p>
+<p class="eng">If thou art a goddess, one of those who hold broad heaven, to Artemis, the daughter of great Zeus, do I liken thee most nearly in comeliness and in stature and in form. But if thou art one of mortals who dwell upon the earth, thrice-blessed then are thy father and thy honored mother,</p>
+</div>
+<div class="unit"><span id="L155"></span><span id="L156"></span><span id="L157"></span><span id="L158"></span><span id="L159"></span>
+<div class="ln">6.155–159</div>
+<p class="ja">そして三たび幸いなるかな、あなたの兄弟たちは。思うに、その心はあなたゆえに絶えず喜びに温められていることでしょう。これほど美しい若木が舞に入って行くのを見るたびに。ですが誰にもまして心に幸いなのは、求婚の贈り物で競り勝って、あなたを我が家へ導く人でしょう。</p>
+<p class="grc">τρὶς μάκαρες δὲ κασίγνητοι· μάλα πού σφισι θυμὸς / αἰὲν ἐυφροσύνῃσιν ἰαίνεται εἵνεκα σεῖο, / λευσσόντων τοιόνδε θάλος χορὸν εἰσοιχνεῦσαν. / κεῖνος δʼ αὖ περὶ κῆρι μακάρτατος ἔξοχον ἄλλων, / ὅς κέ σʼ ἐέδνοισι βρίσας οἶκόνδʼ ἀγάγηται.</p>
+<p class="eng">and thrice-blessed thy brethren. Full well, I ween, are their hearts ever warmed with joy because of thee, as they see thee entering the dance, a plant so fair. But he again is blessed in heart above all others, who shall prevail with his gifts of wooing and lead thee to his home.</p>
+</div>
+<div class="unit"><span id="L160"></span><span id="L161"></span><span id="L162"></span><span id="L163"></span><span id="L164"></span>
+<div class="ln">6.160–164</div>
+<p class="ja">というのも、私はこれまでこの目で、あなたのような死すべき者を見たことがないのです。男であれ女であれ。あなたを見ていると驚きに打たれます。まことにデロスで一度、そのようなものを見たことがあります。アポロンの祭壇のかたわらに生え出た棕櫚の若木です。私はそこへも行ったのです。多くの人が私に従って来ました。</p>
+<p class="grc">οὐ γάρ πω τοιοῦτον ἴδον βροτὸν ὀφθαλμοῖσιν, / οὔτʼ ἄνδρʼ οὔτε γυναῖκα· σέβας μʼ ἔχει εἰσορόωντα. / Δήλῳ δή ποτε τοῖον Ἀπόλλωνος παρὰ βωμῷ / φοίνικος νέον ἔρνος ἀνερχόμενον ἐνόησα· / ἦλθον γὰρ καὶ κεῖσε, πολὺς δέ μοι ἕσπετο λαός,</p>
+<p class="eng">For never yet have mine eyes looked upon a mortal such as thou, whether man or woman; amazement holds me as I look on thee. Of a truth in Delos once I saw such a thing, a young shoot of a palm springing up beside the altar of Apollo—for thither, too, I went, and much people followed with me,</p>
+</div>
+<div class="unit"><span id="L165"></span><span id="L166"></span><span id="L167"></span><span id="L168"></span><span id="L169"></span>
+<div class="ln">6.165–169</div>
+<p class="ja">悪しき禍いが私の分け前となるはずの、あの旅路で。あのときもそれを見て、私は長く心に驚嘆しました。あのような木が地から生え出たことはかつてなかったからです。それと同じように、御方よ、私はあなたに驚嘆し、目を見張り、あなたの膝に触れるのを大いに恐れております。ですが辛い悲しみが私に降りかかっているのです。</p>
+<p class="grc">τὴν ὁδὸν ᾗ δὴ μέλλεν ἐμοὶ κακὰ κήδεʼ ἔσεσθαι. / ὣς δʼ αὔτως καὶ κεῖνο ἰδὼν ἐτεθήπεα θυμῷ / δήν, ἐπεὶ οὔ πω τοῖον ἀνήλυθεν ἐκ δόρυ γαίης, / ὡς σέ, γύναι, ἄγαμαί τε τέθηπά τε, δείδια δʼ αἰνῶς / γούνων ἅψασθαι· χαλεπὸν δέ με πένθος ἱκάνει.</p>
+<p class="eng">on that journey on which evil woes were to be my portion;—even so, when I saw that, I marvelled long at heart, for never yet did such a tree spring up from the earth. And in like manner, lady, do I marvel at thee, and am amazed, and fear greatly to touch thy knees; but sore grief has come upon me.</p>
+</div>
+<div class="unit"><span id="L170"></span><span id="L171"></span><span id="L172"></span><span id="L173"></span><span id="L174"></span>
+<div class="ln">6.170–174</div>
+<p class="ja">昨日、二十日目に、私は葡萄色の海から逃れました。それまでずっと、波と足速い風とが私をオギュギエの島から運びつづけたのです。そして今、定めが私をここの岸に投げ上げました。ここでもまた、何か禍いを受けるのかもしれません。まだ私の苦難は終わるまいと思われるからです。それより前に、神々が数多くを成就させるでしょう。</p>
+<p class="grc">χθιζὸς ἐεικοστῷ φύγον ἤματι οἴνοπα πόντον· / τόφρα δέ μʼ αἰεὶ κῦμʼ ἐφόρει κραιπναί τε θύελλαι / νήσου ἀπʼ Ὠγυγίης. νῦν δʼ ἐνθάδε κάββαλε δαίμων, / ὄφρʼ ἔτι που καὶ τῇδε πάθω κακόν· οὐ γὰρ ὀίω / παύσεσθʼ, ἀλλʼ ἔτι πολλὰ θεοὶ τελέουσι πάροιθεν.</p>
+<p class="eng">Yesterday, on the twentieth day, I escaped from the wine-dark sea, but ever until then the wave and the swift winds bore me from the island of Ogygia; and now fate has cast me ashore here, that here too, haply, I may suffer some ill. For not yet, methinks, will my troubles cease, but the gods ere that will bring many to pass.</p>
+</div>
+<div class="unit"><span id="L175"></span><span id="L176"></span><span id="L177"></span><span id="L178"></span><span id="L179"></span>
+<div class="ln">6.175–179</div>
+<p class="ja">どうか、女王よ、憐れんでください。多くの辛い労苦ののち、私が最初に来たのはあなたのもとなのですから。この町とこの地を領する人々のうち、ほかには誰一人存じません。町を示してください。そして身にまとう襤褸を一枚でも与えてください。ここへ来られたとき、衣を包む布をお持ちであったなら。</p>
+<p class="grc">ἀλλά, ἄνασσʼ, ἐλέαιρε· σὲ γὰρ κακὰ πολλὰ μογήσας / ἐς πρώτην ἱκόμην, τῶν δʼ ἄλλων οὔ τινα οἶδα / ἀνθρώπων, οἳ τήνδε πόλιν καὶ γαῖαν ἔχουσιν. / ἄστυ δέ μοι δεῖξον, δὸς δὲ ῥάκος ἀμφιβαλέσθαι, / εἴ τί που εἴλυμα σπείρων ἔχες ἐνθάδʼ ἰοῦσα.</p>
+<p class="eng">Nay, O queen, have pity; for it is to thee first that I am come after many grievous toils, and of the others who possess this city and land I know not one. Shew me the city, and give me some rag to throw about me, if thou hadst any wrapping for the clothes when thou camest hither.</p>
+</div>
+<div class="unit"><span id="L180"></span><span id="L181"></span><span id="L182"></span><span id="L183"></span><span id="L184"></span>
+<div class="ln">6.180–184</div>
+<p class="ja">そしてあなた自身には、神々が心の望むすべてを授けてくださいますように。夫と家とを授け、心が一つであることを授けてくださいますように。これこそ良き賜物です。夫と妻が心を一つにして家に住むことより、大きく良いものはないのですから。敵には大きな嘆きとなり、</p>
+<p class="grc">σοὶ δὲ θεοὶ τόσα δοῖεν ὅσα φρεσὶ σῇσι μενοινᾷς, / ἄνδρα τε καὶ οἶκον, καὶ ὁμοφροσύνην ὀπάσειαν / ἐσθλήν· οὐ μὲν γὰρ τοῦ γε κρεῖσσον καὶ ἄρειον, / ἢ ὅθʼ ὁμοφρονέοντε νοήμασιν οἶκον ἔχητον / ἀνὴρ ἠδὲ γυνή· πόλλʼ ἄλγεα δυσμενέεσσι,</p>
+<p class="eng">And for thyself, may the gods grant thee all that thy heart desires; a husband and a home may they grant thee, and oneness of heart—a goodly gift. For nothing is greater or better than this, when man and wife dwell in a home in one accord, a great grief to their foes</p>
+</div>
+<div class="unit"><span id="L185"></span><span id="L186"></span><span id="L187"></span><span id="L188"></span><span id="L189"></span>
+<div class="ln">6.185–189</div>
+<p class="ja">味方には喜びとなる。だがそれを最もよく知るのは当人たちです」。すると白い腕のナウシカアが答えて言った。「客人よ、あなたは悪しき人にも愚かな人にも見えません。人に幸いを与えるのはオリュンポスのゼウスご自身で、善き者にも悪しき者にも、めいめいに思うままに与えられるのですから。</p>
+<p class="grc">χάρματα δʼ εὐμενέτῃσι, μάλιστα δέ τʼ ἔκλυον αὐτοί. / τὸν δʼ αὖ Ναυσικάα λευκώλενος ἀντίον ηὔδα· / ξεῖνʼ, ἐπεὶ οὔτε κακῷ οὔτʼ ἄφρονι φωτὶ ἔοικας· / Ζεὺς δʼ αὐτὸς νέμει ὄλβον Ὀλύμπιος ἀνθρώποισιν, / ἐσθλοῖς ἠδὲ κακοῖσιν, ὅπως ἐθέλῃσιν, ἑκάστῳ·</p>
+<p class="eng">and a joy to their friends; but they know it best themselves.” Then white-armed Nausicaa answered him:“Stranger, since thou seemest to be neither an evil man nor a witless, and it is Zeus himself, the Olympian, that gives happy fortune to men, both to the good and the evil, to each man as he will;</p>
+</div>
+<div class="unit"><span id="L190"></span><span id="L191"></span><span id="L192"></span><span id="L193"></span><span id="L194"></span>
+<div class="ln">6.190–194</div>
+<p class="ja">あなたにもこの分け前を与えられたのでしょう。どうあれ耐えねばなりません。ですが今、我らの町と地へ来られたからには、衣にも、そのほか苦難を経た嘆願者が道すがら出会ったときに受けるにふさわしいものにも、事欠くことはありません。町はお示ししましょう。民の名も申し上げましょう。</p>
+<p class="grc">καί που σοὶ τάδʼ ἔδωκε, σὲ δὲ χρὴ τετλάμεν ἔμπης. / νῦν δʼ, ἐπεὶ ἡμετέρην τε πόλιν καὶ γαῖαν ἱκάνεις, / οὔτʼ οὖν ἐσθῆτος δευήσεαι οὔτε τευ ἄλλου, / ὧν ἐπέοιχʼ ἱκέτην ταλαπείριον ἀντιάσαντα. / ἄστυ δέ τοι δείξω, ἐρέω δέ τοι οὔνομα λαῶν.</p>
+<p class="eng">so to thee, I ween, he has given this lot, and thou must in any case endure it. But now, since thou hast come to our city and land, thou shalt not lack clothing or aught else of those things which befit a sore-tried suppliant when he cometh in the way. The city will I shew thee, and will tell thee the name of the people.</p>
+</div>
+<div class="unit"><span id="L195"></span><span id="L196"></span><span id="L197"></span><span id="L198"></span><span id="L199"></span>
+<div class="ln">6.195–199</div>
+<p class="ja">この町とこの地を領するのはパイエケス人です。そして私は心大きなアルキノオスの娘。パイエケス人の力と権はこの人にかかっています」。こう言って、彼女は髪美しい侍女たちに呼びかけた。「お立ちなさい、侍女たち。男を見たくらいでどこへ逃げるのですか。</p>
+<p class="grc">Φαίηκες μὲν τήνδε πόλιν καὶ γαῖαν ἔχουσιν, / εἰμὶ δʼ ἐγὼ θυγάτηρ μεγαλήτορος Ἀλκινόοιο, / τοῦ δʼ ἐκ Φαιήκων ἔχεται κάρτος τε βίη τε. / ἦ ῥα καὶ ἀμφιπόλοισιν ἐυπλοκάμοισι κέλευσε· / στῆτέ μοι, ἀμφίπολοι· πόσε φεύγετε φῶτα ἰδοῦσαι;</p>
+<p class="eng">The Phaeacians possess this city and land, and I am the daughter of great-hearted Alcinous, upon whom depend the might and power of the Phaeacians.” She spoke, and called to her fair-tressed handmaids:“Stand, my maidens. Whither do ye flee at the sight of a man?</p>
+</div>
+<div class="unit"><span id="L200"></span><span id="L201"></span><span id="L202"></span><span id="L203"></span><span id="L204"></span>
+<div class="ln">6.200–204</div>
+<p class="ja">まさか敵だとでも思うのですか。パイエケス人の地へ敵として来るような死すべき者は、生きてもいないし、存在もしないし、これから生まれることもありません。私たちは不死の神々にたいそう愛されているのですから。うねる海の遠くに住み、</p>
+<p class="grc">ἦ μή πού τινα δυσμενέων φάσθʼ ἔμμεναι ἀνδρῶν; / οὐκ ἔσθʼ οὗτος ἀνὴρ διερὸς βροτὸς οὐδὲ γένηται, / ὅς κεν Φαιήκων ἀνδρῶν ἐς γαῖαν ἵκηται / δηιοτῆτα φέρων· μάλα γὰρ φίλοι ἀθανάτοισιν. / οἰκέομεν δʼ ἀπάνευθε πολυκλύστῳ ἐνὶ πόντῳ,</p>
+<p class="eng">Ye do not think, surely, that he is an enemy? That mortal man lives not, or exists nor shall ever be born who shall come to the land of the Phaeacians as a foeman, for we are very dear to the immortals. Far off we dwell in the surging sea,</p>
+</div>
+<div class="unit"><span id="L205"></span><span id="L206"></span><span id="L207"></span><span id="L208"></span><span id="L209"></span>
+<div class="ln">6.205–209</div>
+<p class="ja">人々のうちで最も果てにあって、ほかの死すべき者と行き来もありません。いえ、これはここへ流れ着いた不運なさすらい人です。今この人を世話しなければなりません。客人も乞食もみなゼウスから来るのですし、贈り物は少なくとも喜ばれるものですから。さあ侍女たちよ、客人に食べ物と飲み物を差し上げなさい。</p>
+<p class="grc">ἔσχατοι, οὐδέ τις ἄμμι βροτῶν ἐπιμίσγεται ἄλλος. / ἀλλʼ ὅδε τις δύστηνος ἀλώμενος ἐνθάδʼ ἱκάνει, / τὸν νῦν χρὴ κομέειν· πρὸς γὰρ Διός εἰσιν ἅπαντες / ξεῖνοί τε πτωχοί τε, δόσις δʼ ὀλίγη τε φίλη τε. / ἀλλὰ δότʼ, ἀμφίπολοι, ξείνῳ βρῶσίν τε πόσιν τε,</p>
+<p class="eng">the furthermost of men, and no other mortals have dealings with us. Nay, this is some hapless wanderer that has come hither. Him must we now tend; for from Zeus are all strangers and beggars, and a gift, though small, is welcome. Come, then, my maidens, give to the stranger food and drink,</p>
+</div>
+<div class="unit"><span id="L210"></span><span id="L211"></span><span id="L212"></span><span id="L213"></span><span id="L214"></span>
+<div class="ln">6.210–214</div>
+<p class="ja">そして風を避ける陰のある場所で、河で湯を使わせてあげなさい」。こう言うと、彼女たちは足を止めて互いに呼び合った。そして心大きなアルキノオスの娘ナウシカアが命じたとおり、オデュッセウスを風陰の場所に座らせ、そのかたわらに外套と肌着を衣として置いた。</p>
+<p class="grc">λούσατέ τʼ ἐν ποταμῷ, ὅθʼ ἐπὶ σκέπας ἔστʼ ἀνέμοιο. / ὣς ἔφαθʼ, αἱ δʼ ἔσταν τε καὶ ἀλλήλῃσι κέλευσαν, / κὰδ δʼ ἄρʼ Ὀδυσσῆʼ εἷσαν ἐπὶ σκέπας, ὡς ἐκέλευσεν / Ναυσικάα θυγάτηρ μεγαλήτορος Ἀλκινόοιο· / πὰρ δʼ ἄρα οἱ φᾶρός τε χιτῶνά τε εἵματʼ ἔθηκαν,</p>
+<p class="eng">and bathe him in the river in a spot where there is shelter from the wind.” So she spoke, and they halted and called to each other. Then they set Odysseus in a sheltered place, as Nausicaa, the daughter of great-hearted Alcinous, bade, and beside him they put a cloak and a tunic for raiment,</p>
+</div>
+<div class="unit"><span id="L215"></span><span id="L216"></span><span id="L217"></span><span id="L218"></span><span id="L219"></span>
+<div class="ln">6.215–219</div>
+<p class="ja">そして黄金の瓶に入れた柔らかな橄欖の油を渡し、河の流れで湯を使うようにと勧めた。そこで気高いオデュッセウスは乙女たちに向かって言った。「乙女たちよ、あちらへ離れて立っていてください。私は自分で肩から潮を洗い落とし、</p>
+<p class="grc">δῶκαν δὲ χρυσέῃ ἐν ληκύθῳ ὑγρὸν ἔλαιον, / ἤνωγον δʼ ἄρα μιν λοῦσθαι ποταμοῖο ῥοῇσιν. / δή ῥα τότʼ ἀμφιπόλοισι μετηύδα δῖος Ὀδυσσεύς· / ἀμφίπολοι, στῆθʼ οὕτω ἀπόπροθεν, ὄφρʼ ἐγὼ αὐτὸς / ἅλμην ὤμοιιν ἀπολούσομαι, ἀμφὶ δʼ ἐλαίῳ</p>
+<p class="eng">and gave him soft olive oil in the flask of gold, and bade him bathe in the streams of the river. Then among the maidens spoke goodly Odysseus: “Maidens, stand yonder apart, that by myself I may wash the brine from my shoulders, and</p>
+</div>
+<div class="unit"><span id="L220"></span><span id="L221"></span><span id="L222"></span><span id="L223"></span><span id="L224"></span>
+<div class="ln">6.220–224</div>
+<p class="ja">橄欖の油を身に塗りたいのです。まことに、油が肌に触れてから久しくなります。ですがあなた方の前では湯を使いません。髪美しい乙女たちのただ中で裸になるのは恥ずかしいのですから」。こう言うと、彼女たちは離れて行って王女に告げた。だが気高いオデュッセウスは河の水で肌から洗い落とした。</p>
+<p class="grc">χρίσομαι· ἦ γὰρ δηρὸν ἀπὸ χροός ἐστιν ἀλοιφή. / ἄντην δʼ οὐκ ἂν ἐγώ γε λοέσσομαι· αἰδέομαι γὰρ / γυμνοῦσθαι κούρῃσιν ἐυπλοκάμοισι μετελθών. / ὣς ἔφαθʼ, αἱ δʼ ἀπάνευθεν ἴσαν, εἶπον δʼ ἄρα κούρῃ. / αὐτὰρ ὁ ἐκ ποταμοῦ χρόα νίζετο δῖος Ὀδυσσεὺς</p>
+<p class="eng">anoint myself with olive oil; for of a truth it is long since oil came near my skin. But in your presence will I not bathe, for I am ashamed to make me naked in the midst of fair-tressed maidens.” So he said, and they went apart and told the princess. But with water from the river goodly Odysseus washed from his skin</p>
+</div>
+<div class="unit"><span id="L225"></span><span id="L226"></span><span id="L227"></span><span id="L228"></span><span id="L229"></span>
+<div class="ln">6.225–229</div>
+<p class="ja">背と広い肩とを覆っていた潮を洗い落とし、頭からは休みなき海がこびりつかせた垢を拭い取った。さて全身をすっかり洗い、油を塗って、まだ嫁がぬ乙女が与えてくれた衣を身につけると、そのときゼウスの娘アテナは彼を、</p>
+<p class="grc">ἅλμην, ἥ οἱ νῶτα καὶ εὐρέας ἄμπεχεν ὤμους, / ἐκ κεφαλῆς δʼ ἔσμηχεν ἁλὸς χνόον ἀτρυγέτοιο. / αὐτὰρ ἐπεὶ δὴ πάντα λοέσσατο καὶ λίπʼ ἄλειψεν, / ἀμφὶ δὲ εἵματα ἕσσαθʼ ἅ οἱ πόρε παρθένος ἀδμής, / τὸν μὲν Ἀθηναίη θῆκεν Διὸς ἐκγεγαυῖα</p>
+<p class="eng">the brine which clothed his back and broad shoulders, and from his head he wiped the scurf of the unresting sea. But when he had washed his whole body and anointed himself with oil, and had put on him the raiment which the unwedded maid had given him, then Athena, the daughter of Zeus, made him</p>
+</div>
+<div class="unit"><span id="L230"></span><span id="L231"></span><span id="L232"></span><span id="L233"></span><span id="L234"></span>
+<div class="ln">6.230–234</div>
+<p class="ja">見た目に大きく逞しくし、頭からはヒュアキントスの花に似た巻毛を垂らした。ちょうど人が銀の上に黄金をかぶせるように。ヘパイストスとパラス・アテナがあらゆる技を教えた巧みな職人が。そしてその手から生まれる作は優美に満ちている。</p>
+<p class="grc">μείζονά τʼ εἰσιδέειν καὶ πάσσονα, κὰδ δὲ κάρητος / οὔλας ἧκε κόμας, ὑακινθίνῳ ἄνθει ὁμοίας. / ὡς δʼ ὅτε τις χρυσὸν περιχεύεται ἀργύρῳ ἀνὴρ / ἴδρις, ὃν Ἥφαιστος δέδαεν καὶ Παλλὰς Ἀθήνη / τέχνην παντοίην, χαρίεντα δὲ ἔργα τελείει,</p>
+<p class="eng">taller to look upon and mightier, and from his head she made the locks to flow in curls like unto the hyacinth flower. And as when a man overlays silver with gold, a cunning workman whom Hephaestus and Pallas Athena have taught all manner of craft, and full of grace is the work he produces,</p>
+</div>
+<div class="unit"><span id="L235"></span><span id="L236"></span><span id="L237"></span><span id="L238"></span><span id="L239"></span>
+<div class="ln">6.235–239</div>
+<p class="ja">そのように女神は彼の頭と肩とに優美を注ぎかけた。それから彼は離れて行って海の岸に腰を下ろした。美しさと優美とに輝きながら。乙女は彼に目を見張り、髪美しい侍女たちに向かって言った。「お聞きなさい、白い腕の侍女たち。少し言いたいことがあります。</p>
+<p class="grc">ὣς ἄρα τῷ κατέχευε χάριν κεφαλῇ τε καὶ ὤμοις. / ἕζετʼ ἔπειτʼ ἀπάνευθε κιὼν ἐπὶ θῖνα θαλάσσης, / κάλλεϊ καὶ χάρισι στίλβων· θηεῖτο δὲ κούρη. / δή ῥα τότʼ ἀμφιπόλοισιν ἐυπλοκάμοισι μετηύδα· / κλῦτέ μευ, ἀμφίπολοι λευκώλενοι, ὄφρα τι εἴπω.</p>
+<p class="eng">even so the goddess shed grace upon his head and shoulders. Then he went apart and sat down on the shore of the sea, gleaming with beauty and grace; and the damsel marvelled at him, and spoke to her fair-tressed handmaids, saying: “Listen, white-armed maidens, that I may say somewhat.</p>
+</div>
+<div class="unit"><span id="L240"></span><span id="L241"></span><span id="L242"></span><span id="L243"></span><span id="L244"></span>
+<div class="ln">6.240–244</div>
+<p class="ja">オリュンポスを領する神々すべての意志なしに、この人が神にも似たパイエケス人のもとへ来たのではありません。さきほどは見苦しい人に見えましたが、今は広い天を領する神々のようです。あのような方が私の夫と呼ばれるとよいのに。</p>
+<p class="grc">οὐ πάντων ἀέκητι θεῶν, οἳ Ὄλυμπον ἔχουσιν, / Φαιήκεσσʼ ὅδʼ ἀνὴρ ἐπιμίσγεται ἀντιθέοισι· / πρόσθεν μὲν γὰρ δή μοι ἀεικέλιος δέατʼ εἶναι, / νῦν δὲ θεοῖσιν ἔοικε, τοὶ οὐρανὸν εὐρὺν ἔχουσιν. / αἲ γὰρ ἐμοὶ τοιόσδε πόσις κεκλημένος εἴη</p>
+<p class="eng">Not without the will of all the gods who hold Olympus does this man come among the godlike Phaeacians. Before he seemed to me uncouth, but now he is like the gods, who hold broad heaven. Would that a man such as he might be called my husband,</p>
+</div>
+<div class="unit"><span id="L245"></span><span id="L246"></span><span id="L247"></span><span id="L248"></span><span id="L249"></span>
+<div class="ln">6.245–249</div>
+<p class="ja">ここに住んで、ここに留まることをお気に召すとよいのに。さあ侍女たちよ、客人に食べ物と飲み物を差し上げなさい」。こう言うと、彼女たちはその言葉をよく聞いて従い、オデュッセウスの前に食べ物と飲み物を据えた。そこでまことに、堪え忍ぶ気高いオデュッセウスは飲み、食べた。</p>
+<p class="grc">ἐνθάδε ναιετάων, καί οἱ ἅδοι αὐτόθι μίμνειν. / ἀλλὰ δότʼ, ἀμφίπολοι, ξείνῳ βρῶσίν τε πόσιν τε. / ὣς ἔφαθʼ, αἱ δʼ ἄρα τῆς μάλα μὲν κλύον ἠδʼ ἐπίθοντο, / πὰρ δʼ ἄρʼ Ὀδυσσῆι ἔθεσαν βρῶσίν τε πόσιν τε. / ἦ τοι ὁ πῖνε καὶ ἦσθε πολύτλας δῖος Ὀδυσσεὺς</p>
+<p class="eng">dwelling here, and that it might please him here to remain. But come, my maidens; give to the stranger food and drink.” So she spoke, and they readily hearkened and obeyed, and set before Odysseus food and drink. Then verily did the much-enduring goodly Odysseus drink and eat,</p>
+</div>
+<div class="unit"><span id="L250"></span><span id="L251"></span><span id="L252"></span><span id="L253"></span><span id="L254"></span>
+<div class="ln">6.250–254</div>
+<p class="ja">がつがつと。長いあいだ食べ物を口にしていなかったからである。だが白い腕のナウシカアは別のことを考えた。彼女は衣を畳んで美しい車に載せ、蹄の頑丈な騾馬を軛につなぎ、自分も車に乗った。それからオデュッセウスに呼びかけて語った。</p>
+<p class="grc">ἁρπαλέως· δηρὸν γὰρ ἐδητύος ἦεν ἄπαστος. / αὐτὰρ Ναυσικάα λευκώλενος ἄλλʼ ἐνόησεν· / εἵματʼ ἄρα πτύξασα τίθει καλῆς ἐπʼ ἀπήνης, / ζεῦξεν δʼ ἡμιόνους κρατερώνυχας, ἂν δʼ ἔβη αὐτή, / ὤτρυνεν δʼ Ὀδυσῆα, ἔπος τʼ ἔφατʼ ἔκ τʼ ὀνόμαζεν·</p>
+<p class="eng">ravenously; for long had he been without taste of food. But the white-armed Nausicaa took other counsel. She folded the raiment and put it in the fair wagon, and yoked the stout-hoofed mules, and mounted the car herself. Then she hailed Odysseus, and spoke and addressed him:</p>
+</div>
+<div class="unit"><span id="L255"></span><span id="L256"></span><span id="L257"></span><span id="L258"></span><span id="L259"></span>
+<div class="ln">6.255–259</div>
+<p class="ja">「さあ立ってください、客人よ。町へ行きましょう。賢い父の館まで送り届けます。そこであなたはパイエケス人の最も高貴な人々をみな知ることになるでしょう。ただ、こうしてください。あなたには分別が欠けていないと思いますから。私たちが田野と人の耕地を通り過ぎるあいだは、あなたは急ぎ足で、</p>
+<p class="grc">ὄρσεο δὴ νῦν, ξεῖνε, πόλινδʼ ἴμεν ὄφρα σε πέμψω / πατρὸς ἐμοῦ πρὸς δῶμα δαΐφρονος, ἔνθα σέ φημι / πάντων Φαιήκων εἰδησέμεν ὅσσοι ἄριστοι. / ἀλλὰ μάλʼ ὧδʼ ἔρδειν, δοκέεις δέ μοι οὐκ ἀπινύσσειν· / ὄφρʼ ἂν μέν κʼ ἀγροὺς ἴομεν καὶ ἔργʼ ἀνθρώπων,</p>
+<p class="eng">“Rouse thee now, stranger, to go to the city, that I may escort thee to the house of my wise father, where, I tell thee, thou shalt come to know all the noblest of the Phaeacians. Only do thou thus, and, methinks, thou dost not lack understanding: so long as we are passing through the country and the tilled fields of men go thou quickly</p>
+</div>
+<div class="unit"><span id="L260"></span><span id="L261"></span><span id="L262"></span><span id="L263"></span><span id="L264"></span>
+<div class="ln">6.260–264</div>
+<p class="ja">侍女たちと一緒に騾馬と車の後ろを歩いてください。私が先を行きます。ですが町に入ろうというときには ── 町のまわりには高い城壁が巡っていて、町の両側に美しい港があり、入口は狭く、反り返った船が</p>
+<p class="grc">τόφρα σὺν ἀμφιπόλοισι μεθʼ ἡμιόνους καὶ ἄμαξαν / καρπαλίμως ἔρχεσθαι· ἐγὼ δʼ ὁδὸν ἡγεμονεύσω. / αὐτὰρ ἐπὴν πόλιος ἐπιβήομεν, ἣν πέρι πύργος / ὑψηλός, καλὸς δὲ λιμὴν ἑκάτερθε πόληος, / λεπτὴ δʼ εἰσίθμη· νῆες δʼ ὁδὸν ἀμφιέλισσαι</p>
+<p class="eng">with the handmaids behind the mules and the wagon, and I will lead the way. But when we are about to enter the city, around which runs a lofty wall,—a fair harbor lies on either side of the city and the entrance is narrow, and curved ships</p>
+</div>
+<div class="unit"><span id="L265"></span><span id="L266"></span><span id="L267"></span><span id="L268"></span><span id="L269"></span>
+<div class="ln">6.265–269</div>
+<p class="ja">道に沿って引き上げてあります。誰もが自分の船の置き場を一つずつ持っているのです。そこにはまた、ポセイドンの美しい神殿のまわりに集会の場があります。地に深く据えた巨石で組んだ神殿です。ここで男たちは黒い船の艤装にいそしみます。綱と帆とに。そしてここで薄い櫂の羽根を削るのです。</p>
+<p class="grc">εἰρύαται· πᾶσιν γὰρ ἐπίστιόν ἐστιν ἑκάστῳ. / ἔνθα δέ τέ σφʼ ἀγορὴ καλὸν Ποσιδήιον ἀμφίς, / ῥυτοῖσιν λάεσσι κατωρυχέεσσʼ ἀραρυῖα. / ἔνθα δὲ νηῶν ὅπλα μελαινάων ἀλέγουσι, / πείσματα καὶ σπεῖρα, καὶ ἀποξύνουσιν ἐρετμά.</p>
+<p class="eng">are drawn up along the road, for they all have stations for their ships, each man one for himself. There, too, is their place of assembly about the fair temple of Poseidon, fitted with huge stones set deep in the earth. Here the men are busied with the tackle of their black ships, with cables and sails, and here they shape the thin oar-blades.</p>
+</div>
+<div class="unit"><span id="L270"></span><span id="L271"></span><span id="L272"></span><span id="L273"></span><span id="L274"></span>
+<div class="ln">6.270–274</div>
+<p class="ja">パイエケス人は弓にも箙にも心を寄せず、船の帆柱と櫂に、そして均整のとれた船に心を寄せます。それを喜びとして灰色の海を渡るのです。私が避けたいのは、その人たちの慎みのない口です。あとで誰かに嘲られたくありません。この地には無礼な者たちがいますから。</p>
+<p class="grc">οὐ γὰρ Φαιήκεσσι μέλει βιὸς οὐδὲ φαρέτρη, / ἀλλʼ ἱστοὶ καὶ ἐρετμὰ νεῶν καὶ νῆες ἐῖσαι, / ᾗσιν ἀγαλλόμενοι πολιὴν περόωσι θάλασσαν. / τῶν ἀλεείνω φῆμιν ἀδευκέα, μή τις ὀπίσσω / μωμεύῃ· μάλα δʼ εἰσὶν ὑπερφίαλοι κατὰ δῆμον·</p>
+<p class="eng">For the Phaeacians care not for bow or quiver, but for masts and oars of ships, and for the shapely ships, rejoicing in which they cross over the grey sea. It is their ungentle speech that I shun, lest hereafter some man should taunt me, for indeed there are insolent folk in the land,</p>
+</div>
+<div class="unit"><span id="L275"></span><span id="L276"></span><span id="L277"></span><span id="L278"></span><span id="L279"></span>
+<div class="ln">6.275–279</div>
+<p class="ja">そして卑しい男が私たちに出会えば、こう言うかもしれません。『ナウシカアに従っているあの男は誰だ。見目よく背の高い、よそ者だぞ。どこで見つけたのだ。きっと夫にするのだろう。船から連れて来たどこか遠くの民のさすらい人か ── 近くには誰も住んでいないのだから ──',</p>
+<p class="grc">καί νύ τις ὧδʼ εἴπῃσι κακώτερος ἀντιβολήσας· / τίς δʼ ὅδε Ναυσικάᾳ ἕπεται καλός τε μέγας τε / ξεῖνος; ποῦ δέ μιν εὗρε; πόσις νύ οἱ ἔσσεται αὐτῇ. / ἦ τινά που πλαγχθέντα κομίσσατο ἧς ἀπὸ νηὸς / ἀνδρῶν τηλεδαπῶν, ἐπεὶ οὔ τινες ἐγγύθεν εἰσίν·</p>
+<p class="eng">and thus might some baser fellow say, shall he meet us: ‘Who is this that follows Nausicaa, a comely man and tall, a stranger? Where did she find him? He will doubtless be a husband for her. Haply she has brought from his ship some wanderer of a folk that dwell afar—for none are near us—</p>
+</div>
+<div class="unit"><span id="L280"></span><span id="L281"></span><span id="L282"></span><span id="L283"></span><span id="L284"></span>
+<div class="ln">6.280–284</div>
+<p class="ja">『それとも長く祈り求めていた神が、祈りに応えて天から降りて来たのか。そして生涯その人を夫にするのだろう。そのほうがましだ。自分から出かけて他所の民から夫を見つけて来たとしてもな。まったくあの女は、この地のパイエケス人を見下しているのだ。高貴な求婚者が数多くいるというのに』。</p>
+<p class="grc">ἤ τίς οἱ εὐξαμένῃ πολυάρητος θεὸς ἦλθεν / οὐρανόθεν καταβάς, ἕξει δέ μιν ἤματα πάντα. / βέλτερον, εἰ καὐτή περ ἐποιχομένη πόσιν εὗρεν / ἄλλοθεν· ἦ γὰρ τούσδε γʼ ἀτιμάζει κατὰ δῆμον / Φαίηκας, τοί μιν μνῶνται πολέες τε καὶ ἐσθλοί.</p>
+<p class="eng">or some god, long prayed-for, has come down from heaven in answer to her prayers, and she will have him as her husband all her days. Better so, even if she has herself gone forth and found a husband from another people; for of a truth she scorns the Phaeacians here in the land, where she has wooers many and noble!’</p>
+</div>
+<div class="unit"><span id="L285"></span><span id="L286"></span><span id="L287"></span><span id="L288"></span><span id="L289"></span>
+<div class="ln">6.285–289</div>
+<p class="ja">そんなふうに言われるでしょう。そしてそれは私への非難となります。私自身、他の乙女がそんなことをすれば咎めるでしょう。愛する父と母がまだ生きているのに、その意に逆らって、公の婚礼の日を待たずに男と連れ立つようなことをすれば。ですから客人よ、どうか私の言うことを速やかに聞き入れてください。一刻も早く</p>
+<p class="grc">ὣς ἐρέουσιν, ἐμοὶ δέ κʼ ὀνείδεα ταῦτα γένοιτο. / καὶ δʼ ἄλλῃ νεμεσῶ, ἥ τις τοιαῦτά γε ῥέζοι, / ἥ τʼ ἀέκητι φίλων πατρὸς καὶ μητρὸς ἐόντων, / ἀνδράσι μίσγηται, πρίν γʼ ἀμφάδιον γάμον ἐλθεῖν. / ξεῖνε, σὺ δʼ ὦκʼ ἐμέθεν ξυνίει ἔπος, ὄφρα τάχιστα</p>
+<p class="eng">So will they say, and this would become a reproach to me. Yea, I would myself blame another maiden who should do such thing, and in despite of her dear father and mother, while yet they live, should consort with men before the day of open marriage. Nay, stranger, do thou quickly hearken to my words, that with all speed</p>
+</div>
+<div class="unit"><span id="L290"></span><span id="L291"></span><span id="L292"></span><span id="L293"></span><span id="L294"></span>
+<div class="ln">6.290–294</div>
+<p class="ja">父から送りの手立てと故郷への帰路とを得られるように。道のすぐそばにアテナの立派な森が見つかります。白楊の木立です。その中には泉が湧き、まわりは草地になっています。そこが父の園で、実り豊かな葡萄畑です。町からは、人が叫べば声の届くほどの隔たりです。</p>
+<p class="grc">πομπῆς καὶ νόστοιο τύχῃς παρὰ πατρὸς ἐμοῖο. / δήεις ἀγλαὸν ἄλσος Ἀθήνης ἄγχι κελεύθου / αἰγείρων· ἐν δὲ κρήνη νάει, ἀμφὶ δὲ λειμών· / ἔνθα δὲ πατρὸς ἐμοῦ τέμενος τεθαλυῖά τʼ ἀλωή, / τόσσον ἀπὸ πτόλιος, ὅσσον τε γέγωνε βοήσας.</p>
+<p class="eng">thou mayest win from my father an escort and a return to thy land. Thou wilt find a goodly grove of Athena hard by the road, a grove of poplar trees. In it a spring wells up, and round about is a meadow. There is my father's park and fruitful vineyard, as far from the city as a man's voice carries when he shouts.</p>
+</div>
+<div class="unit"><span id="L295"></span><span id="L296"></span><span id="L297"></span><span id="L298"></span><span id="L299"></span>
+<div class="ln">6.295–299</div>
+<p class="ja">そこに腰を下ろして、しばらく待っていてください。私たちが町に着いて父の館にたどり着くまで。ですが私たちが館に着いたころだとお思いになったら、そのときパイエケス人の町へ入って、父の館を、心大きなアルキノオスの館を尋ねてください。</p>
+<p class="grc">ἔνθα καθεζόμενος μεῖναι χρόνον, εἰς ὅ κεν ἡμεῖς / ἄστυδε ἔλθωμεν καὶ ἱκώμεθα δώματα πατρός. / αὐτὰρ ἐπὴν ἡμέας ἔλπῃ ποτὶ δώματʼ ἀφῖχθαι, / καὶ τότε Φαιήκων ἴμεν ἐς πόλιν ἠδʼ ἐρέεσθαι / δώματα πατρὸς ἐμοῦ μεγαλήτορος Ἀλκινόοιο.</p>
+<p class="eng">Sit thou down there, and wait for a time, until we come to the city and reach the house of my father. But when thou thinkest that we have reached the house, then do thou go to the city of the Phaeacians and ask for the house of my father, great-hearted Alcinous.</p>
+</div>
+<div class="unit"><span id="L300"></span><span id="L301"></span><span id="L302"></span><span id="L303"></span><span id="L304"></span>
+<div class="ln">6.300–304</div>
+<p class="ja">たやすく分かりますし、子供でも案内できるでしょう。ほんの幼子でも。パイエケス人の家は、アルキノオスの君の宮居のような造りではまるでありませんから。ですが館と中庭があなたを囲んだら、大広間を速やかに通り抜けてください。そしてたどり着くのです、</p>
+<p class="grc">ῥεῖα δʼ ἀρίγνωτʼ ἐστί, καὶ ἂν πάϊς ἡγήσαιτο / νήπιος· οὐ μὲν γάρ τι ἐοικότα τοῖσι τέτυκται / δώματα Φαιήκων, οἷος δόμος Ἀλκινόοιο / ἥρωος. ἀλλʼ ὁπότʼ ἄν σε δόμοι κεκύθωσι καὶ αὐλή, / ὦκα μάλα μεγάροιο διελθέμεν, ὄφρʼ ἂν ἵκηαι</p>
+<p class="eng">Easily may it be known, and a child could guide thee, a mere babe; for the houses of the Phaeacians are no wise built of such sort as is the palace of the lord Alcinous. But when the house and the court enclose thee, pass quickly through the great hall, till thou comest</p>
+</div>
+<div class="unit"><span id="L305"></span><span id="L306"></span><span id="L307"></span><span id="L308"></span><span id="L309"></span>
+<div class="ln">6.305–309</div>
+<p class="ja">私の母のもとへ。母は炉のそばに、火の明かりの中に座って、紫の糸を紡いでいます。目を見張るほどの手際で、柱にもたれて。その後ろには侍女たちが座っています。そしてその同じ柱にもたれて、父の座も据えてあります。そこに座って葡萄酒を飲むのです。不死の神のような姿で。</p>
+<p class="grc">μητέρʼ ἐμήν· ἡ δʼ ἧσται ἐπʼ ἐσχάρῃ ἐν πυρὸς αὐγῇ, / ἠλάκατα στρωφῶσʼ ἁλιπόρφυρα, θαῦμα ἰδέσθαι, / κίονι κεκλιμένη· δμωαὶ δέ οἱ εἵατʼ ὄπισθεν. / ἔνθα δὲ πατρὸς ἐμοῖο θρόνος ποτικέκλιται αὐτῇ, / τῷ ὅ γε οἰνοποτάζει ἐφήμενος ἀθάνατος ὥς.</p>
+<p class="eng">to my mother, who sits at the hearth in the light of the fire, spinning the purple yarn, a wonder to behold, leaning against a pillar, and her handmaids sit behind her. There, too, leaning against the selfsame pillar, is set the throne of my father, whereon he sits and quaffs his wine, like unto an immortal.</p>
+</div>
+<div class="unit"><span id="L310"></span><span id="L311"></span><span id="L312"></span><span id="L313"></span><span id="L314"></span>
+<div class="ln">6.310–314</div>
+<p class="ja">その父の前は通り過ぎて、母の膝に両手をかけてください。そうすればどれほど遠くから来られたのであれ、帰りの日を速やかに喜んで見ることになるでしょう。あの方が心のうちで好意を寄せてくださるなら、そのときは親しい者たちに会える望みがあり、帰り着けるのです。</p>
+<p class="grc">τὸν παραμειψάμενος μητρὸς περὶ γούνασι χεῖρας / βάλλειν ἡμετέρης, ἵνα νόστιμον ἦμαρ ἴδηαι / χαίρων καρπαλίμως, εἰ καὶ μάλα τηλόθεν ἐσσί. / εἴ κέν τοι κείνη γε φίλα φρονέῃσʼ ἐνὶ θυμῷ, / ἐλπωρή τοι ἔπειτα φίλους τʼ ἰδέειν καὶ ἱκέσθαι</p>
+<p class="eng">Him pass thou by, and cast thy hands about my mother's knees, that thou mayest quickly see with rejoicing the day of thy return, though thou art come from never so far. If in her sight thou dost win favour, then there is hope that thou wilt see thy friends, and return</p>
+</div>
+<div class="unit"><span id="L315"></span><span id="L316"></span><span id="L317"></span><span id="L318"></span><span id="L319"></span>
+<div class="ln">6.315–319</div>
+<p class="ja">よく築かれた家へ、そして故郷の地へ」。こう言って、彼女は輝く鞭で騾馬を打った。騾馬はたちまち河の流れを後にした。よく駆け、よく足を運んだ。そして彼女は気を配って手綱を操った。</p>
+<p class="grc">οἶκον ἐυκτίμενον καὶ σὴν ἐς πατρίδα γαῖαν. / ὣς ἄρα φωνήσασʼ ἵμασεν μάστιγι φαεινῇ / ἡμιόνους· αἱ δʼ ὦκα λίπον ποταμοῖο ῥέεθρα. / αἱ δʼ ἐὺ μὲν τρώχων, ἐὺ δὲ πλίσσοντο πόδεσσιν· / ἡ δὲ μάλʼ ἡνιόχευεν, ὅπως ἅμʼ ἑποίατο πεζοὶ</p>
+<p class="eng">to thy well-built house and unto thy native land.” So saying, she smote the mules with the shining whip, and they quickly left the streams of the river. Well did they trot, well did they ply their ambling feet, and she drove with care that</p>
+</div>
+<div class="unit"><span id="L320"></span><span id="L321"></span><span id="L322"></span><span id="L323"></span><span id="L324"></span><span id="L325"></span><span id="L326"></span><span id="L327"></span><span id="L328"></span><span id="L329"></span>
+<div class="ln">6.320–329</div>
+<p class="ja">侍女たちとオデュッセウスが歩いて付いて来られるように。加減を見ながら鞭を当てたのである。やがて日が沈み、一行はアテナに捧げられた輝かしい森に着いた。そこにオデュッセウスは腰を下ろし、ただちに大いなるゼウスの娘に祈った。「聞いてください、アイギスを持つゼウスの子、アトリュトネよ。今こそ私の祈りをお聞きください。以前、私が打たれたときには聞いてくださらなかったのですから。輝かしい大地を揺るがす神が私を打ったあのときには。どうかパイエケス人のもとへ、迎えられ憐れまれる者として着けますように」。こう祈ると、パラス・アテナはそれを聞き入れた。だがまだ面と向かって姿を現しはしなかった。恐れていたからである、</p>
+<p class="grc">ἀμφίπολοί τʼ Ὀδυσεύς τε, νόῳ δʼ ἐπέβαλλεν ἱμάσθλην. / δύσετό τʼ ἠέλιος καὶ τοὶ κλυτὸν ἄλσος ἵκοντο / ἱρὸν Ἀθηναίης, ἵνʼ ἄρʼ ἕζετο δῖος Ὀδυσσεύς. / αὐτίκʼ ἔπειτʼ ἠρᾶτο Διὸς κούρῃ μεγάλοιο· / κλῦθί μευ, αἰγιόχοιο Διὸς τέκος, Ἀτρυτώνη· / νῦν δή πέρ μευ ἄκουσον, ἐπεὶ πάρος οὔ ποτʼ ἄκουσας / ῥαιομένου, ὅτε μʼ ἔρραιε κλυτὸς ἐννοσίγαιος. / δός μʼ ἐς Φαίηκας φίλον ἐλθεῖν ἠδʼ ἐλεεινόν. / ὣς ἔφατʼ εὐχόμενος, τοῦ δʼ ἔκλυε Παλλὰς Ἀθήνη. / αὐτῷ δʼ οὔ πω φαίνετʼ ἐναντίη· αἴδετο γάρ ῥα</p>
+<p class="eng">the maidens and Odysseus might follow on foot, and with judgment did she ply the lash. Then the sun set, and they came to the glorious grove, sacred to Athena. There Odysseus sat him down, and straightway prayed to the daughter of great Zeus: “Hear me, child of aegis-bearing Zeus, unwearied one. Hearken now to my prayer, since aforetime thou didst not hearken when I was smitten, what time the glorious Earth-shaker smote me. Grant that I may come to the Phaeacians as one to be welcomed and to be pitied.” So he spoke in prayer, and Pallas Athena heard him; but she did not yet appear to him face to face, for she feared</p>
+</div>
+<div class="unit"><span id="L330"></span><span id="L331"></span>
+<div class="ln">6.330–331</div>
+<p class="ja">父の兄弟を。その神は神にも似たオデュッセウスに対して猛り狂いつづけていた。ついに彼が自分の地に帰り着くまで。</p>
+<p class="grc">πατροκασίγνητον· ὁ δʼ ἐπιζαφελῶς μενέαινεν / ἀντιθέῳ Ὀδυσῆι πάρος ἣν γαῖαν ἱκέσθαι.</p>
+<p class="eng">her father's brother; but he furiously raged against godlike Odysseus, until at length he reached his own land.</p>
+</div>
+</main>
+<footer>
+  <p><a href="https://github.com/twill3c/uta-gaeshi/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a> © 2026 坂田哲朗
+  ・ <a href="https://github.com/twill3c/uta-gaeshi" target="_blank" rel="noopener">GitHub</a>
+  ・ <a href="../about.html">出典と作り方</a>
+  ・ 本文データ CC BY-SA 3.0 US（Perseus Digital Library）
+  ・ <a href="https://app-menu-amber.vercel.app" target="_blank" rel="noopener">App Menu</a></p>
+</footer>
+</body>
+</html>

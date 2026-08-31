@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>第5巻 — 歌返し</title>
+<style>
+:root{--bg:#fbfaf7;--fg:#1c1a17;--sub:#6b6459;--line:#ddd6c9;--acc:#7a5c3e;--mark:#f0e6d2}
+*{box-sizing:border-box}
+body{margin:0;padding:0 0 3.2rem;background:var(--bg);color:var(--fg);
+ font-family:"Hiragino Mincho ProN","Yu Mincho",serif;line-height:1.85}
+header{border-bottom:1px solid var(--line);padding:1.1rem 1rem .9rem}
+header h1{margin:0;font-size:1.35rem;letter-spacing:.04em}
+header h1 .en{font-size:.62rem;color:var(--sub);margin-left:.6rem;letter-spacing:.14em}
+header p{margin:.35rem 0 0;font-size:.8rem;color:var(--sub)}
+nav{padding:.5rem 1rem;border-bottom:1px solid var(--line);font-size:.85rem}
+nav a{color:var(--acc);text-decoration:none;margin-right:1rem}
+nav a:hover{text-decoration:underline}
+main{max-width:56rem;margin:0 auto;padding:1.2rem 1rem}
+h2{font-size:1.05rem;margin:1.8rem 0 .6rem;border-left:3px solid var(--acc);padding-left:.5rem}
+table{border-collapse:collapse;width:100%;font-size:.85rem}
+th,td{border-bottom:1px solid var(--line);padding:.35rem .5rem;text-align:left;vertical-align:top}
+th{color:var(--sub);font-weight:normal;white-space:nowrap}
+.unit{margin:0 0 1.4rem;padding-top:.3rem}
+.ln{font-size:.7rem;color:var(--sub);letter-spacing:.05em}
+.ja{margin:.15rem 0 0}
+.grc,.eng{margin:.3rem 0 0;font-size:.82rem;color:var(--sub)}
+.grc{font-family:"Palatino Linotype",Palatino,serif}
+.untranslated{color:var(--sub);font-style:italic}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(7.2rem,1fr));gap:.4rem}
+.grid a{display:block;border:1px solid var(--line);border-radius:3px;padding:.45rem .5rem;
+ text-decoration:none;color:var(--fg);font-size:.85rem;background:#fff}
+.grid a .st{display:block;font-size:.68rem;color:var(--sub);margin-top:.15rem}
+.grid a.done{border-color:var(--acc)}
+.note{font-size:.8rem;color:var(--sub);background:#fff;border:1px solid var(--line);
+ border-radius:3px;padding:.6rem .8rem;margin:.8rem 0}
+.tier1{color:#2c5f2d}.tier2{color:#8a6d1f}.tier3{color:#8a3324}
+mark{background:var(--mark)}
+.modes{font-size:.8rem;color:var(--sub);margin:.2rem 0 1rem}
+.modes button{font:inherit;font-size:.8rem;border:1px solid var(--line);background:#fff;
+ color:var(--fg);border-radius:3px;padding:.2rem .55rem;margin-right:.3rem;cursor:pointer}
+.modes button[aria-pressed=true]{border-color:var(--acc);background:var(--mark)}
+body.hide-grc .grc{display:none}
+body.hide-eng .eng{display:none}
+footer{position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--bg);
+ border-top:1px solid var(--line);color:var(--sub);font-size:.75rem;text-align:center;
+ padding:.5rem 1rem;white-space:nowrap;overflow-x:auto}
+footer p{display:inline;margin:0}
+footer a{color:var(--sub)}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+ var b=document.body,btns=document.querySelectorAll('.modes button');
+ function set(m){b.classList.toggle('hide-grc',m!=='all');
+  b.classList.toggle('hide-eng',m==='ja');
+  btns.forEach(function(x){x.setAttribute('aria-pressed',String(x.dataset.mode===m))});}
+ btns.forEach(function(x){x.addEventListener('click',function(){set(x.dataset.mode)})});
+ set('ja');});
+</script></head>
+<body>
+<nav><a href="../index.html">目次</a><a href="../formula.html">定型句</a><a href="../person.html">登場者</a><a href="../place.html">地名</a><a href="../about.html">出典と作り方</a></nav>
+<main>
+<h2>第 5 巻</h2>
+<div class="modes">表示：<button type="button" data-mode="ja" aria-pressed="true">和</button><button type="button" data-mode="jaeng" aria-pressed="false">和英</button><button type="button" data-mode="all" aria-pressed="false">希和英</button></div>
+<div class="unit"><span id="L1"></span><span id="L2"></span><span id="L3"></span><span id="L4"></span>
+<div class="ln">5.1–4</div>
+<p class="ja">さて暁は、貴いティトノスのかたわらの臥所から起き上がった。不死の神々に、また死すべき人間に光を運ぶために。そして神々は評議の席に着こうとしていた。その中には高みで雷を鳴らすゼウスもいた。その力は何にもまさる。</p>
+<p class="grc">Ἠὼς δʼ ἐκ λεχέων παρʼ ἀγαυοῦ Τιθωνοῖο / ὤρνυθʼ, ἵνʼ ἀθανάτοισι φόως φέροι ἠδὲ βροτοῖσιν· / οἱ δὲ θεοὶ θῶκόνδε καθίζανον, ἐν δʼ ἄρα τοῖσι / Ζεὺς ὑψιβρεμέτης, οὗ τε κράτος ἐστὶ μέγιστον.</p>
+<p class="eng">Now Dawn arose from her couch from beside lordly Tithonus, to bear light to the immortals and to mortal men. And the gods were sitting down to council, and among them Zeus, who thunders on high, whose might is supreme.</p>
+</div>
+<div class="unit"><span id="L5"></span><span id="L6"></span><span id="L7"></span><span id="L8"></span><span id="L9"></span>
+<div class="ln">5.5–9</div>
+<p class="ja">その神々に向かってアテナは、オデュッセウスの数多の禍いを思い起こしながら数え上げていた。あの人が妖精の住処に留まっていることが心にかかっていたのである。「父ゼウスよ、永遠にいます幸いなる神々よ。これから先、笏を持つ王が進んで心優しく穏やかであろうとすることはありますまい。心に正しきことを顧みることも。</p>
+<p class="grc">τοῖσι δʼ Ἀθηναίη λέγε κήδεα πόλλʼ Ὀδυσῆος / μνησαμένη· μέλε γάρ οἱ ἐὼν ἐν δώμασι νύμφης· / Ζεῦ πάτερ ἠδʼ ἄλλοι μάκαρες θεοὶ αἰὲν ἐόντες, / μή τις ἔτι πρόφρων ἀγανὸς καὶ ἤπιος ἔστω / σκηπτοῦχος βασιλεύς, μηδὲ φρεσὶν αἴσιμα εἰδώς,</p>
+<p class="eng">To them Athena was recounting the many woes of Odysseus, as she called them to mind; for it troubled her that he abode in the dwelling of the nymph: “Father Zeus, and ye other blessed gods that are forever, never henceforward let sceptred king with a ready heart be kind and gentle, nor let him heed righteousness in his mind;</p>
+</div>
+<div class="unit"><span id="L10"></span><span id="L11"></span><span id="L12"></span><span id="L13"></span><span id="L14"></span>
+<div class="ln">5.10–14</div>
+<p class="ja">むしろ常に手荒く、非道な振舞いをするがよいのです。誰一人として、神にも似たオデュッセウスを覚えていないのですから。自分が治めていた民に、父のように優しい人であったのに。あの人はまことに島にあって辛い苦しみを受けています。妖精カリュプソの館で。彼女が</p>
+<p class="grc">ἀλλʼ αἰεὶ χαλεπός τʼ εἴη καὶ αἴσυλα ῥέζοι· / ὡς οὔ τις μέμνηται Ὀδυσσῆος θείοιο / λαῶν οἷσιν ἄνασσε, πατὴρ δʼ ὣς ἤπιος ἦεν. / ἀλλʼ ὁ μὲν ἐν νήσῳ κεῖται κρατέρʼ ἄλγεα πάσχων / νύμφης ἐν μεγάροισι Καλυψοῦς, ἥ μιν ἀνάγκῃ</p>
+<p class="eng">but let him ever be harsh, and work unrighteousness, seeing that no one remembers divine Odysseus of the people whose lord he was; yet gentle was he as a father. He verily abides in an island suffering grievous pains, in the halls of the nymph Calypso, who</p>
+</div>
+<div class="unit"><span id="L15"></span><span id="L16"></span><span id="L17"></span><span id="L18"></span><span id="L19"></span>
+<div class="ln">5.15–19</div>
+<p class="ja">力ずくで留めているのです。そして彼は故郷の地に帰り着くことができずにいる。手もとには櫂ある船も仲間もいないのですから。海の広い背の上を送り届けてくれる者たちが。そして今また、あの人の愛する息子を帰路で討とうと企てている者たちがいます。父の消息を求めて出かけたのに。</p>
+<p class="grc">ἴσχει· ὁ δʼ οὐ δύναται ἣν πατρίδα γαῖαν ἱκέσθαι· / οὐ γάρ οἱ πάρα νῆες ἐπήρετμοι καὶ ἑταῖροι, / οἵ κέν μιν πέμποιεν ἐπʼ εὐρέα νῶτα θαλάσσης. / νῦν αὖ παῖδʼ ἀγαπητὸν ἀποκτεῖναι μεμάασιν / οἴκαδε νισόμενον· ὁ δʼ ἔβη μετὰ πατρὸς ἀκουὴν</p>
+<p class="eng">keeps him perforce; and he cannot return to his own land, for he has at hand no ships with oars and no comrades to send him on his way over the broad back of the sea. And now again they are minded to slay his well-loved son on his homeward way; for he went in quest of tidings of his father</p>
+</div>
+<div class="unit"><span id="L20"></span><span id="L21"></span><span id="L22"></span><span id="L23"></span><span id="L24"></span>
+<div class="ln">5.20–24</div>
+<p class="ja">聖なるピュロスと輝かしいラケダイモンへ」。すると雲を集めるゼウスが答えて言った。「我が子よ、何という言葉が歯の垣を越えて出たのか。この思案をあなた自身が立てたのではないか。オデュッセウスが帰って報いを取るというその企てを。</p>
+<p class="grc">ἐς Πύλον ἠγαθέην ἠδʼ ἐς Λακεδαίμονα δῖαν. / τὴν δʼ ἀπαμειβόμενος προσέφη νεφεληγερέτα Ζεύς· / τέκνον ἐμόν, ποῖόν σε ἔπος φύγεν ἕρκος ὀδόντων. / οὐ γὰρ δὴ τοῦτον μὲν ἐβούλευσας νόον αὐτή, / ὡς ἦ τοι κείνους Ὀδυσεὺς ἀποτίσεται ἐλθών;</p>
+<p class="eng">to sacred Pylos and to goodly Lacedaemon .” Then Zeus, the cloud-gatherer, answered her, and said: “My child, what a word has escaped the barrier of thy teeth! Didst thou not thyself devise this plan, that verily Odysseus might take vengeance on these men at his coming?</p>
+</div>
+<div class="unit"><span id="L25"></span><span id="L26"></span><span id="L27"></span><span id="L28"></span><span id="L29"></span>
+<div class="ln">5.25–29</div>
+<p class="ja">だがテレマコスについては、あなたが知恵をもって導いてやりなさい。あなたにはできるのだから。まったく無傷で故郷の地に着けるように。そして求婚者たちは目論見をくじかれて船で戻って来るように」。こう言って、彼は愛する息子ヘルメスに言った。「ヘルメスよ、お前は他の折にも我らの使者なのだから、</p>
+<p class="grc">Τηλέμαχον δὲ σὺ πέμψον ἐπισταμένως, δύνασαι γάρ, / ὥς κε μάλʼ ἀσκηθὴς ἣν πατρίδα γαῖαν ἵκηται, / μνηστῆρες δʼ ἐν νηὶ· παλιμπετὲς ἀπονέωνται. / ἦ ῥα καὶ Ἑρμείαν, υἱὸν φίλον, ἀντίον ηὔδα· / Ἑρμεία, σὺ γὰρ αὖτε τά τʼ ἄλλα περ ἄγγελός ἐσσι,</p>
+<p class="eng">But concerning Telemachus, do thou guide him in thy wisdom, for thou canst, that all unscathed he may reach his native land, and the wooers may come back in their ship baffled in their purpose.” He spoke, and said to Hermes, his dear son:“Hermes, do thou now, seeing that thou art at other times our messenger,</p>
+</div>
+<div class="unit"><span id="L30"></span><span id="L31"></span><span id="L32"></span><span id="L33"></span><span id="L34"></span>
+<div class="ln">5.30–34</div>
+<p class="ja">髪美しい妖精に我らの定めた決意を告げよ。すなわち忍耐強いオデュッセウスの帰還を。神々の導きも死すべき人間の導きもなしに帰るのだ。頑丈に組んだ筏に乗って、苦しみを受けながら、二十日目に土深いスケリアに着くように。</p>
+<p class="grc">νύμφῃ ἐυπλοκάμῳ εἰπεῖν νημερτέα βουλήν, / νόστον Ὀδυσσῆος ταλασίφρονος, ὥς κε νέηται / οὔτε θεῶν πομπῇ οὔτε θνητῶν ἀνθρώπων· / ἀλλʼ ὅ γʼ ἐπὶ σχεδίης πολυδέσμου πήματα πάσχων / ἤματί κʼ εἰκοστῷ Σχερίην ἐρίβωλον ἵκοιτο,</p>
+<p class="eng">declare to the fair-tressed nymph our fixed resolve, even the return of Odysseus of the steadfast heart, that he may return with guidance neither of gods nor of mortal men, but that on a stoutly-bound raft, suffering woes, he may come on the twentieth day to deep-soiled Scheria ,</p>
+</div>
+<div class="unit"><span id="L35"></span><span id="L36"></span><span id="L37"></span><span id="L38"></span><span id="L39"></span>
+<div class="ln">5.35–39</div>
+<p class="ja">神に近い生まれのパイエケス人の地へ。彼らは心から、あの人を神であるかのように敬い、船で愛する故郷の地へ送り届けるだろう。青銅と黄金と衣とをふんだんに与えて。オデュッセウスがトロイアから持ち帰ったであろう以上に数多く。</p>
+<p class="grc">Φαιήκων ἐς γαῖαν, οἳ ἀγχίθεοι γεγάασιν, / οἵ κέν μιν περὶ κῆρι θεὸν ὣς τιμήσουσιν, / πέμψουσιν δʼ ἐν νηὶ φίλην ἐς πατρίδα γαῖαν, / χαλκόν τε χρυσόν τε ἅλις ἐσθῆτά τε δόντες, / πόλλʼ, ὅσʼ ἂν οὐδέ ποτε Τροίης ἐξήρατʼ Ὀδυσσεύς,</p>
+<p class="eng">the land of the Phaeacians, who are near of kin to the gods. These shall heartily shew him all honor, as if he were a god, and shall send him in a ship to his dear native land, after giving him stores of bronze and gold and raiment, more than Odysseus would ever have won for himself from Troy ,</p>
+</div>
+<div class="unit"><span id="L40"></span><span id="L41"></span><span id="L42"></span><span id="L43"></span><span id="L44"></span>
+<div class="ln">5.40–44</div>
+<p class="ja">無事に帰り、戦利品の分け前を得ていたとしても、それ以上に。こうして親しい者たちに会い、高い屋根の家と故郷の地に帰り着くことが、あの人の定めなのだから」。こう言うと、使者アルゲイポンテスは聞き従うことを怠らなかった。ただちに足もとに美しい履を結わえた。</p>
+<p class="grc">εἴ περ ἀπήμων ἦλθε, λαχὼν ἀπὸ ληίδος αἶσαν. / ὣς γάρ οἱ μοῖρʼ ἐστὶ φίλους τʼ ἰδέειν καὶ ἱκέσθαι / οἶκον ἐς ὑψόροφον καὶ ἑὴν ἐς πατρίδα γαῖαν. / ὣς ἔφατʼ, οὐδʼ ἀπίθησε διάκτορος ἀργεϊφόντης. / αὐτίκʼ ἔπειθʼ ὑπὸ ποσσὶν ἐδήσατο καλὰ πέδιλα,</p>
+<p class="eng">if he had returned unscathed with his due share of the spoil. For in this wise it is his fate to see his friends, and reach his high-roofed house and his native land.” So he spoke, and the messenger, Argeiphontes, failed not to hearken. Straightway he bound beneath his feet his beautiful sandals,</p>
+</div>
+<div class="unit"><span id="L45"></span><span id="L46"></span><span id="L47"></span><span id="L48"></span><span id="L49"></span>
+<div class="ln">5.45–49</div>
+<p class="ja">朽ちぬ黄金の履、それは海の水の上も、果てしない大地の上も、風の息吹のように速く彼を運ぶものであった。そして杖を取った。それで望む者の目を閉じ、また眠る者を呼び覚まし、目を開かせるものである。それを手に、力あるアルゲイポンテスは翔けた。</p>
+<p class="grc">ἀμβρόσια χρύσεια, τά μιν φέρον ἠμὲν ἐφʼ ὑγρὴν / ἠδʼ ἐπʼ ἀπείρονα γαῖαν ἅμα πνοιῇς ἀνέμοιο. / εἵλετο δὲ ῥάβδον, τῇ τʼ ἀνδρῶν ὄμματα θέλγει, / ὧν ἐθέλει, τοὺς δʼ αὖτε καὶ ὑπνώοντας ἐγείρει. / τὴν μετὰ χερσὶν ἔχων πέτετο κρατὺς ἀργεϊφόντης.</p>
+<p class="eng">immortal, golden, which were wont to bear him over the waters of the sea and over the boundless land swift as the blasts of the wind. And he took the wand wherewith he lulls to sleep the eyes of whom he will, while others again he awakens even out of slumber. With this in his hand the strong Argeiphontes flew.</p>
+</div>
+<div class="unit"><span id="L50"></span><span id="L51"></span><span id="L52"></span><span id="L53"></span><span id="L54"></span>
+<div class="ln">5.50–54</div>
+<p class="ja">彼は上空からピエリエへ降り立ち、海へ舞い降りた。それから鳥のように波の上を疾った。鵜のように。休みなき海の恐ろしい淵の上で魚を求め、その厚い羽を潮に濡らす鳥のように。そのようにヘルメスは幾重にも重なる波の上を渡って行った。</p>
+<p class="grc">Πιερίην δʼ ἐπιβὰς ἐξ αἰθέρος ἔμπεσε πόντῳ· / σεύατʼ ἔπειτʼ ἐπὶ κῦμα λάρῳ ὄρνιθι ἐοικώς, / ὅς τε κατὰ δεινοὺς κόλπους ἁλὸς ἀτρυγέτοιο / ἰχθῦς ἀγρώσσων πυκινὰ πτερὰ δεύεται ἅλμῃ· / τῷ ἴκελος πολέεσσιν ὀχήσατο κύμασιν Ἑρμῆς.</p>
+<p class="eng">On to Pieria he stepped from the upper air, and swooped down upon the sea, and then sped over the wave like a bird, the cormorant, which in quest of fish over the dread gulfs of the unresting sea wets its thick plumage in the brine. In such wise did Hermes ride upon the multitudinous waves.</p>
+</div>
+<div class="unit"><span id="L55"></span><span id="L56"></span><span id="L57"></span><span id="L58"></span><span id="L59"></span>
+<div class="ln">5.55–59</div>
+<p class="ja">だが遠くにあるその島に着くと、菫色の海から陸へ上がり、歩いて行って大きな洞に着いた。そこに髪美しい妖精が住んでいたのである。そして中に彼女を見出した。炉には大きな火が燃えており、島の遠くまで香りが漂っていた。</p>
+<p class="grc">ἀλλʼ ὅτε δὴ τὴν νῆσον ἀφίκετο τηλόθʼ ἐοῦσαν, / ἔνθʼ ἐκ πόντου βὰς ἰοειδέος ἤπειρόνδε / ἤιεν, ὄφρα μέγα σπέος ἵκετο, τῷ ἔνι νύμφη / ναῖεν ἐυπλόκαμος· τὴν δʼ ἔνδοθι τέτμεν ἐοῦσαν. / πῦρ μὲν ἐπʼ ἐσχαρόφιν μέγα καίετο, τηλόσε δʼ ὀδμὴ</p>
+<p class="eng">But when he had reached the island which lay afar, then forth from the violet sea he came to land, and went his way until he came to a great cave, wherein dwelt the fair-tressed nymph; and he found her within. A great fire was burning on the hearth, and from afar over the isle there was a fragrance</p>
+</div>
+<div class="unit"><span id="L60"></span><span id="L61"></span><span id="L62"></span><span id="L63"></span><span id="L64"></span>
+<div class="ln">5.60–64</div>
+<p class="ja">割った杉と杜松の、燃える香りが。彼女は中で、甘い声で歌いながら機の前を行き来し、黄金の梭で織っていた。洞のまわりには豊かな森が茂っていた。榛と白楊と、香りよい糸杉が。</p>
+<p class="grc">κέδρου τʼ εὐκεάτοιο θύου τʼ ἀνὰ νῆσον ὀδώδει / δαιομένων· ἡ δʼ ἔνδον ἀοιδιάουσʼ ὀπὶ καλῇ / ἱστὸν ἐποιχομένη χρυσείῃ κερκίδʼ ὕφαινεν. / ὕλη δὲ σπέος ἀμφὶ πεφύκει τηλεθόωσα, / κλήθρη τʼ αἴγειρός τε καὶ εὐώδης κυπάρισσος.</p>
+<p class="eng">of cleft cedar and juniper, as they burned; but she within was singing with a sweet voice as she went to and fro before the loom, weaving with a golden shuttle. Round about the cave grew a luxuriant wood, alder and poplar and sweet-smelling cypress,</p>
+</div>
+<div class="unit"><span id="L65"></span><span id="L66"></span><span id="L67"></span><span id="L68"></span><span id="L69"></span>
+<div class="ln">5.65–69</div>
+<p class="ja">そこには翼の長い鳥が巣を作るのが常だった。梟と鷹と、囀る舌を持つ海鴉が。海で暮らしを立てる鳥たちである。そしてまさにそのうつろな洞のあたりには、園の葡萄の蔓が這い広がっていた。盛りの誇りを見せ、房を豊かに実らせて。</p>
+<p class="grc">ἔνθα δέ τʼ ὄρνιθες τανυσίπτεροι εὐνάζοντο, / σκῶπές τʼ ἴρηκές τε τανύγλωσσοί τε κορῶναι / εἰνάλιαι, τῇσίν τε θαλάσσια ἔργα μέμηλεν. / ἡ δʼ αὐτοῦ τετάνυστο περὶ σπείους γλαφυροῖο / ἡμερὶς ἡβώωσα, τεθήλει δὲ σταφυλῇσι.</p>
+<p class="eng">wherein birds long of wing were wont to nest, owls and falcons and sea-crows with chattering tongues, who ply their business on the sea. And right there about the hollow cave ran trailing a garden vine, in pride of its prime, richly laden with clusters.</p>
+</div>
+<div class="unit"><span id="L70"></span><span id="L71"></span><span id="L72"></span><span id="L73"></span><span id="L74"></span>
+<div class="ln">5.70–74</div>
+<p class="ja">そして四つの泉が並んで、澄んだ水を流していた。互いのすぐそばで、一つはこちらへ、一つはあちらへと向きを変えて。そのまわりには菫と芹の柔らかな草地が花咲いていた。そこへはたまたま来た不死の神でさえ、眺めて目を見張り、心を喜ばせたことだろう。</p>
+<p class="grc">κρῆναι δʼ ἑξείης πίσυρες ῥέον ὕδατι λευκῷ, / πλησίαι ἀλλήλων τετραμμέναι ἄλλυδις ἄλλη. / ἀμφὶ δὲ λειμῶνες μαλακοὶ ἴου ἠδὲ σελίνου / θήλεον. ἔνθα κʼ ἔπειτα καὶ ἀθάνατός περ ἐπελθὼν / θηήσαιτο ἰδὼν καὶ τερφθείη φρεσὶν ᾗσιν.</p>
+<p class="eng">And fountains four in a row were flowing with bright water hard by one another, turned one this way, one that. And round about soft meadows of violets and parsley were blooming. There even an immortal, who chanced to come, might gaze and marvel, and delight his soul;</p>
+</div>
+<div class="unit"><span id="L75"></span><span id="L76"></span><span id="L77"></span><span id="L78"></span><span id="L79"></span>
+<div class="ln">5.75–79</div>
+<p class="ja">そして使者アルゲイポンテスもそこに立って目を見張った。だが心ゆくまで見てのち、ただちに広い洞へ入って行った。美しい女神カリュプソは、面と向かって見たとき、彼が誰か分からぬことはなかった。</p>
+<p class="grc">ἔνθα στὰς θηεῖτο διάκτορος ἀργεϊφόντης. / αὐτὰρ ἐπεὶ δὴ πάντα ἑῷ θηήσατο θυμῷ, / αὐτίκʼ ἄρʼ εἰς εὐρὺ σπέος ἤλυθεν. οὐδέ μιν ἄντην / ἠγνοίησεν ἰδοῦσα Καλυψώ, δῖα θεάων· / οὐ γάρ τʼ ἀγνῶτες θεοὶ ἀλλήλοισι πέλονται</p>
+<p class="eng">and there the messenger Argeiphontes stood and marvelled. But when he had marvelled in his heart at all things, straightway he went into the wide cave; nor did Calypso, the beautiful goddess, fail to know him, when she saw him face to face; for not unknown are</p>
+</div>
+<div class="unit"><span id="L80"></span><span id="L81"></span><span id="L82"></span><span id="L83"></span><span id="L84"></span>
+<div class="ln">5.80–84</div>
+<p class="ja">不死の神々は互いに見知らぬということがない。たとえ一方が遠くの家に住んでいても。だが心大きなオデュッセウスは中にいなかった。いつものように岸辺に座って泣いていたのである。涙と呻きと苦しみとで心を苛みながら。そして休みなき海を眺め、実りなき海を眺めて涙を流しつづけていた。</p>
+<p class="grc">ἀθάνατοι, οὐδʼ εἴ τις ἀπόπροθι δώματα ναίει. / οὐδʼ ἄρʼ Ὀδυσσῆα μεγαλήτορα ἔνδον ἔτετμεν, / ἀλλʼ ὅ γʼ ἐπʼ ἀκτῆς κλαῖε καθήμενος, ἔνθα πάρος περ, / δάκρυσι καὶ στοναχῇσι καὶ ἄλγεσι θυμὸν ἐρέχθων. / πόντον ἐπʼ ἀτρύγετον δερκέσκετο δάκρυα λείβων.</p>
+<p class="eng">the immortal gods to one another, even though one dwells in a home far away. But the great-hearted Odysseus he found not within; for he sat weeping on the shore, as his wont had been, racking his soul with tears and groans and griefs, and he would look over the unresting sea, shedding tears.</p>
+</div>
+<div class="unit"><span id="L85"></span><span id="L86"></span><span id="L87"></span><span id="L88"></span><span id="L89"></span>
+<div class="ln">5.85–89</div>
+<p class="ja">美しい女神カリュプソは、輝く椅子にヘルメスを座らせてから問いかけた。「どうして、黄金の杖のヘルメスよ、来られたのですか。敬うべき、喜ばしい客人よ。これまで来る習いはなかったのに。お心にあることを仰ってください。私の心はそれを果たせと促しています。</p>
+<p class="grc">Ἑρμείαν δʼ ἐρέεινε Καλυψώ, δῖα θεάων, / ἐν θρόνῳ ἱδρύσασα φαεινῷ σιγαλόεντι· / τίπτε μοι, Ἑρμεία χρυσόρραπι, εἰλήλουθας / αἰδοῖός τε φίλος τε; πάρος γε μὲν οὔ τι θαμίζεις. / αὔδα ὅ τι φρονέεις· τελέσαι δέ με θυμὸς ἄνωγεν,</p>
+<p class="eng">And Calypso, the beautiful goddess, questioned Hermes, when she had made him sit on a bright shining chair: “Why, pray, Hermes of the golden wand, hast thou come, an honorable guest and welcome? heretofore thou hast not been wont to come. Speak what is in thy mind; my heart bids me fulfil it,</p>
+</div>
+<div class="unit"><span id="L90"></span><span id="L91"></span><span id="L92"></span><span id="L93"></span><span id="L94"></span>
+<div class="ln">5.90–94</div>
+<p class="ja">果たせることであり、果たしうることであるならば。ですがもう少しこちらへ。もてなしをお出ししましょう」。こう言って女神は、アンブロシアを盛った食卓を彼の前に据え、赤いネクタルを混ぜた。そこで使者アルゲイポンテスは飲み、食べた。</p>
+<p class="grc">εἰ δύναμαι τελέσαι γε καὶ εἰ τετελεσμένον ἐστίν. / ἀλλʼ ἕπεο προτέρω, ἵνα τοι πὰρ ξείνια θείω. / ὥς ἄρα φωνήσασα θεὰ παρέθηκε τράπεζαν / ἀμβροσίης πλήσασα, κέρασσε δὲ νέκταρ ἐρυθρόν. / αὐτὰρ ὁ πῖνε καὶ ἦσθε διάκτορος ἀργεϊφόντης.</p>
+<p class="eng">if fulfil it I can, and it is a thing that hath fulfillment. But follow me further, that I may set before thee entertainment.” So saying, the goddess set before him a table laden with ambrosia, and mixed the ruddy nectar. So he drank and ate, the messenger Argeiphontes.</p>
+</div>
+<div class="unit"><span id="L95"></span><span id="L96"></span><span id="L97"></span><span id="L98"></span><span id="L99"></span>
+<div class="ln">5.95–99</div>
+<p class="ja">さて食事で心を満たしてのち、彼は答えて彼女に語りかけた。「あなたは女神として、神である私に来訪の理由を問われる。ならば私は言葉を偽りなく申し上げよう。あなたがそう促されるのだから。私をここへ来させたのはゼウスだ。私の意に反して。</p>
+<p class="grc">αὐτὰρ ἐπεὶ δείπνησε καὶ ἤραρε θυμὸν ἐδωδῇ, / καὶ τότε δή μιν ἔπεσσιν ἀμειβόμενος προσέειπεν· / εἰρωτᾷς μʼ ἐλθόντα θεὰ θεόν· αὐτὰρ ἐγώ τοι / νημερτέως τὸν μῦθον ἐνισπήσω· κέλεαι γάρ. / Ζεὺς ἐμέ γʼ ἠνώγει δεῦρʼ ἐλθέμεν οὐκ ἐθέλοντα·</p>
+<p class="eng">But when he had dined and satisfied his soul with food, then he made answer, and addressed her, saying: “Thou, a goddess, dost question me, a god, upon my coming, and I will speak my word truly, since thou biddest me. It was Zeus who bade me come hither against my will.</p>
+</div>
+<div class="unit"><span id="L100"></span><span id="L101"></span><span id="L102"></span><span id="L103"></span><span id="L104"></span>
+<div class="ln">5.100–104</div>
+<p class="ja">誰が好きこのんでこれほど広い塩の海水の上を疾るものか。語りきれぬほど広い海を。ここには神々に犠牲と選り抜きの百牲を捧げる人間の町も近くにない。だが他の神が越えることも空しくすることもできないのだ。アイギスを持つゼウスの意志を。</p>
+<p class="grc">τίς δʼ ἂν ἑκὼν τοσσόνδε διαδράμοι ἁλμυρὸν ὕδωρ / ἄσπετον; οὐδέ τις ἄγχι βροτῶν πόλις, οἵ τε θεοῖσιν / ἱερά τε ῥέζουσι καὶ ἐξαίτους ἑκατόμβας. / ἀλλὰ μάλʼ οὔ πως ἔστι Διὸς νόον αἰγιόχοιο / οὔτε παρεξελθεῖν ἄλλον θεὸν οὔθʼ ἁλιῶσαι.</p>
+<p class="eng">Who of his own will would speed over so great space of salt sea-water, great past telling? Nor is there at hand any city of mortals who offer to the gods sacrifice and choice hecatombs. But it is in no wise possible for any other god to evade or make void the will of Zeus, who bears the aegis.</p>
+</div>
+<div class="unit"><span id="L105"></span><span id="L106"></span><span id="L107"></span><span id="L108"></span><span id="L109"></span>
+<div class="ln">5.105–109</div>
+<p class="ja">ゼウスが言うには、あなたのもとに一人の男がいる。プリアモスの都のまわりで九年のあいだ戦い、十年目に都を落として故郷へ発った武人たちすべてのうちで、最も不運な男が。だが帰路で彼らはアテナに対して罪を犯し、女神は彼らに悪しき風と長い波を送った。</p>
+<p class="grc">φησί τοι ἄνδρα παρεῖναι ὀιζυρώτατον ἄλλων, / τῶν ἀνδρῶν, οἳ ἄστυ πέρι Πριάμοιο μάχοντο / εἰνάετες, δεκάτῳ δὲ πόλιν πέρσαντες ἔβησαν / οἴκαδʼ· ἀτὰρ ἐν νόστῳ Ἀθηναίην ἀλίτοντο, / ἥ σφιν ἐπῶρσʼ ἄνεμόν τε κακὸν καὶ κύματα μακρά.</p>
+<p class="eng">He says that there is here with thee a man most wretched above all those warriors who around the city of Priam fought for nine years, and in the tenth year sacked the city and departed homeward. But on the way they sinned against Athena, and she sent upon them an evil wind and long waves.</p>
+</div>
+<div class="unit"><span id="L110"></span><span id="L111"></span><span id="L112"></span><span id="L113"></span><span id="L114"></span>
+<div class="ln">5.110–114</div>
+<p class="ja">そこで立派な仲間たちはみな滅び、彼については、風と波がここへこの人を運んで来たのだ。今その人を、ゼウスは一刻も早く送り出せとあなたに命じている。親しい者たちから遠くここで滅びるのは彼の定めではなく、親しい者たちに会い、</p>
+<p class="grc">ἔνθʼ ἄλλοι μὲν πάντες ἀπέφθιθεν ἐσθλοὶ ἑταῖροι, / τὸν δʼ ἄρα δεῦρʼ ἄνεμός τε φέρων καὶ κῦμα πέλασσε. / τὸν νῦν σʼ ἠνώγειν ἀποπεμπέμεν ὅττι τάχιστα· / οὐ γάρ οἱ τῇδʼ αἶσα φίλων ἀπονόσφιν ὀλέσθαι, / ἀλλʼ ἔτι οἱ μοῖρʼ ἐστὶ φίλους τʼ ἰδέειν καὶ ἱκέσθαι</p>
+<p class="eng">There all the rest of his goodly comrades perished, but as for him, the wind and the wave, as they bore him, brought him hither. Him now Zeus bids thee to send on his way with all speed, for it is not his fate to perish here far from his friends, but it is still his lot to see his friends and reach</p>
+</div>
+<div class="unit"><span id="L115"></span><span id="L116"></span><span id="L117"></span><span id="L118"></span><span id="L119"></span>
+<div class="ln">5.115–119</div>
+<p class="ja">高い屋根の家と故郷の地に帰り着くことが、なお彼の分け前なのだから」。こう言うと、美しい女神カリュプソは身を震わせ、翼ある言葉をかけた。「あなた方は無情です、神々よ。誰よりも早く妬まれる。女神が人と公然と交わることを、</p>
+<p class="grc">οἶκον ἐς ὑψόροφον καὶ ἑὴν ἐς πατρίδα γαῖαν. / ὣς φάτο, ῥίγησεν δὲ Καλυψώ, δῖα θεάων, / καί μιν φωνήσασʼ ἔπεα πτερόεντα προσηύδα· / σχέτλιοί ἐστε, θεοί, ζηλήμονες ἔξοχον ἄλλων, / οἵ τε θεαῖς ἀγάασθε παρʼ ἀνδράσιν εὐνάζεσθαι</p>
+<p class="eng">his high-roofed house and his native land.” So he spoke, and Calypso, the beautiful goddess, shuddered, and she spoke, and addressed him with winged words: “Cruel are ye, O ye gods, and quick to envy above all others, seeing that ye begrudge goddesses that they should mate with men</p>
+</div>
+<div class="unit"><span id="L120"></span><span id="L121"></span><span id="L122"></span><span id="L123"></span><span id="L124"></span>
+<div class="ln">5.120–124</div>
+<p class="ja">そんなにも惜しまれるのですから。死すべき者を愛しい床の伴侶とする女神があれば。薔薇の指の暁がオリオンを我がものとしたときもそうでした。安らかに暮らすあなた方は妬み、ついにオルテュギエで黄金の座の清らかなアルテミスが、穏やかな矢をもって襲い、討ち取ったのです。</p>
+<p class="grc">ἀμφαδίην, ἤν τίς τε φίλον ποιήσετʼ ἀκοίτην. / ὣς μὲν ὅτʼ Ὠρίωνʼ ἕλετο ῥοδοδάκτυλος Ἠώς, / τόφρα οἱ ἠγάασθε θεοὶ ῥεῖα ζώοντες, / ἧος ἐν Ὀρτυγίῃ χρυσόθρονος Ἄρτεμις ἁγνὴ / οἷς ἀγανοῖς βελέεσσιν ἐποιχομένη κατέπεφνεν.</p>
+<p class="eng">openly, if any takes a mortal as her dear bed-fellow. Thus, when rosy-fingered Dawn took to herself Orion, ye gods that live at ease begrudged her, till in Ortygia chaste Artemis of the golden throne assailed him with her gentle shafts and slew him.</p>
+</div>
+<div class="unit"><span id="L125"></span><span id="L126"></span><span id="L127"></span><span id="L128"></span><span id="L129"></span>
+<div class="ln">5.125–129</div>
+<p class="ja">髪美しいデメテルが情に負けて、三度耕した休閑地でイアシオンと愛を交わしたときもそうでした。ゼウスは長く知らずにはおらず、輝く雷霆で彼を打って殺したのです。そして今また同じように、あなた方は妬まれる、神々よ。死すべき人が私のもとに留まることを。</p>
+<p class="grc">ὣς δʼ ὁπότʼ Ἰασίωνι ἐυπλόκαμος Δημήτηρ, / ᾧ θυμῷ εἴξασα, μίγη φιλότητι καὶ εὐνῇ / νειῷ ἔνι τριπόλῳ· οὐδὲ δὴν ἦεν ἄπυστος / Ζεύς, ὅς μιν κατέπεφνε βαλὼν ἀργῆτι κεραυνῷ. / ὣς δʼ αὖ νῦν μοι ἄγασθε, θεοί, βροτὸν ἄνδρα παρεῖναι.</p>
+<p class="eng">Thus too, when fair-tressed Demeter, yielding to her passion, lay in love with Iasion in the thrice-ploughed fallow land, Zeus was not long without knowledge thereof, but smote him with his bright thunder-bolt and slew him. And even so again do ye now begrudge me, O ye gods, that a mortal man should abide with me.</p>
+</div>
+<div class="unit"><span id="L130"></span><span id="L131"></span><span id="L132"></span><span id="L133"></span><span id="L134"></span>
+<div class="ln">5.130–134</div>
+<p class="ja">私はあの人を救ったのです。竜骨にまたがって、たった一人でいたときに。ゼウスが輝く雷霆で速い船を打ち、葡萄色の海のただ中で打ち砕いたのですから。そこで立派な仲間たちはみな滅び、彼については、風と波がここへこの人を運んで来たのです。</p>
+<p class="grc">τὸν μὲν ἐγὼν ἐσάωσα περὶ τρόπιος βεβαῶτα / οἶον, ἐπεί οἱ νῆα θοὴν ἀργῆτι κεραυνῷ / Ζεὺς ἔλσας ἐκέασσε μέσῳ ἐνὶ οἴνοπι πόντῳ. / ἔνθʼ ἄλλοι μὲν πάντες ἀπέφθιθεν ἐσθλοὶ ἑταῖροι, / τὸν δʼ ἄρα δεῦρʼ ἄνεμός τε φέρων καὶ κῦμα πέλασσε.</p>
+<p class="eng">Him I saved when he was bestriding the keel and all alone, for Zeus had smitten his swift ship with his bright thunder-bolt, and had shattered it in the midst of the wine-dark sea. There all the rest of his goodly comrades perished, but as for him, the wind and the wave, as they bore him, brought him hither.</p>
+</div>
+<div class="unit"><span id="L135"></span><span id="L136"></span><span id="L137"></span><span id="L138"></span><span id="L139"></span>
+<div class="ln">5.135–139</div>
+<p class="ja">私はあの人を親切に迎え、食べ物を与え、不死で老いぬ者にすると言いました、いつまでも。ですが他の神が越えることも空しくすることもできない以上、アイギスを持つゼウスの意志を。ゼウスがそう命じ、指図するのなら、行かせましょう。</p>
+<p class="grc">τὸν μὲν ἐγὼ φίλεόν τε καὶ ἔτρεφον, ἠδὲ ἔφασκον / θήσειν ἀθάνατον καὶ ἀγήραον ἤματα πάντα. / ἀλλʼ ἐπεὶ οὔ πως ἔστι Διὸς νόον αἰγιόχοιο / οὔτε παρεξελθεῖν ἄλλον θεὸν οὔθʼ ἁλιῶσαι, / ἐρρέτω, εἴ μιν κεῖνος ἐποτρύνει καὶ ἀνώγει,</p>
+<p class="eng">Him I welcomed kindly and gave him food, and said that I would make him immortal and ageless all his days. But since it is in no wise possible for any other god to evade or make void the will of Zeus who bears the aegis, let him go his way, if Zeus thus orders and commands,</p>
+</div>
+<div class="unit"><span id="L140"></span><span id="L141"></span><span id="L142"></span><span id="L143"></span><span id="L144"></span>
+<div class="ln">5.140–144</div>
+<p class="ja">休みなき海の上を。ですが私が送り届けるのではありません。手もとには櫂ある船も、海の広い背の上を送り届けてくれる人たちもいないのですから。けれども快く助言はしましょう。何も隠さずに。まったく無傷で故郷の地に帰れるように」。</p>
+<p class="grc">πόντον ἐπʼ ἀτρύγετον· πέμψω δέ μιν οὔ πῃ ἐγώ γε· / οὐ γάρ μοι πάρα νῆες ἐπήρετμοι καὶ ἑταῖροι, / οἵ κέν μιν πέμποιεν ἐπʼ εὐρέα νῶτα θαλάσσης. / αὐτάρ οἱ πρόφρων ὑποθήσομαι, οὐδʼ ἐπικεύσω, / ὥς κε μάλʼ ἀσκηθὴς ἣν πατρίδα γαῖαν ἵκηται.</p>
+<p class="eng">over the unresting sea. But it is not I that shall give him convoy, for I have at hand no ships with oars and no men to send him on his way over the broad back of the sea. But with a ready heart will I give him counsel, and will hide naught, that all unscathed he may return to his native land.”</p>
+</div>
+<div class="unit"><span id="L145"></span><span id="L146"></span><span id="L147"></span><span id="L148"></span><span id="L149"></span>
+<div class="ln">5.145–149</div>
+<p class="ja">すると使者アルゲイポンテスがふたたび答えた。「では今すぐ送り出しなさい。ゼウスの怒りを恐れるがよい。あとで憤って、あなたに怒りを向けることのないように」。こう言って力あるアルゲイポンテスは去り、女王なる妖精は心大きなオデュッセウスのもとへ向かった。</p>
+<p class="grc">τὴν δʼ αὖτε προσέειπε διάκτορος ἀργεϊφόντης· / οὕτω νῦν ἀπόπεμπε, Διὸς δʼ ἐποπίζεο μῆνιν, / μή πώς τοι μετόπισθε κοτεσσάμενος χαλεπήνῃ. / ὣς ἄρα φωνήσας ἀπέβη κρατὺς ἀργεϊφόντης· / ἡ δʼ ἐπʼ Ὀδυσσῆα μεγαλήτορα πότνια νύμφη</p>
+<p class="eng">Then again the messenger Argeiphontes answered her: “Even so send him forth now, and beware of the wrath of Zeus, lest haply he wax wroth and visit his anger upon thee hereafter.” So saying, the strong Argeiphontes departed, and the queenly nymph went to the great-hearted Odysseus,</p>
+</div>
+<div class="unit"><span id="L150"></span><span id="L151"></span><span id="L152"></span><span id="L153"></span><span id="L154"></span>
+<div class="ln">5.150–154</div>
+<p class="ja">ゼウスの言伝を聞いたのち。彼女は岸辺に座っている彼を見出した。その目は涙に乾く間もなく、甘い命は流れ出ていくようであった。帰郷を悲しく恋い慕っていたのである。妖精はもう彼の目に好ましくはなかった。夜には確かに、やむなく彼女のかたわらで眠った。</p>
+<p class="grc">ἤιʼ, ἐπεὶ δὴ Ζηνὸς ἐπέκλυεν ἀγγελιάων. / τὸν δʼ ἄρʼ ἐπʼ ἀκτῆς εὗρε καθήμενον· οὐδέ ποτʼ ὄσσε / δακρυόφιν τέρσοντο, κατείβετο δὲ γλυκὺς αἰὼν / νόστον ὀδυρομένῳ, ἐπεὶ οὐκέτι ἥνδανε νύμφη. / ἀλλʼ ἦ τοι νύκτας μὲν ἰαύεσκεν καὶ ἀνάγκῃ</p>
+<p class="eng">when she had heard the message of Zeus. Him she found sitting on the shore, and his eyes were never dry of tears, and his sweet life was ebbing away, as he longed mournfully for his return, for the nymph was no longer pleasing in his sight. By night indeed he would sleep by her side perforce</p>
+</div>
+<div class="unit"><span id="L155"></span><span id="L156"></span><span id="L157"></span><span id="L158"></span><span id="L159"></span>
+<div class="ln">5.155–159</div>
+<p class="ja">うつろな洞の中で。望まぬ身が、望む妖精のかたわらで。だが昼には岩と砂の上に座り、涙と呻きと苦しみとで心を苛みながら、休みなき海を眺め、実りなき海を眺めて涙を流しつづけていた。そこへ美しい女神が近づいて語りかけた。</p>
+<p class="grc">ἐν σπέσσι γλαφυροῖσι παρʼ οὐκ ἐθέλων ἐθελούσῃ· / ἤματα δʼ ἂμ πέτρῃσι καὶ ἠιόνεσσι καθίζων / δάκρυσι καὶ στοναχῇσι καὶ ἄλγεσι θυμὸν ἐρέχθων / πόντον ἐπʼ ἀτρύγετον δερκέσκετο δάκρυα λείβων. / ἀγχοῦ δʼ ἱσταμένη προσεφώνεε δῖα θεάων·</p>
+<p class="eng">in the hollow caves, unwilling beside the willing nymph, but by day he would sit on the rocks and the sands, racking his soul with tears and groans and griefs, and he would look over the unresting sea, shedding tears. Then coming close to him, the beautiful goddess addressed him:</p>
+</div>
+<div class="unit"><span id="L160"></span><span id="L161"></span><span id="L162"></span><span id="L163"></span><span id="L164"></span>
+<div class="ln">5.160–164</div>
+<p class="ja">「不運な方よ、もうここで嘆かないでください。命を萎れさせないでください。今こそ快く、あなたを送り出しましょう。さあ、斧で長い梁を切り出し、幅の広い筏を造ってください。その上に横板を渡して甲板とし、高く張ってください。霧深い海の上をあなたを運べるように。</p>
+<p class="grc">κάμμορε, μή μοι ἔτʼ ἐνθάδʼ ὀδύρεο, μηδέ τοι αἰὼν / φθινέτω· ἤδη γάρ σε μάλα πρόφρασσʼ ἀποπέμψω. / ἀλλʼ ἄγε δούρατα μακρὰ ταμὼν ἁρμόζεο χαλκῷ / εὐρεῖαν σχεδίην· ἀτὰρ ἴκρια πῆξαι ἐπʼ αὐτῆς / ὑψοῦ, ὥς σε φέρῃσιν ἐπʼ ἠεροειδέα πόντον.</p>
+<p class="eng">“Unhappy man, sorrow no longer here, I pray thee, nor let thy life pine away; for even now with a ready heart will I send thee on thy way. Nay, come, hew with the axe long beams, and make a broad raft, and fasten upon it cross-planks for a deck well above it, that it may bear thee over the misty deep.</p>
+</div>
+<div class="unit"><span id="L165"></span><span id="L166"></span><span id="L167"></span><span id="L168"></span><span id="L169"></span>
+<div class="ln">5.165–169</div>
+<p class="ja">そこにパンと水と赤い葡萄酒を積みましょう。心を満たし、飢えを遠ざけるために。衣も着せましょう。そして順風を後ろから送りましょう。まったく無傷で故郷の地に帰れるように。広い天を領する神々の意志がそうであるならば。</p>
+<p class="grc">αὐτὰρ ἐγὼ σῖτον καὶ ὕδωρ καὶ οἶνον ἐρυθρὸν / ἐνθήσω μενοεικέʼ, ἅ κέν τοι λιμὸν ἐρύκοι, / εἵματά τʼ ἀμφιέσω· πέμψω δέ τοι οὖρον ὄπισθεν, / ὥς κε μάλʼ ἀσκηθὴς σὴν πατρίδα γαῖαν ἵκηαι, / αἴ κε θεοί γʼ ἐθέλωσι, τοὶ οὐρανὸν εὐρὺν ἔχουσιν,</p>
+<p class="eng">And I will place therein bread and water and red wine to satisfy thy heart, to keep hunger from thee. And I will clothe thee with raiment, and will send a fair wind behind thee, that all unscathed thou mayest return to thy native land, if it be the will of the gods who hold broad heaven;</p>
+</div>
+<div class="unit"><span id="L170"></span><span id="L171"></span><span id="L172"></span><span id="L173"></span><span id="L174"></span>
+<div class="ln">5.170–174</div>
+<p class="ja">神々は私よりも、企てることにおいても果たすことにおいても力が強いのですから」。こう言うと、堪え忍ぶ気高いオデュッセウスは身を震わせ、翼ある言葉をかけた。「女神よ、あなたはこのことで何か別のことを企てておられる。私を送り出すことではなく。筏で海の大きな淵を渡れと言われるのだから。</p>
+<p class="grc">οἵ μευ φέρτεροί εἰσι νοῆσαί τε κρῆναί τε. / ὣς φάτο, ῥίγησεν δὲ πολύτλας δῖος Ὀδυσσεύς, / καί μιν φωνήσας ἔπεα πτερόεντα προσηύδα· / ἄλλο τι δὴ σύ, θεά, τόδε μήδεαι, οὐδέ τι πομπήν, / ἥ με κέλεαι σχεδίῃ περάαν μέγα λαῖτμα θαλάσσης,</p>
+<p class="eng">for they are mightier than I both to purpose and to fulfil.” So she spoke, and much-enduring goodly Odysseus shuddered, and he spoke, and addressed her with winged words: “Some other thing, goddess, art thou planning in this, and not my sending, seeing that thou biddest me cross on a raft the great gulf of the sea,</p>
+</div>
+<div class="unit"><span id="L175"></span><span id="L176"></span><span id="L177"></span><span id="L178"></span><span id="L179"></span>
+<div class="ln">5.175–179</div>
+<p class="ja">恐ろしく辛い淵を。均整のとれた足速い船でさえ渡らぬところを。ゼウスの風を喜びながらでも。だが私はあなたの意に逆らって筏に足を踏み入れはしない。女神よ、重い誓いを立ててくださらないかぎりは。私自身に悪しき禍いを、ほかに何も企てないと」。</p>
+<p class="grc">δεινόν τʼ ἀργαλέον τε· τὸ δʼ οὐδʼ ἐπὶ νῆες ἐῖσαι / ὠκύποροι περόωσιν, ἀγαλλόμεναι Διὸς οὔρῳ. / οὐδʼ ἂν ἐγὼν ἀέκητι σέθεν σχεδίης ἐπιβαίην, / εἰ μή μοι τλαίης γε, θεά, μέγαν ὅρκον ὀμόσσαι / μή τί μοι αὐτῷ πῆμα κακὸν βουλευσέμεν ἄλλο.</p>
+<p class="eng">dread and grievous, over which not even the shapely, swift-faring ships pass, rejoicing in the wind of Zeus. But I will not set foot on a raft in thy despite, unless thou, goddess, wilt bring thyself to swear a mighty oath that thou wilt not plot against me any fresh mischief to my hurt.”</p>
+</div>
+<div class="unit"><span id="L180"></span><span id="L181"></span><span id="L182"></span><span id="L183"></span><span id="L184"></span>
+<div class="ln">5.180–184</div>
+<p class="ja">こう言うと、美しい女神カリュプソは微笑み、手で撫でて、名を呼んで言葉をかけた。「まことにあなたは食わせ者で、知恵に不足のない方。そんな言葉を口にすることを思いつくとは。ではこのことに大地を証人としましょう。そして頭上の広い天と、</p>
+<p class="grc">ὣς φάτο, μείδησεν δὲ Καλυψὼ δῖα θεάων, / χειρί τέ μιν κατέρεξεν ἔπος τʼ ἔφατʼ ἔκ τʼ ὀνόμαζεν· / ἦ δὴ ἀλιτρός γʼ ἐσσὶ καὶ οὐκ ἀποφώλια εἰδώς, / οἷον δὴ τὸν μῦθον ἐπεφράσθης ἀγορεῦσαι. / ἴστω νῦν τόδε γαῖα καὶ οὐρανὸς εὐρὺς ὕπερθε</p>
+<p class="eng">So he spoke, but Calypso, the beautiful goddess, smiled, and stroked him with her hand, and spoke, and addressed him: “Verily thou art a knave, and not stunted in wit, that thou hast bethought thee to utter such a word. Now therefore let earth be witness to this, and the broad heaven above,</p>
+</div>
+<div class="unit"><span id="L185"></span><span id="L186"></span><span id="L187"></span><span id="L188"></span><span id="L189"></span>
+<div class="ln">5.185–189</div>
+<p class="ja">流れ落ちるステュクスの水とを。幸いなる神々にとって最も大きく、最も恐ろしい誓いです。あなた自身に悪しき禍いを、ほかに何も企てないと。いえ、私が心に思い、助言することは、私自身にそのような必要が生じたときに自分のために考えるであろうことなのです。</p>
+<p class="grc">καὶ τὸ κατειβόμενον Στυγὸς ὕδωρ, ὅς τε μέγιστος / ὅρκος δεινότατός τε πέλει μακάρεσσι θεοῖσι, / μή τί τοι αὐτῷ πῆμα κακὸν βουλευσέμεν ἄλλο. / ἀλλὰ τὰ μὲν νοέω καὶ φράσσομαι, ἅσσʼ ἂν ἐμοί περ / αὐτῇ μηδοίμην, ὅτε με χρειὼ τόσον ἵκοι·</p>
+<p class="eng">and the down-flowing water of the Styx, which is the greatest and most dread oath for the blessed gods, that I will not plot against thee any fresh mischief to thy hurt. Nay, I have such thoughts in mind, and will give such counsel, as I should devise for mine own self, if such need should come on me.</p>
+</div>
+<div class="unit"><span id="L190"></span><span id="L191"></span><span id="L192"></span><span id="L193"></span><span id="L194"></span>
+<div class="ln">5.190–194</div>
+<p class="ja">私にも正しい心があり、この胸の内の心は鉄でできてはおらず、憐れみを知っているのですから」。こう言って美しい女神は速やかに先に立って案内し、彼は神の足跡をたどって行った。そして女神と人とはうつろな洞に着いた。</p>
+<p class="grc">καὶ γὰρ ἐμοὶ νόος ἐστὶν ἐναίσιμος, οὐδέ μοι αὐτῇ / θυμὸς ἐνὶ στήθεσσι σιδήρεος, ἀλλʼ ἐλεήμων. / ὣς ἄρα φωνήσασʼ ἡγήσατο δῖα θεάων / καρπαλίμως· ὁ δʼ ἔπειτα μετʼ ἴχνια βαῖνε θεοῖο. / ἷξον δὲ σπεῖος γλαφυρὸν θεὸς ἠδὲ καὶ ἀνήρ,</p>
+<p class="eng">For I too have a mind that is righteous, and the heart in this breast of mine is not of iron, but hath compassion.” So saying, the beautiful goddess led the way quickly, and he followed in the footsteps of the goddess. And they came to the hollow cave, the goddess and the man,</p>
+</div>
+<div class="unit"><span id="L195"></span><span id="L196"></span><span id="L197"></span><span id="L198"></span><span id="L199"></span>
+<div class="ln">5.195–199</div>
+<p class="ja">彼はヘルメスが立ち上がった椅子に腰を下ろした。妖精は彼の前に、あらゆる食べ物と飲み物を据えた。死すべき人間が食べるような類のものを。彼女自身は神々しいオデュッセウスと向かい合って座り、その前には侍女たちがアンブロシアとネクタルを据えた。</p>
+<p class="grc">καί ῥʼ ὁ μὲν ἔνθα καθέζετʼ ἐπὶ θρόνου ἔνθεν ἀνέστη / Ἑρμείας, νύμφη δʼ ἐτίθει πάρα πᾶσαν ἐδωδήν, / ἔσθειν καὶ πίνειν, οἷα βροτοὶ ἄνδρες ἔδουσιν· / αὐτὴ δʼ ἀντίον ἷζεν Ὀδυσσῆος θείοιο, / τῇ δὲ παρʼ ἀμβροσίην δμῳαὶ καὶ νέκταρ ἔθηκαν.</p>
+<p class="eng">and he sat down upon the chair from which Hermes had arisen, and the nymph set before him all manner of food to eat and drink, of such sort as mortal men eat. But she herself sat over against divine Odysseus, and before her the handmaids set ambrosia and nectar.</p>
+</div>
+<div class="unit"><span id="L200"></span><span id="L201"></span><span id="L202"></span><span id="L203"></span><span id="L204"></span>
+<div class="ln">5.200–204</div>
+<p class="ja">そこで彼らは目の前に並べられた馳走に手を伸ばした。さて飲食に満ち足りると、美しい女神カリュプソが最初に口を開いて言った。「ゼウスの血を引くラエルテスの子、知略に富むオデュッセウスよ、</p>
+<p class="grc">οἱ δʼ ἐπʼ ὀνείαθʼ ἑτοῖμα προκείμενα χεῖρας ἴαλλον. / αὐτὰρ ἐπεὶ τάρπησαν ἐδητύος ἠδὲ ποτῆτος, / τοῖς ἄρα μύθων ἦρχε Καλυψώ, δῖα θεάων· / διογενὲς Λαερτιάδη, πολυμήχανʼ Ὀδυσσεῦ, / οὕτω δὴ οἶκόνδε φίλην ἐς πατρίδα γαῖαν</p>
+<p class="eng">So they put forth their hands to the good cheer lying ready before them. But when they had their fill of food and drink, Calypso, the beautiful goddess, was the first to speak, and said: “Son of Laertes, sprung from Zeus, Odysseus of many devices,</p>
+</div>
+<div class="unit"><span id="L205"></span><span id="L206"></span><span id="L207"></span><span id="L208"></span><span id="L209"></span>
+<div class="ln">5.205–209</div>
+<p class="ja">では今すぐ、愛する故郷の地へ帰ろうというのですね。それならそれで、ご無事に。けれども、故郷の地に着く前に果たすことが定められている禍いの、その量のすべてを心に知っていたなら、あなたはここに留まり、私とこの家を守り、不死の者となったでしょうに。どれほど会いたいと願っていようとも、</p>
+<p class="grc">αὐτίκα νῦν ἐθέλεις ἰέναι; σὺ δὲ χαῖρε καὶ ἔμπης. / εἴ γε μὲν εἰδείης σῇσι φρεσὶν ὅσσα τοι αἶσα / κήδεʼ ἀναπλῆσαι, πρὶν πατρίδα γαῖαν ἱκέσθαι, / ἐνθάδε κʼ αὖθι μένων σὺν ἐμοὶ τόδε δῶμα φυλάσσοις / ἀθάνατός τʼ εἴης, ἱμειρόμενός περ ἰδέσθαι</p>
+<p class="eng">would'st thou then fare now forthwith home to thy dear native land! Yet, even so fare thee well. Howbeit if in thy heart thou knewest all the measure of woe it is thy fate to fulfil before thou comest to thy native land thou wouldest abide here and keep this house with me, and wouldest be immortal, for all thy desire to see</p>
+</div>
+<div class="unit"><span id="L210"></span><span id="L211"></span><span id="L212"></span><span id="L213"></span><span id="L214"></span>
+<div class="ln">5.210–214</div>
+<p class="ja">日ごと恋い慕っておられる妻に。私はその方に劣るとは思いません。姿においても背丈においても。死すべき女が不死の者と姿や美しさを競うのは、そもそもふさわしくないのですから」。すると策に富むオデュッセウスが答えて言った。</p>
+<p class="grc">σὴν ἄλοχον, τῆς τʼ αἰὲν ἐέλδεαι ἤματα πάντα. / οὐ μέν θην κείνης γε χερείων εὔχομαι εἶναι, / οὐ δέμας οὐδὲ φυήν, ἐπεὶ οὔ πως οὐδὲ ἔοικεν / θνητὰς ἀθανάτῃσι δέμας καὶ εἶδος ἐρίζειν. / τὴν δʼ ἀπαμειβόμενος προσέφη πολύμητις Ὀδυσσεύς·</p>
+<p class="eng">thy wife for whom thou longest day by day. Surely not inferior to her do I declare myself to be either in form or stature, for in no wise is it seemly that mortal women should vie with immortals in form or comeliness.” Then Odysseus of many wiles answered her, and said:</p>
+</div>
+<div class="unit"><span id="L215"></span><span id="L216"></span><span id="L217"></span><span id="L218"></span><span id="L219"></span>
+<div class="ln">5.215–219</div>
+<p class="ja">「力ある女神よ、このことで私に憤らないでください。私自身よくわきまえております。賢いペネロペイアが、美しさにおいても背丈においても、あなたより見劣りすることは。あの人は死すべき者で、あなたは不死で老いぬ方なのですから。ですがそれでも私は望み、日ごと恋い慕うのです。</p>
+<p class="grc">πότνα θεά, μή μοι τόδε χώεο· οἶδα καὶ αὐτὸς / πάντα μάλʼ, οὕνεκα σεῖο περίφρων Πηνελόπεια / εἶδος ἀκιδνοτέρη μέγεθός τʼ εἰσάντα ἰδέσθαι· / ἡ μὲν γὰρ βροτός ἐστι, σὺ δʼ ἀθάνατος καὶ ἀγήρως. / ἀλλὰ καὶ ὣς ἐθέλω καὶ ἐέλδομαι ἤματα πάντα</p>
+<p class="eng">“Mighty goddess, be not wroth with me for this. I know full well of myself that wise Penelope is meaner to look upon than thou in comeliness and in stature, for she is a mortal, while thou art immortal and ageless. But even so I wish and long day by day</p>
+</div>
+<div class="unit"><span id="L220"></span><span id="L221"></span><span id="L222"></span><span id="L223"></span><span id="L224"></span>
+<div class="ln">5.220–224</div>
+<p class="ja">家に帰り着き、帰りの日を見ることを。そしてまた神の誰かが葡萄色の海で私を打つなら、耐えましょう。胸のうちに苦難を耐える心を持っているのですから。これまでにも私は多くを苦しみ、多くを労しました。波と戦とのただ中で。これもまたその上に加わるがよい」。</p>
+<p class="grc">οἴκαδέ τʼ ἐλθέμεναι καὶ νόστιμον ἦμαρ ἰδέσθαι. / εἰ δʼ αὖ τις ῥαίῃσι θεῶν ἐνὶ οἴνοπι πόντῳ, / τλήσομαι ἐν στήθεσσιν ἔχων ταλαπενθέα θυμόν· / ἤδη γὰρ μάλα πολλὰ πάθον καὶ πολλὰ μόγησα / κύμασι καὶ πολέμῳ· μετὰ καὶ τόδε τοῖσι γενέσθω.</p>
+<p class="eng">to reach my home, and to see the day of my return. And if again some god shall smite me on the wine-dark sea, I will endure it, having in my breast a heart that endures affliction. For ere this I have suffered much and toiled much amid the waves and in war; let this also be added unto that.”</p>
+</div>
+<div class="unit"><span id="L225"></span><span id="L226"></span><span id="L227"></span><span id="L228"></span><span id="L229"></span>
+<div class="ln">5.225–229</div>
+<p class="ja">こう言うと日は沈み、闇が訪れた。そして二人はうつろな洞の一番奥へ入り、愛の喜びを味わって、互いのかたわらに留まった。朝まだきに生まれた薔薇の指をもつ暁が現れると、ただちにオデュッセウスは外套と肌着を身につけた。</p>
+<p class="grc">ὣς ἔφατʼ, ἠέλιος δʼ ἄρʼ ἔδυ καὶ ἐπὶ κνέφας ἦλθεν· / ἐλθόντες δʼ ἄρα τώ γε μυχῷ σπείους γλαφυροῖο / τερπέσθην φιλότητι, παρʼ ἀλλήλοισι μένοντες. / ἦμος δʼ ἠριγένεια φάνη ῥοδοδάκτυλος Ἠώς, / αὐτίχʼ ὁ μὲν χλαῖνάν τε χιτῶνά τε ἕννυτʼ Ὀδυσσεύς,</p>
+<p class="eng">So he spoke, and the sun set and darkness came on. And the two went into the innermost recess of the hollow cave, and took their joy of love, abiding each by the other's side. As soon as early Dawn appeared, the rosy-fingered, straightway Odysseus put on a cloak and a tunic,</p>
+</div>
+<div class="unit"><span id="L230"></span><span id="L231"></span><span id="L232"></span><span id="L233"></span><span id="L234"></span>
+<div class="ln">5.230–234</div>
+<p class="ja">妖精自身は銀白の大きな衣をまとった。細かく織られた、薄く優美な衣である。そして腰には黄金の美しい帯を巻き、頭には面紗をかけた。それから心大きなオデュッセウスを送り出す支度に取りかかった。彼に大きな斧を与えた。その手によく合う斧を。</p>
+<p class="grc">αὐτὴ δʼ ἀργύφεον φᾶρος μέγα ἕννυτο νύμφη, / λεπτὸν καὶ χαρίεν, περὶ δὲ ζώνην βάλετʼ ἰξυῖ / καλὴν χρυσείην, κεφαλῇ δʼ ἐφύπερθε καλύπτρην. / καὶ τότʼ Ὀδυσσῆι μεγαλήτορι μήδετο πομπήν· / δῶκέν οἱ πέλεκυν μέγαν, ἄρμενον ἐν παλάμῃσι,</p>
+<p class="eng">and the nymph clothed herself in a long white robe, finely woven and beautiful, and about her waist she cast a fair girdle of gold, and on her head a veil above. Then she set herself to plan the sending of the great-hearted Odysseus. She gave him a great axe, well fitted to his hands,</p>
+</div>
+<div class="unit"><span id="L235"></span><span id="L236"></span><span id="L237"></span><span id="L238"></span><span id="L239"></span>
+<div class="ln">5.235–239</div>
+<p class="ja">青銅の斧で、両側を研いであった。そこには橄欖の木の美しい柄がしっかりと嵌め込まれていた。そのあとで磨かれた手斧も与えた。それから島の外れへ導いた。そこには高い木々が立っていた。榛と白楊と樅が。空に届くほどの木々で、</p>
+<p class="grc">χάλκεον, ἀμφοτέρωθεν ἀκαχμένον· αὐτὰρ ἐν αὐτῷ / στειλειὸν περικαλλὲς ἐλάινον, εὖ ἐναρηρός· / δῶκε δʼ ἔπειτα σκέπαρνον ἐύξοον· ἦρχε δʼ ὁδοῖο / νήσου ἐπʼ ἐσχατιῆς, ὅθι δένδρεα μακρὰ πεφύκει, / κλήθρη τʼ αἴγειρός τʼ, ἐλάτη τʼ ἦν οὐρανομήκης,</p>
+<p class="eng">an axe of bronze, sharpened on both sides; and in it was a beautiful handle of olive wood, securely fastened; and thereafter she gave him a polished adze. Then she led the way to the borders of the island where tall trees were standing, alder and popular and fir, reaching to the skies,</p>
+</div>
+<div class="unit"><span id="L240"></span><span id="L241"></span><span id="L242"></span><span id="L243"></span><span id="L244"></span>
+<div class="ln">5.240–244</div>
+<p class="ja">長く乾いてよく枯れており、彼を軽々と浮かべてくれるものだった。高い木の生えている場所を示すと、美しい女神カリュプソは家へ帰った。だが彼は材木を伐りはじめ、仕事は速やかに進んだ。全部で二十本の木を伐り倒し、斧で削り整えた。</p>
+<p class="grc">αὖα πάλαι, περίκηλα, τά οἱ πλώοιεν ἐλαφρῶς. / αὐτὰρ ἐπεὶ δὴ δεῖξʼ, ὅθι δένδρεα μακρὰ πεφύκει, / ἡ μὲν ἔβη πρὸς δῶμα Καλυψώ, δῖα θεάων, / αὐτὰρ ὁ τάμνετο δοῦρα· θοῶς δέ οἱ ἤνυτο ἔργον. / εἴκοσι δʼ ἔκβαλε πάντα, πελέκκησεν δʼ ἄρα χαλκῷ,</p>
+<p class="eng">long dry and well-seasoned, which would float for him lightly. But when she had shewn him where the tall trees grew, Calypso, the beautiful goddess, returned homewards, but he fell to cutting timbers, and his work went forward apace. Twenty trees in all did he fell, and trimmed them with the axe;</p>
+</div>
+<div class="unit"><span id="L245"></span><span id="L246"></span><span id="L247"></span><span id="L248"></span><span id="L249"></span>
+<div class="ln">5.245–249</div>
+<p class="ja">それから巧みにすべてを滑らかにし、墨縄に合わせてまっすぐにした。そのあいだに美しい女神カリュプソが錐を持って来た。彼はすべての材に穴をあけて互いに合わせ、木釘と枘とで打ち組んだ。船大工の技に長けた者が荷船の船体の反りを描く、その幅と同じだけの広さに、</p>
+<p class="grc">ξέσσε δʼ ἐπισταμένως καὶ ἐπὶ στάθμην ἴθυνεν. / τόφρα δʼ ἔνεικε τέρετρα Καλυψώ, δῖα θεάων· / τέτρηνεν δʼ ἄρα πάντα καὶ ἥρμοσεν ἀλλήλοισιν, / γόμφοισιν δʼ ἄρα τήν γε καὶ ἁρμονίῃσιν ἄρασσεν. / ὅσσον τίς τʼ ἔδαφος νηὸς τορνώσεται ἀνὴρ</p>
+<p class="eng">then he cunningly smoothed them all and made them straight to the line. Meanwhile Calypso, the beautiful goddess, brought him augers; and he bored all the pieces and fitted them to one another, and with pegs and morticings did he hammer it together. Wide as a man well-skilled in carpentry marks out the curve of the hull of a freight-ship,</p>
+</div>
+<div class="unit"><span id="L250"></span><span id="L251"></span><span id="L252"></span><span id="L253"></span><span id="L254"></span>
+<div class="ln">5.250–254</div>
+<p class="ja">梁の広い船の、その幅と同じだけの広さにオデュッセウスは筏を造った。そして甲板の梁を立て、密に並べた肋材に留めつけて働きつづけた。長い舷側材で筏を仕上げた。その中に帆柱と、それに合う桁とを据え、</p>
+<p class="grc">φορτίδος εὐρείης, ἐὺ εἰδὼς τεκτοσυνάων, / τόσσον ἔπʼ εὐρεῖαν σχεδίην ποιήσατʼ Ὀδυσσεύς. / ἴκρια δὲ στήσας, ἀραρὼν θαμέσι σταμίνεσσι, / ποίει· ἀτὰρ μακρῇσιν ἐπηγκενίδεσσι τελεύτα. / ἐν δʼ ἱστὸν ποίει καὶ ἐπίκριον ἄρμενον αὐτῷ·</p>
+<p class="eng">broad of beam, even so wide did Odysseus make his raft. And he set up the deck-beams, bolting them to the close-set ribs, and laboured on; and he finished the raft with long gunwales. In it he set a mast and a yard-arm, fitted to it,</p>
+</div>
+<div class="unit"><span id="L255"></span><span id="L256"></span><span id="L257"></span><span id="L258"></span><span id="L259"></span>
+<div class="ln">5.255–259</div>
+<p class="ja">さらに舵取りの櫂も作った。舵を取るためである。それから舳先から艫まで全体を柳の枝で囲った。波を防ぐためである。その上に柴を厚く敷いた。そのあいだに美しい女神カリュプソが帆にする布を持って来た。彼はそれも巧みに仕立てた。</p>
+<p class="grc">πρὸς δʼ ἄρα πηδάλιον ποιήσατο, ὄφρʼ ἰθύνοι. / φράξε δέ μιν ῥίπεσσι διαμπερὲς οἰσυΐνῃσι / κύματος εἶλαρ ἔμεν· πολλὴν δʼ ἐπεχεύατο ὕλην. / τόφρα δὲ φάρεʼ ἔνεικε Καλυψώ, δῖα θεάων, / ἱστία ποιήσασθαι· ὁ δʼ εὖ τεχνήσατο καὶ τά.</p>
+<p class="eng">and furthermore made him a steering-oar, wherewith to steer. Then he fenced in the whole from stem to stern with willow withes to be a defence against the wave, and strewed much brush thereon. Meanwhile Calypso, the beautiful goddess, brought him cloth to make him a sail, and he fashioned that too with skill.</p>
+</div>
+<div class="unit"><span id="L260"></span><span id="L261"></span><span id="L262"></span><span id="L263"></span><span id="L264"></span>
+<div class="ln">5.260–264</div>
+<p class="ja">そして筏に転桁索と揚索と帆脚索とを結びつけ、梃子で輝く海へ押し下ろした。さて四日目が来て、仕事はすべて終わった。そして五日目に、美しいカリュプソは彼を島から送り出した。湯を使わせ、香り高い衣を着せてから。</p>
+<p class="grc">ἐν δʼ ὑπέρας τε κάλους τε πόδας τʼ ἐνέδησεν ἐν αὐτῇ, / μοχλοῖσιν δʼ ἄρα τήν γε κατείρυσεν εἰς ἅλα δῖαν. / τέτρατον ἦμαρ ἔην, καὶ τῷ τετέλεστο ἅπαντα· / τῷ δʼ ἄρα πέμπτῳ πέμπʼ ἀπὸ νήσου δῖα Καλυψώ, / εἵματά τʼ ἀμφιέσασα θυώδεα καὶ λούσασα.</p>
+<p class="eng">And he made fast in the raft braces and halyards and sheets, and then with levers forced it down into the bright sea. Now the fourth day came and all his work was done. And on the fifth the beautiful Calypso sent him on his way from the island after she had bathed him and clothed him in fragrant raiment.</p>
+</div>
+<div class="unit"><span id="L265"></span><span id="L266"></span><span id="L267"></span><span id="L268"></span><span id="L269"></span>
+<div class="ln">5.265–269</div>
+<p class="ja">筏に女神は黒い葡萄酒の皮袋を置き、もう一つ、大きな水の皮袋も置いた。糧も袋に入れた。そこに心を満たすだけの美味をふんだんに詰め、そして害なく暖かい順風を送り出した。そこで気高いオデュッセウスは喜んで、その風に帆を張った。</p>
+<p class="grc">ἐν δέ οἱ ἀσκὸν ἔθηκε θεὰ μέλανος οἴνοιο / τὸν ἕτερον, ἕτερον δʼ ὕδατος μέγαν, ἐν δὲ καὶ ᾖα / κωρύκῳ· ἐν δέ οἱ ὄψα τίθει μενοεικέα πολλά· / οὖρον δὲ προέηκεν ἀπήμονά τε λιαρόν τε. / γηθόσυνος δʼ οὔρῳ πέτασʼ ἱστία δῖος Ὀδυσσεύς.</p>
+<p class="eng">On the raft the goddess put a skin of dark wine, and another, a great one, of water, and provisions, too, in a wallet. Therein she put abundance of dainties to satisfy his heart, and she sent forth a gentle wind and warm. Gladly then did goodly Odysseus spread his sail to the breeze;</p>
+</div>
+<div class="unit"><span id="L270"></span><span id="L271"></span><span id="L272"></span><span id="L273"></span><span id="L274"></span>
+<div class="ln">5.270–274</div>
+<p class="ja">そして座って、舵の櫂で巧みに筏を導いた。まぶたに眠りが落ちることもなく、プレイアデスを、遅く沈む牛飼い座を、そして熊座を見守っていた。人が荷車とも呼ぶ星である。それは常に同じところを巡ってオリオンを見張り、</p>
+<p class="grc">αὐτὰρ ὁ πηδαλίῳ ἰθύνετο τεχνηέντως / ἥμενος, οὐδέ οἱ ὕπνος ἐπὶ βλεφάροισιν ἔπιπτεν / Πληιάδας τʼ ἐσορῶντι καὶ ὀψὲ δύοντα Βοώτην / Ἄρκτον θʼ, ἣν καὶ ἄμαξαν ἐπίκλησιν καλέουσιν, / ἥ τʼ αὐτοῦ στρέφεται καί τʼ Ὠρίωνα δοκεύει,</p>
+<p class="eng">and he sat and guided his raft skilfully with the steering-oar, nor did sleep fall upon his eyelids, as he watched the Pleiads, and late-setting Bootes, and the Bear, which men also call the Wain, which ever circles where it is and watches Orion,</p>
+</div>
+<div class="unit"><span id="L275"></span><span id="L276"></span><span id="L277"></span><span id="L278"></span><span id="L279"></span>
+<div class="ln">5.275–279</div>
+<p class="ja">ただ一つ、大洋の湯浴みに与らない。この星を左手に保って海を渡るようにと、美しい女神カリュプソが彼に命じていたのである。こうして十七日のあいだ彼は海を渡り、十八日目に影なす山々が現れた。</p>
+<p class="grc">οἴη δʼ ἄμμορός ἐστι λοετρῶν Ὠκεανοῖο· / τὴν γὰρ δή μιν ἄνωγε Καλυψώ, δῖα θεάων, / ποντοπορευέμεναι ἐπʼ ἀριστερὰ χειρὸς ἔχοντα. / ἑπτὰ δὲ καὶ δέκα μὲν πλέεν ἤματα ποντοπορεύων, / ὀκτωκαιδεκάτῃ δʼ ἐφάνη ὄρεα σκιόεντα</p>
+<p class="eng">and alone has no part in the baths of Ocean. For this star Calypso, the beautiful goddess, had bidden him to keep on the left hand as he sailed over the sea. For seventeen days then he sailed over the sea, and on the eighteenth appeared the shadowy mountains</p>
+</div>
+<div class="unit"><span id="L280"></span><span id="L281"></span><span id="L282"></span><span id="L283"></span><span id="L284"></span>
+<div class="ln">5.280–284</div>
+<p class="ja">パイエケス人の地の山々が。彼に最も近いところで。それは霧深い海に浮かぶ楯のように見えた。だが輝かしい大地を揺るがす神が、エチオピア人のもとから帰る途中、遠くソリュモイの山々から彼を見つけた。オデュッセウスが海を渡っているのが目に入ったのである。そして心はいっそう憤り、</p>
+<p class="grc">γαίης Φαιήκων, ὅθι τʼ ἄγχιστον πέλεν αὐτῷ· / εἴσατο δʼ ὡς ὅτε ῥινὸν ἐν ἠεροειδέι πόντῳ. / τὸν δʼ ἐξ Αἰθιόπων ἀνιὼν κρείων ἐνοσίχθων / τηλόθεν ἐκ Σολύμων ὀρέων ἴδεν· εἴσατο γάρ οἱ / πόντον ἐπιπλώων. ὁ δʼ ἐχώσατο κηρόθι μᾶλλον,</p>
+<p class="eng">of the land of the Phaeacians, where it lay nearest to him; and it shewed like unto a shield in the misty deep. But the glorious Earth-shaker, as he came back from the Ethiopians, beheld him from afar, from the mountains of the Solymi: for Odysseus was seen of him sailing over the sea; and he waxed the more wroth in spirit,</p>
+</div>
+<div class="unit"><span id="L285"></span><span id="L286"></span><span id="L287"></span><span id="L288"></span><span id="L289"></span>
+<div class="ln">5.285–289</div>
+<p class="ja">頭を振って、おのれの胸にこう語りかけた。「けしからぬ。まったく神々はオデュッセウスについて考えを変えたな。私がエチオピア人のもとにいるあいだに。見よ、彼はもうパイエケス人の地の近くにいる。そこで彼は、身に降りかかった禍いの大きな縛めから逃れる定めなのだ。</p>
+<p class="grc">κινήσας δὲ κάρη προτὶ ὃν μυθήσατο θυμόν· / ὢ πόποι, ἦ μάλα δὴ μετεβούλευσαν θεοὶ ἄλλως / ἀμφʼ Ὀδυσῆι ἐμεῖο μετʼ Αἰθιόπεσσιν ἐόντος, / καὶ δὴ Φαιήκων γαίης σχεδόν, ἔνθα οἱ αἶσα / ἐκφυγέειν μέγα πεῖραρ ὀιζύος, ἥ μιν ἱκάνει.</p>
+<p class="eng">and shook his head, and thus he spoke to his own heart: “Out on it! Surely the gods have changed their purpose regarding Odysseus, while I was among the Ethiopians. And lo, he is near to the land of the Phaeacians, where it is his fate to escape from the great bonds of the woe which has come upon him.</p>
+</div>
+<div class="unit"><span id="L290"></span><span id="L291"></span><span id="L292"></span><span id="L293"></span><span id="L294"></span>
+<div class="ln">5.290–294</div>
+<p class="ja">だがそれでもなお、彼を禍いに飽きるまで追い立ててやろう」。こう言って彼は雲を集め、手に三叉の矛を取って海をかき乱し、あらゆる風のあらゆる息吹を呼び起こした。そして大地も海もともに雲で覆い隠した。天からは夜が湧き起こった。</p>
+<p class="grc">ἀλλʼ ἔτι μέν μίν φημι ἅδην ἐλάαν κακότητος. / ὣς εἰπὼν σύναγεν νεφέλας, ἐτάραξε δὲ πόντον / χερσὶ τρίαιναν ἑλών· πάσας δʼ ὀρόθυνεν ἀέλλας / παντοίων ἀνέμων, σὺν δὲ νεφέεσσι κάλυψε / γαῖαν ὁμοῦ καὶ πόντον· ὀρώρει δʼ οὐρανόθεν νύξ.</p>
+<p class="eng">Aye, but even yet, methinks, I shall drive him to surfeit of evil.” So saying, he gathered the clouds, and seizing his trident in his hands troubled the sea, and roused all blasts of all manner of winds, and hid with clouds land and sea alike; and night rushed down from heaven.</p>
+</div>
+<div class="unit"><span id="L295"></span><span id="L296"></span><span id="L297"></span><span id="L298"></span><span id="L299"></span>
+<div class="ln">5.295–299</div>
+<p class="ja">東風と南風とがぶつかり合い、烈しく吹く西風と、輝く天に生まれた北風とが、大きな波を前に転がして来た。そのときオデュッセウスの膝も心も解けてしまった。そして憤って、心大きなおのれの胸に語りかけた。「ああ、惨めな私よ。最後には何が我が身に降りかかるのか。</p>
+<p class="grc">σὺν δʼ Εὖρός τε Νότος τʼ ἔπεσον Ζέφυρός τε δυσαὴς / καὶ Βορέης αἰθρηγενέτης, μέγα κῦμα κυλίνδων. / καὶ τότʼ Ὀδυσσῆος λύτο γούνατα καὶ φίλον ἦτορ, / ὀχθήσας δʼ ἄρα εἶπε πρὸς ὃν μεγαλήτορα θυμόν· / ὤ μοι ἐγὼ δειλός, τί νύ μοι μήκιστα γένηται;</p>
+<p class="eng">Together the East Wind and the South Wind dashed, and the fierce-blowing West Wind and the North Wind , born in the bright heaven, rolling before him a mighty wave. Then were the knees of Odysseus loosened and his heart melted, and deeply moved he spoke to his own mighty spirit: “Ah me, wretched that I am! What is to befall me at the last?</p>
+</div>
+<div class="unit"><span id="L300"></span><span id="L301"></span><span id="L302"></span><span id="L303"></span><span id="L304"></span>
+<div class="ln">5.300–304</div>
+<p class="ja">恐れるのは、女神が言ったことがすべて本当だったということだ。故郷の地に着く前に、海の上で禍いの量を満たすことになるだろうと告げていた。見よ、それが今すべて成就しつつある。それほどにゼウスは広い天を雲で覆い、海をかき乱し、あらゆる風の息吹が</p>
+<p class="grc">δείδω μὴ δὴ πάντα θεὰ νημερτέα εἶπεν, / ἥ μʼ ἔφατʼ ἐν πόντῳ, πρὶν πατρίδα γαῖαν ἱκέσθαι, / ἄλγεʼ ἀναπλήσειν· τὰ δὲ δὴ νῦν πάντα τελεῖται. / οἵοισιν νεφέεσσι περιστέφει οὐρανὸν εὐρὺν / Ζεύς, ἐτάραξε δὲ πόντον, ἐπισπέρχουσι δʼ ἄελλαι</p>
+<p class="eng">I fear me that verily all that the goddess said was true, when she declared that on the sea, before ever I came to my native land, I should fill up my measure of woes; and lo, all this now is being brought to pass. In such wise does Zeus overcast the broad heaven with clouds, and has stirred up the sea, and the blasts</p>
+</div>
+<div class="unit"><span id="L305"></span><span id="L306"></span><span id="L307"></span><span id="L308"></span><span id="L309"></span>
+<div class="ln">5.305–309</div>
+<p class="ja">私に襲いかかっている。今こそ私の破滅は確かだ。三たび幸いなるダナオイ勢よ、いや四たび幸いなる者たちよ。昔トロイアの広い地で、アトレウスの子らの意に従って滅びた者たちは。ああ、私もあの日に死んで定めに出会っていればよかった。群れなす</p>
+<p class="grc">παντοίων ἀνέμων. νῦν μοι σῶς αἰπὺς ὄλεθρος. / τρὶς μάκαρες Δαναοὶ καὶ τετράκις, οἳ τότʼ ὄλοντο / Τροίῃ ἐν εὐρείῃ χάριν Ἀτρεΐδῃσι φέροντες. / ὡς δὴ ἐγώ γʼ ὄφελον θανέειν καὶ πότμον ἐπισπεῖν / ἤματι τῷ ὅτε μοι πλεῖστοι χαλκήρεα δοῦρα</p>
+<p class="eng">of all manner of winds sweep upon me; now is my utter destruction sure. Thrice blessed those Danaans, aye, four times blessed, who of old perished in the wide land of Troy , doing the pleasure of the sons of Atreus. Even so would that I had died and met my fate on that day when the throngs</p>
+</div>
+<div class="unit"><span id="L310"></span><span id="L311"></span><span id="L312"></span><span id="L313"></span><span id="L314"></span>
+<div class="ln">5.310–314</div>
+<p class="ja">トロイア勢が青銅の穂先の槍を私に投げつけたあの日に。ペレウスの子の亡骸のまわりで戦っていたときに。そうすれば葬いの儀を受けられたろうし、アカイア勢が私の名声を広めてくれたろう。だが今は惨めな死によって断ち切られることが定められている」。こう語っているまさにそのとき、大きな波が高みから彼を打った。恐ろしい力で襲いかかり、そのまわりで筏を渦に巻き込んだ。</p>
+<p class="grc">Τρῶες ἐπέρριψαν περὶ Πηλεΐωνι θανόντι. / τῷ κʼ ἔλαχον κτερέων, καί μευ κλέος ἦγον Ἀχαιοί· / νῦν δέ με λευγαλέῳ θανάτῳ εἵμαρτο ἁλῶναι. / ὣς ἄρα μιν εἰπόντʼ ἔλασεν μέγα κῦμα κατʼ ἄκρης / δεινὸν ἐπεσσύμενον, περὶ δὲ σχεδίην ἐλέλιξε.</p>
+<p class="eng">of the Trojans hurled upon me bronze-tipped spears, fighting around the body of the dead son of Peleus. Then should I have got funeral rites, and the Achaeans would have spread my fame, but now by a miserable death was it appointed me to be cut off.” Even as thus he spoke the great wave smote him from on high, rushing upon him with terrible might, and around it whirled his raft.</p>
+</div>
+<div class="unit"><span id="L315"></span><span id="L316"></span><span id="L317"></span><span id="L318"></span><span id="L319"></span>
+<div class="ln">5.315–319</div>
+<p class="ja">彼は筏から遠くへ落ち、舵の櫂を手から取り落とした。帆柱は、襲いかかった荒れ狂う風の烈しい息吹に真ん中で折れ、帆と桁とは遠く海へ落ちた。彼のほうは、長いあいだ波が深みに押さえつけていて、</p>
+<p class="grc">τῆλε δʼ ἀπὸ σχεδίης αὐτὸς πέσε, πηδάλιον δὲ / ἐκ χειρῶν προέηκε· μέσον δέ οἱ ἱστὸν ἔαξεν / δεινὴ μισγομένων ἀνέμων ἐλθοῦσα θύελλα, / τηλοῦ δὲ σπεῖρον καὶ ἐπίκριον ἔμπεσε πόντῳ. / τὸν δʼ ἄρʼ ὑπόβρυχα θῆκε πολὺν χρόνον, οὐδʼ ἐδυνάσθη</p>
+<p class="eng">Far from the raft he fell, and let fall the steering-oar from his hand; but his mast was broken in the midst by the fierce blast of tumultuous winds that came upon it, and far in the sea sail and yardarm fell. As for him, long time did the wave hold him in the depths, nor could he</p>
+</div>
+<div class="unit"><span id="L320"></span><span id="L321"></span><span id="L322"></span><span id="L323"></span><span id="L324"></span>
+<div class="ln">5.320–324</div>
+<p class="ja">大波の襲来の下からすぐには浮かび上がれなかった。美しいカリュプソが与えた衣が彼を重くしていたからである。だがついに彼は浮かび上がり、口から苦い潮を吐き出した。潮は頭からも幾筋も流れ落ちた。それでもなお、あれほどの窮地にありながら筏を忘れなかった。</p>
+<p class="grc">αἶψα μάλʼ ἀνσχεθέειν μεγάλου ὑπὸ κύματος ὁρμῆς· / εἵματα γάρ ῥʼ ἐβάρυνε, τά οἱ πόρε δῖα Καλυψώ. / ὀψὲ δὲ δή ῥʼ ἀνέδυ, στόματος δʼ ἐξέπτυσεν ἅλμην / πικρήν, ἥ οἱ πολλὴ ἀπὸ κρατὸς κελάρυζεν. / ἀλλʼ οὐδʼ ὣς σχεδίης ἐπελήθετο, τειρόμενός περ,</p>
+<p class="eng">rise at once from beneath the onrush of the mighty wave, for the garments which beautiful Calypso had given him weighed him down. At length, however, he came up, and spat forth from his mouth the bitter brine which flowed in streams from his head. Yet even so he did not forget his raft, in evil case though he was,</p>
+</div>
+<div class="unit"><span id="L325"></span><span id="L326"></span><span id="L327"></span><span id="L328"></span><span id="L329"></span>
+<div class="ln">5.325–329</div>
+<p class="ja">波のただ中を筏へ跳びつき、それを掴んで真ん中に座り込み、死の定めを逃れようとした。そして大きな波が絶えず彼をあちらへこちらへと流れのままに運んだ。秋に北風が薊の穂を平野の上に運び、穂どうしが互いに固く絡み合うように、</p>
+<p class="grc">ἀλλὰ μεθορμηθεὶς ἐνὶ κύμασιν ἐλλάβετʼ αὐτῆς, / ἐν μέσσῃ δὲ καθῖζε τέλος θανάτου ἀλεείνων. / τὴν δʼ ἐφόρει μέγα κῦμα κατὰ ῥόον ἔνθα καὶ ἔνθα. / ὡς δʼ ὅτʼ ὀπωρινὸς Βορέης φορέῃσιν ἀκάνθας / ἂμ πεδίον, πυκιναὶ δὲ πρὸς ἀλλήλῃσιν ἔχονται,</p>
+<p class="eng">but sprang after it amid the waves, and laid hold of it, and sat down in the midst of it, seeking to escape the doom of death; and a great wave ever bore him this way and that along its course. As when in autumn the North Wind bears the thistle-tufts over the plain, and close they cling to one another,</p>
+</div>
+<div class="unit"><span id="L330"></span><span id="L331"></span><span id="L332"></span><span id="L333"></span><span id="L334"></span>
+<div class="ln">5.330–334</div>
+<p class="ja">そのように風は筏を海の上のあちらこちらへ運んだ。あるときは南風が北風に投げ渡して追わせ、またあるときは東風が西風に譲って追わせた。だがカドモスの娘、美しい踝のイノが彼を見た。レウコテエである。昔は人の言葉を語る死すべき者であったが、</p>
+<p class="grc">ὣς τὴν ἂμ πέλαγος ἄνεμοι φέρον ἔνθα καὶ ἔνθα· / ἄλλοτε μέν τε Νότος Βορέῃ προβάλεσκε φέρεσθαι, / ἄλλοτε δʼ αὖτʼ Εὖρος Ζεφύρῳ εἴξασκε διώκειν. / τὸν δὲ ἴδεν Κάδμου θυγάτηρ, καλλίσφυρος Ἰνώ, / Λευκοθέη, ἣ πρὶν μὲν ἔην βροτὸς αὐδήεσσα,</p>
+<p class="eng">so did the winds bear the raft this way and that over the sea. Now the South Wind would fling it to the North Wind to be driven on, and now again the East Wind would yield it to the West Wind to drive. But the daughter of Cadmus , Ino of the fair ankles, saw him, even Leucothea, who of old was a mortal of human speech,</p>
+</div>
+<div class="unit"><span id="L335"></span><span id="L336"></span><span id="L337"></span><span id="L338"></span><span id="L339"></span>
+<div class="ln">5.335–339</div>
+<p class="ja">今は海の深みで神々から誉れの分け前を得ている人だ。彼女はさまよい、ひどい苦しみのうちにあるオデュッセウスを憐れんだ。そして翼をひろげた鴎のように深みから浮かび上がり、頑丈に組んだ筏に座って言った。「不運な方よ、大地を揺るがす神ポセイドンは、</p>
+<p class="grc">νῦν δʼ ἁλὸς ἐν πελάγεσσι θεῶν ἒξ ἔμμορε τιμῆς. / ἥ ῥʼ Ὀδυσῆʼ ἐλέησεν ἀλώμενον, ἄλγεʼ ἔχοντα, / αἰθυίῃ δʼ ἐικυῖα ποτῇ ἀνεδύσετο λίμνης, / ἷζε δʼ ἐπὶ σχεδίης πολυδέσμου εἶπέ τε μῦθον· / κάμμορε, τίπτε τοι ὧδε Ποσειδάων ἐνοσίχθων</p>
+<p class="eng">but now in the deeps of the sea has won a share of honor from the gods. She was touched with pity for Odysseus, as he wandered and was in sore travail, and she rose up from the deep like a sea-mew on the wing, and sat on the stoutly-bound raft, and spoke, saying: “Unhappy man, how is it that Poseidon, the earth-shaker,</p>
+</div>
+<div class="unit"><span id="L340"></span><span id="L341"></span><span id="L342"></span><span id="L343"></span><span id="L344"></span>
+<div class="ln">5.340–344</div>
+<p class="ja">なぜあなたにそれほど猛る怒りを抱いて、多くの禍いの種を蒔いているのでしょう。けれどもまことに、どれほど憤ろうとも、あなたを滅ぼし尽くすことはできません。さあ、こうなさい。あなたには分別が欠けていないと思います。この衣を脱ぎ捨て、筏は風の吹くにまかせなさい。そして手で泳いで、たどり着こうと努めなさい。</p>
+<p class="grc">ὠδύσατʼ ἐκπάγλως, ὅτι τοι κακὰ πολλὰ φυτεύει; / οὐ μὲν δή σε καταφθίσει μάλα περ μενεαίνων. / ἀλλὰ μάλʼ ὧδʼ ἔρξαι, δοκέεις δέ μοι οὐκ ἀπινύσσειν· / εἵματα ταῦτʼ ἀποδὺς σχεδίην ἀνέμοισι φέρεσθαι / κάλλιπʼ, ἀτὰρ χείρεσσι νέων ἐπιμαίεο νόστου</p>
+<p class="eng">has conceived such furious wrath against thee, that he is sowing for thee the seeds of many evils? Yet verily he shall not utterly destroy thee for all his rage. Nay, do thou thus; and methinks thou dost not lack understanding. Strip off these garments, and leave thy raft to be driven by the winds, but do thou swim with thy hands and so strive to reach</p>
+</div>
+<div class="unit"><span id="L345"></span><span id="L346"></span><span id="L347"></span><span id="L348"></span><span id="L349"></span>
+<div class="ln">5.345–349</div>
+<p class="ja">パイエケス人の地へ。そこであなたは逃れる定めなのです。さあ、この面紗を取って、胸の下に張りなさい。これは朽ちぬもの。何かを受けることも滅びることも恐れずにすみます。ですが手で陸を掴んだら、それを身から解いて、葡萄色の海へ投げ返しなさい。</p>
+<p class="grc">γαίης Φαιήκων, ὅθι τοι μοῖρʼ ἐστὶν ἀλύξαι. / τῆ δέ, τόδε κρήδεμνον ὑπὸ στέρνοιο τανύσσαι / ἄμβροτον· οὐδέ τί τοι παθέειν δέος οὐδʼ ἀπολέσθαι. / αὐτὰρ ἐπὴν χείρεσσιν ἐφάψεαι ἠπείροιο, / ἂψ ἀπολυσάμενος βαλέειν εἰς οἴνοπα πόντον</p>
+<p class="eng">the land of the Phaeacians, where it is thy fate to escape. Come, take this veil, and stretch it beneath thy breast. It is immortal; there is no fear that thou shalt suffer aught or perish. But when with thy hands thou hast laid hold of the land, loose it from thee, and cast it into the wine-dark sea</p>
+</div>
+<div class="unit"><span id="L350"></span><span id="L351"></span><span id="L352"></span><span id="L353"></span><span id="L354"></span>
+<div class="ln">5.350–354</div>
+<p class="ja">陸から遠く離して、そして自分は顔を背けなさい」。こう言って女神は彼に面紗を与え、自分はふたたびうねる深みへ潜って行った。鴎のように。そして暗い波が彼女を隠した。それから堪え忍ぶ気高いオデュッセウスは思案し、</p>
+<p class="grc">πολλὸν ἀπʼ ἠπείρου, αὐτὸς δʼ ἀπονόσφι τραπέσθαι. / ὣς ἄρα φωνήσασα θεὰ κρήδεμνον ἔδωκεν, / αὐτὴ δʼ ἂψ ἐς πόντον ἐδύσετο κυμαίνοντα / αἰθυίῃ ἐικυῖα· μέλαν δέ ἑ κῦμα κάλυψεν. / αὐτὰρ ὁ μερμήριξε πολύτλας δῖος Ὀδυσσεύς,</p>
+<p class="eng">far from the land, and thyself turn away.” So saying, the goddess gave him the veil, and herself plunged again into the surging deep, like a sea-mew; and the dark wave hid her. Then the much-enduring, goodly Odysseus pondered,</p>
+</div>
+<div class="unit"><span id="L355"></span><span id="L356"></span><span id="L357"></span><span id="L358"></span><span id="L359"></span>
+<div class="ln">5.355–359</div>
+<p class="ja">そして憤って、心大きなおのれの胸に語りかけた。「ああ困ったことだ。不死の者の誰かが、また私に罠を織っているのでなければよいが。筏を離れよと言うのだから。いや、まだ従うまい。この目で遠くに陸を見たのだ。あそこで逃れられると彼女は言った。</p>
+<p class="grc">ὀχθήσας δʼ ἄρα εἶπε πρὸς ὃν μεγαλήτορα θυμόν· / ὤ μοι ἐγώ, μή τίς μοι ὑφαίνῃσιν δόλον αὖτε / ἀθανάτων, ὅ τέ με σχεδίης ἀποβῆναι ἀνώγει. / ἀλλὰ μάλʼ οὔ πω πείσομʼ, ἐπεὶ ἑκὰς ὀφθαλμοῖσιν / γαῖαν ἐγὼν ἰδόμην, ὅθι μοι φάτο φύξιμον εἶναι.</p>
+<p class="eng">and deeply moved he spoke to his own mighty spirit: “Woe is me! Let it not be that some one of the immortals is again weaving a snare for me, that she bids me leave my raft. Nay, but verily I will not yet obey, for afar off mine eyes beheld the land, where she said I was to escape.</p>
+</div>
+<div class="unit"><span id="L360"></span><span id="L361"></span><span id="L362"></span><span id="L363"></span><span id="L364"></span>
+<div class="ln">5.360–364</div>
+<p class="ja">だがこうしよう。これが最善と思われる。梁が継ぎ目で持ちこたえているかぎりは、ここに留まって苦しみに耐えよう。だが波が筏を砕いてばらばらにしたなら、そのときは泳ごう。それよりましな手立ては思いつかないのだから」。</p>
+<p class="grc">ἀλλὰ μάλʼ ὧδʼ ἔρξω, δοκέει δέ μοι εἶναι ἄριστον· / ὄφρʼ ἂν μέν κεν δούρατʼ ἐν ἁρμονίῃσιν ἀρήρῃ, / τόφρʼ αὐτοῦ μενέω καὶ τλήσομαι ἄλγεα πάσχων· / αὐτὰρ ἐπὴν δή μοι σχεδίην διὰ κῦμα τινάξῃ, / νήξομʼ, ἐπεὶ οὐ μέν τι πάρα προνοῆσαι ἄμεινον.</p>
+<p class="eng">But this will I do, and meseems that this is best: as long as the timbers hold firm in their fastenings, so long will I remain here and endure to suffer affliction; but when the wave shall have shattered the raft to pieces, I will swim, seeing that there is naught better to devise.”</p>
+</div>
+<div class="unit"><span id="L365"></span><span id="L366"></span><span id="L367"></span><span id="L368"></span><span id="L369"></span>
+<div class="ln">5.365–369</div>
+<p class="ja">彼が心と胸のうちで思案しているあいだに、大地を揺るがす神ポセイドンが大きな波を起こした。恐ろしく辛い波で、上から弓なりに覆いかぶさり、それを彼に打ちつけた。強い風が乾いた藁の山を吹き飛ばし、あるものはこちらへ、あるものはあちらへと散らすように、</p>
+<p class="grc">ἧος ὁ ταῦθʼ ὥρμαινε κατὰ φρένα καὶ κατὰ θυμόν, / ὦρσε δʼ ἐπὶ μέγα κῦμα Ποσειδάων ἐνοσίχθων, / δεινόν τʼ ἀργαλέον τε, κατηρεφές, ἤλασε δʼ αὐτόν. / ὡς δʼ ἄνεμος ζαὴς ἠΐων θημῶνα τινάξῃ / καρφαλέων· τὰ μὲν ἄρ τε διεσκέδασʼ ἄλλυδις ἄλλῃ·</p>
+<p class="eng">While he pondered thus in mind and heart, Poseidon, the earth-shaker, made to rise up a great wave, dread and grievous, arching over from above, and drove it upon him. And as when a strong wind tosses a heap of straw that is dry, and some it scatters here, some there,</p>
+</div>
+<div class="unit"><span id="L370"></span><span id="L371"></span><span id="L372"></span><span id="L373"></span><span id="L374"></span>
+<div class="ln">5.370–374</div>
+<p class="ja">そのように波は筏の長い材木を散らした。だがオデュッセウスは一枚の板にまたがった。馬に乗るかのように。そして美しいカリュプソが与えた衣を脱ぎ捨てた。それからただちに面紗を胸の下に張り、両手を伸ばして海へ真っ逆さまに身を投じた。</p>
+<p class="grc">ὣς τῆς δούρατα μακρὰ διεσκέδασʼ. αὐτὰρ Ὀδυσσεὺς / ἀμφʼ ἑνὶ δούρατι βαῖνε, κέληθʼ ὡς ἵππον ἐλαύνων, / εἵματα δʼ ἐξαπέδυνε, τά οἱ πόρε δῖα Καλυψώ. / αὐτίκα δὲ κρήδεμνον ὑπὸ στέρνοιο τάνυσσεν, / αὐτὸς δὲ πρηνὴς ἁλὶ κάππεσε, χεῖρε πετάσσας,</p>
+<p class="eng">even so the wave scattered the long timbers of the raft. But Odysseus bestrode one plank, as though he were riding a horse, and stripped off the garments which beautiful Calypso had given him. Then straightway he stretched the veil beneath his breast, and flung himself headlong into the sea with hands outstretched,</p>
+</div>
+<div class="unit"><span id="L375"></span><span id="L376"></span><span id="L377"></span><span id="L378"></span><span id="L379"></span>
+<div class="ln">5.375–379</div>
+<p class="ja">泳ぐ構えで。大地を揺るがす神の君はそれを見て、頭を振って、おのれの胸にこう語りかけた。「さあ、多くの禍いを受けたうえで、海の上をさまようがよい。ゼウスに養われた民のもとへ着くまで。だがそれでもなお、お前は自分の苦しみを軽んじることはできまい」。</p>
+<p class="grc">νηχέμεναι μεμαώς. ἴδε δὲ κρείων ἐνοσίχθων, / κινήσας δὲ κάρη προτὶ ὃν μυθήσατο θυμόν· / οὕτω νῦν κακὰ πολλὰ παθὼν ἀλόω κατὰ πόντον, / εἰς ὅ κεν ἀνθρώποισι διοτρεφέεσσι μιγήῃς. / ἀλλʼ οὐδʼ ὥς σε ἔολπα ὀνόσσεσθαι κακότητος.</p>
+<p class="eng">ready to swim. And the lord, the earth-shaker, saw him, and he shook his head, and thus he spoke to his own heart: “So now, after thou hast suffered many ills, go wandering over the deep, till thou comest among the folk fostered of Zeus. Yet even so, methinks, thou shalt not make any mock at thy suffering.”</p>
+</div>
+<div class="unit"><span id="L380"></span><span id="L381"></span><span id="L382"></span><span id="L383"></span><span id="L384"></span>
+<div class="ln">5.380–384</div>
+<p class="ja">こう言って、鬣美しい馬に鞭を当て、アイガイへ向かった。そこに彼の輝かしい宮居がある。だがゼウスの娘アテナは別のことを思いついた。ほかの風の道を止め、すべてにやめて静まるよう命じた。</p>
+<p class="grc">ὣς ἄρα φωνήσας ἵμασεν καλλίτριχας ἵππους, / ἵκετο δʼ εἰς Αἰγάς, ὅθι οἱ κλυτὰ δώματʼ ἔασιν. / αὐτὰρ Ἀθηναίη κούρη Διὸς ἄλλʼ ἐνόησεν. / ἦ τοι τῶν ἄλλων ἀνέμων κατέδησε κελεύθους, / παύσασθαι δʼ ἐκέλευσε καὶ εὐνηθῆναι ἅπαντας·</p>
+<p class="eng">So saying, he lashed his fair-maned horses, and came to Aegae , where is his glorious palace. But Athena, daughter of Zeus, took other counsel. She stayed the paths of the other winds, and bade them all cease and be lulled to rest;</p>
+</div>
+<div class="unit"><span id="L385"></span><span id="L386"></span><span id="L387"></span><span id="L388"></span><span id="L389"></span>
+<div class="ln">5.385–389</div>
+<p class="ja">だが足速い北風を呼び起こし、彼の前の波を砕いた。ゼウスの血を引くオデュッセウスが、櫂を愛するパイエケス人のもとへ着けるようにと。死と定めとを逃れて。それから二夜と二日のあいだ、彼はうねる波の上を漂わされ、心はたびたび破滅を予感した。</p>
+<p class="grc">ὦρσε δʼ ἐπὶ κραιπνὸν Βορέην, πρὸ δὲ κύματʼ ἔαξεν, / ἧος ὃ Φαιήκεσσι φιληρέτμοισι μιγείη / διογενὴς Ὀδυσεὺς θάνατον καὶ κῆρας ἀλύξας. / ἔνθα δύω νύκτας δύο τʼ ἤματα κύματι πηγῷ / πλάζετο, πολλὰ δέ οἱ κραδίη προτιόσσετʼ ὄλεθρον.</p>
+<p class="eng">but she roused the swift North Wind , and broke the waves before him, to the end that Zeus-born Odysseus might come among the Phaeacians, lovers of the oar, escaping from death and the fates. Then for two nights and two days he was driven about over the swollen waves, and full often his heart forboded destruction.</p>
+</div>
+<div class="unit"><span id="L390"></span><span id="L391"></span><span id="L392"></span><span id="L393"></span><span id="L394"></span>
+<div class="ln">5.390–394</div>
+<p class="ja">だが髪美しい暁が三日目を生み出したとき、風はやんで凪となった。そして彼は大きな波に持ち上げられて、前方へ素早く目をやり、すぐ近くに岸を認めた。ちょうど、重い痛みを負って病に伏し、長らく衰えていた父の命が、</p>
+<p class="grc">ἀλλʼ ὅτε δὴ τρίτον ἦμαρ ἐυπλόκαμος τέλεσʼ Ἠώς, / καὶ τότʼ ἔπειτʼ ἄνεμος μὲν ἐπαύσατο ἠδὲ γαλήνη / ἔπλετο νηνεμίη· ὁ δʼ ἄρα σχεδὸν εἴσιδε γαῖαν / ὀξὺ μάλα προϊδών, μεγάλου ὑπὸ κύματος ἀρθείς. / ὡς δʼ ὅτʼ ἂν ἀσπάσιος βίοτος παίδεσσι φανήῃ</p>
+<p class="eng">But when fair-tressed Dawn brought to its birth the third day, then the wind ceased and there was a windless calm, and he caught sight of the shore close at hand, casting a quick glance forward, as he was raised up by a great wave. And even as when most welcome to his children appears the life</p>
+</div>
+<div class="unit"><span id="L395"></span><span id="L396"></span><span id="L397"></span><span id="L398"></span><span id="L399"></span>
+<div class="ln">5.395–399</div>
+<p class="ja">むごい神に苛まれていた父の命が、神々の恵みで禍いから解き放たれたとき、子らにとって何より嬉しく見えるように、そのようにオデュッセウスには陸と木立とが嬉しく見えた。そして彼は泳ぎつづけた。陸に足を着けようと逸りながら。</p>
+<p class="grc">πατρός, ὃς ἐν νούσῳ κεῖται κρατέρʼ ἄλγεα πάσχων, / δηρὸν τηκόμενος, στυγερὸς δέ οἱ ἔχραε δαίμων, / ἀσπάσιον δʼ ἄρα τόν γε θεοὶ κακότητος ἔλυσαν, / ὣς Ὀδυσεῖ ἀσπαστὸν ἐείσατο γαῖα καὶ ὕλη, / νῆχε δʼ ἐπειγόμενος ποσὶν ἠπείρου ἐπιβῆναι.</p>
+<p class="eng">of a father who lies in sickness, bearing grievous pains, long while wasting away, and some cruel god assails him, but then to their joy the gods free him from his woe, so to Odysseus did the land and the wood seem welcome; and he swam on, eager to set foot on the land.</p>
+</div>
+<div class="unit"><span id="L400"></span><span id="L401"></span><span id="L402"></span><span id="L403"></span><span id="L404"></span>
+<div class="ln">5.400–404</div>
+<p class="ja">だが叫べば届くほどの隔たりまで来て、暗礁に砕ける海の轟きを聞いたとき ── 大波が乾いた陸に雷のように打ちつけ、恐ろしいさまで吐きかかり、すべては海の泡に包まれていた。船を停められる港もなく、停泊地もなく、</p>
+<p class="grc">ἀλλʼ ὅτε τόσσον ἀπῆν ὅσσον τε γέγωνε βοήσας, / καὶ δὴ δοῦπον ἄκουσε ποτὶ σπιλάδεσσι θαλάσσης· / ῥόχθει γὰρ μέγα κῦμα ποτὶ ξερὸν ἠπείροιο / δεινὸν ἐρευγόμενον, εἴλυτο δὲ πάνθʼ ἁλὸς ἄχνῃ· / οὐ γὰρ ἔσαν λιμένες νηῶν ὄχοι, οὐδʼ ἐπιωγαί.</p>
+<p class="eng">But when he was as far away as a man's voice carries when he shouts, and heard the boom of the sea upon the reefs—for the great wave thundered against the dry land, belching upon it in terrible fashion, and all things were wrapped in the foam of the sea; for there were neither harbors where ships might ride, nor road-steads,</p>
+</div>
+<div class="unit"><span id="L405"></span><span id="L406"></span><span id="L407"></span><span id="L408"></span><span id="L409"></span>
+<div class="ln">5.405–409</div>
+<p class="ja">突き出た岬と暗礁と崖ばかりであった ── そのときオデュッセウスの膝も心も解けてしまった。そして憤って、心大きなおのれの胸に語りかけた。「ああ、ゼウスがついに望みを越えて陸を見せてくださり、こうしてこの淵を切り裂いて渡りきったというのに、</p>
+<p class="grc">ἀλλʼ ἀκταὶ προβλῆτες ἔσαν σπιλάδες τε πάγοι τε· / καὶ τότʼ Ὀδυσσῆος λύτο γούνατα καὶ φίλον ἦτορ, / ὀχθήσας δʼ ἄρα εἶπε πρὸς ὃν μεγαλήτορα θυμόν· / ὤ μοι, ἐπεὶ δὴ γαῖαν ἀελπέα δῶκεν ἰδέσθαι / Ζεύς, καὶ δὴ τόδε λαῖτμα διατμήξας ἐπέρησα,</p>
+<p class="eng">but projecting headlands, and reefs, and cliffs—then the knees of Odysseus were loosened and his heart melted, and deeply moved he spoke to his own mighty spirit: “Ah me, when Zeus has at length granted me to see the land beyond my hopes, and lo, I have prevailed to cleave my way and to cross this gulf,</p>
+</div>
+<div class="unit"><span id="L410"></span><span id="L411"></span><span id="L412"></span><span id="L413"></span><span id="L414"></span>
+<div class="ln">5.410–414</div>
+<p class="ja">灰色の海から抜け出す道がどこにも見えない。外には鋭い岩が並び、そのまわりで波が泡立って吼え、岩壁は垂直に切り立ち、岸のすぐ近くまで水が深い。どうやっても両足をしっかり据えて破滅を逃れることができない。</p>
+<p class="grc">ἔκβασις οὔ πῃ φαίνεθʼ ἁλὸς πολιοῖο θύραζε· / ἔκτοσθεν μὲν γὰρ πάγοι ὀξέες, ἀμφὶ δὲ κῦμα / βέβρυχεν ῥόθιον, λισσὴ δʼ ἀναδέδρομε πέτρη, / ἀγχιβαθὴς δὲ θάλασσα, καὶ οὔ πως ἔστι πόδεσσι / στήμεναι ἀμφοτέροισι καὶ ἐκφυγέειν κακότητα·</p>
+<p class="eng">nowhere doth there appear a way to come forth from the grey sea. For without are sharp crags, and around them the wave roars foaming, and the rock runs up sheer, and the water is deep close in shore, so that in no wise is it possible to plant both feet firmly and escape ruin.</p>
+</div>
+<div class="unit"><span id="L415"></span><span id="L416"></span><span id="L417"></span><span id="L418"></span><span id="L419"></span>
+<div class="ln">5.415–419</div>
+<p class="ja">もし上陸しようとすれば、大波が私をさらってぎざぎざの岩に叩きつけるかもしれない。そうなれば私の努力は空しい。だがもっと先まで泳いで、打ち寄せる岸辺と海の港とを見つけようとすれば、嵐の風がまた私をさらって、</p>
+<p class="grc">μή πώς μʼ ἐκβαίνοντα βάλῃ λίθακι ποτὶ πέτρῃ / κῦμα μέγʼ ἁρπάξαν· μελέη δέ μοι ἔσσεται ὁρμή. / εἰ δέ κʼ ἔτι προτέρω παρανήξομαι, ἤν που ἐφεύρω / ἠιόνας τε παραπλῆγας λιμένας τε θαλάσσης, / δείδω μή μʼ ἐξαῦτις ἀναρπάξασα θύελλα</p>
+<p class="eng">Haply were I to seek to land, a great wave may seize me and dash me against the jagged rock, and so shall my striving be in vain. But if I swim on yet further in hope to find shelving beaches and harbors of the sea, I fear me lest the storm-wind may catch me up again,</p>
+</div>
+<div class="unit"><span id="L420"></span><span id="L421"></span><span id="L422"></span><span id="L423"></span><span id="L424"></span>
+<div class="ln">5.420–424</div>
+<p class="ja">重く呻く私を魚の群れる海の上へ運ぶのではないかと恐ろしい。あるいは神の誰かが、海から大きな怪物を私に差し向けるかもしれない。輝かしいアンピトリテはそのような者を数多く育てているのだから。輝かしい大地を揺るがす神が私に怒りを抱いているのは分かっている」。彼が心と胸のうちで思案しているあいだに、</p>
+<p class="grc">πόντον ἐπʼ ἰχθυόεντα φέρῃ βαρέα στενάχοντα, / ἠέ τί μοι καὶ κῆτος ἐπισσεύῃ μέγα δαίμων / ἐξ ἁλός, οἷά τε πολλὰ τρέφει κλυτὸς Ἀμφιτρίτη· / οἶδα γάρ, ὥς μοι ὀδώδυσται κλυτὸς ἐννοσίγαιος. / ἧος ὁ ταῦθʼ ὥρμαινε κατὰ φρένα καὶ κατὰ θυμόν,</p>
+<p class="eng">and bear me, groaning heavily, over the teeming deep; or lest some god may even send forth upon me some great monster from out the sea—and many such does glorious Amphitrite breed. For I know that the glorious Earth-shaker is filled with wrath against me.” While he pondered thus in mind and heart,</p>
+</div>
+<div class="unit"><span id="L425"></span><span id="L426"></span><span id="L427"></span><span id="L428"></span><span id="L429"></span>
+<div class="ln">5.425–429</div>
+<p class="ja">大きな波が彼を岩がちな岸へ運んだ。そこで皮を剥がれ、骨を砕かれていたことだろう。輝く目の女神アテナが心に一つの考えを置いてくれなければ。彼は突き進んで両手で岩を掴み、呻きながらしがみついた。大波が過ぎ去るまで。</p>
+<p class="grc">τόφρα δέ μιν μέγα κῦμα φέρε τρηχεῖαν ἐπʼ ἀκτήν. / ἔνθα κʼ ἀπὸ ῥινοὺς δρύφθη, σὺν δʼ ὀστέʼ ἀράχθη, / εἰ μὴ ἐπὶ φρεσὶ θῆκε θεά, γλαυκῶπις Ἀθήνη· / ἀμφοτέρῃσι δὲ χερσὶν ἐπεσσύμενος λάβε πέτρης, / τῆς ἔχετο στενάχων, ἧος μέγα κῦμα παρῆλθε.</p>
+<p class="eng">a great wave bore him against the rugged shore. There would his skin have been stripped off and his bones broken, had not the goddess, flashing-eyed Athena, put a thought in his mind. On he rushed and seized the rock with both hands, and clung to it, groaning, until the great wave went by.</p>
+</div>
+<div class="unit"><span id="L430"></span><span id="L431"></span><span id="L432"></span><span id="L433"></span><span id="L434"></span>
+<div class="ln">5.430–434</div>
+<p class="ja">こうして彼はこの波を逃れた。だが引き返す流れがふたたび彼に襲いかかって打ち、遠く海へ投げ出した。ちょうど、蛸が巣穴から引き剥がされるとき、その吸盤に多くの小石がくっついて来るように、そのように彼の強い手からは</p>
+<p class="grc">καὶ τὸ μὲν ὣς ὑπάλυξε, παλιρρόθιον δέ μιν αὖτις / πλῆξεν ἐπεσσύμενον, τηλοῦ δέ μιν ἔμβαλε πόντῳ. / ὡς δʼ ὅτε πουλύποδος θαλάμης ἐξελκομένοιο / πρὸς κοτυληδονόφιν πυκιναὶ λάιγγες ἔχονται, / ὣς τοῦ πρὸς πέτρῃσι θρασειάων ἀπὸ χειρῶν</p>
+<p class="eng">Thus then did he escape this wave, but in its backward flow it once more rushed upon him and smote him, and flung him far out in the sea. And just as, when a cuttlefish is dragged from its hole, many pebbles cling to its suckers, even so from his strong hands</p>
+</div>
+<div class="unit"><span id="L435"></span><span id="L436"></span><span id="L437"></span><span id="L438"></span><span id="L439"></span>
+<div class="ln">5.435–439</div>
+<p class="ja">岩に擦れて皮が剥がれた。そして大波が彼を覆った。そのときまことに不運なオデュッセウスは定めを越えて滅びていたことだろう。輝く目のアテナが思慮を与えてくれなければ。岸に吐きかかる波頭から身を抜け出させ、彼は沖のほうへ泳いだ。絶えず陸のほうを見やりながら、見つけようと望んで。</p>
+<p class="grc">ῥινοὶ ἀπέδρυφθεν· τὸν δὲ μέγα κῦμα κάλυψεν. / ἔνθα κε δὴ δύστηνος ὑπὲρ μόρον ὤλετʼ Ὀδυσσεύς, / εἰ μὴ ἐπιφροσύνην δῶκε γλαυκῶπις Ἀθήνη. / κύματος ἐξαναδύς, τά τʼ ἐρεύγεται ἤπειρόνδε, / νῆχε παρέξ, ἐς γαῖαν ὁρώμενος, εἴ που ἐφεύροι</p>
+<p class="eng">were bits of skin stripped off against the rocks; and the great wave covered him. Then verily would hapless Odysseus have perished beyond his fate, had not flashing-eyed Athena given him prudence. Making his way forth from the surge where it belched upon the shore, he swam outside, looking ever toward the land in hope to find</p>
+</div>
+<div class="unit"><span id="L440"></span><span id="L441"></span><span id="L442"></span><span id="L443"></span><span id="L444"></span>
+<div class="ln">5.440–444</div>
+<p class="ja">打ち寄せる岸辺と海の港とを。だが泳いでいるうちに、よく流れる河の口に来たとき、そこが最も良い場所と思われた。岩のない滑らかな場所で、風を避ける陰にもなっていたからである。彼は流れ出る河を見て取り、心のうちに祈った。</p>
+<p class="grc">ἠιόνας τε παραπλῆγας λιμένας τε θαλάσσης. / ἀλλʼ ὅτε δὴ ποταμοῖο κατὰ στόμα καλλιρόοιο / ἷξε νέων, τῇ δή οἱ ἐείσατο χῶρος ἄριστος, / λεῖος πετράων, καὶ ἐπὶ σκέπας ἦν ἀνέμοιο, / ἔγνω δὲ προρέοντα καὶ εὔξατο ὃν κατὰ θυμόν·</p>
+<p class="eng">shelving beaches and harbors of the sea. But when, as he swam, he came to the mouth of a fair-flowing river, where seemed to him the best place, since it was smooth of stones, and besides there was shelter from the wind, he knew the river as he flowed forth, and prayed to him in his heart:</p>
+</div>
+<div class="unit"><span id="L445"></span><span id="L446"></span><span id="L447"></span><span id="L448"></span><span id="L449"></span>
+<div class="ln">5.445–449</div>
+<p class="ja">「聞いてください、王よ、あなたが何者であれ。切に待ち望んだ方のもとへ来るように、私はあなたのもとへ参ります。ポセイドンの脅しから逃れて海から出ようとして。不死の神々の目にも敬うべき者なのです、さすらい人としてやって来る者は。私が今、多くの労苦ののちにあなたの流れとあなたの膝もとへ来たように。</p>
+<p class="grc">κλῦθι, ἄναξ, ὅτις ἐσσί· πολύλλιστον δέ σʼ ἱκάνω, / φεύγων ἐκ πόντοιο Ποσειδάωνος ἐνιπάς. / αἰδοῖος μέν τʼ ἐστὶ καὶ ἀθανάτοισι θεοῖσιν / ἀνδρῶν ὅς τις ἵκηται ἀλώμενος, ὡς καὶ ἐγὼ νῦν / σόν τε ῥόον σά τε γούναθʼ ἱκάνω πολλὰ μογήσας.</p>
+<p class="eng">“Hear me, O king, whosoever thou art. As to one greatly longed-for do I come to thee, seeking to escape from out the sea from the threats of Poseidon. Reverend even in the eyes of the immortal gods is that man who comes as a wanderer, even as I have now come to thy stream and to thy knees, after many toils.</p>
+</div>
+<div class="unit"><span id="L450"></span><span id="L451"></span><span id="L452"></span><span id="L453"></span><span id="L454"></span>
+<div class="ln">5.450–454</div>
+<p class="ja">どうか私を憐れんでください、王よ。私はあなたの嘆願者だと申し上げます」。こう言うと、神はただちに流れを止め、波を鎮め、彼の前に凪を作って、河口まで無事に運んだ。そして彼は二つの膝を折り、強い手を垂らした。海に打ちのめされて魂が砕けていたのである。</p>
+<p class="grc">ἀλλʼ ἐλέαιρε, ἄναξ· ἱκέτης δέ τοι εὔχομαι εἶναι. / ὣς φάθʼ, ὁ δʼ αὐτίκα παῦσεν ἑὸν ῥόον, ἔσχε δὲ κῦμα, / πρόσθε δέ οἱ ποίησε γαλήνην, τὸν δʼ ἐσάωσεν / ἐς ποταμοῦ προχοάς. ὁ δʼ ἄρʼ ἄμφω γούνατʼ ἔκαμψε / χεῖράς τε στιβαράς. ἁλὶ γὰρ δέδμητο φίλον κῆρ.</p>
+<p class="eng">Nay, pity me, O king, for I declare that I am thy suppliant.” So he spoke, and the god straightway stayed his stream, and checked the waves, and made a calm before him, and brought him safely to the mouth of the river. And he let his two knees bend and his strong hands fall, for his spirit was crushed by the sea.</p>
+</div>
+<div class="unit"><span id="L455"></span><span id="L456"></span><span id="L457"></span><span id="L458"></span><span id="L459"></span>
+<div class="ln">5.455–459</div>
+<p class="ja">その体は一面に腫れ上がり、口と鼻孔からは海水が幾筋も噴き出した。こうして彼は息もなく言葉もなく横たわり、動く力もほとんどなかった。恐ろしい疲れが襲っていたからである。だが息を吹き返し、魂がふたたび胸に戻って来ると、彼は女神の面紗を身から解き、海へ向かって呟き流れる河へ落とした。</p>
+<p class="grc">ᾤδεε δὲ χρόα πάντα, θάλασσα δὲ κήκιε πολλὴ / ἂν στόμα τε ῥῖνάς θʼ· ὁ δʼ ἄρʼ ἄπνευστος καὶ ἄναυδος / κεῖτʼ ὀλιγηπελέων, κάματος δέ μιν αἰνὸς ἵκανεν. / ἀλλʼ ὅτε δή ῥʼ ἄμπνυτο καὶ ἐς φρένα θυμὸς ἀγέρθη, / καὶ τότε δὴ κρήδεμνον ἀπὸ ἕο λῦσε θεοῖο.</p>
+<p class="eng">And all his flesh was swollen, and sea water flowed in streams up through his mouth and nostrils. So he lay breathless and speechless, with scarce strength to move; for terrible weariness had come upon him. But when he revived, and his spirit returned again into his breast, then he loosed from him the veil of the goddess and let it fall into the river that murmured seaward;</p>
+</div>
+<div class="unit"><span id="L460"></span><span id="L461"></span><span id="L462"></span><span id="L463"></span><span id="L464"></span>
+<div class="ln">5.460–464</div>
+<p class="ja">大きな波がそれを流れに乗せて運び返し、ただちにイノがそれを手に受け取った。だがオデュッセウスは河から離れて葦の中に身を沈め、大地に口づけした。麦を生む大地に。そして憤って、心大きなおのれの胸に語りかけた。</p>
+<p class="grc">καὶ τὸ μὲν ἐς ποταμὸν ἁλιμυρήεντα μεθῆκεν, / ἂψ δʼ ἔφερεν μέγα κῦμα κατὰ ῥόον, αἶψα δʼ ἄρʼ Ἰνὼ / δέξατο χερσὶ φίλῃσιν· ὁ δʼ ἐκ ποταμοῖο λιασθεὶς / σχοίνῳ ὑπεκλίνθη, κύσε δὲ ζείδωρον ἄρουραν. / ὀχθήσας δʼ ἄρα εἶπε πρὸς ὃν μεγαλήτορα θυμόν·</p>
+<p class="eng">and the great wave bore it back down the stream, and straightway Ino received it in her hands. But Odysseus, going back from the river, sank down in the reeds and kissed the earth, the giver of grain; and deeply moved he spoke to his own mighty spirit:</p>
+</div>
+<div class="unit"><span id="L465"></span><span id="L466"></span><span id="L467"></span><span id="L468"></span><span id="L469"></span>
+<div class="ln">5.465–469</div>
+<p class="ja">「ああ、困ったことだ。私はどうなるのか。最後には何が起こるのか。もしこの河床で辛い夜を明かして見張っていれば、苦い霜と冷たい露とが二つながら私を打ち負かすのではないか。衰えきって魂を吐き出してしまうのではないか。河からの風は明け方に冷たく吹くのだから。</p>
+<p class="grc">ὤ μοι ἐγώ, τί πάθω; τί νύ μοι μήκιστα γένηται; / εἰ μέν κʼ ἐν ποταμῷ δυσκηδέα νύκτα φυλάσσω, / μή μʼ ἄμυδις στίβη τε κακὴ καὶ θῆλυς ἐέρση / ἐξ ὀλιγηπελίης δαμάσῃ κεκαφηότα θυμόν· / αὔρη δʼ ἐκ ποταμοῦ ψυχρὴ πνέει ἠῶθι πρό.</p>
+<p class="eng">“Ah, woe is me! what is to befall me? What will happen to me at the last? If here in the river bed I keep watch throughout the weary night, I fear that together the bitter frost and the fresh dew may overcome me, when from feebleness I have breathed forth my spirit; and the breeze from the river blows cold in the early morning.</p>
+</div>
+<div class="unit"><span id="L470"></span><span id="L471"></span><span id="L472"></span><span id="L473"></span><span id="L474"></span>
+<div class="ln">5.470–474</div>
+<p class="ja">だが斜面を登って木陰の茂みへ行き、深い藪の中で横になって休めば、寒さと疲れが去ってくれるかもしれない。そして甘い眠りが訪れるかもしれない。だがそのときは獣の餌食となり獲物となるのではないかと恐ろしい」。そう思案してみると、そのほうが得策と思われた。</p>
+<p class="grc">εἰ δέ κεν ἐς κλιτὺν ἀναβὰς καὶ δάσκιον ὕλην / θάμνοις ἐν πυκινοῖσι καταδράθω, εἴ με μεθείη / ῥῖγος καὶ κάματος, γλυκερὸς δέ μοι ὕπνος ἐπέλθῃ, / δείδω, μὴ θήρεσσιν ἕλωρ καὶ κύρμα γένωμαι. / ὣς ἄρα οἱ φρονέοντι δοάσσατο κέρδιον εἶναι·</p>
+<p class="eng">But if I climb up the slope to the shady wood and lie down to rest in the thick brushwood, in the hope that the cold and weariness might leave me, and if sweet sleep comes over me, I fear me lest I become a prey and spoil to wild beasts.” Then, as he pondered, this thing seemed to him the better:</p>
+</div>
+<div class="unit"><span id="L475"></span><span id="L476"></span><span id="L477"></span><span id="L478"></span><span id="L479"></span>
+<div class="ln">5.475–479</div>
+<p class="ja">彼は茂みへ向かい、水の近くの開けた場所にそれを見つけた。そして同じ根から生えた二本の灌木の下に潜り込んだ。一本は茨、一本は橄欖である。この二本を通しては、湿った風の力も決して吹き込めず、輝く日の光も射し込めず、</p>
+<p class="grc">βῆ ῥʼ ἴμεν εἰς ὕλην· τὴν δὲ σχεδὸν ὕδατος εὗρεν / ἐν περιφαινομένῳ· δοιοὺς δʼ ἄρʼ ὑπήλυθε θάμνους, / ἐξ ὁμόθεν πεφυῶτας· ὁ μὲν φυλίης, ὁ δʼ ἐλαίης. / τοὺς μὲν ἄρʼ οὔτʼ ἀνέμων διάη μένος ὑγρὸν ἀέντων, / οὔτε ποτʼ ἠέλιος φαέθων ἀκτῖσιν ἔβαλλεν,</p>
+<p class="eng">he went his way to the wood and found it near the water in a clear space; and he crept beneath two bushes that grew from the same spot, one of thorn and one of olive. Through these the strength of the wet winds could never blow, nor the rays of the bright sun beat,</p>
+</div>
+<div class="unit"><span id="L480"></span><span id="L481"></span><span id="L482"></span><span id="L483"></span><span id="L484"></span>
+<div class="ln">5.480–484</div>
+<p class="ja">雨も貫けなかった。それほど密に、互いに絡み合って生えていたのである。その下にオデュッセウスは潜り込み、ただちに手で広い寝床をかき集めた。落ち葉がふんだんにあり、二人でも三人でも覆えるほどであった。</p>
+<p class="grc">οὔτʼ ὄμβρος περάασκε διαμπερές· ὣς ἄρα πυκνοὶ / ἀλλήλοισιν ἔφυν ἐπαμοιβαδίς· οὓς ὑπʼ Ὀδυσσεὺς / δύσετʼ. ἄφαρ δʼ εὐνὴν ἐπαμήσατο χερσὶ φίλῃσιν / εὐρεῖαν· φύλλων γὰρ ἔην χύσις ἤλιθα πολλή, / ὅσσον τʼ ἠὲ δύω ἠὲ τρεῖς ἄνδρας ἔρυσθαι</p>
+<p class="eng">nor could the rain pierce through them, so closely did they grow, intertwining one with the other. Beneath these Odysseus crept and straightway gathered with his hands a broad bed, for fallen leaves were there in plenty, enough to shelter two men or three</p>
+</div>
+<div class="unit"><span id="L485"></span><span id="L486"></span><span id="L487"></span><span id="L488"></span><span id="L489"></span>
+<div class="ln">5.485–489</div>
+<p class="ja">冬のあいだ、どれほど厳しい天気でも。堪え忍ぶ気高いオデュッセウスはそれを見て喜び、真ん中に横たわって、落ち葉を身の上に積み上げた。ちょうど、隣人のいない離れた農場で、人が黒い燠の下に燃えさしを隠し、</p>
+<p class="grc">ὥρῃ χειμερίῃ, εἰ καὶ μάλα περ χαλεπαίνοι. / τὴν μὲν ἰδὼν γήθησε πολύτλας δῖος Ὀδυσσεύς, / ἐν δʼ ἄρα μέσσῃ λέκτο, χύσιν δʼ ἐπεχεύατο φύλλων. / ὡς δʼ ὅτε τις δαλὸν σποδιῇ ἐνέκρυψε μελαίνῃ / ἀγροῦ ἐπʼ ἐσχατιῆς, ᾧ μὴ πάρα γείτονες ἄλλοι,</p>
+<p class="eng">in winter-time, however bitter the weather. And the much-enduring goodly Odysseus saw it, and was glad, and he lay down in the midst, and heaped over him the fallen leaves. And as a man hides a brand beneath the dark embers in an outlying farm, a man who has no neighbors,</p>
+</div>
+<div class="unit"><span id="L490"></span><span id="L491"></span><span id="L492"></span><span id="L493"></span>
+<div class="ln">5.490–493</div>
+<p class="ja">火種を絶やさぬようにするように ── 他所から火をもらわずにすむように ── そのようにオデュッセウスは葉で身を覆った。そしてアテナが彼の目に眠りを注ぎかけた。まぶたを包み、労苦の疲れから速やかに解き放つようにと。</p>
+<p class="grc">σπέρμα πυρὸς σώζων, ἵνα μή ποθεν ἄλλοθεν αὔοι, / ὣς Ὀδυσεὺς φύλλοισι καλύψατο· τῷ δʼ ἄρʼ Ἀθήνη / ὕπνον ἐπʼ ὄμμασι χεῦʼ, ἵνα μιν παύσειε τάχιστα / δυσπονέος καμάτοιο φίλα βλέφαρʼ ἀμφικαλύψας.</p>
+<p class="eng">and so saves a seed of fire, that he may not have to kindle it from some other source, so Odysseus covered himself with leaves. And Athena shed sleep upon his eyes, that it might enfold his lids and speedily free him from toilsome weariness.</p>
+</div>
+</main>
+<footer>
+  <p><a href="https://github.com/twill3c/uta-gaeshi/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a> © 2026 坂田哲朗
+  ・ <a href="https://github.com/twill3c/uta-gaeshi" target="_blank" rel="noopener">GitHub</a>
+  ・ <a href="../about.html">出典と作り方</a>
+  ・ 本文データ CC BY-SA 3.0 US（Perseus Digital Library）
+  ・ <a href="https://app-menu-amber.vercel.app" target="_blank" rel="noopener">App Menu</a></p>
+</footer>
+</body>
+</html>
