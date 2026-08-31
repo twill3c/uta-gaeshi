@@ -61,11 +61,37 @@ def test_canonical_line_anchors_exist():
         assert want <= ids, f"第{book}巻: 欠けているアンカー {sorted(want - ids)[:5]}"
 
 
-def test_untranslated_books_are_marked_not_hidden():
-    """未訳の巻を空にせず、そうと明示すること。"""
-    t = (OUT / "book" / "24.html").read_text(encoding="utf-8")
-    assert "まだ和訳していません" in t
-    assert "（未訳）" in t
+def test_untranslated_units_are_marked_not_hidden():
+    """未訳を空にせず、そうと明示すること。
+
+    もとは「第24巻は未訳だから印がある」と巻を決め打ちしていた。
+    loop_031 で全24巻を訳し終えた瞬間、この検査は前提ごと落ちた
+    (VERIF-GAP)。**実例を直書きすると、実例が消えたときに
+    不変条件まで一緒に消える。** そこで台帳から導く形に書き直す。
+
+    未訳がゼロでも空回りしないよう、裏側も検査する ——
+    訳のある単位は、その訳が実際に頁へ出ていること。
+    """
+    from pipeline.translate import load_units
+    import json
+
+    ledger = Path(__file__).resolve().parents[1] / "data" / "translated.jsonl"
+    done = {json.loads(l)["id"] for l in
+            ledger.read_text(encoding="utf-8").splitlines() if l.strip()}
+    units = load_units()
+    pending = [u for u in units if u["id"] not in done]
+
+    for u in pending:
+        t = (OUT / "book" / f'{u["book"]}.html').read_text(encoding="utf-8")
+        assert "まだ和訳していません" in t, f'{u["id"]}: 未訳なのに印が無い'
+        assert "（未訳）" in t, f'{u["id"]}: 未訳なのに印が無い'
+
+    # 未訳がゼロのときに素通りしないための裏側。
+    assert units, "単位が空"
+    for book in (1, 12, 24):
+        t = (OUT / "book" / f"{book}.html").read_text(encoding="utf-8")
+        if not any(u["book"] == book for u in pending):
+            assert "まだ和訳していません" not in t, f"第{book}巻: 全訳済みなのに未訳の印が残っている"
 
 
 def test_pages_declare_utf8_and_lang():
