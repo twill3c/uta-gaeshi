@@ -199,3 +199,60 @@ def test_no_unreviewed_key_line_collision():
 
     unreviewed = sorted(k for k, lines in by.items() if len(lines) > 1 and k not in reviewed)
     assert unreviewed == [], f"未検討の鍵と本文行の衝突: {unreviewed}"
+
+
+# 予測表の band を刻印する。loop_020 で登録した時点の値。
+PREDICTION_BANDS_SHA256 = "d48dd9d1b6d7c60470f959b6905c1c918e8279fda3bbb807371177b6b808756c"
+
+
+def test_coverage_predictions_are_frozen():
+    """事前登録した充足率の予測を書き換えてはならない。
+
+    loop_019 で n=1 の説明を一般則として成果物に書き、loop_020 でも
+    「イタケの場面が続くから高いまま」と述べて外した。仮説は事後には
+    いくらでも当てはめられる。そこで残り 10 巻の band を訳す前に固定した。
+
+    **規範だけでは守れないので刻印する。** 実測値はこのファイルではなく
+    追記のみのループログに記録し、予測表そのものは動かさない。
+    band を変えたいなら、それは新しい予測であって、別表として登録し直すこと。
+    """
+    import hashlib
+    import json
+    from pathlib import Path as _P
+
+    src = _P(__file__).resolve().parents[1] / "data" / "judgments" / "coverage_predictions.json"
+    d = json.loads(src.read_text(encoding="utf-8"))
+    bands = {str(p["book"]): p["band"] for p in d["predictions"]}
+    got = hashlib.sha256(
+        json.dumps(bands, sort_keys=True, ensure_ascii=False).encode()
+    ).hexdigest()
+    assert got == PREDICTION_BANDS_SHA256, (
+        f"予測表の band が変わっている。事後の書き換えは禁止: {bands}"
+    )
+
+
+def test_only_registered_gate_exceptions_remain():
+    """台帳の再検査で落ちてよいのは、判断表に記名した誤検出だけ。
+
+    loop_020 で 14.305 が G-14 に落ちた。錨と行の境界がずれる単位では
+    G-02 を満たすと隣の単位の分母だけが残るという構造的な誤検出で、
+    訳し落としではない。**だが赤を残したまま慣れるのが一番危ない。**
+    常時1件落ちている状態を放置すると、二件目の本物に気づかなくなる。
+
+    そこで誤検出は `data/judgments/gate_exceptions.json` に機構つきで
+    記名し、**未登録の違反が一件でもあればここで落ちる**ようにした。
+    閾値は下げない。訳文も水増ししない。
+    """
+    import json
+    from pathlib import Path as _P
+
+    from pipeline.translate import recheck
+
+    root = _P(__file__).resolve().parents[1]
+    registered = {
+        e["unit"] for e in json.loads(
+            (root / "data" / "judgments" / "gate_exceptions.json").read_text(encoding="utf-8")
+        )["exceptions"]
+    }
+    failing = {d["id"] for d in recheck()["detail"] if d.get("violations")}
+    assert failing <= registered, f"未登録のゲート違反: {sorted(failing - registered)}"
