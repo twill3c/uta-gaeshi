@@ -104,3 +104,20 @@ def test_ledger_records_are_well_formed():
 def test_ledger_ids_exist_in_corpus(units):
     for uid in read_ledger():
         assert uid in units, f"台帳に存在しない単位 {uid}"
+
+
+def test_g05_fires_on_stray_latin():
+    """英訳を下敷きにすると訳し残しがそのまま混じる(loop_006 の「old友よ」)。
+
+    G-05 は当初キリル・ハングル・タイ文字しか見ておらず、ラテン文字は素通りした。
+    昇格前の実測: 記録済み訳文 253 件中、ラテン文字を含むもの 0 件(誤検出源にならない)。
+    """
+    assert check_g05("老いた友よ") == []
+    assert check_g05("old友よ")
+
+
+def test_no_latin_in_recorded_translations():
+    import re as _re
+    latin = _re.compile(r"[A-Za-z]")
+    bad = [uid for uid, rec in read_ledger().items() if latin.search(rec["ja"])]
+    assert bad == [], f"訳文にラテン文字が混入: {bad}"
