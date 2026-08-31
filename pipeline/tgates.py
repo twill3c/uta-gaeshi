@@ -90,6 +90,27 @@ def check_g05(ja: str) -> list[str]:
     return [f"G-05 {name}の混入" for name, pat in FOREIGN.items() if pat.search(ja)]
 
 
+# G-14 の閾値。和訳/英訳の文字数比の実測分布(2026-08-31, n=318)から決めた:
+#   中央 0.416 / 平均 0.417 / 標準偏差 0.055 → 平均 - 2σ = 0.307
+# この線を下回る 7 件はすべて、作業画面での原文切り詰め(280字)を超えた単位だった。
+# 訳文が短いこと自体は罪ではないが、**原文の尾部が落ちた場合の唯一の機械的な痕跡**である。
+# 他のゲートは「訳文に何が入っているか」しか見ないため、名前も数詞も定型句も無い
+# 尾部の欠落を捕まえられない(HC-086)。
+LENGTH_RATIO_MIN = 0.31
+
+
+def check_g14(unit: dict, ja: str) -> list[str]:
+    """分量整合。原文に対して訳文が極端に短くないこと。"""
+    src = len(unit["murray"])
+    if src == 0:
+        return []
+    ratio = len(ja) / src
+    if ratio < LENGTH_RATIO_MIN:
+        return [f"G-14 訳文が短すぎる: 英{src}字 → 和{len(ja)}字 "
+                f"(比 {ratio:.2f} < {LENGTH_RATIO_MIN}). 原文の尾部を訳し落としていないか確かめる"]
+    return []
+
+
 def check_unit(unit: dict, ja: str, glossary: dict, names: dict[str, str]) -> list[str]:
     if not ja.strip():
         return ["訳文が空"]
@@ -98,4 +119,5 @@ def check_unit(unit: dict, ja: str, glossary: dict, names: dict[str, str]) -> li
         + check_g03(unit, ja, names)
         + check_g04(unit, ja)
         + check_g05(ja)
+        + check_g14(unit, ja)
     )

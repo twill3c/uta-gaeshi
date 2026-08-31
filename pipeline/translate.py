@@ -179,3 +179,22 @@ def recheck() -> dict:
         "rate": round((len(ledger) - len(failed)) / len(ledger), 4) if ledger else 0.0,
         "detail": failed,
     }
+
+
+def show_pending(book: int, limit: int = 14) -> None:
+    """未訳の単位を**全文で**出す。
+
+    切り詰めた表示のまま訳すと、原文の尾部が黙って落ちる(loop_007 / HC-086)。
+    第4巻では 169 単位中 122 単位が 280 字の表示窓を超えており、
+    そのうち 7 件で実際に訳し落としが起きた。**表示を切らないことが唯一の予防である。**
+    """
+    glossary = load_glossary()["entries"]
+    done = read_ledger()
+    todo = [u for u in load_units() if u["book"] == book and u["id"] not in done]
+    print(f"第{book}巻 未訳 {len(todo)} 単位")
+    for u in todo[:limit]:
+        cores = [glossary[k]["core"] for k in u["formulas"] if k in glossary]
+        head = f"### {u['id']}  英{len(u['murray'])}字"
+        print(head + (f"  中核句: {cores}" if cores else ""))
+        print(u["murray"])
+        print()
