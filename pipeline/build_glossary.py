@@ -14,7 +14,7 @@ DATA = ROOT / "data"
 sys.path.insert(0, str(DATA / "judgments"))
 
 
-def build(books: tuple[int, ...] | None = (1, 2, 3, 4, 5, 6)) -> dict:
+def build(books: tuple[int, ...] | None = (1, 2, 3, 4, 5, 6, 7)) -> dict:
     from glossary_source import CORE  # noqa: E402
 
     from pipeline.translate import load_units
