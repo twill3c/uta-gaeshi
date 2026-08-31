@@ -141,3 +141,30 @@ def test_no_key_shadows_another_with_a_different_core():
         if a != b and b.startswith(a) and CORE[a][0] != CORE[b][0]
     ]
     assert bad == [], f"異なる中核句を持つ鍵が覆い隠し合っている: {bad}"
+
+
+def test_no_duplicate_keys_in_glossary_source():
+    """判断表に同じ鍵を二度書いてはならない。
+
+    Python の dict リテラルは同一鍵を**エラーにせず後勝ちで捨てる**。
+    第9巻で `πάντα κατὰ μοῖραν` を書いたとき、同じ鍵の第3巻の項
+    (白い帆を張り)が黙って消え、既訳の 4.780 / 8.50 が後から落ちた
+    (loop_015)。覆い隠し検査は CORE が dict になった後を見るので、
+    **この故障だけは原理的に見えない**。ソースを AST で読む必要がある。
+    """
+    import ast
+    from pathlib import Path as _P
+
+    src = _P(__file__).resolve().parents[1] / "data" / "judgments" / "glossary_source.py"
+    tree = ast.parse(src.read_text(encoding="utf-8"))
+    dup = []
+    for node in ast.walk(tree):
+        if not isinstance(node, ast.Dict):
+            continue
+        seen = set()
+        for k in node.keys:
+            if isinstance(k, ast.Constant) and isinstance(k.value, str):
+                if k.value in seen:
+                    dup.append((k.lineno, k.value))
+                seen.add(k.value)
+    assert dup == [], f"判断表に重複した鍵がある(後勝ちで黙って消える): {dup}"
