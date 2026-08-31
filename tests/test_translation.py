@@ -168,3 +168,34 @@ def test_no_duplicate_keys_in_glossary_source():
                     dup.append((k.lineno, k.value))
                 seen.add(k.value)
     assert dup == [], f"判断表に重複した鍵がある(後勝ちで黙って消える): {dup}"
+
+
+def test_no_unreviewed_key_line_collision():
+    """一つの鍵が二つ以上の別の反復行に当たるなら、人が見た記録が要る。
+
+    loop_014 の覆い隠し検査は**鍵どうし**を見る。だが鍵が一つしか無くても、
+    新しい本文行がその鍵で始まれば中核句を継承してしまう。第10巻のキルケの鍵
+    `ὣς ἐφάμην, ἡ δʼ αὐτίκʼ` が第11巻の「尊い母」の行に当たり、死んだ母に
+    「女神のうちにも輝かしい方」を強制していた(loop_017)。
+
+    **判定は全24巻の本文に対して行う。** 訳した巻だけを見ると、罠は次の巻を
+    足すまで潜伏する —— 実際、第10巻の時点では衝突は存在しなかった。
+    """
+    import collections
+    import json
+    from pathlib import Path as _P
+
+    from pipeline.build_glossary import build
+
+    root = _P(__file__).resolve().parents[1]
+    reviewed = {
+        c["key"] for c in json.loads(
+            (root / "data" / "judgments" / "key_collisions.json").read_text(encoding="utf-8")
+        )["collisions"]
+    }
+    by = collections.defaultdict(set)
+    for v in build(books=None)["entries"].values():
+        by[v["matched_on"]].add(v["sample"])
+
+    unreviewed = sorted(k for k, lines in by.items() if len(lines) > 1 and k not in reviewed)
+    assert unreviewed == [], f"未検討の鍵と本文行の衝突: {unreviewed}"
