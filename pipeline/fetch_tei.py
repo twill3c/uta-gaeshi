@@ -1,6 +1,6 @@
 """Perseus canonical-greekLit から『オデュッセイア』の TEI XML を取得する。
 
-出典: PerseusDL/canonical-greekLit (CC BY-SA 3.0 US)
+出典: PerseusDL/canonical-greekLit (CC BY-SA 4.0 International)
   tlg0012.tlg002.perseus-grc2 … ギリシャ語原典(Murray 校訂 Loeb 1919)
   tlg0012.tlg002.perseus-eng3 … A.T. Murray 英訳 1919
   tlg0012.tlg002.perseus-eng4 … Samuel Butler 英訳(Power/Nagy 改訂)
@@ -46,7 +46,12 @@ EDITIONS = {
     },
 }
 
-LICENSE = "CC BY-SA 3.0 US"
+# 権利は**取得元リポジトリの license.md と README** にある。TEI ヘッダには
+# <licence> 要素が一つも無い(取得物を見るだけでは分からない構造)。
+# 初回にウェブサイト側の規約(3.0 US)を読んで 12 ループ誤表記した(HC-091)。
+LICENSE = "CC BY-SA 4.0 International"
+# 出典 README が課す追加義務。継承だけでなく還元も求めている。
+OBLIGATION = "改変は Perseus へ提供すること (You must offer Perseus any modifications you make)"
 ATTRIBUTION = "Perseus Digital Library, Tufts University"
 
 

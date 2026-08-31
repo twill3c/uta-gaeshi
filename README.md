@@ -61,7 +61,7 @@ python -m pytest -q             # 構造ゲート・測定の不変量・陽性�
 
 ## 出典と権利
 
-Perseus Digital Library, Tufts University(CC BY-SA 3.0 US)。
+Perseus Digital Library, Tufts University(CC BY-SA 4.0 International)。
 派生データも同ライセンスで頒布する。詳細は `data/LICENSE-DATA.md`。
 
 ## L3 で決めたこと

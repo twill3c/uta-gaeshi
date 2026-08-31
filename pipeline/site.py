@@ -79,7 +79,7 @@ FOOTER = f"""<footer>
   ・ <a href="{GUIDE}" target="_blank" rel="noopener">歌返しの歩き方</a>
   ・ <a href="{DESIGN}" target="_blank" rel="noopener">歌返し設計図</a>
   ・ <a href="about.html">出典と作り方</a>
-  ・ 本文データ CC BY-SA 3.0 US（Perseus Digital Library）
+  ・ 本文データ CC BY-SA 4.0 International（Perseus Digital Library）
   ・ <a href="{APP_MENU}" target="_blank" rel="noopener">App Menu</a></p>
 </footer>"""
 
@@ -348,9 +348,24 @@ def build_about(corpus, formulas, ledger, entities) -> str:
 利用できる電子テキストが存在しません（公開済みは『イーリアス』のみ）。</p>
 <h2>出典</h2>
 <p>Perseus Digital Library（Tufts University）の TEI XML。ライセンスは
-<strong>CC BY-SA 3.0 US</strong>。継承条項があるため、本サイトの派生データ（和訳を含む）も
+<strong>CC BY-SA 4.0 International</strong>。継承条項があるため、本サイトの派生データ（和訳を含む）も
 同ライセンスで頒布します。</p>
 <table><tr><th>版</th><th>大きさ</th><th>sha256</th></tr>{ed}</table>
+<div class="note"><strong>ライセンス表記の訂正（2026-08-31）。</strong>
+本サイトはこれを長らく「CC BY-SA 3.0 US」と誤表記していました。版も適用域も誤りです。
+原因は、Perseus の<em>ウェブサイト</em>の規約を読んだ一方で、ファイルは
+<em>GitHub リポジトリ</em>から取得していたことです。両者のライセンスは実際に異なります。
+権利は取得物（TEI）自体には書かれておらず、リポジトリの <code>license.md</code> と
+README にのみあります。</div>
+<h2>出典側が課すもう一つの義務</h2>
+<p>出典の README は継承に加えてこう定めています ——
+<strong>「You must offer Perseus any modifications you make」</strong>
+（改変を行った場合は Perseus に提供すること）。</p>
+<p>本プロジェクトは出典データに対して<strong>修復を 2 件</strong>行っています
+（巻 6 の錨重複の統合、巻 16 の範囲外の錨の除去）。いずれも下の一覧に記録してあり、
+リポジトリの <code>data/repairs.json</code> に機械可読な形で残しています。
+<strong>この還元はまだ Perseus へ提供していません。</strong>未履行であることを
+ここに明記します。</p>
 <p class="ln">上流が改訂されると刻印が合わなくなり、検査が落ちます。件数のずれが
 「上流の改訂」なのか「我々の回帰」なのかを、そこで切り分けられるようにしています。</p>
 <h2>出典側の欠陥と、その扱い</h2>

@@ -7,7 +7,7 @@ L2 以降ずっと積み上げてきた検査は、いずれも**データ**を�
 
 G-15 リンク整合性: 内部リンクの飛び先ファイルとアンカーが実在する
 G-16 外部依存ゼロ: 外部ホストへのリクエストを一切含まない(SPEC N-01)
-G-17 権利表示: 全ページに Perseus のクレジットと CC BY-SA の表示がある(N-03)
+G-17 権利表示: 全ページに Perseus のクレジットと**版番号を含む**ライセンス表記がある(N-03)
 """
 from __future__ import annotations
 
@@ -16,6 +16,12 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "out"
+
+# **版番号まで含めて検査する。** 「CC BY-SA という文字列がある」だけの検査は、
+# 版と適用域を取り違えたまま 12 ループ通過した(HC-091)。
+# 出典は PerseusDL/canonical-greekLit の license.md と README が権威であり、
+# Perseus のウェブサイト側(3.0 US)とは異なる。
+LICENSE = "CC BY-SA 4.0 International"
 
 HREF = re.compile(r'href="([^"]+)"')
 SRC = re.compile(r'(?:src|href)="(https?://[^"]+)"')
@@ -66,8 +72,8 @@ def check_attribution() -> list[str]:
         t = p.read_text(encoding="utf-8")
         if "Perseus" not in t:
             v.append(f"{p.relative_to(OUT)}: Perseus のクレジットが無い")
-        if "CC BY-SA" not in t:
-            v.append(f"{p.relative_to(OUT)}: CC BY-SA の表示が無い")
+        if LICENSE not in t:
+            v.append(f"{p.relative_to(OUT)}: ライセンス表記 {LICENSE!r} が無い")
     return v
 
 

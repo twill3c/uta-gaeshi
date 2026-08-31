@@ -32,7 +32,11 @@ def test_g16_no_external_resource_fetch():
 
 
 def test_g17_attribution_on_every_page():
-    """SPEC N-03: 継承条項があるため全ページに Perseus と CC BY-SA を表示する。"""
+    """SPEC N-03: 全ページに Perseus と、**版番号を含む**ライセンス表記を出す。
+
+    版だけを間違えても「CC BY-SA がある」検査は通ってしまう。実際 3.0 US と
+    誤表記したまま 12 ループ通過した(HC-091)。版まで検査する。
+    """
     assert check_attribution() == []
 
 

@@ -202,7 +202,7 @@ def build_units() -> dict:
     meta = {
         "work": "Homer, Odyssey (Ὀδύσσεια)",
         "source": "PerseusDL/canonical-greekLit",
-        "license": "CC BY-SA 3.0 US",
+        "license": "CC BY-SA 4.0 International",
         "attribution": "Perseus Digital Library, Tufts University",
         "books": len(by_book),
         "greek_lines": len(greek),

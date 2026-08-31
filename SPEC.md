@@ -35,7 +35,8 @@
 |---|---|---|
 | N-01 | 実行時の課金経路をゼロにする(API 呼び出し・DB・cron を持たない) | 完全 SSG、外部リクエスト無し |
 | N-02 | 地図はタイルサーバに依存しない | Natural Earth をビルド時に焼き込む |
-| N-03 | 派生データを CC BY-SA 3.0 US で頒布し Perseus を明示する | `data/LICENSE-DATA.md` |
+| N-03 | 派生データを CC BY-SA 4.0 International で頒布し Perseus を明示する | `data/LICENSE-DATA.md` |
+| N-05 | 出典側の改変を Perseus へ提供する(出典 README が課す義務) | `data/LICENSE-DATA.md` |
 | N-04 | 和訳が機械生成であることを隠さない | `/about` に生成方法と測定値を開示 |
 
 ## 4. 品質基準

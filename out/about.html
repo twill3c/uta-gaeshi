@@ -62,9 +62,24 @@ footer a{color:var(--sub)}
 利用できる電子テキストが存在しません（公開済みは『イーリアス』のみ）。</p>
 <h2>出典</h2>
 <p>Perseus Digital Library（Tufts University）の TEI XML。ライセンスは
-<strong>CC BY-SA 3.0 US</strong>。継承条項があるため、本サイトの派生データ（和訳を含む）も
+<strong>CC BY-SA 4.0 International</strong>。継承条項があるため、本サイトの派生データ（和訳を含む）も
 同ライセンスで頒布します。</p>
 <table><tr><th>版</th><th>大きさ</th><th>sha256</th></tr><tr><td>ギリシャ語原典(Murray 校訂 Loeb 1919)</td><td>1,560,163 bytes</td><td><code class="ln">e00253c0b383d6c9…</code></td></tr><tr><td>A.T. Murray 英訳 1919</td><td>870,905 bytes</td><td><code class="ln">dda5b206e332e56c…</code></td></tr><tr><td>Samuel Butler 英訳(Power/Nagy 改訂)</td><td>939,107 bytes</td><td><code class="ln">4404a35bd6fc679d…</code></td></tr></table>
+<div class="note"><strong>ライセンス表記の訂正（2026-08-31）。</strong>
+本サイトはこれを長らく「CC BY-SA 3.0 US」と誤表記していました。版も適用域も誤りです。
+原因は、Perseus の<em>ウェブサイト</em>の規約を読んだ一方で、ファイルは
+<em>GitHub リポジトリ</em>から取得していたことです。両者のライセンスは実際に異なります。
+権利は取得物（TEI）自体には書かれておらず、リポジトリの <code>license.md</code> と
+README にのみあります。</div>
+<h2>出典側が課すもう一つの義務</h2>
+<p>出典の README は継承に加えてこう定めています ——
+<strong>「You must offer Perseus any modifications you make」</strong>
+（改変を行った場合は Perseus に提供すること）。</p>
+<p>本プロジェクトは出典データに対して<strong>修復を 2 件</strong>行っています
+（巻 6 の錨重複の統合、巻 16 の範囲外の錨の除去）。いずれも下の一覧に記録してあり、
+リポジトリの <code>data/repairs.json</code> に機械可読な形で残しています。
+<strong>この還元はまだ Perseus へ提供していません。</strong>未履行であることを
+ここに明記します。</p>
 <p class="ln">上流が改訂されると刻印が合わなくなり、検査が落ちます。件数のずれが
 「上流の改訂」なのか「我々の回帰」なのかを、そこで切り分けられるようにしています。</p>
 <h2>出典側の欠陥と、その扱い</h2>
@@ -105,7 +120,7 @@ G-05 と G-14 は実際に本番で欠陥を捕まえました — 目視では�
   ・ <a href="https://claude.ai/code/artifact/53733816-46f1-4044-bf43-9c62a9060480" target="_blank" rel="noopener">歌返しの歩き方</a>
   ・ <a href="https://claude.ai/code/artifact/4870833a-4718-438b-948b-840296c004dd" target="_blank" rel="noopener">歌返し設計図</a>
   ・ <a href="about.html">出典と作り方</a>
-  ・ 本文データ CC BY-SA 3.0 US（Perseus Digital Library）
+  ・ 本文データ CC BY-SA 4.0 International（Perseus Digital Library）
   ・ <a href="https://app-menu-amber.vercel.app" target="_blank" rel="noopener">App Menu</a></p>
 </footer>
 </body>
