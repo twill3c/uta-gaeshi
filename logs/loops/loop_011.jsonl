@@ -1,0 +1,1 @@
+{"v": "1.2", "ts": "2026-08-31T12:00:58+09:00", "project": "uta-gaeshi", "loop_id": "loop_011", "event": "loop_start", "data": {"goal": "本番公開: GitHub へ push し Vercel へデプロイ、フッタ規約のアーティファクト2本を作って参照を繋ぐ", "spec_refs": ["L6", "F-11", "N-01", "N-03"], "scaffold_version": "1.22.0", "agent": "claude-code", "model": "claude-opus-5"}}

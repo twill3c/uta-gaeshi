@@ -25,6 +25,8 @@ OUT = ROOT / "out"
 
 REPO = "https://github.com/twill3c/uta-gaeshi"
 APP_MENU = "https://app-menu-amber.vercel.app"
+GUIDE = "https://claude.ai/code/artifact/53733816-46f1-4044-bf43-9c62a9060480"
+DESIGN = "https://claude.ai/code/artifact/4870833a-4718-438b-948b-840296c004dd"
 
 CSS = """
 :root{--bg:#fbfaf7;--fg:#1c1a17;--sub:#6b6459;--line:#ddd6c9;--acc:#7a5c3e;--mark:#f0e6d2}
@@ -74,6 +76,8 @@ footer a{color:var(--sub)}
 FOOTER = f"""<footer>
   <p><a href="{REPO}/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a> © 2026 坂田哲朗
   ・ <a href="{REPO}" target="_blank" rel="noopener">GitHub</a>
+  ・ <a href="{GUIDE}" target="_blank" rel="noopener">歌返しの歩き方</a>
+  ・ <a href="{DESIGN}" target="_blank" rel="noopener">歌返し設計図</a>
   ・ <a href="about.html">出典と作り方</a>
   ・ 本文データ CC BY-SA 3.0 US（Perseus Digital Library）
   ・ <a href="{APP_MENU}" target="_blank" rel="noopener">App Menu</a></p>
