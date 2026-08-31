@@ -14,7 +14,7 @@ DATA = ROOT / "data"
 sys.path.insert(0, str(DATA / "judgments"))
 
 
-def build(book: int | None = 1) -> dict:
+def build(books: tuple[int, ...] | None = (1, 2)) -> dict:
     from glossary_source import CORE  # noqa: E402
 
     from pipeline.translate import load_units
@@ -22,8 +22,9 @@ def build(book: int | None = 1) -> dict:
     formulas = json.loads((DATA / "formulas.json").read_text(encoding="utf-8"))
     by_key = {g["key"]: g for g in formulas["repeated_lines"]}
     units = load_units()
+    # 用語集は巻をまたいで累積する。一度入った項目は以後のすべての巻を拘束する。
     need = sorted({
-        k for u in units if book is None or u["book"] == book for k in u["formulas"]
+        k for u in units if books is None or u["book"] in books for k in u["formulas"]
     })
 
     entries, unmatched = {}, []
@@ -39,7 +40,7 @@ def build(book: int | None = 1) -> dict:
         else:
             unmatched.append({"key": key, "sample": sample, "count": by_key[key]["count"]})
     return {
-        "authored_on": "2026-08-31", "author": "loop_004",
+        "authored_on": "2026-08-31", "author": "loop_004/loop_005",
         "policy": {
             "core": "反復行が現れるたび一字一句同じで訳文に現れる不変部分",
             "variable": "前後の助詞・接続は文脈に合わせてよい",
@@ -52,7 +53,7 @@ def build(book: int | None = 1) -> dict:
 
 
 def main() -> None:
-    g = build(book=1)
+    g = build()
     (DATA / "judgments" / "glossary.json").write_text(
         json.dumps(g, ensure_ascii=False, indent=1) + chr(10), encoding="utf-8")
     c = g["coverage"]

@@ -16,7 +16,7 @@
 | L1 | TEI 取得・構造化・G-01 / G-06 | 完了 |
 | L2 | 定型句・話者・地名の全数測定 | 完了 |
 | L3 | 名寄せ表と三段台帳の確定 | 完了 |
-| L4 | 和訳ハーネスと第1巻の完訳 | 完了(第1巻 89/89・全体 89/2,432) |
+| L4 | 和訳(継続中) | 第1〜2巻 完訳・全体 176/2,432(7.2%) |
 | L5 | 較正ゲートの測定 | 未着手 |
 | L6 | 公開 | 未着手 |
 
@@ -30,7 +30,7 @@ python -m pipeline.speakers     # 発話定型からの話者候補 data/speaker
 python -m pipeline.places       # 地名の全数集計 data/places.json
 python -m pipeline.align        # 英訳を鍵にした名寄せ data/align.json
 python -m pipeline.persons      # 判断表を適用し保存則で検算 data/entities.json
-python -m pipeline.build_glossary  # 定型句用語集 data/judgments/glossary.json
+python -m pipeline.build_glossary  # 定型句用語集(巻をまたいで累積)
 python -m pipeline.translate       # 和訳の進捗(再開可能な追記台帳)
 python -m pytest -q             # 構造ゲート・測定の不変量・陽性対照
 ```
@@ -102,3 +102,9 @@ Perseus の地名タグの巻き添えで地名に分類されていた。
 
 第 1 巻に現れる反復行 94 種は**すべて他巻へ波及する**ため、第 1 巻を訳した時点で
 残り 23 巻の骨格が決まっている。
+
+## 用語集は巻をまたいで累積する
+
+一度入った中核句は以後のすべての巻を拘束する。第1巻で 94 件、第2巻で 65 件を追加し
+現在 159 件。第2巻が要求した 78 種のうち 13 種は第1巻の用語集で足りた。
+巻を進めるほど新規の追加は減っていく見込みだが、実測して記録する。
