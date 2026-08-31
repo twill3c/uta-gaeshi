@@ -121,3 +121,23 @@ def test_no_latin_in_recorded_translations():
     latin = _re.compile(r"[A-Za-z]")
     bad = [uid for uid, rec in read_ledger().items() if latin.search(rec["ja"])]
     assert bad == [], f"訳文にラテン文字が混入: {bad}"
+
+
+def test_no_key_shadows_another_with_a_different_core():
+    """短い鍵が長い鍵を覆い隠して、別の中核句を当ててはならない。
+
+    照合は前方一致なので、`ὧδε δέ τις εἴπεσκε` は `ὧδε δέ τις εἴπεσκεν` にも当たる。
+    最初の一致を採っていたため、第8巻(話者は神々)へ第2巻(驕り高ぶる若者たち)の
+    中核句が付いていた(loop_014)。最長一致に直したうえで、
+    **異なる中核句を持つ鍵どうしの覆い隠し自体を禁じる**。
+    """
+    import sys
+    from pathlib import Path
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "data" / "judgments"))
+    from glossary_source import CORE  # noqa: E402
+
+    bad = [
+        (a, b) for a in CORE for b in CORE
+        if a != b and b.startswith(a) and CORE[a][0] != CORE[b][0]
+    ]
+    assert bad == [], f"異なる中核句を持つ鍵が覆い隠し合っている: {bad}"

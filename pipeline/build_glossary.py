@@ -14,7 +14,7 @@ DATA = ROOT / "data"
 sys.path.insert(0, str(DATA / "judgments"))
 
 
-def build(books: tuple[int, ...] | None = (1, 2, 3, 4, 5, 6, 7)) -> dict:
+def build(books: tuple[int, ...] | None = (1, 2, 3, 4, 5, 6, 7, 8)) -> dict:
     from glossary_source import CORE  # noqa: E402
 
     from pipeline.translate import load_units
@@ -30,7 +30,11 @@ def build(books: tuple[int, ...] | None = (1, 2, 3, 4, 5, 6, 7)) -> dict:
     entries, unmatched = {}, []
     for key in need:
         sample = by_key[key]["sample"]
-        for prefix, (core, full) in CORE.items():
+        # **最長一致を採る。** 最初の一致を採ると、短い鍵が長い鍵を覆い隠す。
+        # 実際に第8巻の ὧδε δέ τις εἴπεσκεν(話者は神々)へ、第2巻の
+        # ὧδε δέ τις εἴπεσκε(驕り高ぶる若者たち)の中核句が当たっていた
+        # (loop_014 / GEN-LOGIC、HC-081 と同型)。
+        for prefix, (core, full) in sorted(CORE.items(), key=lambda kv: -len(kv[0])):
             if sample.startswith(prefix):
                 entries[key] = {
                     "sample": sample, "count": by_key[key]["count"],
