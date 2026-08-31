@@ -554,11 +554,11 @@
   },
   {
    "english": "Samos",
-   "ja": "サモス",
+   "ja": "サメ",
    "category": "place",
    "resolves_to": null,
    "exclude_forms": [],
-   "note": "",
+   "note": "Murray は Σάμη を Samos と綴るが、これはイタケ近傍の島で、エーゲ海のサモス島とは別の地である。和名はサメを採る。loop_007 で用語集の中核句(サメ)と本表(サモス)が食い違って露見した。",
    "verified": true
   },
   {
