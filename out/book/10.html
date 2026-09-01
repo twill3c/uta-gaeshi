@@ -26,6 +26,13 @@ th{color:var(--sub);font-weight:normal;white-space:nowrap}
 .ja{margin:.15rem 0 0}
 .grc,.eng{margin:.3rem 0 0;font-size:.82rem;color:var(--sub)}
 .grc{font-family:"Palatino Linotype",Palatino,serif}
+/* 定型句の三段併記と登場者の説明。
+   **`.ja` を使い回さないこと** — 本文の和訳段落が既にその名で、
+   ここで再定義すると本文の字が縮む(loop_033 で一度やった)。 */
+.t-en{margin:.25rem 0 0;font-size:.8rem;color:var(--sub);font-style:italic}
+.t-ja{margin:.25rem 0 .35rem;font-size:.86rem;color:var(--fg)}
+.t-ja b{font-weight:600}
+.gap{color:var(--sub);opacity:.75;font-style:normal;font-size:.72rem}
 .untranslated{color:var(--sub);font-style:italic}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(7.2rem,1fr));gap:.4rem}
 .grid a{display:block;border:1px solid var(--line);border-radius:3px;padding:.45rem .5rem;

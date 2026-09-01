@@ -99,3 +99,97 @@ def test_pages_declare_utf8_and_lang():
         t = p.read_text(encoding="utf-8")
         assert '<meta charset="utf-8">' in t, f"{p.name}: charset 宣言が無い"
         assert '<html lang="ja">' in t, f"{p.name}: lang 宣言が無い"
+
+
+# ---- 定型句の英語・和訳併記 / 登場者の説明 (loop_033) ----------------------
+
+def _root():
+    return Path(__file__).resolve().parents[1]
+
+
+def test_formula_page_shows_english_and_japanese():
+    """定型句の地図は、原典だけでなく英語と和訳(中核句)を併記すること。"""
+    t = (OUT / "formula.html").read_text(encoding="utf-8")
+    assert t.count('class="t-ja"') >= 100, "和訳(中核句)の併記が足りない"
+    assert t.count('class="t-en"') >= 100, "英語の併記が足りない"
+    # 代表例。Murray 自身の語であることの確認も兼ねる。
+    # 先頭の Son が落ちているのは、共通部分が語の途中から始まるため
+    # 刈り込みで捨てているからで、これは意図した挙動。
+    assert "of Laertes, sprung from Zeus, Odysseus of many" in t
+    assert "思慮深いテレマコス" in t
+
+
+def test_formula_english_is_substring_of_every_source_unit():
+    """**併記した英語は、その行を含むすべての単位の英訳に実在すること。**
+
+    この欄の主張は「Murray の語である」ことだけである。取り出し方の都合で
+    元文に無い文字列が出れば、それは主張が嘘になる。全数で確かめる。
+    """
+    import json as _json
+    from pipeline.translate import load_units
+
+    root = _root()
+    fen = _json.loads((root / "data" / "formula_en.json").read_text(encoding="utf-8"))
+    formulas = _json.loads(
+        (root / "data" / "formulas.json").read_text(encoding="utf-8"))["repeated_lines"]
+    units = {u["id"]: u for u in load_units()}
+
+    bad = []
+    for g in formulas:
+        en = fen["entries"].get(g["key"])
+        if not en:
+            continue
+        for uid in g["units"]:
+            if uid in units and en not in units[uid]["murray"]:
+                bad.append((g["key"][:30], uid))
+    assert bad == [], f"元の英訳に存在しない文字列: {bad[:5]}"
+
+
+def test_formula_english_coverage_holds():
+    """取得率が黙って落ちないようにする。実測 95% に対し 85% を床にする。"""
+    import json as _json
+    fen = _json.loads((_root() / "data" / "formula_en.json").read_text(encoding="utf-8"))
+    share = fen["coverage"]["share"]
+    assert share >= 0.85, f"定型句の英語の取得率が落ちた: {share:.0%}"
+
+
+def test_every_listed_person_has_a_description():
+    """登場者一覧に出る全員に説明があること。表とコードの取り違えも防ぐ。"""
+    import json as _json
+    root = _root()
+    ents = _json.loads((root / "data" / "entities.json").read_text(encoding="utf-8"))
+    notes = _json.loads(
+        (root / "data" / "judgments" / "person_notes.json").read_text(encoding="utf-8"))
+    listed = {e["english"] for e in ents["entities"]
+              if e["category"] == "person" and e.get("verified") and e.get("ja")}
+    described = {p["english"] for p in notes["persons"] if p.get("note")}
+    assert listed - described == set(), f"説明の無い登場者: {sorted(listed - described)}"
+    assert described - listed == set(), f"一覧に出ないのに説明がある: {sorted(described - listed)}"
+
+    t = (OUT / "person.html").read_text(encoding="utf-8")
+    for p in notes["persons"]:
+        assert p["note"][:12] in t, f'{p["ja"]}: 説明が頁に出ていない'
+
+
+def test_speaks_untagged_claims_point_at_real_lines():
+    """「実際には語っている」の根拠位置が本文に実在すること。
+
+    ここは機械判定に逆らう主張なので、位置が実在しなければ言いっぱなしになる。
+    """
+    import json as _json
+    from pipeline.translate import load_units
+
+    notes = _json.loads(
+        (_root() / "data" / "judgments" / "person_notes.json").read_text(encoding="utf-8"))
+    lines = {(u["book"], g["line"]) for u in load_units() for g in u["greek"]}
+    bad = []
+    for p in notes["persons"]:
+        su = p.get("speaks_untagged")
+        if not su:
+            continue
+        assert su.get("why"), f'{p["ja"]}: 原因が書かれていない'
+        for r in su["refs"]:
+            b, l = r.split(".")
+            if (int(b), int(l)) not in lines:
+                bad.append((p["ja"], r))
+    assert bad == [], f"本文に無い位置を根拠にしている: {bad}"

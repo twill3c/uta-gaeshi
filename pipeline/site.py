@@ -50,6 +50,13 @@ th{color:var(--sub);font-weight:normal;white-space:nowrap}
 .ja{margin:.15rem 0 0}
 .grc,.eng{margin:.3rem 0 0;font-size:.82rem;color:var(--sub)}
 .grc{font-family:"Palatino Linotype",Palatino,serif}
+/* 定型句の三段併記と登場者の説明。
+   **`.ja` を使い回さないこと** — 本文の和訳段落が既にその名で、
+   ここで再定義すると本文の字が縮む(loop_033 で一度やった)。 */
+.t-en{margin:.25rem 0 0;font-size:.8rem;color:var(--sub);font-style:italic}
+.t-ja{margin:.25rem 0 .35rem;font-size:.86rem;color:var(--fg)}
+.t-ja b{font-weight:600}
+.gap{color:var(--sub);opacity:.75;font-style:normal;font-size:.72rem}
 .untranslated{color:var(--sub);font-style:italic}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(7.2rem,1fr));gap:.4rem}
 .grid a{display:block;border:1px solid var(--line);border-radius:3px;padding:.45rem .5rem;
@@ -111,6 +118,9 @@ def load():
     places = json.loads((DATA / "places.json").read_text(encoding="utf-8"))
     tiers = json.loads((DATA / "judgments" / "places_tiers.json").read_text(encoding="utf-8"))
     speakers = json.loads((DATA / "speakers.json").read_text(encoding="utf-8"))
+    fen = json.loads((DATA / "formula_en.json").read_text(encoding="utf-8"))
+    glossary = json.loads((DATA / "judgments" / "glossary.json").read_text(encoding="utf-8"))
+    pnotes = json.loads((DATA / "judgments" / "person_notes.json").read_text(encoding="utf-8"))
     ledger = {}
     lp = DATA / "translated.jsonl"
     if lp.exists():
@@ -118,7 +128,7 @@ def load():
             if line.strip():
                 r = json.loads(line)
                 ledger[r["id"]] = r["ja"]
-    return corpus, formulas, entities, places, tiers, speakers, ledger
+    return corpus, formulas, entities, places, tiers, speakers, ledger, fen, glossary, pnotes
 
 
 def ref(book: int, line: int, depth: int = 0) -> str:
@@ -196,25 +206,40 @@ def build_index(corpus, ledger, formulas) -> str:
 <table>
 <tr><th><a href="formula.html">定型句</a></th><td>逐語的に反復する行 <strong>{m['repeated_types']} 種 /
  {m['repeated_occurrences']:,} 回</strong>＝全行の {m['repeated_share']*100:.1f}%。
- この反復が和訳の検査そのものになっています。</td></tr>
-<tr><th><a href="person.html">登場者</a></th><td>発話・在席・言及の三層で分けた一覧。
- 「名前が出る」ことと「その場にいる」ことは別です。</td></tr>
+ この反復が和訳の検査そのものになっています。
+ 原典・<strong>英語・和訳を併記</strong>しており、英語は Murray の訳文から機械的に取り出したものです。</td></tr>
+<tr><th><a href="person.html">登場者</a></th><td>発話・在席・言及の三層で分けた一覧に、
+ 各人の<strong>短い説明</strong>を添えています。「名前が出る」ことと「その場にいる」ことは別です。
+ <strong>三層が 8 人を取りこぼしている</strong>ことも、原因つきで開示しています。</td></tr>
 <tr><th><a href="place.html">地名</a></th><td>同定確実／比定に争いあり／同定不能の三段。
  <strong>オデュッセウスの航路は地図に描けません。</strong></td></tr>
 </table>"""
     return page("歌返し — ホメロス『オデュッセイア』", body)
 
 
-def build_formula(formulas, ledger, corpus) -> str:
-    """目玉。逐語的に反復する行を、出現位置つきで並べる。"""
+def build_formula(formulas, ledger, corpus, fen, glossary) -> str:
+    """目玉。逐語的に反復する行を、原典・英語・和訳の三段で並べる。"""
     m = formulas["meta"]
     reps = formulas["repeated_lines"]
+    en_map, gl = fen["entries"], glossary["entries"]
+    fc = fen["coverage"]
     rows = []
     for g in reps[:120]:
         refs = " ".join(ref(o["book"], o["line"]) for o in g["occurrences"][:14])
         more = f" ほか{len(g['occurrences'])-14}箇所" if len(g["occurrences"]) > 14 else ""
+        en = en_map.get(g["key"])
+        en_html = (f'<div class="t-en">{esc(en)}</div>' if en
+                   else '<div class="t-en gap">共通部分が 12 字に満たないため出していません</div>')
+        e = gl.get(g["key"])
+        if e:
+            ja_html = (f'<div class="t-ja"><b>{esc(e["core"])}</b>'
+                       f'<span class="ln">　訳例: {esc(e["full"])}</span></div>')
+        else:
+            ja_html = '<div class="t-ja gap">中核句なし</div>'
         rows.append(f'<tr><td style="white-space:nowrap">{g["count"]} 回</td>'
-                    f'<td><span class="grc">{esc(g["sample"])}</span><br>{refs}{more}</td></tr>')
+                    f'<td><span class="grc">{esc(g["sample"])}</span>'
+                    f'{en_html}{ja_html}'
+                    f'<div class="ln">{refs}{more}</div></td></tr>')
     body = f"""<h2>定型句の地図</h2>
 <p>原典 {m['total_lines']:,} 行のうち、<strong>{m['repeated_occurrences']:,} 行（{m['repeated_share']*100:.1f}%）が
 他の行の逐語的な繰り返し</strong>です。異なり {m['repeated_types']} 種。口誦叙事詩としての
@@ -227,11 +252,36 @@ def build_formula(formulas, ledger, corpus) -> str:
 検査できるのはこのためです。</div>
 <p>4-gram で 5 回以上現れる定型句は {m['ngram_types']['4']} 種、
 3-gram では {m['ngram_types']['3']} 種あります。以下は反復行の上位 120 種です。</p>
-<table><tr><th>回数</th><th>行（原典）と出現位置</th></tr>{''.join(rows)}</table>"""
+
+<h3>英語と和訳の出どころ</h3>
+<div class="note">
+<p><strong>和訳（太字）は中核句です。</strong>その行が現れるたび、一字一句同じで訳文に
+現れなければならない不変部分で、G-02 がこれを検査しています。続く「訳例」は、
+その中核句を含む一文の例です。</p>
+<p><strong>英語は Murray の訳文から機械的に取り出しました。</strong>
+Murray の英訳は行ごとに対応していません — 約 5 行ごとの錨で区切られた散文で、
+文の切れ目と行の切れ目は一致しません。そこで反復そのものを使いました。
+ある行が n 箇所に現れるなら、その行を含む n 個の単位の英訳には、その行の訳語が
+n 個すべてに現れているはずです。よって<strong>その行を含むすべての単位の英訳に
+共通して現れる、最長の連続部分</strong>を取りました。定型句の検出が n-gram を
+数えただけであるのと同じで、<strong>我々の解釈は入っていません</strong>。</p>
+<p>ただし<strong>これが「その行の訳である」ことは保証しません。</strong>
+保証されるのは「すべての単位に共通して現れる Murray の語の最長の連なりである」ことだけです。
+とくに 2 箇所しか現れない行では、偶然の重なりでありうるので、そのつもりで読んでください。
+取れたのは {fc['with_english']}/{fc['total']} 種（{fc['share']*100:.0f}%）、平均 {fc['mean_chars']} 字。
+12 字未満と、内容語を含まないものは出していません。</p>
+<p>おのずと出た性質が一つあります。<strong>反復回数が多い行ほど、共通する英語は短くなります。</strong>
+出現 2 回では {fc['by_count']['2']['got']}/{fc['by_count']['2']['total']} 種で取れるのに、
+5 回以上では {fc['by_count']['5+']['got']}/{fc['by_count']['5+']['total']} 種です。
+一致を要求する単位が増えるほど、揃う部分が短くなるからで、
+これは<strong>Murray が同じ行を訳し分けている</strong>ことの裏返しでもあります。
+原典の反復を和訳では反復として保たせているこのサイトとは、そこが違います。</p>
+</div>
+<table><tr><th>回数</th><th>原典 / 英語 / 和訳（中核句）と出現位置</th></tr>{''.join(rows)}</table>"""
     return page("定型句の地図 — 歌返し", body)
 
 
-def build_person(entities, speakers, ledger) -> str:
+def build_person(entities, speakers, ledger, pnotes) -> str:
     """三層(発話/在席/言及)で分けた登場者一覧。"""
     form2ent = {}
     for e in entities["entities"]:
@@ -247,9 +297,11 @@ def build_person(entities, speakers, ledger) -> str:
                 spoke[e["english"]].append((line["book"], line["line"]))
             elif n["role"] == "addressee":
                 addressed[e["english"]].append((line["book"], line["line"]))
+    notes = {p["english"]: p for p in pnotes["persons"]}
     persons = [e for e in entities["entities"]
                if e["category"] == "person" and e.get("verified") and e.get("ja")]
     persons.sort(key=lambda e: -e["count"])
+    missed = [p for p in pnotes["persons"] if p.get("speaks_untagged")]
     rows = []
     for e in persons:
         sp, ad = spoke.get(e["english"], []), addressed.get(e["english"], [])
@@ -260,8 +312,18 @@ def build_person(entities, speakers, ledger) -> str:
         else:
             tier, cls = "言及のみ", "tier3"
         where = " ".join(ref(b, l) for b, l in (sp or ad)[:8]) or "—"
-        note = f'<br><span class="ln">{esc(e["note"])}</span>' if e.get("note") else ""
-        rows.append(f'<tr><td>{esc(e["ja"])}<span class="ln"> {esc(e["english"])}</span>{note}</td>'
+        pn = notes.get(e["english"], {})
+        desc = f'<div class="t-ja">{esc(pn["note"])}</div>' if pn.get("note") else ""
+        untagged = pn.get("speaks_untagged")
+        if untagged:
+            tier = tier + "※"
+            marks = " ".join(ref(int(u.split(".")[0]), int(u.split(".")[1]))
+                             for u in untagged["refs"])
+            desc += (f'<div class="ln">※実際には語っている: {marks}<br>'
+                     f'{esc(untagged["why"])}</div>')
+        merge = f'<div class="ln">名寄せ: {esc(e["note"])}</div>' if e.get("note") else ""
+        rows.append(f'<tr><td>{esc(e["ja"])}<span class="ln"> {esc(e["english"])}</span>'
+                    f'{desc}{merge}</td>'
                     f'<td class="{cls}">{tier}</td><td>{e["count"]}</td>'
                     f'<td>{len(sp)}</td><td>{where}</td></tr>')
     body = f"""<h2>登場者一覧</h2>
@@ -274,7 +336,34 @@ def build_person(entities, speakers, ledger) -> str:
 父称は<strong>別人を指す</strong>ため（「アトレウスの子」はアガメムノンかメネラオス）、
 名前の出現をそのまま数えると壊れます。指示先が一意なものだけ解決し、曖昧なものは保留しました。</p>
 <p>人手で確認したのは出現 10 回以上の人物と地名・集団です。残りは機械確定のまま
-「未確認」として出しています。</p>
+「未確認」として出しています。各人の説明は
+<code>data/judgments/person_notes.json</code> に置いてあり、コードには入れていません。
+書いてあるのは<strong>作中での役どころだけ</strong>で、作品外の神話伝承や後代の解釈は書いていません。</p>
+
+<div class="note"><strong>この三層は、{len(missed)} 人を取りこぼしています。</strong>
+層は「発話導入の定型句に<strong>主格で</strong>現れるか」で機械的に決めています。
+発話導入行に名が出るのに話者として数えられていない人物を全数掃き出し、
+一人ずつ本文と希語の形を見たところ、
+{esc("・".join(p["ja"] for p in missed))} が該当しました。
+原因は一つではなく、<strong>四つ</strong>あります。</p>
+<p>1. <strong>語尾表が主格を読み違える。</strong>Ποσειδάων の -άων を属格と読んでいます
+（1変化の属格複数 θεάων 型と衝突）。Ἀπόλλων にいたっては、どの項にも当たりません。
+これは表の欠陥です。<br>
+2. <strong>語尾表が意図的に決めない。</strong>Λαέρτης・Εὐπείθης の -ης は
+1変化女性の属格とも男性の主格ともとれるため、役割を与えない設計にしてあります。
+欠陥ではなく、決めないことの帰結です。<br>
+3. <strong>語り手が二人称で呼びかける。</strong>この作品は豚飼いエウマイオスにだけ
+「エウマイオスよ、あなたは答えて言った」と直接呼びかけて発話を導きます。
+名は呼格、動詞は二人称なので、主格を見る判定には映りません。<br>
+4. <strong>主語が人でなく「〜の霊」。</strong>「アトレウスの子の霊が答えて」の形では、
+人名は属格の修飾に落ちます。アガメムノンとアキレウスがこれです。
+ヘルメスにいたっては、語るときの名が別名 Ἀργεϊφόντης なので、
+そもそも「ヘルメス」という表記が行にありません。</p>
+<p><strong>層のほうは書き換えていません。</strong>
+機械判定を人手で上書きすると、何が測った値で何が我々の判断なのか見分けられなくなるからです。
+表では※を付け、本文で確かめた位置と原因を各人の欄に書きました。
+これは<strong>ある表し方の上で定義した検査は、別の表し方で書かれたものを見られない</strong>という、
+この企画で何度も出た型のひとつです。</div>
 <table><tr><th>人物</th><th>層</th><th>出現</th><th>発話</th><th>位置</th></tr>{''.join(rows)}</table>"""
     return page("登場者一覧 — 歌返し", body)
 
@@ -402,7 +491,7 @@ G-05 と G-14 は実際に本番で欠陥を捕まえました — 目視では�
 
 
 def main() -> None:
-    corpus, formulas, entities, places, tiers, speakers, ledger = load()
+    corpus, formulas, entities, places, tiers, speakers, ledger, fen, glossary, pnotes = load()
     OUT.mkdir(exist_ok=True)
     (OUT / "book").mkdir(exist_ok=True)
     n = 0
@@ -412,8 +501,8 @@ def main() -> None:
         n += 1
     pages = {
         "index.html": build_index(corpus, ledger, formulas),
-        "formula.html": build_formula(formulas, ledger, corpus),
-        "person.html": build_person(entities, speakers, ledger),
+        "formula.html": build_formula(formulas, ledger, corpus, fen, glossary),
+        "person.html": build_person(entities, speakers, ledger, pnotes),
         "place.html": build_place(places, tiers),
         "about.html": build_about(corpus, formulas, ledger, entities),
     }

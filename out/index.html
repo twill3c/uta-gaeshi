@@ -26,6 +26,13 @@ th{color:var(--sub);font-weight:normal;white-space:nowrap}
 .ja{margin:.15rem 0 0}
 .grc,.eng{margin:.3rem 0 0;font-size:.82rem;color:var(--sub)}
 .grc{font-family:"Palatino Linotype",Palatino,serif}
+/* 定型句の三段併記と登場者の説明。
+   **`.ja` を使い回さないこと** — 本文の和訳段落が既にその名で、
+   ここで再定義すると本文の字が縮む(loop_033 で一度やった)。 */
+.t-en{margin:.25rem 0 0;font-size:.8rem;color:var(--sub);font-style:italic}
+.t-ja{margin:.25rem 0 .35rem;font-size:.86rem;color:var(--fg)}
+.t-ja b{font-weight:600}
+.gap{color:var(--sub);opacity:.75;font-style:normal;font-size:.72rem}
 .untranslated{color:var(--sub);font-style:italic}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(7.2rem,1fr));gap:.4rem}
 .grid a{display:block;border:1px solid var(--line);border-radius:3px;padding:.45rem .5rem;
@@ -63,9 +70,11 @@ footer a{color:var(--sub)}
 <table>
 <tr><th><a href="formula.html">定型句</a></th><td>逐語的に反復する行 <strong>808 種 /
  2,155 回</strong>＝全行の 17.8%。
- この反復が和訳の検査そのものになっています。</td></tr>
-<tr><th><a href="person.html">登場者</a></th><td>発話・在席・言及の三層で分けた一覧。
- 「名前が出る」ことと「その場にいる」ことは別です。</td></tr>
+ この反復が和訳の検査そのものになっています。
+ 原典・<strong>英語・和訳を併記</strong>しており、英語は Murray の訳文から機械的に取り出したものです。</td></tr>
+<tr><th><a href="person.html">登場者</a></th><td>発話・在席・言及の三層で分けた一覧に、
+ 各人の<strong>短い説明</strong>を添えています。「名前が出る」ことと「その場にいる」ことは別です。
+ <strong>三層が 8 人を取りこぼしている</strong>ことも、原因つきで開示しています。</td></tr>
 <tr><th><a href="place.html">地名</a></th><td>同定確実／比定に争いあり／同定不能の三段。
  <strong>オデュッセウスの航路は地図に描けません。</strong></td></tr>
 </table>
